@@ -30,21 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrderReport));
-            this.xtraTabPage3 = new DevExpress.XtraTab.XtraTabPage();
-            this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.gvKetQua = new DevExpress.XtraGrid.GridControl();
-            this.gridView2 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn8 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.xtraTabPage1 = new DevExpress.XtraTab.XtraTabPage();
+            this.tabPageXem = new DevExpress.XtraTab.XtraTabPage();
+            this.tabPageKetQua = new DevExpress.XtraTab.XtraTabPage();
+            this.gcKetQua = new DevExpress.XtraGrid.GridControl();
+            this.gvKetQua = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.tabPageDieuKienLoc = new DevExpress.XtraTab.XtraTabPage();
             this.tablePanel1 = new DevExpress.Utils.Layout.TablePanel();
             this.radioGroup1 = new DevExpress.XtraEditors.RadioGroup();
             this.textEdit5 = new DevExpress.XtraEditors.TextEdit();
@@ -90,16 +80,16 @@
             this.dateEdit2 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEdit3 = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEdit2 = new DevExpress.XtraEditors.DateTimeOffsetEdit();
-            this.xtraTabControl1 = new DevExpress.XtraTab.XtraTabControl();
+            this.tabConOrderReport = new DevExpress.XtraTab.XtraTabControl();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnThucHien = new DevExpress.XtraEditors.SimpleButton();
             this.btnXuatExcel = new DevExpress.XtraEditors.SimpleButton();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
-            this.xtraTabPage2.SuspendLayout();
+            this.tabPageKetQua.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gcKetQua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvKetQua)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).BeginInit();
-            this.xtraTabPage1.SuspendLayout();
+            this.tabPageDieuKienLoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).BeginInit();
             this.tablePanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radioGroup1.Properties)).BeginInit();
@@ -124,171 +114,50 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).BeginInit();
-            this.xtraTabControl1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.tabConOrderReport)).BeginInit();
+            this.tabConOrderReport.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.SuspendLayout();
             // 
-            // xtraTabPage3
+            // tabPageXem
             // 
-            this.xtraTabPage3.Name = "xtraTabPage3";
-            this.xtraTabPage3.Size = new System.Drawing.Size(1225, 797);
-            this.xtraTabPage3.Text = "Xem";
+            this.tabPageXem.Name = "tabPageXem";
+            this.tabPageXem.Size = new System.Drawing.Size(1225, 797);
+            this.tabPageXem.Text = "Xem";
             // 
-            // xtraTabPage2
+            // tabPageKetQua
             // 
-            this.xtraTabPage2.Controls.Add(this.gvKetQua);
-            this.xtraTabPage2.Name = "xtraTabPage2";
-            this.xtraTabPage2.Size = new System.Drawing.Size(1225, 797);
-            this.xtraTabPage2.Text = "Kết quả";
+            this.tabPageKetQua.Controls.Add(this.gcKetQua);
+            this.tabPageKetQua.Name = "tabPageKetQua";
+            this.tabPageKetQua.Size = new System.Drawing.Size(1225, 797);
+            this.tabPageKetQua.Text = "Kết quả";
+            // 
+            // gcKetQua
+            // 
+            this.gcKetQua.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gcKetQua.Location = new System.Drawing.Point(0, 0);
+            this.gcKetQua.MainView = this.gvKetQua;
+            this.gcKetQua.Name = "gcKetQua";
+            this.gcKetQua.Size = new System.Drawing.Size(1225, 797);
+            this.gcKetQua.TabIndex = 0;
+            this.gcKetQua.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gvKetQua});
             // 
             // gvKetQua
             // 
-            this.gvKetQua.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gvKetQua.Location = new System.Drawing.Point(0, 0);
-            this.gvKetQua.MainView = this.gridView2;
+            this.gvKetQua.DetailHeight = 372;
+            this.gvKetQua.GridControl = this.gcKetQua;
             this.gvKetQua.Name = "gvKetQua";
-            this.gvKetQua.Size = new System.Drawing.Size(1225, 797);
-            this.gvKetQua.TabIndex = 0;
-            this.gvKetQua.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
-            this.gridView2});
+            this.gvKetQua.OptionsView.ShowGroupPanel = false;
             // 
-            // gridView2
+            // tabPageDieuKienLoc
             // 
-            this.gridView2.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
-            this.gridColumn2,
-            this.gridColumn3,
-            this.gridColumn4,
-            this.gridColumn5,
-            this.gridColumn6,
-            this.gridColumn7,
-            this.gridColumn8,
-            this.gridColumn9,
-            this.gridColumn10});
-            this.gridView2.DetailHeight = 372;
-            this.gridView2.GridControl = this.gvKetQua;
-            this.gridView2.Name = "gridView2";
-            this.gridView2.OptionsView.ShowGroupPanel = false;
-            // 
-            // gridColumn1
-            // 
-            this.gridColumn1.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn1.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn1.Caption = "Mã KH";
-            this.gridColumn1.MinWidth = 25;
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 5;
-            this.gridColumn1.Width = 94;
-            // 
-            // gridColumn2
-            // 
-            this.gridColumn2.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn2.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn2.Caption = "Tên KH";
-            this.gridColumn2.MinWidth = 25;
-            this.gridColumn2.Name = "gridColumn2";
-            this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 6;
-            this.gridColumn2.Width = 94;
-            // 
-            // gridColumn3
-            // 
-            this.gridColumn3.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn3.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn3.Caption = "Diễn giải";
-            this.gridColumn3.MinWidth = 25;
-            this.gridColumn3.Name = "gridColumn3";
-            this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 7;
-            this.gridColumn3.Width = 94;
-            // 
-            // gridColumn4
-            // 
-            this.gridColumn4.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn4.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn4.Caption = "Số ĐH";
-            this.gridColumn4.MinWidth = 25;
-            this.gridColumn4.Name = "gridColumn4";
-            this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 4;
-            this.gridColumn4.Width = 94;
-            // 
-            // gridColumn5
-            // 
-            this.gridColumn5.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn5.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn5.Caption = "Số LSX";
-            this.gridColumn5.MinWidth = 25;
-            this.gridColumn5.Name = "gridColumn5";
-            this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 3;
-            this.gridColumn5.Width = 94;
-            // 
-            // gridColumn6
-            // 
-            this.gridColumn6.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn6.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn6.Caption = "Số PO KH";
-            this.gridColumn6.MinWidth = 25;
-            this.gridColumn6.Name = "gridColumn6";
-            this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 2;
-            this.gridColumn6.Width = 94;
-            // 
-            // gridColumn7
-            // 
-            this.gridColumn7.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn7.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn7.Caption = "Số CT";
-            this.gridColumn7.MinWidth = 25;
-            this.gridColumn7.Name = "gridColumn7";
-            this.gridColumn7.Visible = true;
-            this.gridColumn7.VisibleIndex = 1;
-            this.gridColumn7.Width = 94;
-            // 
-            // gridColumn8
-            // 
-            this.gridColumn8.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn8.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn8.Caption = "Ngày CT";
-            this.gridColumn8.MinWidth = 25;
-            this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 0;
-            this.gridColumn8.Width = 94;
-            // 
-            // gridColumn9
-            // 
-            this.gridColumn9.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn9.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn9.Caption = "Mã SP";
-            this.gridColumn9.MinWidth = 25;
-            this.gridColumn9.Name = "gridColumn9";
-            this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 8;
-            this.gridColumn9.Width = 94;
-            // 
-            // gridColumn10
-            // 
-            this.gridColumn10.AppearanceHeader.Options.UseTextOptions = true;
-            this.gridColumn10.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
-            this.gridColumn10.Caption = "Tên SP";
-            this.gridColumn10.MinWidth = 25;
-            this.gridColumn10.Name = "gridColumn10";
-            this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 9;
-            this.gridColumn10.Width = 94;
-            // 
-            // xtraTabPage1
-            // 
-            this.xtraTabPage1.Controls.Add(this.tablePanel1);
-            this.xtraTabPage1.Name = "xtraTabPage1";
-            this.xtraTabPage1.Size = new System.Drawing.Size(1225, 797);
-            this.xtraTabPage1.Text = "Điều kiện lọc";
+            this.tabPageDieuKienLoc.Controls.Add(this.tablePanel1);
+            this.tabPageDieuKienLoc.Name = "tabPageDieuKienLoc";
+            this.tabPageDieuKienLoc.Size = new System.Drawing.Size(1225, 797);
+            this.tabPageDieuKienLoc.Text = "Điều kiện lọc";
             // 
             // tablePanel1
             // 
@@ -805,7 +674,6 @@
             this.label1.Size = new System.Drawing.Size(53, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Công ty";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // dateEdit1
             // 
@@ -864,24 +732,24 @@
             this.textEdit2.Size = new System.Drawing.Size(348, 24);
             this.textEdit2.TabIndex = 20;
             // 
-            // xtraTabControl1
+            // tabConOrderReport
             // 
-            this.xtraTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.xtraTabControl1.Location = new System.Drawing.Point(3, 77);
-            this.xtraTabControl1.Name = "xtraTabControl1";
-            this.xtraTabControl1.SelectedTabPage = this.xtraTabPage1;
-            this.xtraTabControl1.Size = new System.Drawing.Size(1227, 822);
-            this.xtraTabControl1.TabIndex = 0;
-            this.xtraTabControl1.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
-            this.xtraTabPage1,
-            this.xtraTabPage2,
-            this.xtraTabPage3});
+            this.tabConOrderReport.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabConOrderReport.Location = new System.Drawing.Point(3, 77);
+            this.tabConOrderReport.Name = "tabConOrderReport";
+            this.tabConOrderReport.SelectedTabPage = this.tabPageDieuKienLoc;
+            this.tabConOrderReport.Size = new System.Drawing.Size(1227, 822);
+            this.tabConOrderReport.TabIndex = 0;
+            this.tabConOrderReport.TabPages.AddRange(new DevExpress.XtraTab.XtraTabPage[] {
+            this.tabPageDieuKienLoc,
+            this.tabPageKetQua,
+            this.tabPageXem});
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.xtraTabControl1, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.tabConOrderReport, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 0, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -911,6 +779,7 @@
             this.btnThucHien.Size = new System.Drawing.Size(132, 53);
             this.btnThucHien.TabIndex = 0;
             this.btnThucHien.Text = "Thực hiện";
+            this.btnThucHien.Click += new System.EventHandler(this.btnThucHien_Click);
             // 
             // btnXuatExcel
             // 
@@ -932,10 +801,10 @@
             this.Name = "OrderReport";
             this.Text = "Báo cáo đơn hàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.xtraTabPage2.ResumeLayout(false);
+            this.tabPageKetQua.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gcKetQua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gvKetQua)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gridView2)).EndInit();
-            this.xtraTabPage1.ResumeLayout(false);
+            this.tabPageDieuKienLoc.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tablePanel1)).EndInit();
             this.tablePanel1.ResumeLayout(false);
             this.tablePanel1.PerformLayout();
@@ -961,8 +830,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dateEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit3.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit2.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl1)).EndInit();
-            this.xtraTabControl1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.tabConOrderReport)).EndInit();
+            this.tabConOrderReport.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
@@ -972,10 +841,10 @@
 
         #endregion
 
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage3;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
-        private DevExpress.XtraTab.XtraTabPage xtraTabPage1;
-        private DevExpress.XtraTab.XtraTabControl xtraTabControl1;
+        private DevExpress.XtraTab.XtraTabPage tabPageXem;
+        private DevExpress.XtraTab.XtraTabPage tabPageKetQua;
+        private DevExpress.XtraTab.XtraTabPage tabPageDieuKienLoc;
+        private DevExpress.XtraTab.XtraTabControl tabConOrderReport;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private DevExpress.Utils.Layout.TablePanel tablePanel1;
         private System.Windows.Forms.Label label1;
@@ -1024,18 +893,8 @@
         private DevExpress.XtraEditors.ComboBoxEdit comboBoxEdit2;
         private DevExpress.XtraEditors.TextEdit textEdit5;
         private DevExpress.XtraEditors.TextEdit textEdit4;
-        private DevExpress.XtraGrid.GridControl gvKetQua;
-        private DevExpress.XtraGrid.Views.Grid.GridView gridView2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
+        private DevExpress.XtraGrid.GridControl gcKetQua;
+        private DevExpress.XtraGrid.Views.Grid.GridView gvKetQua;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private DevExpress.XtraEditors.RadioGroup radioGroup1;
     }

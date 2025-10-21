@@ -1,21 +1,26 @@
-﻿using System;
+﻿using BT_ERP_DEMO.Common;
+using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 
 namespace BT_ERP_DEMO.DAL
 
 {
-    public class Database : IDisposable
+    public class DbConnectionHelper : IDisposable
     {
         private SqlConnection connection;
 
-        // Chuỗi kết nối SQL Server
-        private string connectionString =
-            "Data Source=localhost;Initial Catalog=MyDatabase;Integrated Security=True";
-
-        public Database()
+        public DbConnectionHelper()
         {
+            string connectionString = AppSettings.GetConnectionString();
             connection = new SqlConnection(connectionString);
+        }
+
+        //
+        public SqlConnection GetConnection()
+        {
+            return new SqlConnection(AppSettings.GetConnectionString());
         }
 
         // Mở kết nối

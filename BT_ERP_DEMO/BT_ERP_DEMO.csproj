@@ -56,7 +56,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DAL\connectdb.cs" />
+    <Compile Include="Common\AppSetting.cs" />
+    <Compile Include="DAL\ConnectionDB.cs" />
+    <Compile Include="Model\Sovch03M.cs" />
+    <Compile Include="Repo\SoVch03MRepository.cs" />
     <Compile Include="UI\OrderReport.cs">
       <SubType>Form</SubType>
     </Compile>
