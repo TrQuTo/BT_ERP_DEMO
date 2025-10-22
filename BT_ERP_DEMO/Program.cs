@@ -1,4 +1,5 @@
-﻿using DevExpress.LookAndFeel;
+﻿using BT_ERP_DEMO.UI;
+using DevExpress.LookAndFeel;
 using DevExpress.Skins;
 using DevExpress.UserSkins;
 using System;
@@ -18,7 +19,7 @@ namespace BT_ERP_DEMO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OrderReport());
+            Application.Run(new Orders());
         }
     }
 }
