@@ -56,6 +56,7 @@
     <Reference Include="DevExpress.XtraPrinting.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraRichEdit.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraTreeList.v22.2, Version=22.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
@@ -73,7 +74,11 @@
   <ItemGroup>
     <Compile Include="Common\AppSetting.cs" />
     <Compile Include="DAL\ConnectionDB.cs" />
+    <Compile Include="Model\Core\ExportImportExcel.cs" />
+    <Compile Include="Model\Core\GlobalObject.cs" />
     <Compile Include="Model\Sovch03M.cs" />
+    <Compile Include="Model\soVchQuotationDomD0.cs" />
+    <Compile Include="Model\soVchQuotationDomM.cs" />
     <Compile Include="Repo\SoVch03MRepository.cs" />
     <Compile Include="UI\OrderReport.cs">
       <SubType>Form</SubType>
@@ -107,6 +112,7 @@
       <DependentUpon>Orders.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
