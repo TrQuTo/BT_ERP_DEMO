@@ -101,7 +101,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Base\BaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Common\AppSetting.cs" />
+    <Compile Include="Common\LookupCommon.cs" />
+    <Compile Include="Common\StatusHelpercs.cs" />
     <Compile Include="DAL\ConnectionDB.cs" />
     <Compile Include="Model\Core\ExportImportExcel.cs" />
     <Compile Include="Model\Core\GlobalObject.cs" />

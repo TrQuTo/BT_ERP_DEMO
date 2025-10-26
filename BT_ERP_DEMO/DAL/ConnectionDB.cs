@@ -10,17 +10,17 @@ namespace BT_ERP_DEMO.DAL
     public class DbConnectionHelper : IDisposable
     {
         private SqlConnection connection;
-
+        string DatabaseName = AppSettings.ErpDatabase;
         public DbConnectionHelper()
         {
-            string connectionString = AppSettings.GetConnectionString();
+            string connectionString = AppSettings.GetConnectionString(DatabaseName);
             connection = new SqlConnection(connectionString);
         }
 
         //
         public SqlConnection GetConnection()
         {
-            return new SqlConnection(AppSettings.GetConnectionString());
+            return new SqlConnection(AppSettings.GetConnectionString(DatabaseName));
         }
 
         // Mở kết nối
