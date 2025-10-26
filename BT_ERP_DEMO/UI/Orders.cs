@@ -1,4 +1,5 @@
 ﻿using DevExpress.XtraEditors;
+using DevExpress.XtraGrid;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,16 +17,13 @@ namespace BT_ERP_DEMO.UI
         public Orders()
         {
             InitializeComponent();
-        }
-
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
 
         }
-
-        private void simpleButton2_Click(object sender, EventArgs e)
+        BindingSource source = new BindingSource();
+        private void gcDetails_Load(object sender, EventArgs e)
         {
-
+            source.DataSource = new BindingList<soVchQuotationDomD0>();
+            gcDetails.DataSource = source;
         }
     }
 }

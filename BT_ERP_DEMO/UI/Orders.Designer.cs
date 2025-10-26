@@ -1,4 +1,6 @@
-﻿namespace BT_ERP_DEMO.UI
+﻿using System;
+
+namespace BT_ERP_DEMO.UI
 {
     partial class Orders
     {
@@ -45,10 +47,15 @@
             this.btnNhapTuExcel = new DevExpress.XtraBars.BarButtonItem();
             this.btnXuatExcel = new DevExpress.XtraBars.BarButtonItem();
             this.btnThoat = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem6 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnVeCuoi = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.filterEditorControl1 = new DevExpress.DataAccess.UI.FilterEditorControl();
             this.xtraTabControl2 = new DevExpress.XtraTab.XtraTabControl();
@@ -122,6 +129,8 @@
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.teSoPhieu = new DevExpress.XtraEditors.TextEdit();
+            this.btnNewSoPhieu = new DevExpress.XtraEditors.SimpleButton();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
             this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
             this.deNgayXuatPhieu = new DevExpress.XtraEditors.DateEdit();
@@ -136,6 +145,12 @@
             this.tabDiscount = new DevExpress.XtraTab.XtraTabPage();
             this.tabAccounting = new DevExpress.XtraTab.XtraTabPage();
             this.tabOther = new DevExpress.XtraTab.XtraTabPage();
+            this.bar2 = new DevExpress.XtraBars.Bar();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.bar3 = new DevExpress.XtraBars.Bar();
+            this.bar4 = new DevExpress.XtraBars.Bar();
+            this.bar5 = new DevExpress.XtraBars.Bar();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.xtraTabControl2)).BeginInit();
@@ -177,6 +192,7 @@
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.cboLoaiPhieu.Properties)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.teSoPhieu.Properties)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.deNgayXuatPhieu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.deNgayXuatPhieu.Properties.CalendarTimeProperties)).BeginInit();
@@ -208,8 +224,13 @@
             this.btnBoGhiSo,
             this.btnNhapTuExcel,
             this.btnXuatExcel,
-            this.btnThoat});
-            this.barManager1.MaxItemId = 25;
+            this.btnThoat,
+            this.btnVeCuoi,
+            this.barButtonItem1,
+            this.barButtonItem4,
+            this.barButtonItem5,
+            this.barButtonItem6});
+            this.barManager1.MaxItemId = 35;
             // 
             // bar1
             // 
@@ -230,7 +251,11 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.btnBoGhiSo),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnNhapTuExcel),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnXuatExcel),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnThoat)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnThoat),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem4, true),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem5),
+            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem6),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnVeCuoi)});
             this.bar1.Text = "Tools";
             // 
             // btnThem
@@ -341,6 +366,40 @@
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
+            // barButtonItem4
+            // 
+            this.barButtonItem4.Caption = "Về đầu";
+            this.barButtonItem4.Id = 30;
+            this.barButtonItem4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
+            this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "Trước";
+            this.barButtonItem5.Id = 31;
+            this.barButtonItem5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem5.ImageOptions.SvgImage")));
+            this.barButtonItem5.Name = "barButtonItem5";
+            this.barButtonItem5.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // barButtonItem6
+            // 
+            this.barButtonItem6.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.barButtonItem6.Caption = "Sau";
+            this.barButtonItem6.Id = 32;
+            this.barButtonItem6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem6.ImageOptions.SvgImage")));
+            this.barButtonItem6.Name = "barButtonItem6";
+            this.barButtonItem6.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // btnVeCuoi
+            // 
+            this.btnVeCuoi.Alignment = DevExpress.XtraBars.BarItemLinkAlignment.Right;
+            this.btnVeCuoi.Caption = "Về cuối";
+            this.btnVeCuoi.Id = 26;
+            this.btnVeCuoi.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("btnVeCuoi.ImageOptions.SvgImage")));
+            this.btnVeCuoi.Name = "btnVeCuoi";
+            this.btnVeCuoi.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
             // barDockControlTop
             // 
             this.barDockControlTop.CausesValidation = false;
@@ -372,6 +431,13 @@
             this.barDockControlRight.Location = new System.Drawing.Point(1789, 31);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 743);
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Về đầu";
+            this.barButtonItem1.Id = 27;
+            this.barButtonItem1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem1.ImageOptions.SvgImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
             // 
             // filterEditorControl1
             // 
@@ -430,6 +496,7 @@
             this.gcDetails.TabIndex = 0;
             this.gcDetails.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.advBandedGridView1});
+            this.gcDetails.Load += new System.EventHandler(this.gcDetails_Load);
             // 
             // advBandedGridView1
             // 
@@ -941,7 +1008,6 @@
             this.btnCapNhapThongTin.Size = new System.Drawing.Size(220, 29);
             this.btnCapNhapThongTin.TabIndex = 0;
             this.btnCapNhapThongTin.Text = "Cập nhập thông tin";
-            this.btnCapNhapThongTin.Click += new System.EventHandler(this.simpleButton2_Click);
             // 
             // btnKiemTraKho
             // 
@@ -1155,6 +1221,8 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 60F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 48F));
             this.tableLayoutPanel3.Controls.Add(this.labelControl8, 0, 0);
+            this.tableLayoutPanel3.Controls.Add(this.teSoPhieu, 1, 0);
+            this.tableLayoutPanel3.Controls.Add(this.btnNewSoPhieu, 2, 0);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(758, 42);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;
@@ -1170,6 +1238,31 @@
             this.labelControl8.Size = new System.Drawing.Size(156, 27);
             this.labelControl8.TabIndex = 0;
             this.labelControl8.Text = "Số phiếu";
+            // 
+            // teSoPhieu
+            // 
+            this.teSoPhieu.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.teSoPhieu.Location = new System.Drawing.Point(165, 3);
+            this.teSoPhieu.MenuManager = this.barManager1;
+            this.teSoPhieu.Name = "teSoPhieu";
+            this.teSoPhieu.Properties.ReadOnly = true;
+            this.teSoPhieu.Size = new System.Drawing.Size(237, 24);
+            this.teSoPhieu.TabIndex = 1;
+            // 
+            // btnNewSoPhieu
+            // 
+            this.btnNewSoPhieu.Appearance.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.btnNewSoPhieu.Appearance.ForeColor = System.Drawing.Color.Black;
+            this.btnNewSoPhieu.Appearance.Options.UseBackColor = true;
+            this.btnNewSoPhieu.Appearance.Options.UseForeColor = true;
+            this.btnNewSoPhieu.Appearance.Options.UseTextOptions = true;
+            this.btnNewSoPhieu.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.btnNewSoPhieu.Appearance.TextOptions.VAlignment = DevExpress.Utils.VertAlignment.Center;
+            this.btnNewSoPhieu.Location = new System.Drawing.Point(408, 3);
+            this.btnNewSoPhieu.Name = "btnNewSoPhieu";
+            this.btnNewSoPhieu.Size = new System.Drawing.Size(42, 24);
+            this.btnNewSoPhieu.TabIndex = 2;
+            this.btnNewSoPhieu.Text = ". . .";
             // 
             // tableLayoutPanel4
             // 
@@ -1274,38 +1367,84 @@
             // tabAddress
             // 
             this.tabAddress.Name = "tabAddress";
-            this.tabAddress.Size = new System.Drawing.Size(1781, 303);
+            this.tabAddress.Size = new System.Drawing.Size(1781, 319);
             this.tabAddress.Text = "Địa chỉ";
             // 
             // tabDelivery
             // 
             this.tabDelivery.Name = "tabDelivery";
-            this.tabDelivery.Size = new System.Drawing.Size(1781, 303);
+            this.tabDelivery.Size = new System.Drawing.Size(1781, 319);
             this.tabDelivery.Text = "Giao hàng";
             // 
             // tabPay
             // 
             this.tabPay.Name = "tabPay";
-            this.tabPay.Size = new System.Drawing.Size(1781, 303);
+            this.tabPay.Size = new System.Drawing.Size(1781, 319);
             this.tabPay.Text = "Thanh toán";
             // 
             // tabDiscount
             // 
             this.tabDiscount.Name = "tabDiscount";
-            this.tabDiscount.Size = new System.Drawing.Size(1781, 303);
+            this.tabDiscount.Size = new System.Drawing.Size(1781, 319);
             this.tabDiscount.Text = "Giảm giá";
             // 
             // tabAccounting
             // 
             this.tabAccounting.Name = "tabAccounting";
-            this.tabAccounting.Size = new System.Drawing.Size(1781, 303);
+            this.tabAccounting.Size = new System.Drawing.Size(1781, 319);
             this.tabAccounting.Text = "Hạch toán";
             // 
             // tabOther
             // 
             this.tabOther.Name = "tabOther";
-            this.tabOther.Size = new System.Drawing.Size(1781, 303);
+            this.tabOther.Size = new System.Drawing.Size(1781, 319);
             this.tabOther.Text = "Khác";
+            // 
+            // bar2
+            // 
+            this.bar2.BarName = "Custom 3";
+            this.bar2.DockCol = 0;
+            this.bar2.DockRow = 1;
+            this.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar2.Text = "Custom 3";
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Trước";
+            this.barButtonItem2.Id = 28;
+            this.barButtonItem2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem2.ImageOptions.SvgImage")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "Sau";
+            this.barButtonItem3.Id = 29;
+            this.barButtonItem3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem3.ImageOptions.SvgImage")));
+            this.barButtonItem3.Name = "barButtonItem3";
+            // 
+            // bar3
+            // 
+            this.bar3.BarName = "Custom 3";
+            this.bar3.DockCol = 0;
+            this.bar3.DockRow = 1;
+            this.bar3.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar3.Text = "Custom 3";
+            // 
+            // bar4
+            // 
+            this.bar4.BarName = "Custom 4";
+            this.bar4.DockCol = 0;
+            this.bar4.DockRow = 2;
+            this.bar4.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar4.Text = "Custom 4";
+            // 
+            // bar5
+            // 
+            this.bar5.BarName = "Custom 3";
+            this.bar5.DockCol = 0;
+            this.bar5.DockRow = 1;
+            this.bar5.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar5.Text = "Custom 3";
             // 
             // Orders
             // 
@@ -1369,6 +1508,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.cboLoaiPhieu.Properties)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.teSoPhieu.Properties)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.deNgayXuatPhieu.Properties.CalendarTimeProperties)).EndInit();
@@ -1490,5 +1630,18 @@
         private DevExpress.XtraTab.XtraTabPage tabQuantity;
         private DevExpress.XtraTab.XtraTabPage tabPosting;
         private DevExpress.XtraTab.XtraTabPage tabOther2;
+        private DevExpress.XtraEditors.TextEdit teSoPhieu;
+        private DevExpress.XtraEditors.SimpleButton btnNewSoPhieu;
+        private DevExpress.XtraBars.BarButtonItem btnVeCuoi;
+        private DevExpress.XtraBars.Bar bar2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem4;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem6;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem2;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem3;
+        private DevExpress.XtraBars.Bar bar3;
+        private DevExpress.XtraBars.Bar bar4;
+        private DevExpress.XtraBars.Bar bar5;
     }
 }
