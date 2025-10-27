@@ -1,4 +1,5 @@
 ﻿using BT_ERP_DEMO.UI;
+using BT_ERP_DEMO.UI.Common;
 using DevExpress.LookAndFeel;
 using DevExpress.Skins;
 using DevExpress.UserSkins;

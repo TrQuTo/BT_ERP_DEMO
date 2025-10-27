@@ -19,6 +19,7 @@ namespace BT_ERP_DEMO.Common
         public enum dcVch01M_PaymentMethod {
             ChuyenKhoan = 0,
             TienMat = 1,
+            CanTru= 2
         }
 
         public enum dcVch01M_TyGia {
@@ -28,6 +29,13 @@ namespace BT_ERP_DEMO.Common
             JPY = 3,
             GBP = 4,
             CNY = 5
+        }
+
+        public enum dcVch01M_LoaiPhieu {
+            TheoPO = 0,
+            TheoForeCast = 1,
+            ThuongMai = 2,
+            lapRap = 3,
         }
     }
 }

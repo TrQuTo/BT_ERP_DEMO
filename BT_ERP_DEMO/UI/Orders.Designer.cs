@@ -98,7 +98,7 @@ namespace BT_ERP_DEMO.UI
             this.labelControl12 = new DevExpress.XtraEditors.LabelControl();
             this.flowLayoutPanel9 = new System.Windows.Forms.FlowLayoutPanel();
             this.glkTyGia = new DevExpress.XtraEditors.LookUpEdit();
-            this.teTyGia = new DevExpress.XtraEditors.MemoEdit();
+            this.spnTyGia = new DevExpress.XtraEditors.SpinEdit();
             this.glkTrangThai = new DevExpress.XtraEditors.LookUpEdit();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.labelControl7 = new DevExpress.XtraEditors.LabelControl();
@@ -118,7 +118,7 @@ namespace BT_ERP_DEMO.UI
             this.cboKhachHang = new DevExpress.XtraEditors.ComboBoxEdit();
             this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.cboLoaiPhieu = new DevExpress.XtraEditors.ComboBoxEdit();
+            this.glkLoaiPhieu = new DevExpress.XtraEditors.LookUpEdit();
             this.flowLayoutPanel7 = new System.Windows.Forms.FlowLayoutPanel();
             this.btnChonBaoGia = new DevExpress.XtraEditors.SimpleButton();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
@@ -174,7 +174,7 @@ namespace BT_ERP_DEMO.UI
             this.tableLayoutPanel7.SuspendLayout();
             this.flowLayoutPanel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.glkTyGia.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teTyGia.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spnTyGia.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.glkTrangThai.Properties)).BeginInit();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.deNgayHachToan.Properties)).BeginInit();
@@ -192,7 +192,7 @@ namespace BT_ERP_DEMO.UI
             ((System.ComponentModel.ISupportInitialize)(this.cboKhachHang.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.cboLoaiPhieu.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.glkLoaiPhieu.Properties)).BeginInit();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teSoPhieu.Properties)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
@@ -919,7 +919,7 @@ namespace BT_ERP_DEMO.UI
             // flowLayoutPanel9
             // 
             this.flowLayoutPanel9.Controls.Add(this.glkTyGia);
-            this.flowLayoutPanel9.Controls.Add(this.teTyGia);
+            this.flowLayoutPanel9.Controls.Add(this.spnTyGia);
             this.flowLayoutPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel9.Location = new System.Drawing.Point(162, 0);
             this.flowLayoutPanel9.Margin = new System.Windows.Forms.Padding(0);
@@ -944,17 +944,31 @@ namespace BT_ERP_DEMO.UI
             this.glkTyGia.TabIndex = 0;
             this.glkTyGia.EditValueChanged += new System.EventHandler(this.glkTyGia_EditValueChanged);
             // 
-            // teTyGia
+            // spnTyGia
             // 
-            this.teTyGia.EditValue = "";
-            this.teTyGia.Location = new System.Drawing.Point(95, 3);
-            this.teTyGia.MenuManager = this.barManager1;
-            this.teTyGia.Name = "teTyGia";
-            this.teTyGia.Properties.Appearance.Options.UseTextOptions = true;
-            this.teTyGia.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
-            this.teTyGia.Properties.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.teTyGia.Size = new System.Drawing.Size(145, 25);
-            this.teTyGia.TabIndex = 1;
+            this.spnTyGia.EditValue = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.spnTyGia.Location = new System.Drawing.Point(95, 3);
+            this.spnTyGia.MenuManager = this.barManager1;
+            this.spnTyGia.Name = "spnTyGia";
+            this.spnTyGia.Properties.Appearance.Options.UseTextOptions = true;
+            this.spnTyGia.Properties.Appearance.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Far;
+            this.spnTyGia.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.spnTyGia.Properties.DisplayFormat.FormatType = DevExpress.Utils.FormatType.Numeric;
+            this.spnTyGia.Properties.EditValueChangedFiringMode = DevExpress.XtraEditors.Controls.EditValueChangedFiringMode.Default;
+            this.spnTyGia.Properties.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.spnTyGia.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
+            this.spnTyGia.Properties.MaskSettings.Set("mask", "n2");
+            this.spnTyGia.Size = new System.Drawing.Size(145, 24);
+            this.spnTyGia.TabIndex = 1;
             // 
             // glkTrangThai
             // 
@@ -1052,6 +1066,7 @@ namespace BT_ERP_DEMO.UI
             this.glkHinhThucTT.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.glkHinhThucTT.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Code", "Mã", 5, DevExpress.Utils.FormatType.None, "", true, DevExpress.Utils.HorzAlignment.Default, DevExpress.Data.ColumnSortOrder.None, DevExpress.Utils.DefaultBoolean.Default),
             new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Hình thức TT")});
             this.glkHinhThucTT.Properties.NullText = "";
             this.glkHinhThucTT.Properties.PopupSizeable = false;
@@ -1138,7 +1153,7 @@ namespace BT_ERP_DEMO.UI
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.cboLoaiPhieu);
+            this.flowLayoutPanel1.Controls.Add(this.glkLoaiPhieu);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel7);
             this.flowLayoutPanel1.Controls.Add(this.btnChonBaoGia);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(158, 7);
@@ -1146,16 +1161,21 @@ namespace BT_ERP_DEMO.UI
             this.flowLayoutPanel1.Size = new System.Drawing.Size(548, 33);
             this.flowLayoutPanel1.TabIndex = 12;
             // 
-            // cboLoaiPhieu
+            // glkLoaiPhieu
             // 
-            this.cboLoaiPhieu.Dock = System.Windows.Forms.DockStyle.Left;
-            this.cboLoaiPhieu.Location = new System.Drawing.Point(3, 3);
-            this.cboLoaiPhieu.MenuManager = this.barManager1;
-            this.cboLoaiPhieu.Name = "cboLoaiPhieu";
-            this.cboLoaiPhieu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            this.glkLoaiPhieu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.glkLoaiPhieu.Location = new System.Drawing.Point(3, 3);
+            this.glkLoaiPhieu.MenuManager = this.barManager1;
+            this.glkLoaiPhieu.Name = "glkLoaiPhieu";
+            this.glkLoaiPhieu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.cboLoaiPhieu.Size = new System.Drawing.Size(294, 24);
-            this.cboLoaiPhieu.TabIndex = 0;
+            this.glkLoaiPhieu.Properties.Columns.AddRange(new DevExpress.XtraEditors.Controls.LookUpColumnInfo[] {
+            new DevExpress.XtraEditors.Controls.LookUpColumnInfo("Name", "Loại phiếu")});
+            this.glkLoaiPhieu.Properties.NullText = "";
+            this.glkLoaiPhieu.Properties.PopupSizeable = false;
+            this.glkLoaiPhieu.Properties.ShowHeader = false;
+            this.glkLoaiPhieu.Size = new System.Drawing.Size(294, 24);
+            this.glkLoaiPhieu.TabIndex = 0;
             // 
             // flowLayoutPanel7
             // 
@@ -1174,6 +1194,7 @@ namespace BT_ERP_DEMO.UI
             this.btnChonBaoGia.Size = new System.Drawing.Size(106, 24);
             this.btnChonBaoGia.TabIndex = 2;
             this.btnChonBaoGia.Text = "Chọn báo giá";
+            this.btnChonBaoGia.Click += new System.EventHandler(this.btnChonBaoGia_Click);
             // 
             // labelControl1
             // 
@@ -1501,6 +1522,8 @@ namespace BT_ERP_DEMO.UI
             this.Controls.Add(this.barDockControlTop);
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.Shadow;
             this.IconOptions.Image = global::BT_ERP_DEMO.Properties.Resources.bach_tung_symbol;
+            this.LookAndFeel.SkinName = "Office 2019 Colorful";
+            this.LookAndFeel.UseDefaultLookAndFeel = false;
             this.MinimumSize = new System.Drawing.Size(1310, 801);
             this.Name = "Orders";
             this.Text = "Đơn đặt hàng";
@@ -1529,7 +1552,7 @@ namespace BT_ERP_DEMO.UI
             this.tableLayoutPanel7.PerformLayout();
             this.flowLayoutPanel9.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.glkTyGia.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.teTyGia.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.spnTyGia.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.glkTrangThai.Properties)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
@@ -1548,7 +1571,7 @@ namespace BT_ERP_DEMO.UI
             ((System.ComponentModel.ISupportInitialize)(this.cboKhachHang.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.textEdit6.Properties)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.cboLoaiPhieu.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.glkLoaiPhieu.Properties)).EndInit();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.teSoPhieu.Properties)).EndInit();
@@ -1596,7 +1619,6 @@ namespace BT_ERP_DEMO.UI
         private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel9;
-        private DevExpress.XtraEditors.MemoEdit teTyGia;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private DevExpress.XtraEditors.LabelControl labelControl7;
         private DevExpress.XtraEditors.DateEdit deNgayHachToan;
@@ -1614,7 +1636,6 @@ namespace BT_ERP_DEMO.UI
         private DevExpress.XtraEditors.ComboBoxEdit cboKhachHang;
         private DevExpress.XtraEditors.TextEdit textEdit6;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private DevExpress.XtraEditors.ComboBoxEdit cboLoaiPhieu;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel7;
         private DevExpress.XtraEditors.SimpleButton btnChonBaoGia;
         private DevExpress.XtraEditors.LabelControl labelControl1;
@@ -1687,5 +1708,7 @@ namespace BT_ERP_DEMO.UI
         private DevExpress.XtraEditors.LookUpEdit glkTrangThaiGD;
         private DevExpress.XtraEditors.LookUpEdit glkHinhThucTT;
         private DevExpress.XtraEditors.LookUpEdit glkTyGia;
+        private DevExpress.XtraEditors.LookUpEdit glkLoaiPhieu;
+        private DevExpress.XtraEditors.SpinEdit spnTyGia;
     }
 }

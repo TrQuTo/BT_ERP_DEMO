@@ -1,4 +1,5 @@
 ﻿using BT_ERP_DEMO.Common;
+using BT_ERP_DEMO.UI.Common;
 using DevExpress.XtraEditors;
 using DevExpress.XtraEditors.Repository;
 using DevExpress.XtraGrid;
@@ -52,6 +53,11 @@ namespace BT_ERP_DEMO.UI
             glkTyGia.Properties.DataSource = StatusHelper.GetTyGiaList();
             glkTyGia.Properties.DisplayMember = "Code";
             glkTyGia.Properties.ValueMember = "ID";
+
+            // load dữ liệu cho glkLoaiPhieu
+            glkLoaiPhieu.Properties.DataSource = StatusHelper.GetLoaiPhieuList();
+            glkLoaiPhieu.Properties.DisplayMember = "Code";
+            glkLoaiPhieu.Properties.ValueMember = "ID";
         }
 
         private bool ValidateInput()
@@ -60,7 +66,7 @@ namespace BT_ERP_DEMO.UI
             bool valid = true;
 
             // Required
-            valid &= ValidateRequired(cboLoaiPhieu, "Vui lòng nhập Loại phiếu");
+            valid &= ValidateRequired(glkLoaiPhieu, "Vui lòng nhập Loại phiếu");
             valid &= ValidateRequired(cboKhachHang, "Vui lòng chọn Khách hàng");
             valid &= ValidateRequired(teDienGiai, "Vui lòng nhập Diễn giải");
             valid &= ValidateRequired(cboHopDong, "Vui lòng chọn Hợp đồng");
@@ -128,7 +134,15 @@ namespace BT_ERP_DEMO.UI
             var row = edit.GetSelectedDataRow() as LookupItem;
             if (row != null)
             {
-                teTyGia.Text = row.ExchangeRate.ToString(); // gán giá trị
+                spnTyGia.Text = row.ExchangeRate.ToString(); // gán giá trị
+            }
+        }
+
+        private void btnChonBaoGia_Click(object sender, EventArgs e)
+        {
+            using (var frm = new DKloc())
+            {
+                frm.ShowDialog(); // form B là modal → Form A bị vô hiệu hóa
             }
         }
     }

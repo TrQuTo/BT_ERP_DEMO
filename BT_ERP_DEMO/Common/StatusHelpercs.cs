@@ -24,8 +24,9 @@ namespace BT_ERP_DEMO.Common
         {
             return new List<LookupItem>
             {
-                new LookupItem { ID = (int) LookupCommon.dcVch01M_PaymentMethod.ChuyenKhoan, Name = "Chuyển khoản" },
-                new LookupItem { ID = (int)LookupCommon.dcVch01M_PaymentMethod.TienMat, Name = "Tiền mặt" },
+                new LookupItem { ID = (int)LookupCommon.dcVch01M_PaymentMethod.ChuyenKhoan, Code = "CK", Name = "Chuyển khoản" },
+                new LookupItem { ID = (int)LookupCommon.dcVch01M_PaymentMethod.CanTru, Code = "CT", Name = "Cấn Trừ" },
+                new LookupItem { ID = (int)LookupCommon.dcVch01M_PaymentMethod.TienMat, Code = "TM", Name = "Tiền mặt" },
             };
         }
 
@@ -33,12 +34,23 @@ namespace BT_ERP_DEMO.Common
         {
             return new List<LookupItem>
             {
-                new LookupItem { ID = (int) LookupCommon.dcVch01M_TyGia.VND, Code = "VND", Name = "Việt Nam đồng", ExchangeRate = 1},
-                new LookupItem { ID = (int)LookupCommon.dcVch01M_TyGia.USD, Code = "USD", Name = "Đô la Mỹ", ExchangeRate = 25000 },
-                new LookupItem { ID = (int)LookupCommon.dcVch01M_TyGia.EUR, Code = "EUR", Name = "Euro", ExchangeRate = 27000 },
-                new LookupItem { ID = (int)LookupCommon.dcVch01M_TyGia.JPY, Code = "JPY", Name = "Yên Nhật", ExchangeRate = 170 },
-                new LookupItem { ID = (int)LookupCommon.dcVch01M_TyGia.GBP, Code = "GBP", Name = "Bảng Anh", ExchangeRate = 31000 },
-                new LookupItem { ID = (int)LookupCommon.dcVch01M_TyGia.CNY, Code = "CNY", Name = "Nhân dân tệ", ExchangeRate = 3400 },
+                new LookupItem { ID = (int) LookupCommon.dcVch01M_TyGia.VND, Code = "VND", Name = "Việt Nam đồng", ExchangeRate = 1.00},
+                new LookupItem { ID = (int)LookupCommon.dcVch01M_TyGia.USD, Code = "USD", Name = "Đô la Mỹ", ExchangeRate = 25000.00 },
+                new LookupItem { ID = (int)LookupCommon.dcVch01M_TyGia.EUR, Code = "EUR", Name = "Euro", ExchangeRate = 27000.00 },
+                new LookupItem { ID = (int)LookupCommon.dcVch01M_TyGia.JPY, Code = "JPY", Name = "Yên Nhật", ExchangeRate = 170.00 },
+                new LookupItem { ID = (int)LookupCommon.dcVch01M_TyGia.GBP, Code = "GBP", Name = "Bảng Anh", ExchangeRate = 31000.00 },
+                new LookupItem { ID = (int)LookupCommon.dcVch01M_TyGia.CNY, Code = "CNY", Name = "Nhân dân tệ", ExchangeRate = 3400.00 },
+            };
+        }
+
+        public static List<LookupItem> GetLoaiPhieuList()
+        {
+            return new List<LookupItem>
+            {
+                new LookupItem { ID = (int) LookupCommon.dcVch01M_LoaiPhieu.TheoPO, Name = "Đơn đặt hàng theo PO" },
+                new LookupItem { ID = (int)LookupCommon.dcVch01M_LoaiPhieu.TheoForeCast, Name = "Đơn đặt hàng theo Forecast" },
+                new LookupItem { ID = (int)LookupCommon.dcVch01M_LoaiPhieu.ThuongMai, Name = "Đơn đặt hàng thương mại" },
+                new LookupItem { ID = (int)LookupCommon.dcVch01M_LoaiPhieu.lapRap, Name = "Đơn đặt hàng lắp ráp" },
             };
         }
     }
@@ -49,6 +61,6 @@ namespace BT_ERP_DEMO.Common
         public string Code { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public int ExchangeRate { get; set; }
+        public double ExchangeRate { get; set; }
     }
 }

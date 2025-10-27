@@ -12,6 +12,36 @@ namespace BT_ERP_DEMO.Base
 {
     public class BaseForm : XtraForm
     {
+        public BaseForm()
+        {
+            // Cấu hình mặc định cho toàn bộ Form kế thừa
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.FormBorderStyle = FormBorderStyle.FixedSingle;
+            this.LookAndFeel.SkinName = "Office 2019 Colorful";
+            this.LookAndFeel.UseDefaultLookAndFeel = false;
+            this.MaximizeBox = false;
+            this.MinimizeBox = true;
+            this.KeyPreview = true;
+            this.IconOptions.Image = global::BT_ERP_DEMO.Properties.Resources.bach_tung_symbol;
+
+            // Sự kiện dùng chung
+            this.KeyDown += BaseForm_KeyDown;
+        }
+
+        private void BaseForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Escape)
+                this.Close(); // Bấm ESC để đóng form
+        }
+
+        protected override void OnLoad(EventArgs e)
+        {
+            base.OnLoad(e);
+
+            // Ví dụ: tự resize form cho màn hình nhỏ
+            if (this.Width > Screen.PrimaryScreen.WorkingArea.Width)
+                this.Width = Screen.PrimaryScreen.WorkingArea.Width - 50;
+        }
         protected DXErrorProvider dxErrorProvider = new DXErrorProvider();
         #region 🔹 Cơ bản
         protected void ClearValidation()
