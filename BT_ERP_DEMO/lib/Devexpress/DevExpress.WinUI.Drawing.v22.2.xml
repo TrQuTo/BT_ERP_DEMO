@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.WinUI.Drawing.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.WinUI.Drawing">
+      <summary>
+        <para>Contains classes which implement the line drawing functionality of Chart and Range controls.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Drawing.StrokeStyle">
+      <summary>
+        <para>Contains parameters of the style used to draw a stroke line.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Drawing.StrokeStyle.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Drawing.StrokeStyle"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Drawing.StrokeStyle.DashArray">
+      <summary>
+        <para>Gets or sets a collection of values that specifies the lengths of alternating dashes and gaps.</para>
+      </summary>
+      <value>The pattern of dashes and gaps.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Drawing.StrokeStyle.DashArrayProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Drawing.StrokeStyle.DashArray"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Drawing.StrokeStyle.DashCap">
+      <summary>
+        <para>Gets or sets a value that specifies the shape of each dash end.</para>
+      </summary>
+      <value>The shape of each dash end.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Drawing.StrokeStyle.DashCapProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Drawing.StrokeStyle.DashCap"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Drawing.StrokeStyle.DashOffset">
+      <summary>
+        <para>Gets or sets the distance from the start of a line to the beginning of a dash pattern.</para>
+      </summary>
+      <value>The distance from the start of a line to the beginning of a dash pattern.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Drawing.StrokeStyle.DashOffsetProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Drawing.StrokeStyle.DashOffset"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Drawing.StrokeStyle.EndLineCap">
+      <summary>
+        <para>Gets or sets the cap style of the line end.</para>
+      </summary>
+      <value>The cap style of the line end.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Drawing.StrokeStyle.EndLineCapProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Drawing.StrokeStyle.EndLineCap"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Drawing.StrokeStyle.LineJoin">
+      <summary>
+        <para>Gets or sets the join style for the ends of two consecutive lines.</para>
+      </summary>
+      <value>The join style for the ends of two consecutive lines.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Drawing.StrokeStyle.LineJoinProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Drawing.StrokeStyle.LineJoin"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Drawing.StrokeStyle.MiterLimit">
+      <summary>
+        <para>Gets or sets the thickness limit of the join on a mitered corner.</para>
+      </summary>
+      <value>The thickness limit of the join on a mitered corner.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Drawing.StrokeStyle.MiterLimitProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Drawing.StrokeStyle.MiterLimit"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Drawing.StrokeStyle.NativeStrokeStyle">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Drawing.StrokeStyle.StartLineCap">
+      <summary>
+        <para>Gets or sets the cap style of the line’s beginning.</para>
+      </summary>
+      <value>The cap style of the line’s beginning.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Drawing.StrokeStyle.StartLineCapProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Drawing.StrokeStyle.StartLineCap"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Drawing.StrokeStyle.Thickness">
+      <summary>
+        <para>Gets or sets the stroke thickness.</para>
+      </summary>
+      <value>The stroke thickness.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Drawing.StrokeStyle.ThicknessProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Drawing.StrokeStyle.Thickness"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Drawing.StrokeStyle.ThicknessScale">
+      <summary>
+        <para>Gets or sets the stroke thickness multiplier.</para>
+      </summary>
+      <value>The stroke thickness multiplier.</value>
+    </member>
+  </members>
+</doc>

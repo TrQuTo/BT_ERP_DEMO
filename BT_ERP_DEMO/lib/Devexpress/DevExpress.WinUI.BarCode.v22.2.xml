@@ -1,0 +1,832 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.WinUI.BarCode.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.WinUI.Controls">
+      <summary>
+        <para>Contains classes which provide the functionality for DevExpress BarCodeControl and RangeControl.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.BarCodeControl">
+      <summary>
+        <para>A control that displays barcodes.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.BarCodeControl.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.BarCodeControl"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.BarCodeControl.AutoModule">
+      <summary>
+        <para>Gets or sets a value that specifies whether the <see cref="P:DevExpress.WinUI.Controls.BarCodeControl.Module"/> property value should be calculated automatically based upon the bar code’s size. This is a dependency property.</para>
+      </summary>
+      <value>true, if the bar code’s module is calculated automatically; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.BarCodeControl.AutoModuleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.BarCodeControl.AutoModule"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.BarCodeControl.BinaryData">
+      <summary>
+        <para>Gets or sets the array of byte to be coded into the PDF417 or ECC200 bar code. This is a dependency property.</para>
+      </summary>
+      <value>An array which should be coded with bar code’s symbology.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.BarCodeControl.BinaryDataProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.BarCodeControl.BinaryData"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.BarCodeControl.HorizontalContentAlignment">
+      <summary>
+        <para>Gets or sets the content’s horizontal alignment. This is a dependency property.</para>
+      </summary>
+      <value>The content’s horizontal alignment.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.BarCodeControl.HorizontalContentAlignmentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.BarCodeControl.HorizontalContentAlignment"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.BarCodeControl.HorizontalTextAlignment">
+      <summary>
+        <para>Gets or sets the text’s horizontal alignment. This is a dependency property.</para>
+      </summary>
+      <value>The text’s horizontal alignment.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.BarCodeControl.HorizontalTextAlignmentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.BarCodeControl.HorizontalTextAlignment"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.BarCodeControl.Module">
+      <summary>
+        <para>Gets or sets the width of the narrowest bar or space, in pixels. This is a dependency property.</para>
+      </summary>
+      <value>The width of the narrowest bar or space, in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.BarCodeControl.ModuleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.BarCodeControl.Module"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.BarCodeControl.ShowText">
+      <summary>
+        <para>Gets or sets whether the <see cref="T:DevExpress.WinUI.Controls.BarCodeControl"/> shows the text.</para>
+      </summary>
+      <value>true, if the text is displayed; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.BarCodeControl.ShowTextProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.BarCodeControl.ShowText"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.BarCodeControl.Symbology">
+      <summary>
+        <para>Gets or sets the symbology (code type) for the barcode.</para>
+      </summary>
+      <value>A BarCodeControl symbology.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.BarCodeControl.SymbologyProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.BarCodeControl.Symbology"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.BarCodeControl.Text">
+      <summary>
+        <para>Gets or sets the BarCodeControl’s text.</para>
+      </summary>
+      <value>A barcode display text.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.BarCodeControl.TextProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.BarCodeControl.Text"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.BarCodeControl.VerticalContentAlignment">
+      <summary>
+        <para>Gets or sets the content’s vertical alignment. This is a dependency property.</para>
+      </summary>
+      <value>The content’s vertical alignment.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.BarCodeControl.VerticalContentAlignmentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.BarCodeControl.VerticalContentAlignment"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.BarCodeControl.VerticalTextAlignment">
+      <summary>
+        <para>Gets or sets the text’s vertical alignment. This is a dependency property.</para>
+      </summary>
+      <value>The text’s vertical alignment.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.BarCodeControl.VerticalTextAlignmentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.BarCodeControl.VerticalTextAlignment"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.CodabarSymbology">
+      <summary>
+        <para>Generates a Codabar bar code.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.CodabarSymbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.CodabarSymbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.CodabarSymbology.StartStopPair">
+      <summary>
+        <para>Gets or sets the first (start) and last (stop) symbols used to code the bar code’s structure.</para>
+      </summary>
+      <value>The pair of start and stop symbols.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.CodabarSymbology.StartStopPairProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.CodabarSymbology.StartStopPair"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.CodabarSymbology.WideNarrowRatio">
+      <summary>
+        <para>Gets or sets the density of a bar code’s bars.</para>
+      </summary>
+      <value>A float value specifying the density of a bar code’s bars.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.CodabarSymbology.WideNarrowRatioProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.CodabarSymbology.WideNarrowRatio"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.Code11Symbology">
+      <summary>
+        <para>Generates a Code 11 (USD-8) bar code.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.Code11Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.Code11Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.Code128Symbology">
+      <summary>
+        <para>Generates a Code 128 bar code. Code 128 is a high-density symbology that encodes alphanumeric data.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.Code128Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.Code128Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.Code128SymbologyBase`1">
+      <summary>
+        <para>The base class for the Code128 class used to generate bar codes.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.Code128SymbologyBase`1.CharacterSet">
+      <summary>
+        <para>Gets or sets the character set type for the bar code.</para>
+      </summary>
+      <value>A character set that a bar code uses.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.Code128SymbologyBase`1.CharacterSetProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.Code128SymbologyBase`1.CharacterSet"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.Code39ExtendedSymbology">
+      <summary>
+        <para>Generates a Code 39 Extended bar code. Code 39 Extended is an extended version of the Code 39 (USD-3) barcode that supports the ASCII character set.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.Code39ExtendedSymbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.Code39ExtendedSymbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.Code39Symbology">
+      <summary>
+        <para>Generates a Code 39 (USD-3) bar code.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.Code39Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.Code39Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.Code39SymbologyBase`1">
+      <summary>
+        <para>The base class for the Code39 and Code39Extended classes used to generate bar codes.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.Code39SymbologyBase`1.WideNarrowRatio">
+      <summary>
+        <para>Gets or sets the density of a bar code’s bars.</para>
+      </summary>
+      <value>A float value specifying the density of a bar code’s bars.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.Code39SymbologyBase`1.WideNarrowRatioProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.Code39SymbologyBase`1.WideNarrowRatio"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.Code93ExtendedSymbology">
+      <summary>
+        <para>Generates a Code 93 Extended bar code. Code 93 Extended is based on Code 93 and can encode all 128 ASCII characters.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.Code93ExtendedSymbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.Code93ExtendedSymbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.Code93Symbology">
+      <summary>
+        <para>Generates a Code 39 (USD-3) bar code.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.Code93Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.Code93Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.CodeMSISymbology">
+      <summary>
+        <para>Generates an MSI bar code. MSI is based on the Plessey Code symbology. MSI, also known as Modified Plessey, is used to mark retail shelves for inventory control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.CodeMSISymbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.CodeMSISymbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.CodeMSISymbology.MSICheckSum">
+      <summary>
+        <para>Gets or sets the checksum type for the bar code.</para>
+      </summary>
+      <value>The checksum type.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.CodeMSISymbology.MSICheckSumProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.CodeMSISymbology.MSICheckSum"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.DataBarSymbology">
+      <summary>
+        <para>Generates a GS1 (DataBar) bar code. The GS1 DataBar barcode is based on a family of symbols often used in the GS1 DataBar Coupon (coupon codes are commonly used in retail).</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.DataBarSymbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.DataBarSymbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.DataBarSymbology.FNC1Substitute">
+      <summary>
+        <para>Gets or sets the symbol (or set of symbols) in the bar code’s text that will be replaced with the FNC1 functional character when the bars are drawn.</para>
+      </summary>
+      <value>Symbols to be replaced.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.DataBarSymbology.FNC1SubstituteProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.DataBarSymbology.FNC1Substitute"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.DataBarSymbology.SegmentsInRow">
+      <summary>
+        <para>Gets or sets the number of data segments per row in the Expanded Stacked type of a GS1 DataBar bar code.</para>
+      </summary>
+      <value>A number of data segments per row.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.DataBarSymbology.SegmentsInRowProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.DataBarSymbology.SegmentsInRow"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.DataBarSymbology.Type">
+      <summary>
+        <para>Gets or sets the type of a GS1 DataBar bar code.</para>
+      </summary>
+      <value>The GS1 DataBar bar code’s type.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.DataBarSymbology.TypeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.DataBarSymbology.Type"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.DataMatrixGS1Symbology">
+      <summary>
+        <para>Generates a GS1 (Data Matrix) bar code. GS1 Data Matrix is a variant of the Data Matrix symbology that conforms to GS1 specifications.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.DataMatrixGS1Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.DataMatrixGS1Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.DataMatrixGS1Symbology.FNC1Substitute">
+      <summary>
+        <para>Gets or sets the symbol (or set of symbols) in the bar code’s text that will be replaced with the FNC1 functional character when the bars are drawn.</para>
+      </summary>
+      <value>Symbols to be replaced.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.DataMatrixGS1Symbology.FNC1SubstituteProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.DataMatrixGS1Symbology.FNC1Substitute"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.DataMatrixGS1Symbology.HumanReadableText">
+      <summary>
+        <para>Gets or sets whether or not parentheses should be included in the bar code’s text.</para>
+      </summary>
+      <value>true to insert parentheses into the bar code’s printed text; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.DataMatrixGS1Symbology.HumanReadableTextProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.DataMatrixGS1Symbology.HumanReadableText"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.DataMatrixGS1Symbology.MatrixSize">
+      <summary>
+        <para>Gets or sets the bar code matrix size.</para>
+      </summary>
+      <value>The bar code matrix size.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.DataMatrixGS1Symbology.MatrixSizeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.DataMatrixGS1Symbology.MatrixSize"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.DataMatrixSymbology">
+      <summary>
+        <para>Generates an ECC200 - Data Matrix bar code. Data Matrix is a two-dimensional matrix barcode. It consists of black and white “cells” arranged in a rectangular pattern. The barcode can encode textual and numeric data.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.DataMatrixSymbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.DataMatrixSymbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.DataMatrixSymbology.CompactionMode">
+      <summary>
+        <para>Gets or sets whether text or binary mode should be used to encode the barcode’s data.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Controls.Internal.DataMatrixCompactionMode enumeration value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.DataMatrixSymbology.CompactionModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.DataMatrixSymbology.CompactionMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.DataMatrixSymbology.MatrixSize">
+      <summary>
+        <para>Gets or sets the bar code matrix size.</para>
+      </summary>
+      <value>The bar code matrix size.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.DataMatrixSymbology.MatrixSizeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.DataMatrixSymbology.MatrixSize"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.EAN128Symbology">
+      <summary>
+        <para>Generates a GS1-128 - EAN-128 (UCC) bar code. GS1-128 is a variable length self-checking symbololgy. GS1-128 is a subset of a more general Code 128 symbology.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.EAN128Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.EAN128Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.EAN128Symbology.FNC1Substitute">
+      <summary>
+        <para>Gets or sets the symbol (or set of symbols) in the bar code’s text that will be replaced with the FNC1 functional character when the bar code’s bars are drawn.</para>
+      </summary>
+      <value>The symbols to be replaced.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.EAN128Symbology.FNC1SubstituteProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.EAN128Symbology.FNC1Substitute"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.EAN128Symbology.HumanReadableText">
+      <summary>
+        <para>Gets or sets whether or not parentheses should be included in the bar code’s text.</para>
+      </summary>
+      <value>true to insert parentheses into the bar code’s printed text; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.EAN128Symbology.HumanReadableTextProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.EAN128Symbology.HumanReadableText"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.EAN13Symbology">
+      <summary>
+        <para>Generates a EAN-13 bar code. EAN-13 is a symbology based on the UPC-A standard.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.EAN13Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.EAN13Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.EAN8Symbology">
+      <summary>
+        <para>Generates an EAN-13 bar code. EAN-8 is a shorter version of the EAN-13. EAN-8 can encode 8 digits, the first 7 of which users should specify, and the last digit (check digit) is generated automatically. EAN-8 is used on small packages where EAN-13 does not fit, for example on pencils or chewing gum packets.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.EAN8Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.EAN8Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.Industrial2of5Symbology">
+      <summary>
+        <para>Generates an Industrial 2 of 5 bar code. Standard 2 of 5 is a low-density numerical barcode that was introduced in the 1960s. It has been used in the photofinishing and warehouse sorting industries, as well as to sequentially number airline tickets.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.Industrial2of5Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.Industrial2of5Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.Industrial2of5SymbologyBase`1">
+      <summary>
+        <para>The base class for the Industrial2of5 class used to generate bar codes.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.Industrial2of5SymbologyBase`1.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.Industrial2of5SymbologyBase`1"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.Industrial2of5SymbologyBase`1.WideNarrowRatio">
+      <summary>
+        <para>Gets or sets the density of a bar code’s bars.</para>
+      </summary>
+      <value>The density of a bar code’s bars.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.Industrial2of5SymbologyBase`1.WideNarrowRatioProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.Industrial2of5SymbologyBase`1.WideNarrowRatio"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.IntelligentMailSymbology">
+      <summary>
+        <para>Generates an IntelligentMail bar code. The Intelligent Mail barcode is a height-modulated barcode that encodes up to 31 decimal digits of mail-piece data into 65 vertical bars.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.IntelligentMailSymbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.IntelligentMailSymbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.Interleaved2of5Symbology">
+      <summary>
+        <para>Generates an Interleaved 2 of 5 barcode. Interleaved 2 of 5 is a high-density numerical barcode based on the Standard 2 of 5 symbology. It is used primarily in the distribution and warehousing industries.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.Interleaved2of5Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.Interleaved2of5Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.Interleaved2of5SymbologyBase`1">
+      <summary>
+        <para>The base class for the Interleaved2of5 class used to generate bar codes.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.Interleaved2of5SymbologyBase`1.WideNarrowRatio">
+      <summary>
+        <para>Gets or sets the density of a bar code’s bars.</para>
+      </summary>
+      <value>The density of a bar code’s bars.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.Interleaved2of5SymbologyBase`1.WideNarrowRatioProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.Interleaved2of5SymbologyBase`1.WideNarrowRatio"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.ITF14Symbology">
+      <summary>
+        <para>Generates an ITF-14 bar code. The UPC Shipping Container Symbol (ITF-14) barcode is used to mark packaging materials that contain products labeled with a UPC or EAN product identification number.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.ITF14Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.ITF14Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.Matrix2of5Symbology">
+      <summary>
+        <para>Generates a Matrix 2 of 5 bar code. Matrix 2 of 5 is a linear one-dimensional self-checking barcode that can encode only numerical data. The barcode is used primarily for warehouse sorting, photo finishing, and airline ticket marking.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.Matrix2of5Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.Matrix2of5Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.PDF417Symbology">
+      <summary>
+        <para>Generates a PDF417 bar code. PDF417 (Portable Data File) is a stacked linear two-dimensional barcode. It is used in different fields, including transport, postal, identification card, and inventory management.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.PDF417Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.PDF417Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.PDF417Symbology.Columns">
+      <summary>
+        <para>Gets or sets the number of bar code columns, which allows control of the logic width of the bar code.</para>
+      </summary>
+      <value>The logic width of the bar code.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.PDF417Symbology.ColumnsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.PDF417Symbology.Columns"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.PDF417Symbology.CompactionMode">
+      <summary>
+        <para>Gets or sets whether text or binary mode should be used to encode the barcode’s data.</para>
+      </summary>
+      <value>Specifies whether to use to encode the barcode’s data: text or binary.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.PDF417Symbology.CompactionModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.PDF417Symbology.CompactionMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.PDF417Symbology.ErrorCorrectionLevel">
+      <summary>
+        <para>Gets or sets the amount of redundancy built into the bar code’s coding, to compensate for calculation errors.</para>
+      </summary>
+      <value>The error correction level.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.PDF417Symbology.ErrorCorrectionLevelProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.PDF417Symbology.ErrorCorrectionLevel"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.PDF417Symbology.Rows">
+      <summary>
+        <para>Gets or sets the number of bar code rows, which allows control of the logic height of the bar code.</para>
+      </summary>
+      <value>The logic height of the bar code.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.PDF417Symbology.RowsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.PDF417Symbology.Rows"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.PDF417Symbology.TruncateSymbol">
+      <summary>
+        <para>Gets or sets whether the special end-symbol should be appended to the bar code.</para>
+      </summary>
+      <value>true if the end symbol should be appended; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.PDF417Symbology.TruncateSymbolProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.PDF417Symbology.TruncateSymbol"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.PDF417Symbology.YToXRatio">
+      <summary>
+        <para>Gets or sets the height-to-width ratio of a logical unit’s graphic representation.</para>
+      </summary>
+      <value>The height-to-width ratio of a logical unit’’’s graphic representation.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.PDF417Symbology.YToXRatioProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.PDF417Symbology.YToXRatio"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.PostNetSymbology">
+      <summary>
+        <para>Generates a PostNet bar code. PostNet was developed by the United States Postal Service (USPS) for faster mail sorting and routing. Unlike most other bar codes where data is encoded in the width of the bars and spaces, PostNet encodes data in the height of the bars. PostNet bars have the same width but different heights.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.PostNetSymbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.PostNetSymbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.QRCodeSymbology">
+      <summary>
+        <para>Generates a QRCode bar code. A Quick Response (QR) Code is a two-dimensional code. QR scanners, mobile phones with a camera, and smartphones can read this code.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.QRCodeSymbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.QRCodeSymbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.QRCodeSymbology.CompactionMode">
+      <summary>
+        <para>Gets or sets whether numeric, alphanumeric or byte mode should be used to encode the barcode’s data.</para>
+      </summary>
+      <value>Specifies whether to use to encode the barcode’s data: text or binary.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.QRCodeSymbology.CompactionModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.QRCodeSymbology.CompactionMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.QRCodeSymbology.ErrorCorrectionLevel">
+      <summary>
+        <para>Gets or sets the amount of redundancy built into the bar code’s coding, to compensate for calculation errors.</para>
+      </summary>
+      <value>A QRCodeErrorCorrectionLevel enumeration value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.QRCodeSymbology.ErrorCorrectionLevelProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.QRCodeSymbology.ErrorCorrectionLevel"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.QRCodeSymbology.Version">
+      <summary>
+        <para>Gets or sets the bar code’s size.</para>
+      </summary>
+      <value>The bar code’s size.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.QRCodeSymbology.VersionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.QRCodeSymbology.Version"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.SymbologyBase">
+      <summary>
+        <para>The base class for all the classes used to generate bar codes.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.SymbologyBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.SymbologyBase"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.SymbologyBase`1">
+      <summary>
+        <para>The base class for all the classes that generate bar codes.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.SymbologyBase`1.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.SymbologyBase`1"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.SymbologyCheckSumBase`1">
+      <summary>
+        <para>The base class for all the classes used to generate bar codes.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.SymbologyCheckSumBase`1.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.SymbologyCheckSumBase`1"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.SymbologyCheckSumBase`1.CalcCheckSum">
+      <summary>
+        <para>Gets or sets whether to calculate a checksum for the bar code.</para>
+      </summary>
+      <value>true if the barcode object needs a checksum to be calculated; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.SymbologyCheckSumBase`1.CalcCheckSumProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.SymbologyCheckSumBase`1.CalcCheckSum"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.UPCASymbology">
+      <summary>
+        <para>Generates a UPC-A bar code. The Universal Product Code (UPC) is a barcode symbology that is widely used in the United States, Canada, Europe, Australia, New Zealand, and other countries for tracking trade items in stores.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.UPCASymbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.UPCASymbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.UPCE0Symbology">
+      <summary>
+        <para>Generates a UPC-E0 bar code.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.UPCE0Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.UPCE0Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.UPCE1Symbology">
+      <summary>
+        <para>Generates a UPC-E1 bar code.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.UPCE1Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.UPCE1Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.UPCSupplemental2Symbology">
+      <summary>
+        <para>Generates a UPC Supplemental 2 bar code. UPC Supplemental 2 is a 2-digit supplement for the EAN-13 barcode. It is used on magazines, newspapers, and other periodicals to indicate the issue number.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.UPCSupplemental2Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.UPCSupplemental2Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.UPCSupplemental5Symbology">
+      <summary>
+        <para>Generates a UPC Supplemental 5 bar code. UPC Supplemental 5 is a 5-digit supplement for the EAN-13 barcode. It is used on books to indicate the suggested retail price.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.UPCSupplemental5Symbology.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.UPCSupplemental5Symbology"/> class.</para>
+      </summary>
+    </member>
+    <member name="N:DevExpress.WinUI.Localization">
+      <summary>
+        <para>Contains classes and enumerations that are intended to localize the User Interface of DevExpress WinUI Controls.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Localization.BarCodeStringID">
+      <summary>
+        <para>Contains values corresponding to strings that can be localized.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.BarCodeStringID.CantFitBarcodeToControlBounds">
+      <summary>
+        <para>Control’s boundaries are too small for the barcode</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.BarCodeStringID.IncompatibleBarcodeSettings">
+      <summary>
+        <para>Incompatible settings : {0}</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.BarCodeStringID.IncompatibleLogoQRCodeSettings">
+      <summary>
+        <para>Logo size / Module / Error correction level</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.BarCodeStringID.InvalidBarcodeData">
+      <summary>
+        <para>Binary data can’t be longer than {0} bytes.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.BarCodeStringID.InvalidBarcodeText">
+      <summary>
+        <para>There are invalid characters in the text</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.BarCodeStringID.InvalidBarcodeTextFormat">
+      <summary>
+        <para>Invalid text format</para>
+      </summary>
+    </member>
+  </members>
+</doc>

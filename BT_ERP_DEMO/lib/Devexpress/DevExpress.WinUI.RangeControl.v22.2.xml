@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.WinUI.RangeControl.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.WinUI.Controls">
+      <summary>
+        <para>Contains classes which provide the functionality for DevExpress BarCodeControl and RangeControl.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.CalendarClient">
+      <summary>
+        <para>Shows a calendar within the range control’s viewport.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.CalendarClient.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.CalendarClient"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.RangeControl">
+      <summary>
+        <para>A Range Control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.RangeControl.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.RangeControl"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.AllowImmediateRangeUpdate">
+      <summary>
+        <para>Gets or sets whether changes to the selected or visible area via the user interface are being posted immediately or after the interaction is completed. This is a dependency property.</para>
+      </summary>
+      <value>true, to post changes immediately; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.AllowImmediateRangeUpdateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.AllowImmediateRangeUpdate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.AllowScroll">
+      <summary>
+        <para>Gets or sets whether to allow horizontal scrolling. This is a dependency property.</para>
+      </summary>
+      <value>true, to allow scrolling; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.AllowScrollProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.AllowScroll"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.AllowSnapToInterval">
+      <summary>
+        <para>Gets or sets whether to snap the selection thumbs to the bounds of the range items. This is a dependency property.</para>
+      </summary>
+      <value>true, to snap the selection thumbs to the bounds of the range items; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.AllowSnapToIntervalProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.AllowSnapToInterval"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.AllowZoom">
+      <summary>
+        <para>Gets or sets whether to allow zooming. This is a dependency property.</para>
+      </summary>
+      <value>true, to enable the zoom feature; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.AllowZoomProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.AllowZoom"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.Client">
+      <summary>
+        <para>Gets or sets the object that visualizes the data within the RangeControl’s viewport. This is a dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.ClientProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.Client"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.Content">
+      <summary>
+        <para>Gets or sets the range control’s content. This is a dependency property.</para>
+      </summary>
+      <value>An object that is the range control’s content.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.ContentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.Content"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.EnableAnimation">
+      <summary>
+        <para>Gets or sets whether to enable animation. This is a dependency property.</para>
+      </summary>
+      <value>true, to enable animation; otherwise, false. The default is true.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.EnableAnimationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.EnableAnimation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.OutOfRangeAreaBrush">
+      <summary>
+        <para>Gets or sets the brush used to paint the viewport area out of the selected range. This is a dependency property.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.Media.Brush value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.OutOfRangeAreaBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.OutOfRangeAreaBrush"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.RangeEnd">
+      <summary>
+        <para>Gets or sets the end bound of a range.</para>
+      </summary>
+      <value>The end bound of a range.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.RangeEndProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.RangeEnd"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.RangeStart">
+      <summary>
+        <para>Gets or sets the start bound of a range.</para>
+      </summary>
+      <value>The start bound of a range.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.RangeStartProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.RangeStart"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.RangeThumbsBrush">
+      <summary>
+        <para>Gets or sets the brush used to paint the selection thumbs. This is a dependency property.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.Media.Brush value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.RangeThumbsBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.RangeThumbsBrush"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.RangeThumbsHighlightBrush">
+      <summary>
+        <para>Gets or sets the brush used to paint the selection thumbs when panning a selected range. This is a dependency property.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.Media.Brush value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.RangeThumbsHighlightBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.RangeThumbsHighlightBrush"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.SelectionRangeEnd">
+      <summary>
+        <para>Gets or sets the end bound of the selected range.</para>
+      </summary>
+      <value>The end bound of the selected range.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.SelectionRangeEndProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.SelectionRangeEnd"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.SelectionRangeStart">
+      <summary>
+        <para>Gets or sets the start bound of the selected range.</para>
+      </summary>
+      <value>The start bound of the selected range.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.SelectionRangeStartProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.SelectionRangeStart"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.SelectionThumbStyle">
+      <summary>
+        <para>Gets or sets the style applied to selection thumbs. This is a dependency property.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.Style object specifies the style applied to selection thumbs.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.SelectionThumbStyleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.SelectionThumbStyle"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.ShowRangeBar">
+      <summary>
+        <para>Gets or sets whether to show the Zoom And Scroll Bar. This is a dependency property.</para>
+      </summary>
+      <value>true, to show the Zoom&amp;Scroll Bar; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.ShowRangeBarProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.ShowRangeBar"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.ShowRangeThumbs">
+      <summary>
+        <para>Gets or sets whether to show the selection thumbs within the viewport. This is a dependency property.</para>
+      </summary>
+      <value>true, to show the selection thumbs; otherwise, false</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.ShowRangeThumbsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.ShowRangeThumbs"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.ShowSelectionRectangle">
+      <summary>
+        <para>Gets or sets whether to show the selection rectangle. This is a dependency property.</para>
+      </summary>
+      <value>true, to show the selection rectangle; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.ShowSelectionRectangleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.ShowSelectionRectangle"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.UpdateDelay">
+      <summary>
+        <para>Specifies the delay (in milliseconds) that occurs before passing the changes made in a Range Control to its associated client. This is a dependency property.</para>
+      </summary>
+      <value>An integer value specifying the update delay, in milliseconds.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.UpdateDelayProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.UpdateDelay"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.VisibleRangeEnd">
+      <summary>
+        <para>Gets or sets the end bound of the visible range.</para>
+      </summary>
+      <value>The end bound of the visible range.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.VisibleRangeEndProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.VisibleRangeEnd"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Controls.RangeControl.VisibleRangeStart">
+      <summary>
+        <para>Gets or sets the start bound of the visible range.</para>
+      </summary>
+      <value>The start bound of the visible range.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Controls.RangeControl.VisibleRangeStartProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Controls.RangeControl.VisibleRangeStart"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Controls.SparkAreaClient">
+      <summary>
+        <para>This RangeControl client shows a range of numeric values. Each value is represented by a dot. Dots are connected by a continuous line. The areas above and below the line are of different colors.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.SparkAreaClient.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.SparkAreaClient"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.SparkBarClient.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.SparkBarClient"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.SparkLineClient.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.SparkLineClient"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Controls.SparkPointClient.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Controls.SparkPointClient"/> class.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

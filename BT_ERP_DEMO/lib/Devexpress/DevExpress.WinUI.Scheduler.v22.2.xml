@@ -1,0 +1,1720 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.WinUI.Scheduler.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.WinUI.Localization">
+      <summary>
+        <para>Contains classes and enumerations that are intended to localize the User Interface of DevExpress WinUI Controls.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Localization.DXComboBoxStringID">
+      <summary>
+        <para>Contains values corresponding to strings that can be localized.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DXComboBoxStringID.CancelButtonText">
+      <summary>
+        <para>Cancel</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DXComboBoxStringID.OKButtonText">
+      <summary>
+        <para>OK</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Localization.DXListViewStringID">
+      <summary>
+        <para>Contains values corresponding to strings that can be localized.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DXListViewStringID.ClearSelection">
+      <summary>
+        <para>Clear Selection</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DXListViewStringID.SelectAll">
+      <summary>
+        <para>Select All</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Localization.SchedulerStringId">
+      <summary>
+        <para>Contains values corresponding to strings that can be localized.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_Day">
+      <summary>
+        <para>day</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_Days">
+      <summary>
+        <para>days</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_DaysShort">
+      <summary>
+        <para>d</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_Hour">
+      <summary>
+        <para>hour</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_Hours">
+      <summary>
+        <para>hours</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_HoursShort">
+      <summary>
+        <para>h</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_Minute">
+      <summary>
+        <para>minute</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_Minutes">
+      <summary>
+        <para>minutes</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_MinutesShort1">
+      <summary>
+        <para>m</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_MinutesShort2">
+      <summary>
+        <para>min</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_Month">
+      <summary>
+        <para>month</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_Months">
+      <summary>
+        <para>months</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_Week">
+      <summary>
+        <para>week</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_Weeks">
+      <summary>
+        <para>weeks</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_WeeksShort">
+      <summary>
+        <para>w</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_Year">
+      <summary>
+        <para>year</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Abbr_Years">
+      <summary>
+        <para>years</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.AppointmentLabel_Anniversary">
+      <summary>
+        <para>Anniversary</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.AppointmentLabel_Birthday">
+      <summary>
+        <para>Birthday</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.AppointmentLabel_Business">
+      <summary>
+        <para>Business</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.AppointmentLabel_Important">
+      <summary>
+        <para>Important</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.AppointmentLabel_MustAttend">
+      <summary>
+        <para>Must Attend</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.AppointmentLabel_NeedsPreparation">
+      <summary>
+        <para>Needs Preparation</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.AppointmentLabel_None">
+      <summary>
+        <para>None</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.AppointmentLabel_Personal">
+      <summary>
+        <para>Personal</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.AppointmentLabel_PhoneCall">
+      <summary>
+        <para>Phone Call</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.AppointmentLabel_TravelRequired">
+      <summary>
+        <para>Travel Required</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.AppointmentLabel_Vacation">
+      <summary>
+        <para>Vacation</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.ButtonCaption_Cancel">
+      <summary>
+        <para>Cancel</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.ButtonCaption_Save">
+      <summary>
+        <para>Save</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Caption_Busy">
+      <summary>
+        <para>Busy</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Caption_DayView">
+      <summary>
+        <para>Day</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Caption_Free">
+      <summary>
+        <para>Free</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Caption_MonthView">
+      <summary>
+        <para>Month</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Caption_NoneReminder">
+      <summary>
+        <para>None</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Caption_OutOfOffice">
+      <summary>
+        <para>Out Of Office</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Caption_Reminder">
+      <summary>
+        <para>{0} Reminder</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Caption_Reminders">
+      <summary>
+        <para>{0} Reminders</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Caption_StartTime">
+      <summary>
+        <para>Start time: {0}</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Caption_Tentative">
+      <summary>
+        <para>Tentative</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Caption_WeekView">
+      <summary>
+        <para>Full Week</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Caption_WorkingElsewhere">
+      <summary>
+        <para>Working Elsewhere</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Caption_WorkWeekView">
+      <summary>
+        <para>Work Week</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.DeleteOccurrenceWindow_DeleteOccurrence">
+      <summary>
+        <para>Delete this occurrence</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.DeleteOccurrenceWindow_DeleteRecurrentAppointmentMessage">
+      <summary>
+        <para>Do you want to delete all occurrences of the recurring appointment, or just this one?</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.DeleteOccurrenceWindow_DeleteRecurrentAppointmentTitle">
+      <summary>
+        <para>Confirm delete</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.DeleteOccurrenceWindow_DeleteSeries">
+      <summary>
+        <para>Delete the series</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.Format_TimeBeforeStart">
+      <summary>
+        <para>{0} before start</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.MenuCmd_DeleteAppointment">
+      <summary>
+        <para>Delete</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.MenuCmd_GoToToday">
+      <summary>
+        <para>Go to Today</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.MenuCmd_NewAppointment">
+      <summary>
+        <para>New Appointment</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.MenuCmd_OpenAppointment">
+      <summary>
+        <para>Open</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.RemindersWindow_ClickSnoozeToBeReminderAgainIn">
+      <summary>
+        <para>Click Snooze to be reminded again in:</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.RemindersWindow_Dismiss">
+      <summary>
+        <para>Dismiss</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.RemindersWindow_DismissAll">
+      <summary>
+        <para>Dismiss All</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.RemindersWindow_Now">
+      <summary>
+        <para>Now</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.RemindersWindow_OverdueTimeBeforeAppointmentStart">
+      <summary>
+        <para>{0} overdue</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.SchedulerStringId.RemindersWindow_Snooze">
+      <summary>
+        <para>Snooze</para>
+      </summary>
+    </member>
+    <member name="N:DevExpress.WinUI.Scheduler">
+      <summary>
+        <para>Contains classes which implement the main functionality of WinUI Scheduler.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.ActiveViewChangedEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.ActiveViewChanged"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentAddedEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentAdded"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentAddingEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentAdding"/> event.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentAddingEventArgs.Appointments">
+      <summary>
+        <para>Returns the collection of appointments the user attempts to add to the scheduler.</para>
+      </summary>
+      <value>A collection of DevExpress.WinUI.Scheduler.AppointmentItem objects.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentAddingEventArgs.Calendar">
+      <summary>
+        <para>Returns the calendar that displays appointments.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.CalendarBase descendant.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentAddingEventArgs.EventSource">
+      <summary>
+        <para>Indicates the user action that raised the event.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.AppointmentEventSource enumeration value.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentDragDropEventArgsBase">
+      <summary>
+        <para>The base class for classes that provide data for drag-drop related events.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentDragDropEventArgsBase.DraggingAppointments">
+      <summary>
+        <para>Returns the collection of appointments the user is dragging.</para>
+      </summary>
+      <value>A collection of DevExpress.WinUI.Scheduler.AppointmentItem objects.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentDragDropEventArgsBase.SourceAppointments">
+      <summary>
+        <para>Returns the collection of appointments before the changes the user attempts to apply.</para>
+      </summary>
+      <value>A collection of DevExpress.WinUI.Scheduler.AppointmentItem objects.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentDragEnterEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentDragEnter"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentDragEventArgsBase">
+      <summary>
+        <para>The base class for classes that provide data for drag-drop related events.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentDragEventArgsBase.AcceptedOperation">
+      <summary>
+        <para>Specifies the operations the user is allowed to perform.</para>
+      </summary>
+      <value>A Windows.ApplicationModel.DataTransfer.DataPackageOperation enumeration value.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentDragEventArgsBase.Cancel">
+      <summary>
+        <para>Specifies whether to cancel the drag-drop operation.</para>
+      </summary>
+      <value>true to cancel the drag-drop operation and reset the appointments to their initial state; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentDragEventArgsBase.DragUIOverride">
+      <summary>
+        <para>Returns the visual representation of appointments the user is dragging.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.DragUIOverride object.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentDragLeaveEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentDragLeave"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentDragOverEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentDragOver"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentDragStartingEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentDragStarting"/> event.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentDragStartingEventArgs.AllowedOperations">
+      <summary>
+        <para>Specifies the operations the user is allowed to perform.</para>
+      </summary>
+      <value>A Windows.ApplicationModel.DataTransfer.DataPackageOperation enumeration value.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentDragStartingEventArgs.Cancel">
+      <summary>
+        <para>Specifies whether to cancel the drag-drop operation.</para>
+      </summary>
+      <value>true, to cancel the drag-drop operation and reset the appointments to their initial state; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentDragStartingEventArgs.DragUI">
+      <summary>
+        <para>Returns the visual representation of appointments the user is dragging.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.DragUIOverride object.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentDropCompletedEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentDropCompleted"/> event.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentDropCompletedEventArgs.DropResult">
+      <summary>
+        <para>Indicates the result of the drag-drop operation.</para>
+      </summary>
+      <value>A Windows.ApplicationModel.DataTransfer.DataPackageOperation enumeration value.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentDropEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentDrop"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentItem">
+      <summary>
+        <para>An appointment in the Scheduler.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.AppointmentItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the class with the default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.AllDay">
+      <summary>
+        <para>Gets or sets whether the current appointment lasts the entire day (or several days).</para>
+      </summary>
+      <value>true, if this is an all-day appointment; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.Calendar">
+      <summary>
+        <para>Returns the calendar that displays the appointment.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.CalendarBase descendant.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.Description">
+      <summary>
+        <para>Gets or sets the text for the appointment’s description.</para>
+      </summary>
+      <value>A System.String value that specifies the appointment’s description.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.End">
+      <summary>
+        <para>Gets or sets the appointment’s end date and time.</para>
+      </summary>
+      <value>A System.DateTime value that is the end of the appointment.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.Exceptions">
+      <summary>
+        <para>Returns the exceptions for the appointment item.</para>
+      </summary>
+      <value>A collection of exceptions.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.LabelId">
+      <summary>
+        <para>Gets or sets the identifier of the label object associated with the appointment.</para>
+      </summary>
+      <value>An object that specifies the unique identifier of the AppointmentLabelItem.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.Location">
+      <summary>
+        <para>Gets or sets the text that specifies the place where the appointment is scheduled.</para>
+      </summary>
+      <value>A System.String value that specifies the appointment’s location.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.LongerThanADay">
+      <summary>
+        <para>Gets whether the appointment’s length is equal to or greater than one day.</para>
+      </summary>
+      <value>true, if the appointment lasts one day or more; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.RecurrenceIndex">
+      <summary>
+        <para>Gets the appointment index in the recurring series.</para>
+      </summary>
+      <value>An integer value that is the zero-based index within the series.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.RecurrenceRule">
+      <summary>
+        <para>Gets or sets information that specifies an appointment’s recurrence rule.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.Reminder">
+      <summary>
+        <para>Gets a reminder associated with the current appointment (the collection’s first reminder, if there are several reminders).</para>
+      </summary>
+      <value>A ReminderItem object that is a reminder used to provide a notification of a future appointment. It is the first reminder in the collection, if there are several reminders, or null (Nothing in Visual Basic) if no reminder is associated with the appointment.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.Reminders">
+      <summary>
+        <para>Gets a collection of all reminders associated with the current appointment</para>
+      </summary>
+      <value>A collection of ReminderItem objects.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.SameDay">
+      <summary>
+        <para>Gets whether the appointment’s start and end times are on the same day.</para>
+      </summary>
+      <value>true, if the appointment interval is within a single day; false, if the appointment’s start and end times are on different days.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.Start">
+      <summary>
+        <para>Gets or sets the start date and time of the appointment.</para>
+      </summary>
+      <value>A System.DateTime value that is the start of the appointment.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.StatusId">
+      <summary>
+        <para>Gets or sets the unique identifier of the status object associated with the appointment.</para>
+      </summary>
+      <value>An object that is the unique identifier of the DevExpress.WinUI.Scheduler.AppointmentStatusItem object.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.Subject">
+      <summary>
+        <para>Gets or sets the appointment’s subject text.</para>
+      </summary>
+      <value>A System.String value that specifies the text of appointment’s subject.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.TimeZoneId">
+      <summary>
+        <para>Gets or sets the appointment time zone.</para>
+      </summary>
+      <value>A String indicating the appointment time zone name.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentItem.Type">
+      <summary>
+        <para>Gets or sets the type of an appointment.</para>
+      </summary>
+      <value>An DevExpress.WinUI.Scheduler.AppointmentType enumeration value which specifies the appointment’s type.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentLabelItem">
+      <summary>
+        <para>An object used as a label to categorize appointments.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.AppointmentLabelItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.AppointmentLabelItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentLabelItem.Caption">
+      <summary>
+        <para>Gets or sets the text which identifies an appointment label.</para>
+      </summary>
+      <value>A label identifier.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.AppointmentLabelItemCollection.#ctor(DevExpress.WinUI.Scheduler.Calendar)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.AppointmentLabelItemCollection"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.AppointmentLabelMappings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.AppointmentLabelMappings"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentMappings">
+      <summary>
+        <para>Specifies the mapping of the AppointmentItem properties to the appropriate data fields.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.AppointmentMappings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the AppointmentMapping class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.ActualEnd">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.ActualEnd"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.ActualStart">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.ActualStart"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.AllDay">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.AllDay"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.Description">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.Description"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.End">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.AllDay"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.Id">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s AppointmentItem.Id property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.LabelId">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.LabelId"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.Location">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.Location"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.PatternId">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.PatternId"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.RecurrenceIndex">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.RecurrenceIndex"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.RecurrenceRule">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.RecurrenceRule"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.ResourceIds">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.ResourceIds"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.Start">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.Start"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.StatusId">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.StatusId"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.Subject">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.Subject"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.TimeZoneId">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.TimeZoneId"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentMappings.Type">
+      <summary>
+        <para>Gets or sets the data field to which an appointment’s <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.Type"/> property is bound.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Mapping value that specifies the name of the bound data field.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentRemovedEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentRemoved"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentRemovingEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentRemoving"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentStatusItem">
+      <summary>
+        <para>An object used to indicate the busy status of the user for the appointment.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.AppointmentStatusItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.AppointmentStatusItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentStatusItem.Caption">
+      <summary>
+        <para>Gets or sets the appointment status’s caption.</para>
+      </summary>
+      <value>The appointment status caption.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.AppointmentStatusItem.Type">
+      <summary>
+        <para>Gets the type of the appointment status.</para>
+      </summary>
+      <value>The appointment status type.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.AppointmentStatusItemCollection.#ctor(DevExpress.WinUI.Scheduler.Calendar)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.AppointmentStatusItemCollection"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.AppointmentStatusMappings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.AppointmentStatusMappings"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentStatusType">
+      <summary>
+        <para>Lists the appointment status types.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.AppointmentStatusType.Busy">
+      <summary>
+        <para>This status means that a person is in the office but unavailable to others. The status bar is colored with a darker shade of the appointment label color. If an appointment has no label, the color is blue (#FF4A87E2).</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.AppointmentStatusType.Custom">
+      <summary>
+        <para>This status represents all custom statuses added to the AppointmentStorage.Statuses collection. The color fill of appointment status is specified by the AppointmentStatus.Brush property, which is platform-specific.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.AppointmentStatusType.Free">
+      <summary>
+        <para>This status means that a person is in the office and available to others. The status bar is colored white.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.AppointmentStatusType.OutOfOffice">
+      <summary>
+        <para>This status means that a person is out of the office and unavailable to others. The status bar color is close to purple (#FF800080).</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.AppointmentStatusType.Tentative">
+      <summary>
+        <para>This status means that a person is in the office and tentatively available to others. The status bar is colored with a darker shade of the appointment label color. If an appointment has no label, the color is blue (#FF4A87E2). The color pattern has white diagonal stripes (the System.Drawing.Drawing2D.HatchStyle.WideUpwardDiagonal type).</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.AppointmentStatusType.WorkingElsewhere">
+      <summary>
+        <para>This status means that a person is not in the office but is readily available for business contacts. The status bar is colored with a darker shade of the appointment label color. If an appointment has no label, the color is light violet (#FF937BD1). The pattern is 75 percent hatch (System.Drawing.Drawing2D.HatchStyle.Percent75) with the white foreground.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentType">
+      <summary>
+        <para>Lists the types of appointment.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.AppointmentType.ChangedOccurrence">
+      <summary>
+        <para>Represents a recurring appointment, which was changed and now doesn’t satisfy the pattern of the recurring series.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.AppointmentType.DeletedOccurrence">
+      <summary>
+        <para>Represents a recurring appointment which was deleted from the series of other recurring appointments of the same pattern.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.AppointmentType.Normal">
+      <summary>
+        <para>Represents a standard (non-recurring) appointment.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.AppointmentType.Occurrence">
+      <summary>
+        <para>Represents a recurring appointment whose pattern appointment is specified via the <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.RecurrenceRule"/> property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.AppointmentType.Pattern">
+      <summary>
+        <para>Represents the appointment which serves as the pattern for the other recurring appointments. The pattern for recurring appointments is specified via the <see cref="P:DevExpress.WinUI.Scheduler.AppointmentItem.PatternId"/> property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentUpdatedEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentUpdated"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.AppointmentUpdatingEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentUpdating"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.BusyAppointmentStatusItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.BusyAppointmentStatusItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.Calendar">
+      <summary>
+        <para>The calendar that displays appointments.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.Calendar.#ctor">
+      <summary>
+        <para>Initializes a new instance of the Calendar class.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.Calendar.AppointmentMappingsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.Calendar.AppointmentMappings"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.Calendar.AppointmentsSource">
+      <summary>
+        <para>Gets or sets a collection of objects containing appointment information. This is a dependency property.</para>
+      </summary>
+      <value>A collection of objects which contain appointment information.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.Calendar.AppointmentsSourceProperty">
+      <summary>
+        <para>Identifies the AppointmentsSource dependency property.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.Calendar.GetAppointmentsAsync(System.DateTimeOffset,System.DateTimeOffset)">
+      <summary>
+        <para>Retrieves the collection of appointments that fall within the specified time interval.</para>
+      </summary>
+      <param name="queryStart">A System.DateTimeOffset value that specifies the start time of the required time interval.</param>
+      <param name="queryEnd">A System.DateTimeOffset value that specifies the end time of the required time interval.</param>
+      <returns>A collection of appointments which belong to the specified time interval.</returns>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.Calendar.LabelMappings">
+      <summary>
+        <para>Gets an object that specifies how label properties map to the data source fields. This is a dependency property.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.AppointmentLabelMappings object that has information on the mapping of the label properties to the data fields.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.Calendar.LabelMappingsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.Calendar.LabelMappings"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.Calendar.LabelsSource">
+      <summary>
+        <para>Gets or sets a collection of objects containing label information. This is a dependency property.</para>
+      </summary>
+      <value>A collection of objects which contain label information.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.Calendar.LabelsSourceProperty">
+      <summary>
+        <para>Identifies the LabelsSource dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.Calendar.ResourceMappingsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.Calendar.ResourceMappings"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.Calendar.ResourcesSource">
+      <summary>
+        <para>Gets or sets a collection of objects containing resource information. This is a dependency property.</para>
+      </summary>
+      <value>A collection of objects which contain resource information.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.Calendar.ResourcesSourceProperty">
+      <summary>
+        <para>Identifies the ResourcesSource dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.Calendar.StatusesSource">
+      <summary>
+        <para>Gets or sets a collection of objects containing status information. This is a dependency property.</para>
+      </summary>
+      <value>A collection of objects which contain status information.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.Calendar.StatusesSourceProperty">
+      <summary>
+        <para>Identifies the StatusesSource dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.Calendar.StatusMappings">
+      <summary>
+        <para>Gets an object that specifies how appointment status properties map to the data source fields.</para>
+      </summary>
+      <value>A AppointmentStatusMappings object that provides information on the mapping of the appointment status properties to the data fields.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.Calendar.StatusMappingsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.Calendar.StatusMappings"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.CalendarBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.CalendarBase"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.CalendarBase.Appointments">
+      <summary>
+        <para>Provides access to the appointments.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.CalendarBase.CaptionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.CalendarBase.Caption"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.CalendarBase.Labels">
+      <summary>
+        <para>Returns the Calendar appointment labels collection.</para>
+      </summary>
+      <value>The collection of appointment label items.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.CalendarBase.Resources">
+      <summary>
+        <para>Provides access to the resources for appointments.</para>
+      </summary>
+      <value>The collection of resources.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.CalendarBase.Statuses">
+      <summary>
+        <para>Returns the calendar’s appointment statuses collection.</para>
+      </summary>
+      <value>A AppointmentStatusItemCollection object that is the collection of appointment statues.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.CalendarBase.StyleSettingsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.CalendarBase.StyleSettings"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.CalendarBase.TimeZone">
+      <summary>
+        <para>Gets or sets the time zone for the Calendar. This is a dependency property.</para>
+      </summary>
+      <value>A System.TimeZoneInfo object identifying a time zone.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.CalendarBase.TimeZoneProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.CalendarBase.TimeZone"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.CalendarBase.VisibleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.CalendarBase.Visible"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.CalendarCollection.#ctor(System.Action{DevExpress.WinUI.Scheduler.CalendarBase},System.Action{DevExpress.WinUI.Scheduler.CalendarBase})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.CalendarCollection"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.DateTimeRangeCollection.#ctor(System.Collections.Generic.IList{DevExpress.Mvvm.DateTimeRange})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.DateTimeRangeCollection"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.DayView">
+      <summary>
+        <para>A view that displays a detailed picture of events across one or more days.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.DayView.#ctor">
+      <summary>
+        <para>Initializes a new instance of the DayView class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.DayView.DayCount">
+      <summary>
+        <para>Gets or sets the number of days that are simultaneously displayed within the Day View. This is a dependency property.</para>
+      </summary>
+      <value>A positive integer value that specifies the number of days displayed by the Day View. By default, 1</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.DayView.DayCountProperty">
+      <summary>
+        <para>Identifies the DayCount dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.DayView.Days">
+      <summary>
+        <para>Gets or sets the days that are currently displayed by the Day View. This is a dependency property.</para>
+      </summary>
+      <value>A list of dates displayed in the view.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.DayView.DaysProperty">
+      <summary>
+        <para>Identifies the Days dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.DeserializeAppointmentsEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.DeserializeAppointments"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.EditAppointmentDialogSettings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.EditAppointmentDialogSettings"/> class.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.EditAppointmentDialogSettings.AllowMultipleResourceSelectionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.EditAppointmentDialogSettings.AllowMultipleResourceSelection"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.EditAppointmentDialogShowingEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.EditAppointmentDialogShowing"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.FreeAppointmentStatusItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.FreeAppointmentStatusItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.Mapping.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.Mapping"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.Mapping.#ctor(System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.Mapping"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.MonthView">
+      <summary>
+        <para>A view that displays events across a month.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.MonthView.#ctor">
+      <summary>
+        <para>Initializes a new instance of the MonthView class with the default settings.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.MonthView.ActualStyleSettingsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.MonthView.ActualStyleSettings"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.MonthView.StyleSettingsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.MonthView.StyleSettings"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.MonthView.StyleSettingsTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.MonthView.StyleSettingsTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.MonthView.WeekCount">
+      <summary>
+        <para>Gets or sets the number of weeks that are simultaneously displayed in the MonthView. This is a dependency property.</para>
+      </summary>
+      <value>A positive integer value specifying the number of weeks displayed in the MonthView. The default is 4.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.MonthView.WeekCountProperty">
+      <summary>
+        <para>Identifies the WeekCount dependency property.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.MonthViewStyleSettings"/> class.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.AppointmentMinHeightProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.AppointmentMinHeight"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.CellMinHeightProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.CellMinHeight"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.CellMinWidthProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.CellMinWidth"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.CellStringFormatProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.CellStringFormat"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.CellTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.CellTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.FirstDayOfMonthCellStringFormatProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.FirstDayOfMonthCellStringFormat"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.FirstDayOfYearCellStringFormatProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.FirstDayOfYearCellStringFormat"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.GroupSpacingProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.GroupSpacing"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.HeaderCellMinHeightProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.MonthViewStyleSettings.HeaderCellMinHeight"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.OutOfOfficeAppointmentStatusItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.OutOfOfficeAppointmentStatusItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.ReminderItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.ReminderItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.RemindersDialogShowingEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.RemindersDialogShowing"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.RemoveAppointmentDialogShowingEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.RemoveAppointmentDialogShowing"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.ResourceIdsMapping.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.ResourceIdsMapping"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.ResourceItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.ResourceItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.ResourceItemCollection.#ctor(DevExpress.WinUI.Scheduler.Calendar)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.ResourceItemCollection"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.ResourceMappings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.ResourceMappings"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.SchedulerCommands.#ctor(DevExpress.WinUI.Scheduler.SchedulerControl)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.SchedulerCommands"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.SchedulerControl">
+      <summary>
+        <para>The main control of the Scheduler suite which displays and manages calendar events (appointments).</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.SchedulerControl.#ctor">
+      <summary>
+        <para>Initializes a new instance of the SchedulerControl class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.ActiveView">
+      <summary>
+        <para>Returns the view currently used by the SchedulerControl to show its data.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.Internal.ViewBase class descendant, which represents the currently active view.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.ActiveViewIndex">
+      <summary>
+        <para>Gets or sets the index of the view currently used by the SchedulerControl to show its data. This is a dependency property.</para>
+      </summary>
+      <value>An integer value specifying a zero-based index of the active view in the Views collection.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.ActiveViewIndexProperty">
+      <summary>
+        <para>Identifies the ActiveViewIndex dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.ActiveViewProperty">
+      <summary>
+        <para>Identifies the ActiveView dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.ActualDefaultCalendarStyleSettingsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.SchedulerControl.ActualDefaultCalendarStyleSettings"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.AllowReminders">
+      <summary>
+        <para>Gets or sets whether appointment reminders are allowed. This is a dependency property.</para>
+      </summary>
+      <value>true, to allow reminders; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.AllowRemindersProperty">
+      <summary>
+        <para>Identifies the AllowReminders dependency property.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentAdded">
+      <summary>
+        <para>Occurs after the user has added an appointment to the Scheduler.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentAdding">
+      <summary>
+        <para>Occurs when the user adds an appointment to the Scheduler.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentDragEnter">
+      <summary>
+        <para>Occurs when the user drags back appointments that have been dragged out of the Scheduler or have been deserialized in the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.DeserializeAppointments"/> event.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentDragLeave">
+      <summary>
+        <para>Occurs when the user drags appointments out of the Scheduler’s bounds.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentDragOver">
+      <summary>
+        <para>Raised repeatedly while the user drags appointments in the Scheduler control.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentDragStarting">
+      <summary>
+        <para>Occurs when the user starts dragging the selected appointment(s).</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentDrop">
+      <summary>
+        <para>Occurs when the user drops appointments within a Scheduler’s view.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentDropCompleted">
+      <summary>
+        <para>Occurs after completing a drag and drop operation.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentRemoved">
+      <summary>
+        <para>Occurs after the user has removed an appointment.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentRemoving">
+      <summary>
+        <para>Occurs when the user removes an appointment.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentUpdated">
+      <summary>
+        <para>Occurs after the user has modified an appointment.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.AppointmentUpdating">
+      <summary>
+        <para>Occurs when the user modifies an appointment.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.Calendars">
+      <summary>
+        <para>Returns the collection of calendars that display appointments.</para>
+      </summary>
+      <value>A collection of DevExpress.WinUI.Scheduler.CalendarBase descendants.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.DefaultCalendarStyleSettingsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.SchedulerControl.DefaultCalendarStyleSettings"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.DefaultCalendarStyleSettingsTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.SchedulerControl.DefaultCalendarStyleSettingsTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.DeserializeAppointments">
+      <summary>
+        <para>Occurs when the user drags appointments from an external source.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.EditAppointmentDialogShowing">
+      <summary>
+        <para>Occurs before invoking the Edit Appointment dialog.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.FirstDayOfWeek">
+      <summary>
+        <para>Specifies the day which the SchedulerControl’s week starts. This is a dependency property.</para>
+      </summary>
+      <value>A System.DayOfWeek enumeration value specifying the start day of the week for the Scheduler. The default is DayOfWeek.Sunday.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.FirstDayOfWeekProperty">
+      <summary>
+        <para>Identifies the FirstDayOfWeek dependency property.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.SchedulerControl.GetAppointmentsAsync(System.DateTimeOffset,System.DateTimeOffset)">
+      <summary>
+        <para>Retrieves the collection of appointments that fall within the specified time interval.</para>
+      </summary>
+      <param name="queryStart">A System.DateTimeOffset value that specifies the start time of the required time interval.</param>
+      <param name="queryEnd">A System.DateTimeOffset value that specifies the end time of the required time interval.</param>
+      <returns>A collection of appointments which belong to the specified time interval.</returns>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.GroupType">
+      <summary>
+        <para>Specifies the type of grouping applied to the Scheduler. This is a dependency property.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.SchedulerGroupType enumeration value that specifies how appointments are grouped.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.GroupTypeProperty">
+      <summary>
+        <para>Identifies the GroupType dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.LimitInterval">
+      <summary>
+        <para>Gets or sets the time interval available for end-users. This is a dependency property.</para>
+      </summary>
+      <value>A DevExpress.Mvvm.DateTimeRange object representing available time interval.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.LimitIntervalProperty">
+      <summary>
+        <para>Identifies the LimitInterval dependency property.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.RemoveAppointmentDialogShowing">
+      <summary>
+        <para>Occurs before invoking the Confirm Delete dialog.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.SelectedAppointments">
+      <summary>
+        <para>Returns the selected appointments.</para>
+      </summary>
+      <value>A collection of AppointmentItem objects that represent the selected appointments.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.SerializeAppointments">
+      <summary>
+        <para>Allows you to serialize appointment that are being dragged by the user.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.Start">
+      <summary>
+        <para>Gets or sets the SchedulerControl start date. This is a dependency property.</para>
+      </summary>
+      <value>A System.DateTime value which represents the start date of the SchedulerControl.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.StartProperty">
+      <summary>
+        <para>Identifies the Start dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.TimeZone">
+      <summary>
+        <para>Gets or sets the time zone for the Scheduler. This is a dependency property.</para>
+      </summary>
+      <value>A System.TimeZoneInfo object identifying a time zone.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.TimeZoneProperty">
+      <summary>
+        <para>Identifies the TimeZone dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.Views">
+      <summary>
+        <para>Returns the collection of the SchedulerControl’s views.</para>
+      </summary>
+      <value>A collection that stores all views specified in the scheduler.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.VisibleIntervals">
+      <summary>
+        <para>Returns the currently visible time cell intervals. This is a dependency property.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.DateTimeRangeCollection object that is the collection of visible time intervals.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.Scheduler.SchedulerControl.VisibleIntervalsChanged">
+      <summary>
+        <para>Occurs when changing the visible time cells interval.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.VisibleIntervalsProperty">
+      <summary>
+        <para>Identifies the VisibleIntervals dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.WorkDays">
+      <summary>
+        <para>Gets or sets days that form a work week. This is a dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.WorkDaysProperty">
+      <summary>
+        <para>Identifies the WorkDays dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SchedulerControl.WorkTime">
+      <summary>
+        <para>Gets or sets the work time interval. This is a dependency property.</para>
+      </summary>
+      <value>A DevExpress.Mvvm.TimeSpanRange object which specifies the work time interval.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerControl.WorkTimeProperty">
+      <summary>
+        <para>Identifies the WorkTime dependency property.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.SchedulerHeaderSettings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.SchedulerHeaderSettings"/> class.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerHeaderSettings.GotoTodayIconProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.SchedulerHeaderSettings.GotoTodayIcon"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerHeaderSettings.HeaderPresenterTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.SchedulerHeaderSettings.HeaderPresenterTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.SchedulerHeaderSettings.ShowDefaultItemsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Scheduler.SchedulerHeaderSettings.ShowDefaultItems"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.SchedulerViewCollection.#ctor(DevExpress.WinUI.Scheduler.SchedulerControl)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.SchedulerViewCollection"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.SelectedAppointmentItemCollection.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.SelectedAppointmentItemCollection"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.SerializeAppointmentsEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.SerializeAppointments"/> event.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SerializeAppointmentsEventArgs.Appointments">
+      <summary>
+        <para>Returns the list of appointments that should be serialized.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.SerializeAppointmentsEventArgs.Data">
+      <summary>
+        <para>The appointment data.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.TentativeAppointmentStatusItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.TentativeAppointmentStatusItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.TimeIndicator">
+      <summary>
+        <para>A horizontal line that marks the specified time value.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.TimeIndicator.#ctor">
+      <summary>
+        <para>Initializes a new instance of the TimeIndicator class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.TimeIndicator.DisplayMode">
+      <summary>
+        <para>Specifies the display mode. This is a dependency property.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Scheduler.TimeIndicatorDisplayMode enumeration value. By default, <see cref="F:DevExpress.WinUI.Scheduler.TimeIndicatorDisplayMode.Everywhere"/>.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.TimeIndicator.DisplayModeProperty">
+      <summary>
+        <para>Identifies the DisplayMode dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.TimeIndicator.DisplayTime">
+      <summary>
+        <para>Gets or sets the time value marked by the time indicator. This is a dependency property.</para>
+      </summary>
+      <value>A System.TimeSpan value. By default, {00:00:00}.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.TimeIndicator.DisplayTimeProperty">
+      <summary>
+        <para>Identifies the DisplayTime dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.TimeIndicator.Fill">
+      <summary>
+        <para>Specifies the brush used to paint the time indicator. This is a dependency property.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.Media.Brush value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.TimeIndicator.FillProperty">
+      <summary>
+        <para>Identifies the Fill dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.TimeIndicator.TimeOffset">
+      <summary>
+        <para>Specifies the offset applied to the display time. This is a dependency property.</para>
+      </summary>
+      <value>A System.TimeSpan value. By default, {00:00:00}.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.TimeIndicator.TimeOffsetProperty">
+      <summary>
+        <para>Identifies the TimeOffset dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.TimeIndicator.TrackCurrentTime">
+      <summary>
+        <para>Specifies whether the time indicator marks the current time. This is a dependency property.</para>
+      </summary>
+      <value>true, to set the display time to the current time; otherwise, false. By default, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.TimeIndicator.TrackCurrentTimeProperty">
+      <summary>
+        <para>Identifies the TrackCurrentTime dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.TimeIndicatorCollection">
+      <summary>
+        <para>A collection of time indicators.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.TimeIndicatorCollection.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.TimeIndicatorCollection"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.TimeRuler">
+      <summary>
+        <para>A time ruler for the <see cref="T:DevExpress.WinUI.Scheduler.SchedulerControl"/></para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.TimeRuler.#ctor">
+      <summary>
+        <para>Initializes a new instance of the class with the default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.TimeRuler.AlwaysShowTimeDesignator">
+      <summary>
+        <para>Gets or sets whether the time value should be always shown for the top row. This is a dependency property.</para>
+      </summary>
+      <value>true, if the top row time should be always visible; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.TimeRuler.AlwaysShowTimeDesignatorProperty">
+      <summary>
+        <para>Identifies the AlwaysShowTimeDesignator dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.TimeRuler.Caption">
+      <summary>
+        <para>Gets or sets the time ruler’s caption. This is a dependency property.</para>
+      </summary>
+      <value>A String value that is the time ruler`s caption.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.TimeRuler.CaptionProperty">
+      <summary>
+        <para>Identifies the Caption dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.TimeRuler.ShowMinutes">
+      <summary>
+        <para>Gets or sets whether the time ruler displays minutes. This is a dependency property.</para>
+      </summary>
+      <value>true, to display minutes; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.TimeRuler.ShowMinutesProperty">
+      <summary>
+        <para>Identifies the ShowMinutes dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Scheduler.TimeRuler.TimeZone">
+      <summary>
+        <para>Gets or sets the time zone displayed by the time ruler. This is a dependency property.</para>
+      </summary>
+      <value>A System.TimeZoneInfo object identifying the time zone.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Scheduler.TimeRuler.TimeZoneProperty">
+      <summary>
+        <para>Identifies the TimeZone dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.TimeRulerCollection">
+      <summary>
+        <para>A collection of time rulers.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.TimeRulerCollection.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.TimeRulerCollection"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.TimeSpanCollection">
+      <summary>
+        <para>A collection of time spans.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.TimeSpanCollection.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.TimeSpanCollection"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.VisibleIntervalsChangedEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Scheduler.SchedulerControl.VisibleIntervalsChanged"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.VisibleIntervalsChangedEventArgs.#ctor(System.Collections.Generic.IEnumerable{DevExpress.Mvvm.DateTimeRange})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.VisibleIntervalsChangedEventArgs"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.WeekView">
+      <summary>
+        <para>A view that displays events across a week.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.WeekView.#ctor">
+      <summary>
+        <para>Initializes a new instance of the WeekView class with the default settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.WorkingElsewhereAppointmentStatusItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Scheduler.WorkingElsewhereAppointmentStatusItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Scheduler.WorkWeekView">
+      <summary>
+        <para>A view that displays events across a work week.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Scheduler.WorkWeekView.#ctor">
+      <summary>
+        <para>Initializes a new instance of the WorkWeekView class with the default settings.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

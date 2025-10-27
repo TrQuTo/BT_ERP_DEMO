@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.WinUI.Printing.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.WinUI.Localization">
+      <summary>
+        <para>Contains classes and enumerations that are intended to localize the User Interface of DevExpress WinUI Controls.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Localization.PrintingStringID">
+      <summary>
+        <para>Contains values corresponding to strings that can be localized.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.DuplexHorizontalText">
+      <summary>
+        <para>Flip on Short Edge</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.DuplexSimplexText">
+      <summary>
+        <para>None</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.DuplexVerticalText">
+      <summary>
+        <para>Flip on Long Edge</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.LandscapeOrientationText">
+      <summary>
+        <para>Landscape</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PaperSourceAutomaticText">
+      <summary>
+        <para>Automatically select</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PaperSourceManualFeedText">
+      <summary>
+        <para>Manual feed</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PortraitOrientationText">
+      <summary>
+        <para>Portrait</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PrintDialogAllPages">
+      <summary>
+        <para>All Pages</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PrintDialogCollateText">
+      <summary>
+        <para>Collate</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PrintDialogCopiesText">
+      <summary>
+        <para>Copies:</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PrintDialogCurrent">
+      <summary>
+        <para>Current</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PrintDialogCustom">
+      <summary>
+        <para>Custom</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PrintDialogDuplexText">
+      <summary>
+        <para>Print on both side</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PrintDialogLocationText">
+      <summary>
+        <para>Location:</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PrintDialogOrientationText">
+      <summary>
+        <para>Orientation</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PrintDialogPages">
+      <summary>
+        <para>Pages</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PrintDialogPaperKind">
+      <summary>
+        <para>Paper kind</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PrintDialogPrinters">
+      <summary>
+        <para>Printers</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.PrintingStringID.PrintDialogStatusText">
+      <summary>
+        <para>Status:</para>
+      </summary>
+    </member>
+    <member name="N:DevExpress.WinUI.Printing">
+      <summary>
+        <para>Contains classes that implement the basic printing functionality. To use these classes in XAML code, add the xmlns:dxp=”using:DevExpress.WinUI.Printing” namespace reference.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Printing.IPrintable">
+      <summary>
+        <para>When implemented by a class, enables it to print DevExpress controls.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Printing.IPrintable.CreateRootNode(Windows.Foundation.Size)">
+      <summary>
+        <para>For internal use.</para>
+      </summary>
+      <param name="usablePageSize">A <see cref="T:Windows.Foundation.Size"/> structure.</param>
+      <returns>An object implementing the <see cref="T:DevExpress.XtraPrinting.DataNodes.IRootDataNode"/> interface.</returns>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.IPrintable.RightToLeftLayout">
+      <summary>
+        <para>Gets or sets whether to enable a right-to-left layout in the printed document.</para>
+      </summary>
+      <value>true to enable the RTL layout; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Printing.Link">
+      <summary>
+        <para>The base class for links that enables printing functionality for WinUI controls.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.BottomMarginStyle">
+      <summary>
+        <para>Gets or sets the style applied to a bottom margin of the printed document.</para>
+      </summary>
+      <value>The style applied to a bottom margin of the printed document.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.BottomMarginText">
+      <summary>
+        <para>Gets or sets the text of the document’s bottom margin.</para>
+      </summary>
+      <value>The text of the document’s bottom margin.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.ColumnLayout">
+      <summary>
+        <para>Gets or sets the column layout.</para>
+      </summary>
+      <value>The <see cref="T:DevExpress.XtraPrinting.ColumnLayout"/> enumeration value.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.ColumnWidth">
+      <summary>
+        <para>Gets or sets the width of a single column.</para>
+      </summary>
+      <value>The width of a single column.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.Landscape">
+      <summary>
+        <para>Gets or sets whether the printed page orientation is landscape.</para>
+      </summary>
+      <value>true if the printed page orientation is landscape; false if the printed page orientation is portrait.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.PageFooterStyle">
+      <summary>
+        <para>Gets or sets the style applied to a footer of the printed page.</para>
+      </summary>
+      <value>The style applied to a footer of the printed page.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.PageFooterText">
+      <summary>
+        <para>Gets or sets the text of the page’s footer.</para>
+      </summary>
+      <value>The text of the page’s footer.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.PageHeaderStyle">
+      <summary>
+        <para>Gets or sets the style applied to a header of the printed page.</para>
+      </summary>
+      <value>The style applied to a header of the printed page.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.PageHeaderText">
+      <summary>
+        <para>Gets or sets the text of the page’s header.</para>
+      </summary>
+      <value>The text of the page’s header.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.PrintReportFooterAtBottom">
+      <summary>
+        <para>Gets or sets whether the report footer is printed at the bottom of each page, or only after the report content.</para>
+      </summary>
+      <value>true to always print the report footer at the bottom of the document’s last page; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.ReportFooterStyle">
+      <summary>
+        <para>Gets or sets the style applied to the footer of the printed report.</para>
+      </summary>
+      <value>The style applied to a footer of the printed report.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.ReportFooterText">
+      <summary>
+        <para>Gets or sets the text of the report’s footer.</para>
+      </summary>
+      <value>The text of the report’s footer.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.ReportHeaderStyle">
+      <summary>
+        <para>Gets or sets the style applied to a header of the printed report.</para>
+      </summary>
+      <value>The style applied to a header of the printed report.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.ReportHeaderText">
+      <summary>
+        <para>Gets or sets the text of the report’s header.</para>
+      </summary>
+      <value>The text of the report’s header.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.TopMarginStyle">
+      <summary>
+        <para>Gets or sets the style applied to the top margin of the printed document.</para>
+      </summary>
+      <value>The style applied to the top margin of the printed document.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.TopMarginText">
+      <summary>
+        <para>Gets or sets the text of the document’s top margin.</para>
+      </summary>
+      <value>The text of the document’s top margin.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.Link.VerticalContentSplitting">
+      <summary>
+        <para>Gets or sets whether content bricks outside the right page margin should be split across pages or moved to the next page.</para>
+      </summary>
+      <value>The VerticalContentSplitting mode.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Printing.LinkBase">
+      <summary>
+        <para>The base class for all printing links.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Printing.LinkBase.CreateDocument">
+      <summary>
+        <para>Creates a document from the link.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Printing.LinkBase.CreateDocument(System.Boolean)">
+      <summary>
+        <para>Creates a document from the link. Optionally, you can access the document pages as soon as they are created. Document creation is always synchronous and does not occur in a background thread.</para>
+      </summary>
+      <param name="buildForInstantPreview">true to enable accessing document pages progressively as they are created; otherwise false.</param>
+    </member>
+    <member name="E:DevExpress.WinUI.Printing.LinkBase.CreateDocumentFinished">
+      <summary>
+        <para>Occurs when the document was successfully created.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Printing.LinkBase.CreateDocumentStarted">
+      <summary>
+        <para>Occurs when the document creation has been started.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.LinkBase.CustomPaperSize">
+      <summary>
+        <para>Gets or sets a size of custom paper (in hundredths of an inch).</para>
+      </summary>
+      <value>The size of custom paper (in hundredths of an inch).</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Printing.LinkBase.Dispose">
+      <summary>
+        <para>Disposes the <see cref="T:DevExpress.WinUI.Printing.LinkBase"/> object. The method releases all the resources allocated to the object and improves system performance.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.LinkBase.DocumentName">
+      <summary>
+        <para>Gets or sets the document name.</para>
+      </summary>
+      <value>The document name.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Printing.LinkBase.LoadDocument(System.Object)">
+      <summary>
+        <para>Load the specified document.</para>
+      </summary>
+      <param name="source">The document’s source.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.LinkBase.Margins">
+      <summary>
+        <para>Gets or sets the margins of a report page (in hundredths of an inch).</para>
+      </summary>
+      <value>The margins of a report page (in hundredths of an inch).</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.LinkBase.MinMargins">
+      <summary>
+        <para>Gets or sets the minimum printer margins.</para>
+      </summary>
+      <value>The minimum printer margins.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.LinkBase.PaperKind">
+      <summary>
+        <para>Gets or sets the paper type.</para>
+      </summary>
+      <value>The paper type.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Printing.LinkBase.Print(System.String)">
+      <summary>
+        <para>Prints the <see cref="T:DevExpress.WinUI.Printing.LinkBase"/> instance on the default or specified printer.</para>
+      </summary>
+      <param name="printerName">The printer’s name (in OS) that should print the <see cref="T:DevExpress.WinUI.Grid.GridControl"/>.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.LinkBase.PrintingSystem">
+      <summary>
+        <para>Gets the Printing System used to create and print a document for this link.</para>
+      </summary>
+      <value>The Printing System used to create or print a document.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Printing.LinkBase.StopPageBuilding">
+      <summary>
+        <para>Interrupts the document creation.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Printing.PrintableLink">
+      <summary>
+        <para>A link used to print a DevExpress WinUI control or display a print preview.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Printing.PrintableLink.#ctor(DevExpress.WinUI.Printing.IPrintable,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Printing.PrintableLink"/> class with specified settings.</para>
+      </summary>
+      <param name="printableControl">An object that implements the <see cref="T:DevExpress.WinUI.Printing.IPrintable"/> interface. This is the control that should be printed with the <see cref="T:DevExpress.WinUI.Printing.PrintableLink"/>.</param>
+      <param name="documentName">The document name.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Printing.PrintableLink.#ctor(DevExpress.WinUI.Printing.IPrintable)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Printing.PrintableLink"/> class with specified settings.</para>
+      </summary>
+      <param name="printableControl">An object implementing the <see cref="T:DevExpress.WinUI.Printing.IPrintable"/> interface that is the control that should be printed with the <see cref="T:DevExpress.WinUI.Printing.PrintableLink"/>.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.PrintableLink.PrintableControl">
+      <summary>
+        <para>Gets the control that should be printed with the <see cref="T:DevExpress.WinUI.Printing.PrintableLink"/>.</para>
+      </summary>
+      <value>The control that should be printed.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Printing.PrintBrickStyle">
+      <summary>
+        <para>Contains appearance settings of printed bricks (elements).</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Printing.PrintBrickStyle.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Printing.PrintBrickStyle"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.PrintBrickStyle.Background">
+      <summary>
+        <para>Gets or set the background color of the printed brick.</para>
+      </summary>
+      <value>The printed brick’s background color.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.PrintBrickStyle.BorderColor">
+      <summary>
+        <para>Gets or set the border color of the printed brick.</para>
+      </summary>
+      <value>The printed brick’s border color.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.PrintBrickStyle.BorderThickness">
+      <summary>
+        <para>Gets or set the border thickness of the printed brick.</para>
+      </summary>
+      <value>The printed brick’s border thickness.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.PrintBrickStyle.FontFamily">
+      <summary>
+        <para>Gets or set the font family of the printed brick.</para>
+      </summary>
+      <value>The printed brick’s font family.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.PrintBrickStyle.FontSize">
+      <summary>
+        <para>Gets or set the font size of the printed brick.</para>
+      </summary>
+      <value>The printed brick’s font size.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.PrintBrickStyle.FontStyle">
+      <summary>
+        <para>Gets or set the font style of the printed brick.</para>
+      </summary>
+      <value>The printed brick’s font style.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.PrintBrickStyle.FontWeight">
+      <summary>
+        <para>Gets or set the font weight of the printed brick.</para>
+      </summary>
+      <value>The printed brick’s font weight.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.PrintBrickStyle.Foreground">
+      <summary>
+        <para>Gets or set the foreground color of the printed brick.</para>
+      </summary>
+      <value>The printed brick’s foreground color.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.PrintBrickStyle.HorizontalContentAlignment">
+      <summary>
+        <para>Gets or set the horizontal alignment of the printed brick.</para>
+      </summary>
+      <value>The printed brick’s horizontal alignment.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.PrintBrickStyle.Padding">
+      <summary>
+        <para>Gets or set paddings of the printed brick.</para>
+      </summary>
+      <value>The printed brick’s paddings.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Printing.PrintBrickStyle.VerticalContentAlignment">
+      <summary>
+        <para>Gets or set the vertical alignment of the printed brick.</para>
+      </summary>
+      <value>The printed brick’s vertical alignment.</value>
+    </member>
+  </members>
+</doc>

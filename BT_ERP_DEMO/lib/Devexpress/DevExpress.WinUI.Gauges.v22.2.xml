@@ -1,0 +1,2247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.WinUI.Gauges.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.WinUI.Gauges">
+      <summary>
+        <para>Contains classes which implement the main functionality of Gauge Controls.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScale">
+      <summary>
+        <para>An arc scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScale.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScale"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScale.EndAngle">
+      <summary>
+        <para>Gets or sets the angle that specifies the scale end position.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that is the end angle of the scale.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScale.EndAngleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScale.EndAngle"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScale.LabelOptions">
+      <summary>
+        <para>Gets or sets the options that specify the position and format for labels displayed on the scale.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleLabelOptions"/> object that contains label settings.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScale.LabelOptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScale.LabelOptions"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScale.Layers">
+      <summary>
+        <para>Provides access to a collection of layers contained in the current Circular scale.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleLayerCollection"/> object that contains scale layers.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScale.LayoutMode">
+      <summary>
+        <para>Provides different types of layouts for the Circular Scale.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleLayoutMode"/> enumeration value that specifies the possible ways a circular scale can be positioned.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScale.LayoutModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScale.LayoutMode"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScale.Markers">
+      <summary>
+        <para>Provides access to a collection of markers contained in the current Circular Scale.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleMarkerCollection"/> object that contains scale markers.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScale.Needles">
+      <summary>
+        <para>Provides access to a collection of needles contained in the current Circular Scale.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleNeedleCollection"/> object that contains scale needles.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScale.RangeBars">
+      <summary>
+        <para>Provides access to a collection of range bars contained in the current Circular Scale.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleRangeBarCollection"/> object that contains scale range bars.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScale.Ranges">
+      <summary>
+        <para>Provides access to a collection of ranges contained in the current Circular Scale.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleRangeCollection"/>  object that contains scale ranges.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScale.ShowSpindleCap">
+      <summary>
+        <para>Gets or sets a value indicating whether a spindle cap should be shown or not.</para>
+      </summary>
+      <value>true to show a spindle cap; false to hide it.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScale.ShowSpindleCapProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScale.ShowSpindleCap"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScale.SpindleCapOptions">
+      <summary>
+        <para>Gets or sets the options that specify the position and format for a spindle cap displayed on the scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.SpindleCapOptions"/> object that contains spindle cap settings.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScale.SpindleCapOptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScale.SpindleCapOptions"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScale.SpindleCapTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the presentation of an arc scale’s spindle cap.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Controls.ControlTemplate"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScale.SpindleCapTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScale.SpindleCapTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScale.StartAngle">
+      <summary>
+        <para>Gets or sets the angle that specifies the scale start position.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that is the start angle of the scale.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScale.StartAngleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScale.StartAngle"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleCollection">
+      <summary>
+        <para>A collection of arc scales.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleCollection.#ctor(DevExpress.WinUI.Gauges.CircularGauge)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="gauge">A <see cref="T:DevExpress.WinUI.Gauges.CircularGauge"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleIndicator">
+      <summary>
+        <para>A class that specifies  value indicators of a circular scale.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleIndicatorCollection`1">
+      <summary>
+        <para>A collection that stores value indicators of a particular circular scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleIndicatorCollection`1.#ctor(DevExpress.WinUI.Gauges.ArcScale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleIndicatorCollection`1"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">An <see cref="T:DevExpress.WinUI.Gauges.ArcScale"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleLabelOptions">
+      <summary>
+        <para>Contains appearance and behavior options for arc scale labels.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleLabelOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleLabelOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScaleLabelOptions.Orientation">
+      <summary>
+        <para>Provides different types of orientation for labels on the Circular scale.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleLabelOrientation"/> object that specifies possible ways labels can be oriented.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleLabelOptions.OrientationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScaleLabelOptions.Orientation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleLabelOrientation">
+      <summary>
+        <para>Lists the possible ways arc scale labels can be oriented.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleLabelOrientation.BottomToTop">
+      <summary>
+        <para>Arc scale labels are painted from bottom to top.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleLabelOrientation.LeftToRight">
+      <summary>
+        <para>Arc scale labels are painted from left to right.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleLabelOrientation.Radial">
+      <summary>
+        <para>Arc scale labels are painted radially to the corresponding values on a scale.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleLabelOrientation.Tangent">
+      <summary>
+        <para>Arc scale labels are painted tangentially to the corresponding values on a scale.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleLabelOrientation.TopToBottom">
+      <summary>
+        <para>Arc scale labels are painted from top to bottom.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleLayer">
+      <summary>
+        <para>A layer that contains properties to define the visual presentation of a circular scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleLayer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleLayer"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleLayerCollection">
+      <summary>
+        <para>A collection that stores the layers of a particular arc scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleLayerCollection.#ctor(DevExpress.WinUI.Gauges.ArcScale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleLayerCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">An <see cref="T:DevExpress.WinUI.Gauges.ArcScale"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleLayoutMode">
+      <summary>
+        <para>Lists possible layouts of an arc scale.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleLayoutMode.Auto">
+      <summary>
+        <para>An arc scale appears as an ellipse whose length depends on the start and end scale angles.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleLayoutMode.Circle">
+      <summary>
+        <para>An arc scale always appears as a circle that tries to occupy as much space as possible.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleLayoutMode.Ellipse">
+      <summary>
+        <para>An arc scale appears as an ellipse whose sides are stretched.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleLayoutMode.HalfTop">
+      <summary>
+        <para>An arc scale appears as the upper half of a circle which tries to occupy as much space as possible.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleLayoutMode.QuarterTopLeft">
+      <summary>
+        <para>An arc scale appears as an upper left quarter circle.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleLayoutMode.QuarterTopRight">
+      <summary>
+        <para>An arc scale appears as an upper right quarter circle.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleLayoutMode.ThreeQuarters">
+      <summary>
+        <para>An arc scale is displayed as a three quarter circle.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleMarker">
+      <summary>
+        <para>An arc scale marker.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleMarker.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleMarker"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScaleMarker.Options">
+      <summary>
+        <para>Gets or sets the options of a marker that specify its shape and position on a Circular scale.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleMarkerOptions"/> object that contains the settings of the marker.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleMarker.OptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScaleMarker.Options"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleMarkerCollection">
+      <summary>
+        <para>A collection that stores the markers of a particular arc scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleMarkerCollection.#ctor(DevExpress.WinUI.Gauges.ArcScale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleMarkerCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">An <see cref="T:DevExpress.WinUI.Gauges.ArcScale"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleMarkerOptions">
+      <summary>
+        <para>Contains layout options for an arc scale marker.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleMarkerOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleMarkerOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScaleMarkerOptions.Orientation">
+      <summary>
+        <para>Provides different types of orientation for the marker on the Circular scale.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleMarkerOrientation"/> object that specifies possible ways the marker can be oriented.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleMarkerOptions.OrientationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScaleMarkerOptions.Orientation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleMarkerOrientation">
+      <summary>
+        <para>Lists the possible ways arc scale markers can be oriented.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleMarkerOrientation.Normal">
+      <summary>
+        <para>An Arc scale marker isn’t rotated when painted, and its default orientation is used. For example, in the picture below, a marker’s model represents an arrow oriented from right to left.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleMarkerOrientation.RadialFromCenter">
+      <summary>
+        <para>The Arc scale marker is rotated, so that at any point on a scale a marker is radially oriented from the scale center.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleMarkerOrientation.RadialToCenter">
+      <summary>
+        <para>The Arc scale marker is rotated, so that at any point on a scale a marker is radially oriented to the scale center.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleMarkerOrientation.RotateClockwise">
+      <summary>
+        <para>The Arc scale marker is rotated clockwise by 90 degrees when being painted. For example, in the picture below, a marker’s model represents an arrow oriented from bottom to top.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleMarkerOrientation.RotateCounterclockwise">
+      <summary>
+        <para>The Arc scale marker is rotated counterclockwise by 90 degrees when being painted. For example, in the picture below, a marker’s model represents an arrow oriented from top to bottom.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleMarkerOrientation.Tangent">
+      <summary>
+        <para>The Arc scale marker is rotated, so that at any point on a scale a marker is tangentially oriented to the corresponding values on a scale.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleMarkerOrientation.UpsideDown">
+      <summary>
+        <para>The Arc scale marker is rotated by 180 degrees when being painted. For example, in the picture below, a marker’s model represents an arrow oriented from left to right.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleNeedle">
+      <summary>
+        <para>An arc scale needle.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleNeedle.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleNeedle"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScaleNeedle.Options">
+      <summary>
+        <para>Gets or sets the options that allow you to customize the needle‘s  shape and position on a Circular scale.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleNeedleOptions"/> object that contains the settings for the needle.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleNeedle.OptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScaleNeedle.Options"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleNeedleCollection">
+      <summary>
+        <para>A collection that stores the needles of a particular arc scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleNeedleCollection.#ctor(DevExpress.WinUI.Gauges.ArcScale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleNeedleCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">An <see cref="T:DevExpress.WinUI.Gauges.ArcScale"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleNeedleOptions">
+      <summary>
+        <para>Contains layout options for arc scale needles.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleNeedleOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleNeedleOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScaleNeedleOptions.EndOffset">
+      <summary>
+        <para>Gets or sets the offset of the needle‘s end point  from the edge of the Circular scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that specifies the end offset of the needle.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleNeedleOptions.EndOffsetProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScaleNeedleOptions.EndOffset"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScaleNeedleOptions.StartOffset">
+      <summary>
+        <para>Gets or sets the offset of the needle‘s starting point  from the Circular scale center.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that specifies the start offset of the needle.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleNeedleOptions.StartOffsetProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScaleNeedleOptions.StartOffset"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleRange">
+      <summary>
+        <para>An arc scale range.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleRange.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleRange"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScaleRange.Geometry">
+      <summary>
+        <para>Gets or sets the geometry used to draw the scale range.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.Media.Geometry object.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleRangeBar">
+      <summary>
+        <para>An arc scale range bar.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleRangeBar.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleRangeBar"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScaleRangeBar.AnchorValue">
+      <summary>
+        <para>Gets or sets the value on a scale that specifies a fixed edge of the range bar.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value on a scale.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleRangeBar.AnchorValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScaleRangeBar.AnchorValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScaleRangeBar.Geometry">
+      <summary>
+        <para>Gets or sets the geometry used to draw the scale range bar.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Media.Geometry"/> object.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ArcScaleRangeBar.Options">
+      <summary>
+        <para>Gets or sets the options of a range bar that specify its shape and position on a Circular scale.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleRangeBarOptions"/> object that contains the settings of the range bar.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ArcScaleRangeBar.OptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ArcScaleRangeBar.Options"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleRangeBarCollection">
+      <summary>
+        <para>A collection that stores the range bars of a particular arc scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleRangeBarCollection.#ctor(DevExpress.WinUI.Gauges.ArcScale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleRangeBarCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">An <see cref="T:DevExpress.WinUI.Gauges.ArcScale"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleRangeBarOptions">
+      <summary>
+        <para>Contains appearance and layout options for an arc scale range bar.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleRangeBarOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleRangeBarOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ArcScaleRangeCollection">
+      <summary>
+        <para>A collection that stores the ranges of a particular arc scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ArcScaleRangeCollection.#ctor(DevExpress.WinUI.Gauges.ArcScale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ArcScaleRangeCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">An <see cref="T:DevExpress.WinUI.Gauges.ArcScale"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.BaseGaugeNotificationElement">
+      <summary>
+        <para>The base class for all gauge elements that implement property changed notifications.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Gauges.BaseGaugeNotificationElement.PropertyChanged">
+      <summary>
+        <para>Occurs every time any of the <see cref="T:DevExpress.WinUI.Gauges.BaseGaugeNotificationElement"/> class properties has changed its value.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.CircularGauge">
+      <summary>
+        <para>A Circular Gauge control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.CircularGauge.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.CircularGauge"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.CircularGauge.CalcHitInfo(Windows.Foundation.Point)">
+      <summary>
+        <para>Returns information on the gauge elements located at the specified point.</para>
+      </summary>
+      <param name="point">A <see cref="T:System.Windows.Point"/> structure which specifies the test point coordinates relative to the gauge’s top-left corner.</param>
+      <returns>A <see cref="T:DevExpress.WinUI.Gauges.CircularGaugeHitInfo"/> object, which contains information about the gauge elements located at the test point.</returns>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.CircularGauge.Layers">
+      <summary>
+        <para>Provides access to a collection of  layers contained in the circular gauge.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.CircularGaugeLayerCollection"/> object that contains circular gauge layers.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.CircularGauge.Scales">
+      <summary>
+        <para>Provides access to a collection of  scales contained in the Circular gauge.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleCollection"/> object that contains circular gauge scales.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.CircularGaugeHitInfo">
+      <summary>
+        <para>Contains information about a specific point within a circular gauge.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.CircularGaugeHitInfo.InMarker">
+      <summary>
+        <para>Gets a value indicating whether the test point is within a marker.</para>
+      </summary>
+      <value>true if the test point is within a marker; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.CircularGaugeHitInfo.InNeedle">
+      <summary>
+        <para>Gets a value indicating whether the test point is within a needle.</para>
+      </summary>
+      <value>true if the test point is within a needle; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.CircularGaugeHitInfo.InRange">
+      <summary>
+        <para>Gets a value indicating whether the test point is within a range.</para>
+      </summary>
+      <value>true if the test point is within a range; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.CircularGaugeHitInfo.InRangeBar">
+      <summary>
+        <para>Gets a value indicating whether the test point is within a range bar.</para>
+      </summary>
+      <value>true if the test point is within a range bar; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.CircularGaugeHitInfo.InScale">
+      <summary>
+        <para>Gets a value indicating whether the test point is within a scale.</para>
+      </summary>
+      <value>true if the test point is within a scale; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.CircularGaugeHitInfo.Marker">
+      <summary>
+        <para>Gets a marker which is located under the test point.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleMarker"/> object that is the marker located under the test point.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.CircularGaugeHitInfo.Needle">
+      <summary>
+        <para>Gets a needle which is located under the test point.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleNeedle"/> object that is the needle located under the test point.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.CircularGaugeHitInfo.Range">
+      <summary>
+        <para>Gets a range which is located under the test point.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleRange"/> object that is the range located under the test point.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.CircularGaugeHitInfo.RangeBar">
+      <summary>
+        <para>Gets a range bar which is located under the test point.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScaleRangeBar"/> object that is the range bar located under the test point.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.CircularGaugeHitInfo.Scale">
+      <summary>
+        <para>Gets a scale which is located under the test point.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.ArcScale"/> object that is the scale located under the test point.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.CircularGaugeLayer">
+      <summary>
+        <para>A layer of a Circular Gauge.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.CircularGaugeLayer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.CircularGaugeLayer"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.CircularGaugeLayerCollection">
+      <summary>
+        <para>A collection that stores the layers of a particular circular gauge.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.CircularGaugeLayerCollection.#ctor(DevExpress.WinUI.Gauges.CircularGauge)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.CircularGaugeLayerCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="gauge">A <see cref="T:DevExpress.WinUI.Gauges.CircularGauge"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.GaugeBase">
+      <summary>
+        <para>The base class for all gauge controls.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.GaugeBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.GaugeBase"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.GaugeBase.EnableAnimation">
+      <summary>
+        <para>Gets or sets a value specifying whether value indicators should be animated when changing their values.</para>
+      </summary>
+      <value>true, to enable animation; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.GaugeBase.EnableAnimationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.GaugeBase.EnableAnimation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.GaugeBase.ScalePanelTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the presentation of a gauge’s scale panel.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.GaugeBase.ScalePanelTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.GaugeBase.ScalePanelTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.GaugeDependencyObject">
+      <summary>
+        <para>Enables WinRT property system services for its derived model classes.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Gauges.GaugeDependencyObject.PropertyChanged">
+      <summary>
+        <para>Occurs every time any of the <see cref="T:DevExpress.WinUI.Gauges.GaugeDependencyObject"/> class properties has changed its value.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.GaugeElement">
+      <summary>
+        <para>The base class for other gauge elements, intended to hide most properties of the <see cref="T:Microsoft.UI.Xaml.Controls.Control"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.GaugeElementCollection`1">
+      <summary>
+        <para>A base class for collections containing gauge elements.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.GaugeElementCollection`1.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.GaugeElementCollection`1"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.GaugeElementCollectionBase`1">
+      <summary>
+        <para>A base class for collections containing gauge elements.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.GaugeHitInfoBase">
+      <summary>
+        <para>A base class for classes that contains information about a specific point within a gauge.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.GaugeLayerBase">
+      <summary>
+        <para>Serves as the base class for gauge-related layers.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.GaugeLayerBase.Options">
+      <summary>
+        <para>Provides access to the settings that specify the shape and position of the current gauge layer.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LayerOptions"/> object that contains the settings of the layer.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.GaugeLayerBase.OptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.GaugeLayerBase.Options"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.GaugeLayerCollection`1">
+      <summary>
+        <para>A base class for collections containing gauge layers.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.GaugeLayerCollection`1.#ctor(DevExpress.WinUI.Gauges.GaugeBase)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.GaugeLayerCollection`1"/> class with the specified owner.</para>
+      </summary>
+      <param name="gauge">A <see cref="T:DevExpress.WinUI.Gauges.GaugeBase"/> class descendant that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.GaugeLayoutElement">
+      <summary>
+        <para>The base class for various gauge elements that are laid out within the Gauge control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.GaugeLayoutElement.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.GaugeLayoutElement"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.GaugeLayoutElement.Fill">
+      <summary>
+        <para>Defines the color to fill this object.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Media.Brush"/> object.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.GaugeLayoutElementCollection`1">
+      <summary>
+        <para>A base class for collections containing gauge elements that need to be laid out.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.GaugeLayoutElementCollection`1.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.GaugeLayoutElementCollection`1"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.GaugeOptionsBase">
+      <summary>
+        <para>The base for all classes that contain options for gauge elements.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.GaugeOptionsBase.Fill">
+      <summary>
+        <para>Defines the color to fill this object.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Media.Brush"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.GaugeOptionsBase.FillProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.GaugeOptionsBase.Fill"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.GaugeOptionsBase.ZIndex">
+      <summary>
+        <para>Gets or sets the z-index of the object.</para>
+      </summary>
+      <value>A <see cref="T:System.Int32"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.GaugeOptionsBase.ZIndexProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.GaugeOptionsBase.ZIndex"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.IndicatorAnimation">
+      <summary>
+        <para>Contains settings for animating a value indicator when it changes its value.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.IndicatorAnimation.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.IndicatorAnimation"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.IndicatorAnimation.Duration">
+      <summary>
+        <para>Gets or sets the duration of an animation effect.</para>
+      </summary>
+      <value>A <see cref="T:System.TimeSpan"/> value that is the duration of an animation effect.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.IndicatorAnimation.DurationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.IndicatorAnimation.Duration"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.IndicatorAnimation.EasingFunction">
+      <summary>
+        <para>Gets or sets an animation function that defines how indicator values change during animation.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.Media.Animation.EasingFunctionBase"/> class descendant.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.IndicatorAnimation.EasingFunctionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.IndicatorAnimation.EasingFunction"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.IndicatorAnimation.Enable">
+      <summary>
+        <para>Gets or sets a value specifying whether the value indicator should be animated when changing its value.</para>
+      </summary>
+      <value>true, to enable animation; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.IndicatorAnimation.EnableProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.IndicatorAnimation.Enable"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.IndicatorEnterEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Gauges.RangeBase.IndicatorEnter"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.IndicatorEnterEventHandler">
+      <summary>
+        <para>A method that will handle the <see cref="E:DevExpress.WinUI.Gauges.RangeBase.IndicatorEnter"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.IndicatorEnterLeaveEventArgs">
+      <summary>
+        <para>A base class for classes that provide data for <see cref="E:DevExpress.WinUI.Gauges.RangeBase.IndicatorEnter"/> and <see cref="E:DevExpress.WinUI.Gauges.RangeBase.IndicatorLeave"/> events.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.IndicatorEnterLeaveEventArgs.Indicator">
+      <summary>
+        <para>Gets the object for which either the <see cref="E:DevExpress.WinUI.Gauges.RangeBase.IndicatorEnter"/> or <see cref="E:DevExpress.WinUI.Gauges.RangeBase.IndicatorLeave"/> event has been raised.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.ValueIndicatorBase"/> class descendant representing the indicator.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.IndicatorLeaveEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Gauges.RangeBase.IndicatorLeave"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.IndicatorLeaveEventHandler">
+      <summary>
+        <para>A method that will handle the <see cref="E:DevExpress.WinUI.Gauges.RangeBase.IndicatorLeave"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LayerBase">
+      <summary>
+        <para>Serves as the base class for all layers.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LayerBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LayerBase"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LayerBase.Visible">
+      <summary>
+        <para>Gets or sets whether the layer is visible.</para>
+      </summary>
+      <value>true if the layer is visible; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LayerBase.VisibleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.LayerBase.Visible"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LayerCollection`1">
+      <summary>
+        <para>A collection that stores the layers of a particular scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LayerCollection`1.#ctor(DevExpress.WinUI.Gauges.Scale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LayerCollection`1"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">A <see cref="T:DevExpress.WinUI.Gauges.Scale"/> class descendant that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LayerOptions">
+      <summary>
+        <para>Contains layout options for a layer.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LayerOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LayerOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearGauge">
+      <summary>
+        <para>A Linear Gauge control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearGauge.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearGauge"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearGauge.CalcHitInfo(Windows.Foundation.Point)">
+      <summary>
+        <para>Returns information on the gauge elements located at the specified point.</para>
+      </summary>
+      <param name="point">A <see cref="T:System.Windows.Point"/> structure which specifies the test point coordinates relative to the gauge’s top-left corner.</param>
+      <returns>A <see cref="T:DevExpress.WinUI.Gauges.LinearGaugeHitInfo"/> object, which contains information about the gauge elements located at the test point.</returns>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearGauge.Layers">
+      <summary>
+        <para>Provides access to a collection of  layers contained in the linear gauge.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearGaugeLayerCollection"/> object that contains linear gauge layers.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearGauge.Scales">
+      <summary>
+        <para>Provides access to a collection of scales contained in the linear gauge.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleCollection"/> object that contains linear gauge scales.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearGaugeHitInfo">
+      <summary>
+        <para>Contains information about a specific point within a linear gauge.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearGaugeHitInfo.InLevelBar">
+      <summary>
+        <para>Gets a value indicating whether the test point is within a level bar.</para>
+      </summary>
+      <value>true if the test point is within a level bar; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearGaugeHitInfo.InMarker">
+      <summary>
+        <para>Gets a value indicating whether the test point is within a marker.</para>
+      </summary>
+      <value>true if the test point is within a marker; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearGaugeHitInfo.InRange">
+      <summary>
+        <para>Gets a value indicating whether the test point is within a range.</para>
+      </summary>
+      <value>true if the test point is within a range; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearGaugeHitInfo.InRangeBar">
+      <summary>
+        <para>Gets a value indicating whether the test point is within a range bar.</para>
+      </summary>
+      <value>true if the test point is within a range bar; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearGaugeHitInfo.InScale">
+      <summary>
+        <para>Gets a value indicating whether the test point is within a linear scale.</para>
+      </summary>
+      <value>true if the test point is within a scale; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearGaugeHitInfo.LevelBar">
+      <summary>
+        <para>Gets a level bar which is located under the test point.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleLevelBar"/> object that is the level bar located under the test point.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearGaugeHitInfo.Marker">
+      <summary>
+        <para>Gets a marker which is located under the test point.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleMarker"/> object that is the marker located under the test point.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearGaugeHitInfo.Range">
+      <summary>
+        <para>Gets a range which is located under the test point.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleRange"/> object that is the range located under the test point.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearGaugeHitInfo.RangeBar">
+      <summary>
+        <para>Gets a range bar which is located under the test point.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleRangeBar"/> object that is the range bar located under the test point.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearGaugeHitInfo.Scale">
+      <summary>
+        <para>Gets a scale which is located under the test point.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScale"/> object that is the scale located under the test point.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearGaugeLayer">
+      <summary>
+        <para>A layer of a Linear Gauge.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearGaugeLayer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearGaugeLayer"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearGaugeLayerCollection">
+      <summary>
+        <para>A collection that stores the layers of a particular linear gauge.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearGaugeLayerCollection.#ctor(DevExpress.WinUI.Gauges.LinearGauge)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearGaugeLayerCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="gauge">A <see cref="T:DevExpress.WinUI.Gauges.LinearGauge"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScale">
+      <summary>
+        <para>A linear scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScale.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScale"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScale.LabelOptions">
+      <summary>
+        <para>Gets or sets the options that specify the position and format for labels displayed on the scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleLabelOptions"/> object that contains label settings.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScale.LabelOptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.LinearScale.LabelOptions"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScale.Layers">
+      <summary>
+        <para>Provides access to a collection of layers contained in the current Linear Scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleLayerCollection"/> object that contains scale layers.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScale.LayoutMode">
+      <summary>
+        <para>Provides different types of layouts for the Linear Scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleLayoutMode"/> enumeration value that specifies the possible ways a linear scale can be positioned.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScale.LayoutModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.LinearScale.LayoutMode"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScale.LevelBars">
+      <summary>
+        <para>Provides access to a collection of level bars contained in the current Linear Scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleLevelBarCollection"/> object that contains scale level bars.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScale.Markers">
+      <summary>
+        <para>Provides access to a collection of markers contained in the current  Linear Scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleMarkerCollection"/> object that contains scale markers.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScale.RangeBars">
+      <summary>
+        <para>Provides access to a collection of range bars contained in the current Linear Scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleRangeBarCollection"/> object that contains scale range bars.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScale.Ranges">
+      <summary>
+        <para>Provides access to a collection of ranges contained in the current Linear Scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleRangeCollection"/> object that contains scale ranges.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleCollection">
+      <summary>
+        <para>A collection of linear scales.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleCollection.#ctor(DevExpress.WinUI.Gauges.LinearGauge)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="gauge">A <see cref="T:DevExpress.WinUI.Gauges.LinearGauge"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleIndicator">
+      <summary>
+        <para>Serves as the base class for a linear scale’s value indicators.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleIndicatorCollection`1">
+      <summary>
+        <para>A collection that stores the value indicators of a particular linear scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleIndicatorCollection`1.#ctor(DevExpress.WinUI.Gauges.LinearScale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleIndicatorCollection`1"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">A <see cref="T:DevExpress.WinUI.Gauges.LinearScale"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleLabelOptions">
+      <summary>
+        <para>Contains behavior, layout and data representation options for linear scale labels.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleLabelOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleLabelOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScaleLabelOptions.Orientation">
+      <summary>
+        <para>Provides different types of orientation for labels on the Linear scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleLabelOrientation"/> object that specifies possible ways labels can be oriented.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleLabelOptions.OrientationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.LinearScaleLabelOptions.Orientation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleLabelOrientation">
+      <summary>
+        <para>Lists the possible ways linear scale labels can be oriented.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleLabelOrientation.BottomToTop">
+      <summary>
+        <para>Linear scale labels are painted from bottom to top.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleLabelOrientation.LeftToRight">
+      <summary>
+        <para>Linear scale labels are painted from left to right.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleLabelOrientation.TopToBottom">
+      <summary>
+        <para>Linear scale labels are painted from top to bottom.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleLayer">
+      <summary>
+        <para>A layer that contains properties to define the visual presentation of a linear scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleLayer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleLayer"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleLayerCollection">
+      <summary>
+        <para>A collection that stores the layers of a particular linear scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleLayerCollection.#ctor(DevExpress.WinUI.Gauges.LinearScale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleLayerCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">A <see cref="T:DevExpress.WinUI.Gauges.LinearScale"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleLayoutMode">
+      <summary>
+        <para>Lists possible layouts of a linear scale.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleLayoutMode.BottomToTop">
+      <summary>
+        <para>A Linear scale is positioned from bottom to top.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleLayoutMode.LeftToRight">
+      <summary>
+        <para>A linear scale is positioned from left to right.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleLayoutMode.RightToLeft">
+      <summary>
+        <para>A linear scale is positioned from right to left.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleLayoutMode.TopToBottom">
+      <summary>
+        <para>A linear scale is positioned from top to bottom.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleLevelBar">
+      <summary>
+        <para>A linear scale level bar.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleLevelBar.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleLevelBar"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScaleLevelBar.BackgroundTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the presentation of a level bar’s background.</para>
+      </summary>
+      <value><see cref="T:Microsoft.UI.Xaml.Controls.ControlTemplate"/></value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleLevelBar.BackgroundTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.LinearScaleLevelBar.BackgroundTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScaleLevelBar.ForegroundTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the presentation of a level bar’s foreground.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Controls.ControlTemplate"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleLevelBar.ForegroundTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.LinearScaleLevelBar.ForegroundTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScaleLevelBar.Geometry">
+      <summary>
+        <para>Gets or sets the geometry used to draw the scale level bar.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Media.Geometry"/> object.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScaleLevelBar.Options">
+      <summary>
+        <para>Gets or sets the options of a level bar that specify its shape and position on a Linear scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleLevelBarOptions"/> object that contains the settings of the level bar.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleLevelBar.OptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.LinearScaleLevelBar.Options"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleLevelBarCollection">
+      <summary>
+        <para>A collection that stores the level bars of a particular linear scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleLevelBarCollection.#ctor(DevExpress.WinUI.Gauges.LinearScale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleLevelBarCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">A <see cref="T:DevExpress.WinUI.Gauges.LinearScale"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleLevelBarOptions">
+      <summary>
+        <para>Contains layout  options for a linear scale’s level bar.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleLevelBarOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleLevelBarOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScaleLevelBarOptions.FactorThickness">
+      <summary>
+        <para>Gets or sets a value by which the level bar‘s thickness should be multiplied.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that is the level bar’s thickness multiplier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleLevelBarOptions.FactorThicknessProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.LinearScaleLevelBarOptions.FactorThickness"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScaleLevelBarOptions.Offset">
+      <summary>
+        <para>Gets or sets the offset specifying a level bar‘s position on a Linear scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that specifies the level bar’s offset.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleLevelBarOptions.OffsetProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.LinearScaleLevelBarOptions.Offset"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleMarker">
+      <summary>
+        <para>A linear scale marker.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleMarker.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleMarker"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScaleMarker.Options">
+      <summary>
+        <para>Gets or sets the options of a marker that specify its shape and position on a Linear scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleMarkerOptions"/> object that contains the settings of the marker.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleMarker.OptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.LinearScaleMarker.Options"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleMarkerCollection">
+      <summary>
+        <para>A collection that stores the markers of a particular linear scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleMarkerCollection.#ctor(DevExpress.WinUI.Gauges.LinearScale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleMarkerCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">A <see cref="T:DevExpress.WinUI.Gauges.LinearScale"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleMarkerOptions">
+      <summary>
+        <para>Contains layout options for a linear scale marker.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleMarkerOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleMarkerOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScaleMarkerOptions.Orientation">
+      <summary>
+        <para>Provides different types of orientation for the marker on the Linear scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LinearScaleMarkerOrientation"/> object that specifies possible ways the marker can be oriented.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleMarkerOptions.OrientationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.LinearScaleMarkerOptions.Orientation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleMarkerOrientation">
+      <summary>
+        <para>Lists the possible ways linear scale markers can be oriented.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleMarkerOrientation.Normal">
+      <summary>
+        <para>Linear scale marker is painted from right to left.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleMarkerOrientation.Reversed">
+      <summary>
+        <para>Linear scale marker is painted from left to right.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleRange">
+      <summary>
+        <para>A linear scale range.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleRange.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleRange"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleRangeBar">
+      <summary>
+        <para>A linear scale range bar.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleRangeBar.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleRangeBar"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScaleRangeBar.AnchorValue">
+      <summary>
+        <para>Gets or sets the value on a scale that specifies the fixed edge of the range bar.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value on a scale.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleRangeBar.AnchorValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.LinearScaleRangeBar.AnchorValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.LinearScaleRangeBar.Options">
+      <summary>
+        <para>Gets or sets the options of a range bar that specify its shape and position on a Linear scale.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.LinearScaleRangeBarOptions"/> object that contains the settings of the range bar.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.LinearScaleRangeBar.OptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.LinearScaleRangeBar.Options"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleRangeBarCollection">
+      <summary>
+        <para>A collection that stores the range bars of a particular linear scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleRangeBarCollection.#ctor(DevExpress.WinUI.Gauges.LinearScale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleRangeBarCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">A <see cref="T:DevExpress.WinUI.Gauges.LinearScale"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleRangeBarOptions">
+      <summary>
+        <para>Contains appearance and layout options for a linear scale range bar.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleRangeBarOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleRangeBarOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.LinearScaleRangeCollection">
+      <summary>
+        <para>A collection that stores the ranges of a particular linear scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.LinearScaleRangeCollection.#ctor(DevExpress.WinUI.Gauges.LinearScale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.LinearScaleRangeCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">A <see cref="T:DevExpress.WinUI.Gauges.LinearScale"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.MajorTickmarkOptions">
+      <summary>
+        <para>Contains settings that define the layout and behavior of the major tickmarks along the scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.MajorTickmarkOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.MajorTickmarkOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.MajorTickmarkOptions.ShowFirst">
+      <summary>
+        <para>Gets or sets a value indicating whether or not the fitst major tickmark should be shown on a scale.</para>
+      </summary>
+      <value>true to display the first major tickmark; otherwise false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.MajorTickmarkOptions.ShowFirstProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.MajorTickmarkOptions.ShowFirst"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.MajorTickmarkOptions.ShowLast">
+      <summary>
+        <para>Gets or sets a value indicating whether or not the last major tickmark should be shown on a scale.</para>
+      </summary>
+      <value>true to display the last major tickmark on a scale; otherwise false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.MajorTickmarkOptions.ShowLastProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.MajorTickmarkOptions.ShowLast"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.MarkerOptionsBase">
+      <summary>
+        <para>Serves as the base class for all marker options.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.MarkerOptionsBase.FactorHeight">
+      <summary>
+        <para>Gets or sets a value by which the marker’s height should be multiplied.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that is the marker’s height multiplier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.MarkerOptionsBase.FactorHeightProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.MarkerOptionsBase.FactorHeight"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.MarkerOptionsBase.FactorWidth">
+      <summary>
+        <para>Gets or sets a value by which the marker’s width should be multiplied.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that is the marker’s width multiplier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.MarkerOptionsBase.FactorWidthProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.MarkerOptionsBase.FactorWidth"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.MarkerOptionsBase.Offset">
+      <summary>
+        <para>Gets or sets the offset specifying a marker’s position on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that specifies the marker’s offset.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.MarkerOptionsBase.OffsetProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.MarkerOptionsBase.Offset"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.MinorTickmarkOptions">
+      <summary>
+        <para>Contains settings that define the layout and behavior of the minor tickmarks along the scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.MinorTickmarkOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.MinorTickmarkOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.MinorTickmarkOptions.ShowTicksForMajor">
+      <summary>
+        <para>Gets or sets a value indicating whether or not minor tickmarks should be visible at the positions of the corresponding major tickmarks.</para>
+      </summary>
+      <value>true to display minor tickmarks at the major tickmark positions; otherwise false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.MinorTickmarkOptions.ShowTicksForMajorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.MinorTickmarkOptions.ShowTicksForMajor"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.RangeBarOptionsBase">
+      <summary>
+        <para>Serves as the base class for range bar options.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.RangeBarOptionsBase.Offset">
+      <summary>
+        <para>Gets or sets the offset specifying a range bar’s position on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that specifies the range bar’s offset.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.RangeBarOptionsBase.OffsetProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.RangeBarOptionsBase.Offset"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.RangeBarOptionsBase.Thickness">
+      <summary>
+        <para>Gets or sets a value that specifies the thickness of the range bar on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Int32"/> value that is the thickness of the range bar.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.RangeBarOptionsBase.ThicknessProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.RangeBarOptionsBase.Thickness"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.RangeBase">
+      <summary>
+        <para>Serves as the base class for all ranges.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.RangeBase.EndValue">
+      <summary>
+        <para>Gets or sets the end value of the range.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value which is the end of the range.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.RangeBase.EndValueAbsolute">
+      <summary>
+        <para>Gets a value that specifies the end range position on a scale in absolute units.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that is the end range position in absolute units.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.RangeBase.EndValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.RangeBase.EndValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Gauges.RangeBase.IndicatorEnter">
+      <summary>
+        <para>Occurs when any value indicator enters the current range.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Gauges.RangeBase.IndicatorLeave">
+      <summary>
+        <para>Occurs when any value indicator leaves the current range.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.RangeBase.Options">
+      <summary>
+        <para>Provides access to the settings that specify the shape and position of the current range.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.RangeOptions"/> object that contains the settings of the range.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.RangeBase.OptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.RangeBase.Options"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.RangeBase.StartValue">
+      <summary>
+        <para>Gets or sets the start value of the range.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value which is the start of the range.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.RangeBase.StartValueAbsolute">
+      <summary>
+        <para>Gets a value that specifies the start range position in absolute units.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that is the start range position in absolute units.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.RangeBase.StartValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.RangeBase.StartValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.RangeOptions">
+      <summary>
+        <para>Contains layout and appearance options for a range.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.RangeOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.RangeOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.RangeOptions.Offset">
+      <summary>
+        <para>Gets or sets the offset specifying a range’s position on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that specifies the range’s offset.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.RangeOptions.OffsetProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.RangeOptions.Offset"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.RangeOptions.Thickness">
+      <summary>
+        <para>Gets or sets a value that specifies the thickness of the range on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Int32"/> value that is the thickness of the range.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.RangeOptions.ThicknessProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.RangeOptions.Thickness"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.RangeValue.#ctor(System.Double,DevExpress.WinUI.Gauges.RangeValueType)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.RangeValue"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.RangeValue.#ctor(System.Double)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.RangeValue"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.Scale">
+      <summary>
+        <para>Serves as the base class for all scales.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.Scale.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.Scale"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.CustomElements">
+      <summary>
+        <para>Provides access to a collection of custom elements  contained in the current Circular Scale or Linear Scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.ScaleCustomElementCollection"/> object that contains scale custom elements.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.CustomLabels">
+      <summary>
+        <para>Provides access to a collection of custom labels contained in the current scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.ScaleCustomLabelCollection"/> object that contains scale custom labels.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.EndValue">
+      <summary>
+        <para>Gets or sets the end value of the scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value which is the end of the scale.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.EndValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.EndValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.LabelTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the presentation of scale labels.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Controls.ControlTemplate"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.LabelTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.LabelTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.LineOptions">
+      <summary>
+        <para>Provides access to the options that specify the shape and position of a scale line, either Circular or Linear.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.ScaleLineOptions"/> object that contains line options.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.LineOptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.LineOptions"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.LineTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the presentation of a scale line.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Controls.ControlTemplate"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.LineTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.LineTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.MajorIntervalCount">
+      <summary>
+        <para>Gets or sets a value that specifies the number of intervals between major tickmarks on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Int32"/> value that is the number of intervals between major tickmarks’ on a scale.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.MajorIntervalCountProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.MajorIntervalCount"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.MajorTickmarkOptions">
+      <summary>
+        <para>Provides access to the options that define the appearance, behavior and location of major tickmarks within the current scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.MajorTickmarkOptions"/> object that contains settings for major tickmarks.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.MajorTickmarkOptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.MajorTickmarkOptions"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.MajorTickmarksTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the presentation of a scale’s major tickmarks.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Controls.ControlTemplate"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.MajorTickmarksTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.MajorTickmarksTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.MinorIntervalCount">
+      <summary>
+        <para>Gets or sets a value that specifies the number of intervals between minor tickmarks on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Int32"/> value that is the number of intervals between minor tickmarks’ on a scale.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.MinorIntervalCountProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.MinorIntervalCount"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.MinorTickmarkOptions">
+      <summary>
+        <para>Provides access to the options that define the appearance, behavior and location of minor tickmarks within the current scale.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.MinorTickmarkOptions"/> object that contains settings for minor tickmarks.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.MinorTickmarkOptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.MinorTickmarkOptions"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.MinorTickmarksTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the presentation of a scale’s minor tickmarks.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Controls.ControlTemplate"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.MinorTickmarksTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.MinorTickmarksTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.ShowLabels">
+      <summary>
+        <para>Gets or sets a value indicating whether or not labels should be displayed on a scale.</para>
+      </summary>
+      <value>true to show labels on a scale; otherwise false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.ShowLabelsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.ShowLabels"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.ShowLine">
+      <summary>
+        <para>Indicates whether or not a line should be displayed on a scale.</para>
+      </summary>
+      <value>true, to show a line on a scale; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.ShowLineProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.ShowLine"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.ShowMajorTickmarks">
+      <summary>
+        <para>Gets or sets whether or not the major tickmarks should be visible on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Boolean"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.ShowMajorTickmarksProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.ShowMajorTickmarks"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.ShowMinorTickmarks">
+      <summary>
+        <para>Gets or sets whether or not the minor tickmarks should be visible on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Boolean"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.ShowMinorTickmarksProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.ShowMinorTickmarks"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.Scale.StartValue">
+      <summary>
+        <para>Gets or sets the start value of the scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value which is the scale start.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.Scale.StartValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.Scale.StartValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ScaleCollection`1">
+      <summary>
+        <para>A base class for collections containing scales.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ScaleCollection`1.#ctor(DevExpress.WinUI.Gauges.GaugeBase)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ScaleCollection`1"/> class with the specified owner.</para>
+      </summary>
+      <param name="gauge">A <see cref="T:DevExpress.WinUI.Gauges.GaugeBase"/> class descendant that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ScaleCustomElement">
+      <summary>
+        <para>A custom element on a scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ScaleCustomElement.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ScaleCustomElement"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ScaleCustomElementBase">
+      <summary>
+        <para>The base class for custom scale elements.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleCustomElementBase.Content">
+      <summary>
+        <para>Gets or sets the custom scale element content. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.Object"/> value that is the custom element’s content.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleCustomElementBase.ContentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleCustomElementBase.Content"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleCustomElementBase.ContentTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the presentation of the custom element content represented by the <see cref="P:DevExpress.WinUI.Gauges.ScaleCustomElementBase.Content"/>  property. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object, representing the template which defines the presentation of the custom element content.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleCustomElementBase.ContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleCustomElementBase.ContentTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleCustomElementBase.Visible">
+      <summary>
+        <para>Gets or sets whether the scale custom element is visible.</para>
+      </summary>
+      <value>true, if the custom element is visible on the scale; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleCustomElementBase.VisibleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleCustomElementBase.Visible"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleCustomElementBase.ZIndex">
+      <summary>
+        <para>Gets or sets the z-index of custom elements.</para>
+      </summary>
+      <value>A <see cref="T:System.Int32"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleCustomElementBase.ZIndexProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleCustomElementBase.ZIndex"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ScaleCustomElementCollection">
+      <summary>
+        <para>A collection that stores custom elements of a particular scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ScaleCustomElementCollection.#ctor(DevExpress.WinUI.Gauges.Scale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ScaleCustomElementCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">A <see cref="T:DevExpress.WinUI.Gauges.Scale"/> object that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ScaleCustomLabel">
+      <summary>
+        <para>A custom scale label.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ScaleCustomLabel.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ScaleCustomLabel"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleCustomLabel.Offset">
+      <summary>
+        <para>Gets or sets the offset specifying a custom label’s position on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that specifies the custom label’s offset.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleCustomLabel.OffsetProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleCustomLabel.Offset"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleCustomLabel.Value">
+      <summary>
+        <para>Gets or sets the value at which the custom label is located on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleCustomLabel.ValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleCustomLabel.Value"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ScaleCustomLabelCollection">
+      <summary>
+        <para>A collection that stores the custom labels of a particular scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ScaleCustomLabelCollection.#ctor(DevExpress.WinUI.Gauges.Scale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ScaleCustomLabelCollection"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">A <see cref="T:DevExpress.WinUI.Gauges.Scale"/> class descendant that should be the owner of the created collection.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ScaleLabelOptions">
+      <summary>
+        <para>Serves as a base for classes that contain appearance and behavior options for scale labels.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.Addend">
+      <summary>
+        <para>Gets or sets a value that should be added to every label’s value.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value which is added to every label’s value on a scale.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleLabelOptions.AddendProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.Addend"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.FormatString">
+      <summary>
+        <para>Gets or sets a value that specifies the format string for the display text on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that is the format string of a label.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleLabelOptions.FormatStringProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.FormatString"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.Multiplier">
+      <summary>
+        <para>Gets or sets a value by which every label’s value should be multiplied.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value which is a multiplier applied to every label’s value on a scale.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleLabelOptions.MultiplierProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.Multiplier"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.Offset">
+      <summary>
+        <para>Gets or sets the offset specifying a label’s position on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that specifies the label’s offset.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleLabelOptions.OffsetProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.Offset"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.ShowFirst">
+      <summary>
+        <para>Gets or sets a value indicating whether or not the first label should be shown on a scale.</para>
+      </summary>
+      <value>true to display the first label on a scale; otherwise false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleLabelOptions.ShowFirstProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.ShowFirst"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.ShowLast">
+      <summary>
+        <para>Gets or sets a value indicating whether or not the last label should be shown on a scale.</para>
+      </summary>
+      <value>true to display the last label on a scale; otherwise false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleLabelOptions.ShowLastProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.ShowLast"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.ZIndex">
+      <summary>
+        <para>Gets or sets the z-index of scale labels.</para>
+      </summary>
+      <value>An integer value that is the z-index.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleLabelOptions.ZIndexProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleLabelOptions.ZIndex"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ScaleLayerBase">
+      <summary>
+        <para>Serves as the base class for scale layers.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleLayerBase.Options">
+      <summary>
+        <para>Provides access to the settings that specify the shape and position of the current scale layer.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Gauges.LayerOptions"/> object that contains the settings of the layer.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleLayerBase.OptionsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleLayerBase.Options"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ScaleLineOptions">
+      <summary>
+        <para>Contains layout and appearance options for a scale line.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ScaleLineOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ScaleLineOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleLineOptions.Offset">
+      <summary>
+        <para>Gets or sets the offset specifying a line’s position on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that specifies the line’s offset.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleLineOptions.OffsetProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleLineOptions.Offset"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ScaleLineOptions.Thickness">
+      <summary>
+        <para>Gets or sets a value that specifies the thickness of the line on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Int32"/> value that is the thickness of the line.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ScaleLineOptions.ThicknessProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ScaleLineOptions.Thickness"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.SpindleCapOptions">
+      <summary>
+        <para>Contains layout options for a spindle cap.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.SpindleCapOptions.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.SpindleCapOptions"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.SpindleCapOptions.FactorHeight">
+      <summary>
+        <para>Gets or sets a value by which the spindle cap‘s height should be multiplied.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that is the spindle cap’s height multiplier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.SpindleCapOptions.FactorHeightProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.SpindleCapOptions.FactorHeight"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.SpindleCapOptions.FactorWidth">
+      <summary>
+        <para>Gets or sets a value by which the spindle cap‘s width should be multiplied.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that is the spindle cap’s width multiplier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.SpindleCapOptions.FactorWidthProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.SpindleCapOptions.FactorWidth"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.TickmarkOptions">
+      <summary>
+        <para>Serves as a base for classes that contain appearance and behavior options for tickmarks.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.TickmarkOptions.FactorLength">
+      <summary>
+        <para>Gets or sets a value by which the tickmarks’ length should be multiplied.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that is the tickmarks’ length multiplier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.TickmarkOptions.FactorLengthProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.TickmarkOptions.FactorLength"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.TickmarkOptions.FactorThickness">
+      <summary>
+        <para>Gets or sets a value by which the tickmarks’ thickness should be multiplied.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that is the tickmarks’ thickness multiplier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.TickmarkOptions.FactorThicknessProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.TickmarkOptions.FactorThickness"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.TickmarkOptions.Offset">
+      <summary>
+        <para>Gets or sets the offset of tickmarks shown on a scale.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that specifies the tickmark position on a scale.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.TickmarkOptions.OffsetProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.TickmarkOptions.Offset"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ValueChangedEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Gauges.ValueIndicatorBase.ValueChanged"/> event.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ValueChangedEventArgs.NewValue">
+      <summary>
+        <para>Gets the new value of a property.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> that is the new value.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ValueChangedEventArgs.OldValue">
+      <summary>
+        <para>Gets the old value of a property.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> that is the old value.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ValueChangedEventHandler">
+      <summary>
+        <para>Represents a method that will handle the <see cref="E:DevExpress.WinUI.Gauges.ValueIndicatorBase.ValueChanged"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ValueIndicatorBase">
+      <summary>
+        <para>Serves as the base class for all value indicators.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ValueIndicatorBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ValueIndicatorBase"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ValueIndicatorBase.Animation">
+      <summary>
+        <para>Provides access to the animation object that allows you to customize animation for the current value indicator.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Gauges.IndicatorAnimation"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ValueIndicatorBase.AnimationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ValueIndicatorBase.Animation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ValueIndicatorBase.IsInteractive">
+      <summary>
+        <para>Gets or sets a value that indicates whether interactivity is enabled for the current value indicator or not.</para>
+      </summary>
+      <value>true, to enable interactivity; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ValueIndicatorBase.IsInteractiveProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ValueIndicatorBase.IsInteractive"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ValueIndicatorBase.Value">
+      <summary>
+        <para>Gets or sets the value of a scale indicator.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that specifies the position of a value indicator on the scale.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.Gauges.ValueIndicatorBase.ValueChanged">
+      <summary>
+        <para>Occurs when the <see cref="P:DevExpress.WinUI.Gauges.ValueIndicatorBase.Value"/> property has been changed.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ValueIndicatorBase.ValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ValueIndicatorBase.Value"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Gauges.ValueIndicatorBase.Visible">
+      <summary>
+        <para>Gets or sets whether the value indicator is visible.</para>
+      </summary>
+      <value>true if the value indicator is visible; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Gauges.ValueIndicatorBase.VisibleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Gauges.ValueIndicatorBase.Visible"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Gauges.ValueIndicatorCollection`1">
+      <summary>
+        <para>A collection that stores the value indicators of a particular scale.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Gauges.ValueIndicatorCollection`1.#ctor(DevExpress.WinUI.Gauges.Scale)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Gauges.ValueIndicatorCollection`1"/> class with the specified owner.</para>
+      </summary>
+      <param name="scale">A <see cref="T:DevExpress.WinUI.Gauges.Scale"/> class descendant that should be the owner of the created collection.</param>
+    </member>
+  </members>
+</doc>

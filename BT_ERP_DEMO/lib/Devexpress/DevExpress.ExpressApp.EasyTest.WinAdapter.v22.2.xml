@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.ExpressApp.EasyTest.WinAdapter.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.EasyTest.Framework">
+      <summary>
+        <para>Contains interfaces and classes that implement EasyTest functionality.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.EasyTest.Framework.WinApplicationOptions">
+      <summary>
+        <para>Stores options for a tested Blazor application.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.EasyTest.Framework.WinApplicationOptions.#ctor(System.String,System.String,System.Int32,System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.EasyTest.Framework.WinApplicationOptions"/> class with specified settings.</para>
+      </summary>
+      <param name="name">Specifies the name of the WinForms application. This name is used to differentiate between different applications.</param>
+      <param name="fileName">Specifies  the fully qualified name of the application’s executable file.</param>
+      <param name="communicationPort">Specifies a number of the communication port used by EasyTest when testing the application.</param>
+      <param name="arguments">Specifies the command-line arguments passed to the application when it is started.</param>
+    </member>
+    <member name="P:DevExpress.EasyTest.Framework.WinApplicationOptions.Arguments">
+      <summary>
+        <para>Gets the command-line arguments passed to the application when it is started.</para>
+      </summary>
+      <value>The command-line arguments passed to the application when it is started.</value>
+    </member>
+    <member name="P:DevExpress.EasyTest.Framework.WinApplicationOptions.CommunicationPort">
+      <summary>
+        <para>Gets the communication port number that will be used by EasyTest when testing the application.</para>
+      </summary>
+      <value>A port number.</value>
+    </member>
+    <member name="M:DevExpress.EasyTest.Framework.WinApplicationOptions.CreateApplicationContext">
+      <summary>
+        <para>Creates a WinForms application context.</para>
+      </summary>
+      <returns>A WinForms application context.</returns>
+    </member>
+    <member name="P:DevExpress.EasyTest.Framework.WinApplicationOptions.FileName">
+      <summary>
+        <para>Gets the fully qualified name of the application’s executable file.</para>
+      </summary>
+      <value>The fully qualified name of the application’s executable file.</value>
+    </member>
+    <member name="P:DevExpress.EasyTest.Framework.WinApplicationOptions.Name">
+      <summary>
+        <para>Gets the name of the WinForms application. This name is used to differentiate between different applications.</para>
+      </summary>
+      <value>A Blazor application name.</value>
+    </member>
+  </members>
+</doc>

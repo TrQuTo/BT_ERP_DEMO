@@ -1,0 +1,1476 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.WinUI.Ribbon.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.WinUI.Ribbon">
+      <summary>
+        <para>Contains classes that allow you to build the Ribbon UI.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonButton">
+      <summary>
+        <para>A button within a <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonButton.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonButton"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonButtonBase">
+      <summary>
+        <para>Serves as the base class for the <see cref="T:DevExpress.WinUI.Ribbon.RibbonButton"/>, <see cref="T:DevExpress.WinUI.Ribbon.RibbonDropdownButton"/>, <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>, <see cref="T:DevExpress.WinUI.Ribbon.RibbonSplitButton"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonButtonBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonButtonBase"/> class.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Ribbon.RibbonButtonBase.Click">
+      <summary>
+        <para>Fires when the split item is clicked.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.Command">
+      <summary>
+        <para>Gets or sets the command to invoke when the ribbon button is clicked. This is a dependency property.</para>
+      </summary>
+      <value>The command to invoke when the ribbon button is clicked.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.CommandParameter">
+      <summary>
+        <para>Gets or sets the parameter to pass to the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.Command"/>. This is a dependency property.</para>
+      </summary>
+      <value>A parameter to pass to the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.Command"/>.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonBase.CommandParameterProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.CommandParameter"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonBase.CommandProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.Command"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.Content">
+      <summary>
+        <para>Gets or sets the ribbon button’s content. This is a dependency property.</para>
+      </summary>
+      <value>The data that is the ribbon button’s content.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonBase.ContentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.Content"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.ContentTemplate">
+      <summary>
+        <para>Gets or sets the template used to display the ribbon button’s <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.Content"/>. This is a dependency property.</para>
+      </summary>
+      <value>The data template to display the ribbon item’s content.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonBase.ContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.ContentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.ContentTemplateSelector">
+      <summary>
+        <para>Gets or sets an object that chooses the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.ContentTemplate"/> based on custom logic. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Controls.DataTemplateSelector"/> descendant that applies a template based on custom logic.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonBase.ContentTemplateSelectorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.ContentTemplateSelector"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.DisplayMode">
+      <summary>
+        <para>Gets or sets a flagged enumeration value that specifies the ribbon button’s possible states within a <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/>. This is a dependency property.</para>
+      </summary>
+      <value>A set of <see cref="T:DevExpress.WinUI.Ribbon.RibbonItemDisplayMode"/> flags that specify the ribbon button’s possible states within a <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/>.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonBase.DisplayModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.DisplayMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.LargeIcon">
+      <summary>
+        <para>Gets or sets the ribbon button’s large icon (32x32 px). This is a dependency property.</para>
+      </summary>
+      <value>The ribbon button’s large icon.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonBase.LargeIconProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.LargeIcon"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.SmallIcon">
+      <summary>
+        <para>Gets or sets the ribbon button’s small icon (16x16 px). This is a dependency property.</para>
+      </summary>
+      <value>The ribbon button’s small icon.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonBase.SmallIconProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.SmallIcon"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.ToolTip">
+      <summary>
+        <para>Gets or sets the ribbon button’s tooltip. This is a dependency property.</para>
+      </summary>
+      <value>The ribbon button’s tooltip.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.ToolTipDescription">
+      <summary>
+        <para>Gets or sets the ribbon button’s tooltip description text that is displayed under the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.ToolTipTitle"/>. This is a dependency property.</para>
+      </summary>
+      <value>The ribbon button’s tooltip description text.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonBase.ToolTipDescriptionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.ToolTipDescription"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonBase.ToolTipProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.ToolTip"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.ToolTipTitle">
+      <summary>
+        <para>Gets or sets the ribbon button’s tooltip title text. This is a dependency property.</para>
+      </summary>
+      <value>The ribbon button’s tooltip title text.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonBase.ToolTipTitleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonBase.ToolTipTitle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings">
+      <summary>
+        <para>Defines the appearance of ribbon buttons.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.BorderThickness">
+      <summary>
+        <para>Gets or sets a ribbon button’s border thickness. This is a dependency property.</para>
+      </summary>
+      <value>The thickness of the ribbon button’s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.BorderThicknessProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.BorderThickness"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedBackground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s checked state background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the checked ribbon button’s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedBorderBrush">
+      <summary>
+        <para>Gets or sets a checked <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s border brush. This is a dependency property.</para>
+      </summary>
+      <value>The checked <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s border brush.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedDisabledBackground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s disabled state background when the button is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the disabled ribbon button’s background when the button is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedDisabledBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedDisabledBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedDisabledBorderBrush">
+      <summary>
+        <para>Gets or sets a disabled <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s border brush when the button is checked. This is a dependency property.</para>
+      </summary>
+      <value>The disabled <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s border brush when the button is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedDisabledBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedDisabledBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedDisabledForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s disabled state foreground when the button is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the disabled ribbon button’s foreground when the button is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedDisabledForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedDisabledForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s checked state foreground. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the checked ribbon button’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedHoverBackground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s hovered state background when the button is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the hovered ribbon button’s background when the button is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedHoverBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedHoverBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedHoverBorderBrush">
+      <summary>
+        <para>Gets or sets a hovered <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s border brush when the button is checked. This is a dependency property.</para>
+      </summary>
+      <value>The hovered <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s border brush when the button is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedHoverBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedHoverBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedHoverForeground">
+      <summary>
+        <para>Gets or sets a hovered <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s foreground when the button is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the hovered <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s foreground when the button is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedHoverForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedHoverForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedPressedBackground">
+      <summary>
+        <para>Gets or sets a pressed <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s background when the button is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the pressed <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s background when the button is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedPressedBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedPressedBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedPressedBorderBrush">
+      <summary>
+        <para>Gets or sets a pressed <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s border brush when the button is checked. This is a dependency property.</para>
+      </summary>
+      <value>The pressed <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s border brush when the button is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedPressedBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedPressedBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedPressedForeground">
+      <summary>
+        <para>Gets or sets a pressed <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s foreground when the button is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the pressed <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/>‘s foreground when the button is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedPressedForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CheckedPressedForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CornerRadius">
+      <summary>
+        <para>Gets or sets a corner radius of the ribbon button’s border. This is a dependency property.</para>
+      </summary>
+      <value>A corner radius of the ribbon button’s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CornerRadiusProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.CornerRadius"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.DisabledBackground">
+      <summary>
+        <para>Gets or sets a ribbon button’s disabled state background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the disabled ribbon button’s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.DisabledBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.DisabledBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.DisabledBorderBrush">
+      <summary>
+        <para>Gets or sets a ribbon button’s disabled state border brush. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the disabled ribbon button’s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.DisabledBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.DisabledBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.DisabledForeground">
+      <summary>
+        <para>Gets or sets a ribbon button’s disabled state foreground. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the disabled ribbon button’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.DisabledForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.DisabledForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.HoverBackground">
+      <summary>
+        <para>Gets or sets a ribbon button’s hovered state background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the hovered ribbon button’s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.HoverBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.HoverBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.HoverBorderBrush">
+      <summary>
+        <para>Gets or sets a ribbon button’s hovered state border brush. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the hovered ribbon button’s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.HoverBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.HoverBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.HoverForeground">
+      <summary>
+        <para>Gets or sets a ribbon button’s hovered state foreground. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the hovered ribbon button’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.HoverForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.HoverForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.NormalBackground">
+      <summary>
+        <para>Gets or sets a ribbon button’s normal state background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the normal ribbon button’s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.NormalBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.NormalBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.NormalBorderBrush">
+      <summary>
+        <para>Gets or sets a ribbon button’s normal state border brush. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the normal ribbon button’s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.NormalBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.NormalBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.NormalForeground">
+      <summary>
+        <para>Gets or sets a ribbon button’s normal state foreground. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the normal ribbon button’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.NormalForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.NormalForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.PressedBackground">
+      <summary>
+        <para>Gets or sets a ribbon button’s pressed state background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the pressed ribbon button’s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.PressedBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.PressedBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.PressedBorderBrush">
+      <summary>
+        <para>Gets or sets a ribbon button’s pressed state border brush. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the pressed ribbon button’s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.PressedBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.PressedBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.PressedForeground">
+      <summary>
+        <para>Gets or sets a ribbon button’s pressed state foreground. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the pressed ribbon button’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.PressedForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonButtonStyleSettings.PressedForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonCheckBox">
+      <summary>
+        <para>A checkbox within a <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonCheckBox.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> class.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Ribbon.RibbonCheckBox.Checked">
+      <summary>
+        <para>Fires when a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> is checked.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Ribbon.RibbonCheckBox.Indeterminate">
+      <summary>
+        <para>Fires when a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> is set to the indeterminate state.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBox.IsChecked">
+      <summary>
+        <para>Gets or sets whether the <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> is checked.</para>
+      </summary>
+      <value>true if the <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> is checked; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBox.IsCheckedProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBox.IsChecked"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBox.IsThreeState">
+      <summary>
+        <para>Gets or sets whether the <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> supports three states (checked, unchecked, and indeterminate). This is a dependency property.</para>
+      </summary>
+      <value>true if the <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> supports three states rather than two; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBox.IsThreeStateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBox.IsThreeState"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBox.Text">
+      <summary>
+        <para>Gets or sets the <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s text. This is a dependency property.</para>
+      </summary>
+      <value>The <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s text.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBox.TextProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBox.Text"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBox.ToolTip">
+      <summary>
+        <para>Gets or sets the ribbon check box’s tooltip. This is a dependency property.</para>
+      </summary>
+      <value>The ribbon check box’s tooltip.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBox.ToolTipDescription">
+      <summary>
+        <para>Gets or sets the ribbon checkbox’s tooltip description text that is displayed under the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBox.ToolTipTitle"/>. This is a dependency property.</para>
+      </summary>
+      <value>The ribbon checkbox’s tooltip description text.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBox.ToolTipDescriptionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBox.ToolTipDescription"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBox.ToolTipProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBox.ToolTip"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBox.ToolTipTitle">
+      <summary>
+        <para>Gets or sets the ribbon checkbox’s tooltip title text. This is a dependency property.</para>
+      </summary>
+      <value>The ribbon checkbox’s tooltip title text.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBox.ToolTipTitleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBox.ToolTipTitle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.Ribbon.RibbonCheckBox.Unchecked">
+      <summary>
+        <para>Fires when a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> is unchecked.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings">
+      <summary>
+        <para>Defines the appearance of a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedBackground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s checked state background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the checked <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedBorderBrush">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s checked state border brush. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the checked <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedDisabledBackground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s disabled state background when the checkbox is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the disabled <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s background when the checkbox is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedDisabledBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedDisabledBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedDisabledBorderBrush">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s disabled state border brush when the checkbox is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the disabled <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s border when the checkbox is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedDisabledBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedDisabledBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedDisabledForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s disabled state foreground when the checkbox is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the disabled <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s foreground when the checkbox is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedDisabledForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedDisabledForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedDisabledTextForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s disabled state background when the checkbox is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the disabled <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s background when the checkbox is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedDisabledTextForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedDisabledTextForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s checked state foreground. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the checked <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedHoverBackground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s hovered state background when the checkbox is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the hovered <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s background when the checkbox is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedHoverBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedHoverBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedHoverBorderBrush">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s hovered state border brush when the checkbox is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the hovered <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s border when the checkbox is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedHoverBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedHoverBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedHoverForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s hovered state foreground when the checkbox is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the hovered <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s foreground when the checkbox is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedHoverForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedHoverForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedHoverTextForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s hovered state foreground when the checkbox is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the checked <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s hovered state foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedHoverTextForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedHoverTextForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedPressedBackground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s pressed state background when the checkbox is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the pressed <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s background when the checkbox is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedPressedBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedPressedBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedPressedBorderBrush">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s hovered state border brush when the checkbox is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the pressed <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s border when the checkbox is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedPressedBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedPressedBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedPressedForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s pressed state foreground when the checkbox is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the pressed <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s foreground when the checkbox is checked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedPressedForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedPressedForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedPressedTextForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s pressed state foreground when the checkbox is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the checked <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s pressed state foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedPressedTextForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedPressedTextForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedTextForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s foreground when the checkbox is checked. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the checked <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedTextForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CheckedTextForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CornerRadius">
+      <summary>
+        <para>Gets or sets a corner radius of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s border. This is a dependency property.</para>
+      </summary>
+      <value>A corner radius of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CornerRadiusProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.CornerRadius"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.DisabledBackground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s disabled state background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the disabled <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.DisabledBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.DisabledBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.DisabledBorderBrush">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s disabled state border brush. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the disabled <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.DisabledBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.DisabledBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.DisabledTextForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s disabled state foreground. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the disabled <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.DisabledTextForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.DisabledTextForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.HoverBackground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s hovered state background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the hovered <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.HoverBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.HoverBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.HoverBorderBrush">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s hovered state border brush. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the hovered <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.HoverBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.HoverBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.HoverTextForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s hovered state foreground. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the hovered <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.HoverTextForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.HoverTextForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.NormalBackground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s normal state background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the normal <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.NormalBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.NormalBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.NormalBorderBrush">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s normal state border brush. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the normal <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.NormalBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.NormalBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.NormalTextForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s normal state foreground. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the normal <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.NormalTextForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.NormalTextForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.PressedBackground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s pressed state background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the pressed <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.PressedBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.PressedBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.PressedBorderBrush">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s pressed state border brush. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the pressed <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/>‘s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.PressedBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.PressedBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.PressedTextForeground">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s pressed state foreground. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the pressed <see cref="T:DevExpress.WinUI.Ribbon.RibbonCheckBox"/> text’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.PressedTextForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCheckBoxStyleSettings.PressedTextForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonControl">
+      <summary>
+        <para>The Ribbon Control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonControl.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonControl.SelectedTab">
+      <summary>
+        <para>Gets the currently selected <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/>‘s tab. This is a dependency property.</para>
+      </summary>
+      <value>The selected <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/>‘s tab.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonControl.SelectedTabIndex">
+      <summary>
+        <para>Gets or sets the index of the displayed <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/> tab. The first <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/> tab’s index is 0, the second tab’s index is 1, and so on. This is a dependency property.</para>
+      </summary>
+      <value>The index of the displayed <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/>‘s tab.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonControl.SelectedTabIndexProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonControl.SelectedTabIndex"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonControl.SelectedTabProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonControl.SelectedTab"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonControl.Tabs">
+      <summary>
+        <para>Gets the collection of <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/> tabs.</para>
+      </summary>
+      <value>A collection of objects that are tabs in the <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/>.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonCustomItem">
+      <summary>
+        <para>A custom item within a <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonCustomItem.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonCustomItem"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.Content">
+      <summary>
+        <para>Gets or sets the ribbon custom item’s content. This is a dependency property.</para>
+      </summary>
+      <value>The data that is the ribbon custom item’s content.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCustomItem.ContentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.Content"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.ContentTemplate">
+      <summary>
+        <para>Gets or sets the template used to display the ribbon custom item’s <see cref="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.Content"/>. This is a dependency property.</para>
+      </summary>
+      <value>The data template to display the ribbon custom item’s content.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCustomItem.ContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.ContentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.ContentTemplateSelector">
+      <summary>
+        <para>Gets or sets an object that chooses the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.ContentTemplate"/> based on custom logic. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Controls.DataTemplateSelector"/> descendant that applies a template based on custom logic.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCustomItem.ContentTemplateSelectorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.ContentTemplateSelector"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.DisplayMode">
+      <summary>
+        <para>Gets or sets a ribbon custom item’s size. This is a dependency property.</para>
+      </summary>
+      <value>The ribbon custom item’s size.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCustomItem.DisplayModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.DisplayMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.ToolTip">
+      <summary>
+        <para>Gets or sets the ribbon custom item’s tooltip. This is a dependency property.</para>
+      </summary>
+      <value>The ribbon button’s tooltip.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.ToolTipDescription">
+      <summary>
+        <para>Gets or sets the ribbon custom item’s tooltip description text that is displayed under the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.ToolTipTitle"/>. This is a dependency property.</para>
+      </summary>
+      <value>The ribbon custom item’s tooltip description text.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCustomItem.ToolTipDescriptionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.ToolTipDescription"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCustomItem.ToolTipProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.ToolTip"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.ToolTipTitle">
+      <summary>
+        <para>Gets or sets the ribbon custom item’s tooltip title text. This is a dependency property.</para>
+      </summary>
+      <value>The ribbon custom item’s tooltip title text.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCustomItem.ToolTipTitleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonCustomItem.ToolTipTitle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonCustomItemDisplayMode">
+      <summary>
+        <para>If active, a ribbon item can be displayed as a large image with a caption.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCustomItemDisplayMode.Large">
+      <summary>
+        <para>The large item (100px height).</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonCustomItemDisplayMode.Small">
+      <summary>
+        <para>The small item (32px height).</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonDropdownButton">
+      <summary>
+        <para>A <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/>‘s button that includes a dropdown (a <see cref="T:Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase"/> class instance).</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonDropdownButton.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonDropdownButton"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonDropdownButton.Flyout">
+      <summary>
+        <para>Gets or sets the <see cref="T:Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase"/> object associated with a specific object. This object is displayed when you click the <see cref="T:DevExpress.WinUI.Ribbon.RibbonDropdownButton"/>. This is an attached property.</para>
+      </summary>
+      <value>The menu that is displayed when you click the <see cref="T:DevExpress.WinUI.Ribbon.RibbonDropdownButton"/>.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonDropdownButton.FlyoutProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonDropdownButton.Flyout"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonDropdownButton.IsFlyoutOpen">
+      <summary>
+        <para>Gets whether the <see cref="T:DevExpress.WinUI.Ribbon.RibbonDropdownButton"/>‘s <see cref="P:DevExpress.WinUI.Ribbon.RibbonDropdownButton.Flyout"/> is opened.</para>
+      </summary>
+      <value>true if the <see cref="P:DevExpress.WinUI.Ribbon.RibbonDropdownButton.Flyout"/> is opened; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonGroup">
+      <summary>
+        <para>A group of ribbon items in a <see cref="T:DevExpress.WinUI.Ribbon.RibbonTab"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonGroup.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonGroup"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonGroup.Caption">
+      <summary>
+        <para>Gets or sets the <see cref="T:DevExpress.WinUI.Ribbon.RibbonGroup"/>‘s caption. This is a dependency property.</para>
+      </summary>
+      <value>The <see cref="T:DevExpress.WinUI.Ribbon.RibbonGroup"/>‘s caption.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonGroup.CaptionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonGroup.Caption"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonGroup.Items">
+      <summary>
+        <para>Gets the collection of objects that are items in the <see cref="T:DevExpress.WinUI.Ribbon.RibbonGroup"/>.</para>
+      </summary>
+      <value>A collection of objects that are items in the <see cref="T:DevExpress.WinUI.Ribbon.RibbonGroup"/>.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonItem`1">
+      <summary>
+        <para>A base class for a ribbon item with appearance settings.</para>
+      </summary>
+      <typeparam name="TSettings">The ribbon item’s appearance settings.</typeparam>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonItem`1.StyleSettings">
+      <summary>
+        <para>Gets or sets style settings applied to a ribbon item. This is a dependency property.</para>
+      </summary>
+      <value>Style settings applied to a ribbon item.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonItem`1.StyleSettingsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonItem`1.StyleSettings"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonItemBase">
+      <summary>
+        <para>Serves as the base class for ribbon items.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonItemBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonItemBase"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonItemBase.IsEnabled">
+      <summary>
+        <para>Gets or sets whether the ribbon item is enabled. This is a dependency property.</para>
+      </summary>
+      <value>true if the ribbon item is enabled; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonItemBase.IsEnabledProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonItemBase.IsEnabled"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonItemBase.IsVisible">
+      <summary>
+        <para>Gets or sets whether the ribbon item is visible. This is a dependency property.</para>
+      </summary>
+      <value>true if the ribbon item is visible; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonItemBase.IsVisibleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonItemBase.IsVisible"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonItemDisplayMode.Default">
+      <summary>
+        <para>If active, a ribbon item can be displayed as a large image with a caption.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonItemDisplayMode.Large">
+      <summary>
+        <para>If active, a ribbon item can be displayed as a large image with a caption.</para>
+        <para />
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonItemDisplayMode.SmallWithoutText">
+      <summary>
+        <para>If active, a ribbon item can be displayed as a small image.</para>
+        <para />
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonItemDisplayMode.SmallWithText">
+      <summary>
+        <para>If active, a ribbon item can be displayed as a small image with a caption.</para>
+        <para />
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonItemStyleSettings">
+      <summary>
+        <para>Serves as the base class for appearance settings of ribbon items.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonSeparator">
+      <summary>
+        <para>A line that separates neighboring RibbonItems within a single <see cref="T:DevExpress.WinUI.Ribbon.RibbonGroup"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonSeparator.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonSeparator"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonSeparatorStyleSettings">
+      <summary>
+        <para>Defines the appearance of a <see cref="T:DevExpress.WinUI.Ribbon.RibbonSeparator"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonSeparatorStyleSettings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonSeparatorStyleSettings"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonSeparatorStyleSettings.Background">
+      <summary>
+        <para>Gets or sets a <see cref="T:DevExpress.WinUI.Ribbon.RibbonSeparator"/>‘s background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the <see cref="T:DevExpress.WinUI.Ribbon.RibbonSeparator"/>‘s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonSeparatorStyleSettings.BackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonSeparatorStyleSettings.Background"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonSplitButton">
+      <summary>
+        <para>A <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/>‘s split button that consists of the regular <see cref="T:DevExpress.WinUI.Ribbon.RibbonButton"/> and the dropdown button that displays a dropdown when you click or tap it.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonSplitButton.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonSplitButton"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonSplitButton.Flyout">
+      <summary>
+        <para>Gets or sets the <see cref="T:Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase"/> object associated with a specific object. This <see cref="T:Microsoft.UI.Xaml.Controls.Primitives.FlyoutBase"/> object is displayed when you click the <see cref="T:DevExpress.WinUI.Ribbon.RibbonSplitButton"/>‘s dropdown button. This is an attached property.</para>
+      </summary>
+      <value>The menu that is displayed when you click the <see cref="T:DevExpress.WinUI.Ribbon.RibbonSplitButton"/>‘s dropdown button.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonSplitButton.FlyoutProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonSplitButton.Flyout"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonSplitButton.IsFlyoutOpen">
+      <summary>
+        <para>Gets whether the <see cref="T:DevExpress.WinUI.Ribbon.RibbonSplitButton"/>‘s <see cref="P:DevExpress.WinUI.Ribbon.RibbonSplitButton.Flyout"/> is opened.</para>
+      </summary>
+      <value>true if the <see cref="P:DevExpress.WinUI.Ribbon.RibbonSplitButton.Flyout"/> is opened; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonTab">
+      <summary>
+        <para>A <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/> tab item.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonTab.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonTab"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonTab.Caption">
+      <summary>
+        <para>Gets or sets the <see cref="T:DevExpress.WinUI.Ribbon.RibbonTab"/>‘s caption. This is a dependency property.</para>
+      </summary>
+      <value>The <see cref="T:DevExpress.WinUI.Ribbon.RibbonTab"/>‘s caption.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonTab.CaptionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonTab.Caption"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonTab.ContentTemplate">
+      <summary>
+        <para>Gets or sets the template used to display the <see cref="T:DevExpress.WinUI.Ribbon.RibbonTab"/>‘s <see cref="P:DevExpress.WinUI.Ribbon.RibbonTab.Caption"/>. This is a dependency property.</para>
+      </summary>
+      <value>The data template to display the <see cref="T:DevExpress.WinUI.Ribbon.RibbonTab"/>‘s caption.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonTab.ContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonTab.ContentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonTab.ContentTemplateSelector">
+      <summary>
+        <para>Gets or sets the template used to display the <see cref="T:DevExpress.WinUI.Ribbon.RibbonTab"/>‘s <see cref="P:DevExpress.WinUI.Ribbon.RibbonTab.Caption"/>. This is a dependency property.</para>
+      </summary>
+      <value>The data template to display the <see cref="T:DevExpress.WinUI.Ribbon.RibbonTab"/>‘s caption.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonTab.ContentTemplateSelectorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonTab.ContentTemplateSelector"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonTab.Groups">
+      <summary>
+        <para>Gets the collection of objects that are groups in the <see cref="T:DevExpress.WinUI.Ribbon.RibbonTab"/>.</para>
+      </summary>
+      <value>A collection of objects that are groups in the <see cref="T:DevExpress.WinUI.Ribbon.RibbonTab"/>.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonTab.IsSelected">
+      <summary>
+        <para>Gets or sets whether the current ribbon tab is selected. This is a dependency property.</para>
+      </summary>
+      <value>true if the current ribbon tab is selected; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonTab.StyleSettings">
+      <summary>
+        <para>Gets or sets style settings applied to ribbon tabs. This is a dependency property.</para>
+      </summary>
+      <value>Style settings applied to ribbon tabs.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonTab.StyleSettingsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonTab.StyleSettings"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings">
+      <summary>
+        <para>Defines the appearance of a <see cref="T:DevExpress.WinUI.Ribbon.RibbonTab"/> area.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.HoverBackground">
+      <summary>
+        <para>Gets or sets a ribbon tab header’s hovered state background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the hovered ribbon tab header’s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.HoverBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.HoverBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.HoverForeground">
+      <summary>
+        <para>Gets or sets the ribbon tab header’s hovered state foreground. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the ribbon tab header’s hovered state foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.HoverForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.HoverForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.NormalBackground">
+      <summary>
+        <para>Gets or sets a ribbon tab header’s normal state background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the normal ribbon tab header’s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.NormalBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.NormalBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.NormalForeground">
+      <summary>
+        <para>Gets or sets a ribbon tab header’s normal state foreground. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the ribbon tab header’s normal state foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.NormalForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.NormalForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.SelectedBackground">
+      <summary>
+        <para>Gets or sets a ribbon tab header’s selected state background. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the selected ribbon tab header’s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.SelectedBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.SelectedBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.SelectedForeground">
+      <summary>
+        <para>Gets or sets a ribbon tab header’s selected state foreground. This is a dependency property.</para>
+      </summary>
+      <value>A brush that describes the ribbon tab header’s selected state foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.SelectedForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonTabHeaderStyleSettings.SelectedForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Ribbon.RibbonToggleButton">
+      <summary>
+        <para>A toggle button within a <see cref="T:DevExpress.WinUI.Ribbon.RibbonControl"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Ribbon.RibbonToggleButton.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/> class.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Ribbon.RibbonToggleButton.Checked">
+      <summary>
+        <para>Fires when a <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/> is checked.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Ribbon.RibbonToggleButton.IsChecked">
+      <summary>
+        <para>Gets or sets whether the <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/> is checked.</para>
+      </summary>
+      <value>true if the <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/> is checked; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Ribbon.RibbonToggleButton.IsCheckedProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Ribbon.RibbonToggleButton.IsChecked"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.Ribbon.RibbonToggleButton.Unchecked">
+      <summary>
+        <para>Fires when a <see cref="T:DevExpress.WinUI.Ribbon.RibbonToggleButton"/> is unchecked.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

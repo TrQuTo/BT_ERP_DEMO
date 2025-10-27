@@ -1,0 +1,1172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.WinUI.Core.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.WinUI.Core">
+      <summary>
+        <para>Contains types which implement functionality that is common to all DevExpress WinUI Controls.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.Behavior">
+      <summary>
+        <para>The base class for the WinUI behaviors.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.Behavior.AssociatedObject">
+      <summary>
+        <para>Gets the behavior’s associated object. This is a dependency property.</para>
+      </summary>
+      <value>The behavior’s associated object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.Behavior.AssociatedObjectProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.Behavior.AssociatedObject"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.Behavior.IsAttached">
+      <summary>
+        <para>Gets whether the behavior is attached to its associated object.</para>
+      </summary>
+      <value>true if the behavior is attached to the associated object; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.Behavior`1">
+      <summary>
+        <para>The base class for the WinUI behaviors.</para>
+      </summary>
+      <typeparam name="T">A behavior’s associated object.</typeparam>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.DependencyPropertyBehavior">
+      <summary>
+        <para>Allows you to bind a ViewModel property to a control’s non-dependency property.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.DependencyPropertyBehavior.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.DependencyPropertyBehavior"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DependencyPropertyBehavior.Binding">
+      <summary>
+        <para>Gets or sets the binding that should be applied to the specified property. This is a dependency property.</para>
+      </summary>
+      <value>The binding that should be applied to the specified property.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DependencyPropertyBehavior.BindingProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DependencyPropertyBehavior.Binding"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DependencyPropertyBehavior.EventName">
+      <summary>
+        <para>Gets or sets the name of the event the <see cref="T:DevExpress.WinUI.Core.DependencyPropertyBehavior"/> handles to update the binding.</para>
+      </summary>
+      <value>The name of the event name the <see cref="T:DevExpress.WinUI.Core.DependencyPropertyBehavior"/> processes to update the specified binding.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DependencyPropertyBehavior.PropertyName">
+      <summary>
+        <para>Gets or sets a control’s property name (the binding’s target).</para>
+      </summary>
+      <value>The name of the control’s property that should be bound.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.DispatcherActionPriorityExtensions">
+      <summary>
+        <para>Contains an extension method that is used in the <see cref="T:DevExpress.Mvvm.DispatcherActionPriority"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.DispatcherActionPriorityExtensions.ToDispatcherQueuePriority(DevExpress.Mvvm.DispatcherActionPriority)">
+      <summary>
+        <para>Converts a <see cref="T:DevExpress.Mvvm.DispatcherActionPriority"/> value from the <see cref="T:DevExpress.Mvvm.DispatcherActionPriority"/> to a real <see cref="T:Microsoft.UI.Dispatching.DispatcherQueuePriority"/>.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.DispatcherService">
+      <summary>
+        <para>A UI service that allows you to use the <see cref="T:Microsoft.UI.Dispatching.DispatcherQueue"/> to perform actions in a ViewModel.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.DispatcherService.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.DispatcherService"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.DispatcherService.InvokeAsync(System.Action,DevExpress.Mvvm.DispatcherActionPriority,System.Int32)">
+      <summary>
+        <para>Executes the specified <see cref="T:System.Action"/> asynchronously at the specified priority on the thread that is associated with the <see cref="T:System.Windows.Threading.Dispatcher"/>.</para>
+      </summary>
+      <param name="action">A delegate that is invoked.</param>
+      <param name="priority">The order in which the specified callback is invoked relative to the other pending operations in the Dispatcher.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.Dock">
+      <summary>
+        <para>Lists values that specify the child element’s position within its parent.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.Dock.Bottom">
+      <summary>
+        <para>The element is located at the bottom of its parent.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.Dock.Left">
+      <summary>
+        <para>The element is located on the left side of its parent.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.Dock.Right">
+      <summary>
+        <para>The element is located on the right side of its parent.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.Dock.Top">
+      <summary>
+        <para>The element is located at the top of its parent.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.DXButton">
+      <summary>
+        <para>The button control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.DXButton.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.DXButton"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.Background">
+      <summary>
+        <para>Gets or sets a brush that paints the button’s background.</para>
+      </summary>
+      <value>A brush that paints the button’s background.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.BorderBrush">
+      <summary>
+        <para>Gets or sets a brush that paints the button’s border.</para>
+      </summary>
+      <value>A brush that paints the button’s border.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.BorderThickness">
+      <summary>
+        <para>Gets or sets the thickness of the button’s border.</para>
+      </summary>
+      <value>The thickness of the button’s border.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.Core.DXButton.Click">
+      <summary>
+        <para>Occurs when a user clicks the button.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.Command">
+      <summary>
+        <para>Gets or sets a command that is executed when a user clicks the button. This is a dependency property.</para>
+      </summary>
+      <value>A command that is executed when a user clicks the button.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.CommandParameter">
+      <summary>
+        <para>Gets or sets a parameter passed to the <see cref="P:DevExpress.WinUI.Core.DXButton.Command"/> property. This is a dependency property.</para>
+      </summary>
+      <value>A parameter passed to the <see cref="P:DevExpress.WinUI.Core.DXButton.Command"/> property.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.CommandParameterProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.CommandParameter"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.CommandProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.Command"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.Content">
+      <summary>
+        <para>Gets or sets the button’s content. This is a dependency property.</para>
+      </summary>
+      <value>The button’s content.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.ContentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.Content"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.ContentTemplate">
+      <summary>
+        <para>Gets or sets a template that defines the appearance of the button’s content. This is a dependency property.</para>
+      </summary>
+      <value>A template that defines the appearance of the button’s content.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.ContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.ContentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.ContentTemplateSelector">
+      <summary>
+        <para>Gets or sets an object that chooses the button’s content template based on custom logic. This is a dependency property.</para>
+      </summary>
+      <value>The button’s content template selector.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.ContentTemplateSelectorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.ContentTemplateSelector"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.CornerRadius">
+      <summary>
+        <para>Gets or sets the radius for the button’s corners.</para>
+      </summary>
+      <value>The radius for the button’s corners.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.Foreground">
+      <summary>
+        <para>Gets or sets a brush that paints the button’s foreground.</para>
+      </summary>
+      <value>A brush that paints the button’s foreground.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.HorizontalContentAlignment">
+      <summary>
+        <para>Gets or sets the horizontal alignment of the button’s content.</para>
+      </summary>
+      <value>The horizontal alignment of the button’s content.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.Icon">
+      <summary>
+        <para>Gets or sets an icon displayed in the button. This is a dependency property.</para>
+      </summary>
+      <value>An icon displayed in the button.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.IconHeight">
+      <summary>
+        <para>Gets or sets the height of the button’s icon. This is a dependency property.</para>
+      </summary>
+      <value>The height of the button’s icon, in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.IconHeightProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.IconHeight"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.IconPlacement">
+      <summary>
+        <para>Gets or sets the icon’s position within the button. This is a dependency property.</para>
+      </summary>
+      <value>The icon’s position within the button.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.IconPlacementProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.IconPlacement"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.IconProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.Icon"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.IconSpacing">
+      <summary>
+        <para>Gets or sets the amount of space between the icon and the button’s content. This is a dependency property.</para>
+      </summary>
+      <value>The amount of space between the icon and the button’s content.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.IconSpacingProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.IconSpacing"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.IconTemplate">
+      <summary>
+        <para>Gets or sets a template that defines the appearance of the button’s icon. This is a dependency property.</para>
+      </summary>
+      <value>A template that defines the appearance of the button’s icon.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.IconTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.IconTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.IconWidth">
+      <summary>
+        <para>Gets or sets the width of the button’s icon. This is a dependency property.</para>
+      </summary>
+      <value>The width of the button’s icon, in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.IconWidthProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.IconWidth"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.IsEnabled">
+      <summary>
+        <para>Gets or sets whether users can interact with the button.</para>
+      </summary>
+      <value>true if users can interact with the button; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.Padding">
+      <summary>
+        <para>Gets or sets the amount of space between the button’s content and borders.</para>
+      </summary>
+      <value>The amount of space between the button’s content and borders.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.ShowContent">
+      <summary>
+        <para>Gets or sets whether to display the button’s content. This is a dependency property.</para>
+      </summary>
+      <value>true to display the button’s content; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.ShowContentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.ShowContent"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.ShowIcon">
+      <summary>
+        <para>Gets or sets whether to display the button’s icon. This is a dependency property.</para>
+      </summary>
+      <value>true to display the button’s icon; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.ShowIconProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.ShowIcon"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.StyleSettings">
+      <summary>
+        <para>Gets or sets style settings applied to the button. This is a dependency property.</para>
+      </summary>
+      <value>Style settings applied to the button.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButton.StyleSettingsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButton.StyleSettings"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButton.VerticalContentAlignment">
+      <summary>
+        <para>Gets or sets the vertical alignment of the button’s content.</para>
+      </summary>
+      <value>The vertical alignment of the button’s content.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.DXButtonStyleSettings">
+      <summary>
+        <para>Contains style settings that specify the DXButton’s appearance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.DXButtonStyleSettings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.DXButtonStyleSettings"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButtonStyleSettings.DisabledBackground">
+      <summary>
+        <para>Gets or sets a brush that paints the disabled DXButton’s background.</para>
+      </summary>
+      <value>A brush that paints the disabled DXButton’s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButtonStyleSettings.DisabledBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButtonStyleSettings.DisabledBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButtonStyleSettings.DisabledBorderBrush">
+      <summary>
+        <para>Gets or sets a brush that paints the disabled DXButton’s border.</para>
+      </summary>
+      <value>A brush that paints the disabled DXButton’s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButtonStyleSettings.DisabledBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButtonStyleSettings.DisabledBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButtonStyleSettings.DisabledForeground">
+      <summary>
+        <para>Gets or sets a brush that paints the disabled DXButton’s foreground.</para>
+      </summary>
+      <value>A brush that paints the disabled DXButton’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButtonStyleSettings.DisabledForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButtonStyleSettings.DisabledForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButtonStyleSettings.HoverBackground">
+      <summary>
+        <para>Gets or sets a brush that paints the hovered DXButton’s background.</para>
+      </summary>
+      <value>A brush that paints the hovered DXButton’s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButtonStyleSettings.HoverBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButtonStyleSettings.HoverBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButtonStyleSettings.HoverBorderBrush">
+      <summary>
+        <para>Gets or sets a brush that paints the hovered DXButton’s border.</para>
+      </summary>
+      <value>A brush that paints the hovered DXButton’s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButtonStyleSettings.HoverBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButtonStyleSettings.HoverBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButtonStyleSettings.HoverForeground">
+      <summary>
+        <para>Gets or sets a brush that paints the hovered DXButton’s foreground.</para>
+      </summary>
+      <value>A brush that paints the hovered DXButton’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButtonStyleSettings.HoverForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButtonStyleSettings.HoverForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButtonStyleSettings.PressedBackground">
+      <summary>
+        <para>Gets or sets a brush that paints the pressed DXButton’s background.</para>
+      </summary>
+      <value>A brush that paints the pressed DXButton’s background.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButtonStyleSettings.PressedBackgroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButtonStyleSettings.PressedBackground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButtonStyleSettings.PressedBorderBrush">
+      <summary>
+        <para>Gets or sets a brush that paints the pressed DXButton’s border.</para>
+      </summary>
+      <value>A brush that paints the pressed DXButton’s border.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButtonStyleSettings.PressedBorderBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButtonStyleSettings.PressedBorderBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXButtonStyleSettings.PressedForeground">
+      <summary>
+        <para>Gets or sets a brush that paints the pressed DXButton’s foreground.</para>
+      </summary>
+      <value>A brush that paints the pressed DXButton’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXButtonStyleSettings.PressedForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXButtonStyleSettings.PressedForeground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.DXFontIconSource">
+      <summary>
+        <para>The icon source that uses a glyph from the specified font as the icon’s content.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.DXFontIconSource.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.DXFontIconSource"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXFontIconSource.FontFamily">
+      <summary>
+        <para>Gets or sets the glyph’s font.</para>
+      </summary>
+      <value>The glyph’s font.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXFontIconSource.FontFamilyProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXFontIconSource.FontFamily"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXFontIconSource.Glyph">
+      <summary>
+        <para>Gets or sets the glyph’s hexadecimal character code.</para>
+      </summary>
+      <value>The glyph’s hexadecimal character code.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXFontIconSource.GlyphProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXFontIconSource.Glyph"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.DXFontIconSourceBase">
+      <summary>
+        <para>Serves as a base class for the <see cref="T:DevExpress.WinUI.Core.DXFontIconSource"/> and <see cref="T:DevExpress.WinUI.Core.DXSymbolIconSource"/> classes.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXFontIconSourceBase.FontSize">
+      <summary>
+        <para>Gets or sets the icon’s font size.</para>
+      </summary>
+      <value>The icon’s font size.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXFontIconSourceBase.FontSizeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXFontIconSourceBase.FontSize"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXFontIconSourceBase.FontStyle">
+      <summary>
+        <para>Gets or sets the icon’s font style.</para>
+      </summary>
+      <value>The icon’s font style.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXFontIconSourceBase.FontStyleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXFontIconSourceBase.FontStyle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXFontIconSourceBase.FontWeight">
+      <summary>
+        <para>Gets or sets the icon’s font weight.</para>
+      </summary>
+      <value>The icon’s font weight.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXFontIconSourceBase.FontWeightProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXFontIconSourceBase.FontWeight"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXFontIconSourceBase.Foreground">
+      <summary>
+        <para>Gets or sets a brush that paints the icon’s foreground.</para>
+      </summary>
+      <value>A brush that paints the icon’s foreground.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXFontIconSourceBase.ForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXFontIconSourceBase.Foreground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.DXIconSource">
+      <summary>
+        <para>Serves as a base class for icon sources used to specify icon-related properties in DevExpress WinUI controls.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.DXImageIconSource">
+      <summary>
+        <para>The icon source that uses an image as the icon’s content.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.DXImageIconSource.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.DXImageIconSource"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXImageIconSource.NineGrid">
+      <summary>
+        <para>Gets or sets nine-grid values used to resize the image.</para>
+      </summary>
+      <value>Nine-grid values used to resize the image.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXImageIconSource.NineGridProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXImageIconSource.NineGrid"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXImageIconSource.Source">
+      <summary>
+        <para>Gets or sets a source of the image that is converted to an icon.</para>
+      </summary>
+      <value>A source of the image that is converted to an icon.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXImageIconSource.SourceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXImageIconSource.Source"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXImageIconSource.Stretch">
+      <summary>
+        <para>Gets or sets a value that specifies how to stretch an image to fill the area.</para>
+      </summary>
+      <value>A value that specifies how to stretch an image to fill the area.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXImageIconSource.StretchProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXImageIconSource.Stretch"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.DXRepeatButton">
+      <summary>
+        <para>The button that raises its Click event with a specified interval while a user presses it.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.DXRepeatButton.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.DXRepeatButton"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXRepeatButton.Delay">
+      <summary>
+        <para>Gets or sets the time between when a user presses the button and the button starts to repeat the click action.</para>
+      </summary>
+      <value>The time, in milliseconds, between when a user presses the button and the button starts to repeat the click action.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXRepeatButton.DelayProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXRepeatButton.Delay"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXRepeatButton.Interval">
+      <summary>
+        <para>Gets or sets the time between the repeated clicks.</para>
+      </summary>
+      <value>The time, in milliseconds, between the repeated clicks.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXRepeatButton.IntervalProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXRepeatButton.Interval"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.DXSymbolIconSource">
+      <summary>
+        <para>The icon source that uses a Segoe MDL2 Assets glyph as the icon’s content.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.DXSymbolIconSource.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.DXSymbolIconSource"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.DXSymbolIconSource.Symbol">
+      <summary>
+        <para>Gets or sets a Segoe MDL2 Assets glyph used as the icon’s content.</para>
+      </summary>
+      <value>A Segoe MDL2 Assets glyph used as the icon’s content.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.DXSymbolIconSource.SymbolProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.DXSymbolIconSource.Symbol"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.ElementSelectionMode">
+      <summary>
+        <para>Lists the values that specify the selection mode of a chart element.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.ElementSelectionMode.Extended">
+      <summary>
+        <para>Selects multiple consecutive chart elements (the Shift or Ctrl key is held down) or deselects chart elements (the Ctrl key is held down).</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.ElementSelectionMode.Multiple">
+      <summary>
+        <para>Selects multiple chart elements.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.ElementSelectionMode.None">
+      <summary>
+        <para>The selection of a chart element is disabled.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.ElementSelectionMode.Single">
+      <summary>
+        <para>Selects the only chart element.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.EventArgsConverterBase`2">
+      <summary>
+        <para>A base class that allows you to implement a custom EventArgs conversion logic. The <see cref="P:DevExpress.WinUI.Core.EventToCommand.EventArgsConverter"/> uses this class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.EventToCommand">
+      <summary>
+        <para>Executes a command in response to a raised event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.EventToCommand.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.EventToCommand"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.EventToCommand.AllowChangeEventOwnerIsEnabled">
+      <summary>
+        <para>Gets or sets whether the event owner object’s IsEnabled property value reflects the command’s CanExecute method value. This is a dependency property.</para>
+      </summary>
+      <value>true if the event owner object’s IsEnabled property value reflects the command’s CanExecute method value; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.EventToCommand.AllowChangeEventOwnerIsEnabledProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.EventToCommand.AllowChangeEventOwnerIsEnabled"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.EventToCommand.EventArgsConverter">
+      <summary>
+        <para>Gets or sets an object that converts the event’s argument to a command’s parameter. This is a dependency property.</para>
+      </summary>
+      <value>An object that implements the <see cref="T:DevExpress.WinUI.Core.IEventArgsConverter"/> interface.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.EventToCommand.EventArgsConverterProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.EventToCommand.EventArgsConverter"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.EventToCommand.ModifierKeys">
+      <summary>
+        <para>Gets or sets modifier keys that need to be pressed to call the command. This is a dependency property.</para>
+      </summary>
+      <value>The set of modifier keys.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.EventToCommand.ModifierKeysProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.EventToCommand.ModifierKeys"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.EventToCommand.PassEventArgsToCommand">
+      <summary>
+        <para>Gets or sets whether the event arguments are passed to the command. This is a dependency property.</para>
+      </summary>
+      <value>true to pass the event arguments to the command; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.EventToCommand.PassEventArgsToCommandProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.EventToCommand.PassEventArgsToCommand"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.EventToCommandBase">
+      <summary>
+        <para>A base class for the <see cref="T:DevExpress.WinUI.Core.EventToCommand"/> behavior.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.EventToCommandBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.EventToCommandBase"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.EventToCommandBase.Command">
+      <summary>
+        <para>Gets or sets the command to invoke when the associated event is raised. This is a dependency property.</para>
+      </summary>
+      <value>The command to invoke when the associated event is raised.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.EventToCommandBase.CommandParameter">
+      <summary>
+        <para>Gets or sets a parameter to pass to the <see cref="P:DevExpress.WinUI.Core.EventToCommandBase.Command"/>. This is a dependency property.</para>
+      </summary>
+      <value>A parameter to pass to the <see cref="P:DevExpress.WinUI.Core.EventToCommandBase.Command"/>.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.EventToCommandBase.CommandParameterProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.EventToCommandBase.CommandParameter"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.EventToCommandBase.CommandProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.EventToCommandBase.Command"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.EventToCommandBase.DispatcherPriority">
+      <summary>
+        <para>Gets or sets the priority of the DispatcherQueue that invokes the associated command. The default value is null which means that the DispatcherQueue is not used to invoke the associated command. This is a dependency property.</para>
+      </summary>
+      <value>The dispatcher’s priority.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.EventToCommandBase.DispatcherPriorityProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.EventToCommandBase.DispatcherPriority"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.EventToCommandBase.MarkRoutedEventsAsHandled">
+      <summary>
+        <para>Gets or sets whether the associated routed event is marked as handled when the command is executed. This is a dependency property.</para>
+      </summary>
+      <value>true if the associated routed event is marked as handled; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.EventToCommandBase.MarkRoutedEventsAsHandledProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.EventToCommandBase.MarkRoutedEventsAsHandled"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.EventToCommandBase.ProcessEventsFromDisabledEventOwner">
+      <summary>
+        <para>Gets or sets whether the EventToCommand processes events for event owner objects even if they are disabled. This is a dependency property.</para>
+      </summary>
+      <value>true if EventToCommand processes events for disabled event owners; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.EventToCommandBase.ProcessEventsFromDisabledEventOwnerProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.EventToCommandBase.ProcessEventsFromDisabledEventOwner"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.EventTrigger`1">
+      <summary>
+        <para>A base class for the <see cref="T:DevExpress.WinUI.Core.EventToCommand"/> behavior.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.EventTrigger`1.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.EventTrigger`1"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.EventTrigger`1.ActualEventOwner">
+      <summary>
+        <para>Gets an actual event owner. This is a dependency property.</para>
+      </summary>
+      <value>An actual event owner.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.EventTrigger`1.EventName">
+      <summary>
+        <para>Gets or sets the name of an event that triggers the associated command. This is a dependency property.</para>
+      </summary>
+      <value>The name of an event that triggers the associated command.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.EventTrigger`1.EventNameProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.EventTrigger`1.EventName"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.EventTrigger`1.EventOwner">
+      <summary>
+        <para>Gets or sets a source object that raises the event. This is a dependency property.</para>
+      </summary>
+      <value>A behavior’s source object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.EventTrigger`1.EventOwnerProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.EventTrigger`1.EventOwner"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.FocusBehavior">
+      <summary>
+        <para>Focuses a UI control without code-behind.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.FocusBehavior.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.FocusBehavior"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.FocusBehavior.FocusDelay">
+      <summary>
+        <para>Gets or sets the amount of time to wait before focusing the associated object. This is a dependency property.</para>
+      </summary>
+      <value>The amount of time to wait before the <see cref="T:DevExpress.WinUI.Core.FocusBehavior"/> focuses the associated object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.FocusBehavior.FocusDelayProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.FocusBehavior.FocusDelay"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.FocusBehavior.FocusState">
+      <summary>
+        <para>Gets or sets whether a control has focus. This is a dependency property.</para>
+      </summary>
+      <value>An associated object’s focus state.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.FocusBehavior.FocusStateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.FocusBehavior.FocusState"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.IEventArgsConverter">
+      <summary>
+        <para>Allows you to convert an event’s arguments to a command’s parameter. This class is implemented in the <see cref="T:DevExpress.WinUI.Core.EventArgsConverterBase`2"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.IEventArgsConverter.Convert(System.Object,System.Object)">
+      <summary>
+        <para>Converts the event argument to the command’s parameter.</para>
+      </summary>
+      <param name="sender">The event’s sender.</param>
+      <param name="args">The event’s argument.</param>
+      <returns>The command’s parameter.</returns>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.IEventArgsConverter.ConvertBack(System.Object,System.Object,System.Object)">
+      <summary>
+        <para>Converts the command’s parameter to the event argument.</para>
+      </summary>
+      <param name="sender">The event’s sender.</param>
+      <param name="args">The event’s argument.</param>
+      <param name="parameter">The command’s parameter.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.Interaction">
+      <summary>
+        <para>Contains static functions that allow you to access Behaviors and/or UI Services.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.Interaction.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.Interaction"/> class.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.Interaction.BehaviorsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.Interaction.Behaviors"/> attached property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.Interaction.BehaviorsTemplateProperty">
+      <summary>
+        <para>Gets or sets a behavior’s templates.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.Interaction.GetBehaviors(Microsoft.UI.Xaml.DependencyObject)">
+      <summary>
+        <para>Gets a behaviors collection for the specified DependencyObject.</para>
+      </summary>
+      <param name="x">An associated object.</param>
+      <returns>A behavior template.</returns>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.Interaction.GetBehaviorsTemplate(Microsoft.UI.Xaml.DependencyObject)">
+      <summary>
+        <para>Gets a data template with Behaviors and/or UI Services for the specified DependencyObject.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.Interaction.SetBehaviorsTemplate(Microsoft.UI.Xaml.DependencyObject,Microsoft.UI.Xaml.DataTemplate)">
+      <summary>
+        <para>Sets a data template with Behaviors and/or UI Services for the specified DependencyObject.</para>
+      </summary>
+      <param name="x">An associated object.</param>
+      <param name="v">A behavior template.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.KeyGesture">
+      <summary>
+        <para>A keyboard combination that you can use to invoke a command.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.KeyGesture.#ctor(Windows.System.VirtualKey,DevExpress.WinUI.Core.Internal.ModifierKeys)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.KeyGesture"/> class with specified settings.</para>
+      </summary>
+      <param name="key">The key associated with this gesture.</param>
+      <param name="modifiers">The modifier keys associated with the gesture.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.KeyGesture.#ctor(Windows.System.VirtualKey)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.KeyGesture"/> class with specified settings.</para>
+      </summary>
+      <param name="key">The key associated with this gesture.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.KeyGesture.Key">
+      <summary>
+        <para>Gets the key associated with this <see cref="T:DevExpress.WinUI.Core.KeyGesture"/>.</para>
+      </summary>
+      <value>The key associated with the gesture.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.KeyGesture.ModifierKeys">
+      <summary>
+        <para>Gets the modifier keys associated with this <see cref="T:DevExpress.WinUI.Core.KeyGesture"/>.</para>
+      </summary>
+      <value>The modifier keys associated with the gesture.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.KeyToCommand">
+      <summary>
+        <para>Allows you to specify a key combination that invokes a command.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.KeyToCommand.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.KeyToCommand"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.KeyToCommand.KeyGesture">
+      <summary>
+        <para>Gets or sets the key gesture that invokes the command. This is a dependency property.</para>
+      </summary>
+      <value>The key gesture that invokes the command.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.KeyToCommand.KeyGestureProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.KeyToCommand.KeyGesture"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.LayoutChangedEventArgs">
+      <summary>
+        <para>Contains data for the <see cref="E:DevExpress.WinUI.Charts.ChartRangeControlClient.LayoutChanged"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.LayoutChangedEventArgs.#ctor(DevExpress.WinUI.Core.LayoutChangedType,System.Object,System.Object)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.LayoutChangedEventArgs"/> class with specified settings.</para>
+      </summary>
+      <param name="changeType">The type of changes applied to <see cref="T:DevExpress.WinUI.Charts.ChartRangeControlClient"/>.</param>
+      <param name="start">The start value of the bound chart’s whole range (X-axis).</param>
+      <param name="end">The end value of the bound chart’s whole range (X-axis).</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.LayoutChangedEventArgs.ChangeType">
+      <summary>
+        <para>Returns the type of changes applied to <see cref="T:DevExpress.WinUI.Charts.ChartRangeControlClient"/>.</para>
+      </summary>
+      <value>The type of changes that are applied to <see cref="T:DevExpress.WinUI.Charts.ChartRangeControlClient"/>.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.LayoutChangedEventArgs.End">
+      <summary>
+        <para>Returns the end value of the bound chart’s whole range (X-axis).</para>
+      </summary>
+      <value>The end value of the bound chart’s whole range.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.LayoutChangedEventArgs.Start">
+      <summary>
+        <para>Returns the start value of the bound chart’s whole range (X-axis).</para>
+      </summary>
+      <value>The start value of the bound chart’s whole range.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.LayoutChangedType">
+      <summary>
+        <para>Lists the type of changes applied to <see cref="T:DevExpress.WinUI.Charts.ChartRangeControlClient"/>.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.LayoutChangedType.Data">
+      <summary>
+        <para>The selected data range is changed.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.LayoutChangedType.Layout">
+      <summary>
+        <para>The layout is changed when the <see cref="T:DevExpress.WinUI.Charts.ChartRangeControlClient"/> is rendered or resized.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.LayoutTreeHelper">
+      <summary>
+        <para>A helper that can search for nodes in an application’s visual and logical trees.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.LayoutTreeHelper.GetVisualChildren(Microsoft.UI.Xaml.DependencyObject)">
+      <summary>
+        <para>Returns a LINQ-compatible collection that contains visual children.</para>
+      </summary>
+      <param name="parent">A visual object from which you want to obtain a collection of visual children.</param>
+      <returns>A LINQ-compatible collection that contains visual children.</returns>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.LayoutTreeHelper.GetVisualParents(Microsoft.UI.Xaml.DependencyObject,Microsoft.UI.Xaml.DependencyObject)">
+      <summary>
+        <para>Returns a LINQ-compatible collection that contains visual parents.</para>
+      </summary>
+      <param name="child">A visual or logical child for which you want to obtain a collection of visual parents.</param>
+      <param name="stopNode">A visual parent that is the stop node.</param>
+      <returns>A LINQ-compatible collection that contains visual parents.</returns>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.MessageBoxService">
+      <summary>
+        <para>The UI service that allows you to show messages.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.MessageBoxService.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.MessageBoxService"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.TypedDataTemplateSelector">
+      <summary>
+        <para>Allows you to define a simple template selection logic in XAML. The class is a declarative way to implement the <see cref="T:Microsoft.UI.Xaml.Controls.DataTemplateSelector"/>.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.TypedDataTemplateSelector.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.TypedDataTemplateSelector"/> class.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.UIObjectService">
+      <summary>
+        <para>The UI Service that provides direct access to the service’s AssociatedObject from the View Model without referencing the AssociatedObject’s real type.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.UIObjectService.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.UIObjectService"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.UIObjectService.Object">
+      <summary>
+        <para>Gets a UI element of the dynamic type.</para>
+      </summary>
+      <value>A UI element.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.UIServiceBase">
+      <summary>
+        <para>The base class that allows you to implement UI Services.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Core.UIServiceBase`1">
+      <summary>
+        <para>The base class for the <see cref="T:DevExpress.WinUI.Core.UIServiceBase"/>.</para>
+      </summary>
+      <typeparam name="T">An associated object.</typeparam>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.UIServiceBase`1.Name">
+      <summary>
+        <para>Gets or sets the service name that is used to register the service to a service container. You can use it to implement separate access to services that implement the same service.</para>
+      </summary>
+      <value>The service name.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Core.UIServiceBase`1.ServiceClient">
+      <summary>
+        <para>Gets or sets a service container where the service is registered. This is a dependency property.</para>
+      </summary>
+      <value>The service container where the service is registered.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Core.UIServiceBase`1.ServiceClientProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Core.UIServiceBase`1.ServiceClient"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Core.ValueEventArgs`1.#ctor(`0)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Core.ValueEventArgs`1"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="N:DevExpress.WinUI.Localization">
+      <summary>
+        <para>Contains classes and enumerations that are intended to localize the User Interface of DevExpress WinUI Controls.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Localization.Localizer">
+      <summary>
+        <para>A base class that provides necessary functionality for custom localizers of WinUI Controls.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Localization.ResourceStringLoader.#ctor(System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Localization.ResourceStringLoader"/> class with specified settings.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

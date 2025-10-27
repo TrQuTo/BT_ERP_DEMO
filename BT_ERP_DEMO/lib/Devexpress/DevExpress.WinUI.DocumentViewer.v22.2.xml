@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.WinUI.DocumentViewer.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.WinUI.DocumentViewer">
+      <summary>
+        <para>Contains classes that implement the main functionality of the Document Viewer control for WinUI.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.DocumentViewer.DocumentViewer">
+      <summary>
+        <para>A control that allows you to preview, print, save, and export a document created with a <see cref="T:DevExpress.WinUI.Printing.PrintableLink"/> or a report created with the DevExpress Reporting Suite.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.DocumentViewer.DocumentViewer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.DocumentViewer.DocumentViewer"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.Commands">
+      <summary>
+        <para>Provides access to DocumentViewer commands.</para>
+      </summary>
+      <value>A set of <see cref="T:DevExpress.WinUI.DocumentViewer.DocumentViewer"/> commands.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.DocumentViewer.DocumentViewer.CommandsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.Commands"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.CurrentPageIndex">
+      <summary>
+        <para>Gets or sets the index of the current page. This is a dependency property.</para>
+      </summary>
+      <value>A zero-based integer value that specifies the active page’s index.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.DocumentViewer.DocumentViewer.CurrentPageIndexProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.CurrentPageIndex"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.DocumentViewer.DocumentViewer.DocumentLoaded">
+      <summary>
+        <para>Occurs after the <see cref="T:DevExpress.WinUI.DocumentViewer.DocumentViewer"/> loads a document.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.DocumentSource">
+      <summary>
+        <para>Specifies an object that the Docuemnt Viewer converts to a document and displays. This is a dependency property.</para>
+      </summary>
+      <value>The document source.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.DocumentViewer.DocumentViewer.DocumentSourceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.DocumentSource"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.DocumentViewModel">
+      <summary>
+        <para>This property is intended for internal use.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.DocumentViewer.DocumentViewer.DocumentViewModelProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.DocumentViewModel"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.DocumentViewer.DocumentViewer.Export(DevExpress.XtraPrinting.ExportFormat,System.String)">
+      <summary>
+        <para>Exports the document with the specified name, path, and file format.</para>
+      </summary>
+      <param name="format">The exported file’s format.</param>
+      <param name="filePath">The exported file’s full path and name.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.PageCount">
+      <summary>
+        <para>Gets the total number of pages in the opened document.</para>
+      </summary>
+      <value>The total number of pages in the opened document.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.DocumentViewer.DocumentViewer.PageCountProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.PageCount"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.DocumentViewer.DocumentViewer.Save(System.String)">
+      <summary>
+        <para>Saves the opened document to the specified file in PRNX format.</para>
+      </summary>
+      <param name="path">The path to the file where the document is stored.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.ShowCommandBar">
+      <summary>
+        <para>Gets or sets whether to show a <see cref="T:DevExpress.WinUI.DocumentViewer.DocumentViewer"/>‘s command bar. This is a dependency property.</para>
+      </summary>
+      <value>true to display a <see cref="T:DevExpress.WinUI.DocumentViewer.DocumentViewer"/>‘s command bar; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.DocumentViewer.DocumentViewer.ShowCommandBarProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.ShowCommandBar"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.ZoomFactor">
+      <summary>
+        <para>Gets or sets the opened document’s zoom factor. This is a dependency property.</para>
+      </summary>
+      <value>The document zoom factor.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.DocumentViewer.DocumentViewer.ZoomFactorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.ZoomFactor"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.DocumentViewer.DocumentViewer.ZoomModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.DocumentViewer.DocumentViewer.ZoomMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands">
+      <summary>
+        <para>Stores DocumentViewer commands.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.CloseDocumentCommand">
+      <summary>
+        <para>Gets or sets the command that closes the document in the DocumentViewer.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.FirstPageCommand">
+      <summary>
+        <para>Gets or sets the command that navigates to the first page of the document.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.GoToPageCommand">
+      <summary>
+        <para>Gets or sets the command that navigates to a specific page of the document.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.LastPageCommand">
+      <summary>
+        <para>Gets or sets the command that navigates to the last page of the document.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.NextPageCommand">
+      <summary>
+        <para>Gets or sets the command that navigates to the next page.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.PrevPageCommand">
+      <summary>
+        <para>Gets or sets the command that navigates to the previous page.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.ShowExportDialogCommand">
+      <summary>
+        <para>Gets or sets the command that opens the Export dialog.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.ShowOpenDialogCommand">
+      <summary>
+        <para>Gets or sets the command that opens the Open File dialog.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.ShowPrintDialogCommand">
+      <summary>
+        <para>Gets or sets the command that opens the Print File dialog.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.ShowSaveDialogCommand">
+      <summary>
+        <para>Gets or sets the command that opens the Save File dialog.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.ToggleExportOptionsPanelCommand">
+      <summary>
+        <para>Gets or sets the command that shows or hides the Export Options panel.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.ToggleReportParameterPanelCommand">
+      <summary>
+        <para>Gets or sets the command that shows or hides the Parameter panel.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.ToggleSearchPanelCommand">
+      <summary>
+        <para>Gets or sets the command that shows or hides the Search panel.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.DocumentViewer.DocumentViewerCommands.ZoomCommand">
+      <summary>
+        <para>Gets or sets the command that specifies the zoom factor.</para>
+      </summary>
+      <value>A command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface.</value>
+    </member>
+    <member name="N:DevExpress.WinUI.Localization">
+      <summary>
+        <para>Contains classes and enumerations that are intended to localize the User Interface of DevExpress WinUI Controls.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Localization.DocumentViewerStringID">
+      <summary>
+        <para>Contains values that correspond to strings that can be localized.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DocumentViewerStringID.CancelButtonText">
+      <summary>
+        <para>Cancel</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DocumentViewerStringID.ErrorDialogTitle">
+      <summary>
+        <para>Error</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DocumentViewerStringID.ExportDialogTitle">
+      <summary>
+        <para>Export Document…</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DocumentViewerStringID.ExportFileNameText">
+      <summary>
+        <para>File path:</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DocumentViewerStringID.ExportFileTypeChoicesText">
+      <summary>
+        <para>Export formats</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DocumentViewerStringID.ExportFormatText">
+      <summary>
+        <para>Export format:</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DocumentViewerStringID.ExportOpenAfterExportingText">
+      <summary>
+        <para>Open file after exporting</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DocumentViewerStringID.OkButtonText">
+      <summary>
+        <para>Ok</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DocumentViewerStringID.PrintDialogButtonText">
+      <summary>
+        <para>Print</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DocumentViewerStringID.PrintDialogTitle">
+      <summary>
+        <para>Print…</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.DocumentViewerStringID.SaveButtonText">
+      <summary>
+        <para>Save</para>
+      </summary>
+    </member>
+  </members>
+</doc>

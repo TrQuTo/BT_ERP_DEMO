@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.WinUI.Grid.Printing.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.WinUI.Grid.Printing">
+      <summary>
+        <para>Contains classes that include data for events related to GridControl printing.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Grid.Printing.GridControlPrinter">
+      <summary>
+        <para>The base class that implements a <see cref="T:DevExpress.WinUI.Grid.GridControl"/> printing.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Grid.Printing.GridControlPrinter.#ctor(DevExpress.WinUI.Grid.GridControl)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Grid.Printing.GridControlPrinter"/> class with specified settings.</para>
+      </summary>
+      <param name="gridControl">A <see cref="T:DevExpress.WinUI.Grid.GridControl"/> instance for which the <see cref="T:DevExpress.WinUI.Grid.Printing.GridControlPrinter"/> is created.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Grid.Printing.GridControlPrinter.GridControl">
+      <summary>
+        <para>Gets the <see cref="T:DevExpress.WinUI.Grid.GridControl"/> instance for which the <see cref="T:DevExpress.WinUI.Grid.Printing.GridControlPrinter"/> is created.</para>
+      </summary>
+      <value>The <see cref="T:DevExpress.WinUI.Grid.GridControl"/> instance.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.Grid.Printing.GridControlPrinter.PrintAreaInitializing">
+      <summary>
+        <para>Occurs before an area is printed.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Grid.Printing.GridControlPrintExtensions">
+      <summary>
+        <para>The base class for extension methods that allow you to print and export <see cref="T:DevExpress.WinUI.Grid.GridControl"/> content.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Grid.Printing.GridControlPrintExtensions.Export(DevExpress.WinUI.Grid.GridControl,DevExpress.XtraPrinting.ExportFormat,System.IO.Stream)">
+      <summary>
+        <para>Exports <see cref="T:DevExpress.WinUI.Grid.GridControl"/> data to a stream in the specified file format.</para>
+      </summary>
+      <param name="gridControl">The exported <see cref="T:DevExpress.WinUI.Grid.GridControl"/>.</param>
+      <param name="format">The exported file’s format.</param>
+      <param name="stream">A stream to which the <see cref="T:DevExpress.Xpf.Grid.GridControl"/> sends the created file.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Grid.Printing.GridControlPrintExtensions.Export(DevExpress.WinUI.Grid.GridControl,DevExpress.XtraPrinting.ExportFormat,System.String)">
+      <summary>
+        <para>Exports <see cref="T:DevExpress.WinUI.Grid.GridControl"/> data with the specified name, path, and file format.</para>
+      </summary>
+      <param name="gridControl">The exported <see cref="T:DevExpress.WinUI.Grid.GridControl"/>.</param>
+      <param name="format">The exported file’s format.</param>
+      <param name="filePath">The exported file’s full path and the name.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Grid.Printing.GridControlPrintExtensions.Print(DevExpress.WinUI.Grid.GridControl,System.String)">
+      <summary>
+        <para>Prints the <see cref="T:DevExpress.WinUI.Grid.GridControl"/> instance on the default or specified printer.</para>
+      </summary>
+      <param name="gridControl">The printed <see cref="T:DevExpress.WinUI.Grid.GridControl"/>.</param>
+      <param name="printerName">The printer’s name (in OS) that should print the <see cref="T:DevExpress.WinUI.Grid.GridControl"/>.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Grid.Printing.GridPrintAreaType">
+      <summary>
+        <para>Lists GridControl’s elements that is being printed.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Grid.Printing.GridPrintAreaType.Cell">
+      <summary>
+        <para>A cell.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Grid.Printing.GridPrintAreaType.ColumnHeader">
+      <summary>
+        <para>A ColumnHeader.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Grid.Printing.GridPrintAreaType.FixedTotalSummary">
+      <summary>
+        <para>A FixedTotalSummary.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Grid.Printing.GridPrintAreaType.GroupRow">
+      <summary>
+        <para>A GroupRow.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Grid.Printing.GridPrintAreaType.GroupSummary">
+      <summary>
+        <para>A GroupSummary.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Grid.Printing.GridPrintAreaType.TotalSummary">
+      <summary>
+        <para>A TotalSummary.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Grid.Printing.GridPrintingEventArgs">
+      <summary>
+        <para>Populates the <see cref="E:DevExpress.WinUI.Grid.Printing.GridControlPrinter.PrintAreaInitializing"/> event with data.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Grid.Printing.GridPrintingEventArgs.#ctor(DevExpress.WinUI.Grid.Printing.GridPrintAreaType,DevExpress.XtraPrinting.Brick,Windows.Foundation.Size,DevExpress.XtraPrinting.PrintingSystemBase,System.String,System.Object,System.String,System.Nullable{System.Int32})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Grid.Printing.GridPrintingEventArgs"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Grid.Printing.GridPrintingEventArgs.Brick">
+      <summary>
+        <para>Gets or sets a brick (element) that will be printed.</para>
+      </summary>
+      <value>An element that will be printed.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Grid.Printing.GridPrintingEventArgs.BrickSize">
+      <summary>
+        <para>Gets the size of a brick (element) that will be printed.</para>
+      </summary>
+      <value>The size of a brick (element) that will be printed.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Grid.Printing.GridPrintingEventArgs.ColumnFieldName">
+      <summary>
+        <para>Gets the column’s name that will be printed.</para>
+      </summary>
+      <value>The column’s name that will be printed.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Grid.Printing.GridPrintingEventArgs.DisplayText">
+      <summary>
+        <para>Gets the text that will be printed.</para>
+      </summary>
+      <value>The text that will be printed.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Grid.Printing.GridPrintingEventArgs.PrintAreaType">
+      <summary>
+        <para>Gets a GridControl’s area that will be printed.</para>
+      </summary>
+      <value>A GridControl’s area.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Grid.Printing.GridPrintingEventArgs.PrintingSystem">
+      <summary>
+        <para>Gets the PrintingSystem that is used to print the brick.</para>
+      </summary>
+      <value>The <see cref="T:DevExpress.XtraPrinting.PrintingSystem"/> that is used to print the brick.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Grid.Printing.GridPrintingEventArgs.Value">
+      <summary>
+        <para>Gets the object that will be printed.</para>
+      </summary>
+      <value>The object that will be printed.</value>
+    </member>
+  </members>
+</doc>

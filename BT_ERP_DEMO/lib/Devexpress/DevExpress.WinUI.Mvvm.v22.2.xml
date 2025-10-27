@@ -1,0 +1,1282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.WinUI.Mvvm.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.Mvvm">
+      <summary>
+        <para>Contains controls for building MVVM-aware applications.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Mvvm.ActionReferenceType">
+      <summary>
+        <para>Lists a reference type of a <see cref="T:DevExpress.Mvvm.Messenger"/> action that is invoked when a view recieves the specified message.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.ActionReferenceType.StrongReference">
+      <summary>
+        <para>The <see cref="T:DevExpress.Mvvm.Messenger"/>‘s action is stored as a strong reference.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.ActionReferenceType.WeakReference">
+      <summary>
+        <para>The <see cref="T:DevExpress.Mvvm.Messenger"/>‘s action is stored as a weak reference.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Mvvm.AsyncCommand">
+      <summary>
+        <para>An asynchronous command without a command parameter.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.AsyncCommand.#ctor(System.Func{System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Func{System.Boolean},System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.AsyncCommand"/> class with specified settings.</para>
+      </summary>
+      <param name="execute">The method that is called when the specified command is invoked.</param>
+      <param name="canExecute">true if this command can be executed; otherwise, false.</param>
+      <param name="allowMultipleExecution">true to allow the command to be invoked simultaneously; otherwise, false.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.AsyncCommand.#ctor(System.Func{System.Threading.Tasks.Task},System.Func{System.Boolean},System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.AsyncCommand"/> class with specified settings.</para>
+      </summary>
+      <param name="execute">The <see cref="T:System.Threading.Tasks.Task"/> that is called when the specified command is invoked.</param>
+      <param name="canExecute">true if this command can be executed; otherwise, false.</param>
+      <param name="allowMultipleExecution">true, to allow multiple threads to execute the initializer delegate; otherwise, false.</param>
+    </member>
+    <member name="T:DevExpress.Mvvm.AsyncCommand`1">
+      <summary>
+        <para>An asynchronous command whose <see cref="M:DevExpress.Mvvm.AsyncCommand`1.Execute(`0)"/> and <see cref="M:DevExpress.Mvvm.AsyncCommand`1.CanExecute(`0)"/> delegates accept a command parameter of the T type.</para>
+      </summary>
+      <typeparam name="T">A command parameter of the T type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.AsyncCommand`1.#ctor(System.Func{`0,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Func{`0,System.Boolean},System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.AsyncCommand`1"/> class with specified settings.</para>
+      </summary>
+      <param name="execute">The execute delegate. The delegate parameter allows you to implement cancellation logic.</param>
+      <param name="canExecute">A delegate that determines whether a command can be executed.</param>
+      <param name="allowMultipleExecution">true if the AsyncCommand allows you to invoke the execute delegate while its execution is in progress; otherwise false.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.AsyncCommand`1.#ctor(System.Func{`0,System.Threading.Tasks.Task},System.Func{`0,System.Boolean},System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.AsyncCommand`1"/> class with specified settings.</para>
+      </summary>
+      <param name="execute">The execute delegate.</param>
+      <param name="canExecute">A delegate that determines whether a command can be executed.</param>
+      <param name="allowMultipleExecution">true if the AsyncCommand allows you to invoke the execute delegate while its execution is in progress; otherwise false.</param>
+    </member>
+    <member name="P:DevExpress.Mvvm.AsyncCommand`1.AllowMultipleExecution">
+      <summary>
+        <para>Gets whether the <see cref="T:DevExpress.Mvvm.AsyncCommand`1"/> allows you to invoke the execute delegate while its execution is in progress.</para>
+      </summary>
+      <value>true if the AsyncCommand allows you to invoke the execute delegate while its execution is in progress; otherwise false.</value>
+    </member>
+    <member name="M:DevExpress.Mvvm.AsyncCommand`1.Cancel">
+      <summary>
+        <para>Creates a request to cancel the command execution.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.AsyncCommand`1.Cancel(System.Boolean)">
+      <summary>
+        <para>Creates a request to cancel the command execution.</para>
+      </summary>
+      <param name="throwOnFirstException">true if an exception should cancel the command execution; otherwise, false.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.AsyncCommand`1.CancelAfter(System.Int32)">
+      <summary>
+        <para>Creates a request to cancel the command execution after the specified number of milliseconds.</para>
+      </summary>
+      <param name="millisecondsDelay">The number of milliseconds to wait before canceling this CancellationTokenSource.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.AsyncCommand`1.CancelAfter(System.TimeSpan)">
+      <summary>
+        <para>Creates a request to cancel the command execution after the specified time span.</para>
+      </summary>
+      <param name="delay">The time span to wait before canceling this CancellationTokenSource.</param>
+    </member>
+    <member name="P:DevExpress.Mvvm.AsyncCommand`1.CancelCommand">
+      <summary>
+        <para>Gets the command that creates a request to cancel the asynchronous command execution.</para>
+      </summary>
+      <value>The command that cancels the command execution.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.AsyncCommand`1.CancellationToken">
+      <summary>
+        <para>Gets the <see cref="T:System.Threading.CancellationToken"/> that propagates the notification that an asynchronous command should be canceled.</para>
+      </summary>
+      <value>A cancellation token.</value>
+    </member>
+    <member name="M:DevExpress.Mvvm.AsyncCommand`1.CanExecute(`0)">
+      <summary>
+        <para>Returns whether the command can be executed in its current state.</para>
+      </summary>
+      <param name="param">The command parameter.</param>
+      <returns>true if this command can be executed; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.AsyncCommand`1.Execute(`0)">
+      <summary>
+        <para>Defines the method to be called when the command is invoked.</para>
+      </summary>
+      <param name="param">The command parameter.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.AsyncCommand`1.ExecuteAsync(`0)">
+      <summary>
+        <para>Defines the asynchronous method to be called when the command is invoked.</para>
+      </summary>
+      <param name="param">The command parameter.</param>
+      <returns>The Task of the execution process.</returns>
+    </member>
+    <member name="P:DevExpress.Mvvm.AsyncCommand`1.IsCancellationRequested">
+      <summary>
+        <para>Gets whether an <see cref="T:DevExpress.Mvvm.AsyncCommand`1"/> should be cancelled.</para>
+      </summary>
+      <value>true if the command should be cancelled; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.AsyncCommand`1.IsExecuting">
+      <summary>
+        <para>Gets whether the asynchronous command is executing.</para>
+      </summary>
+      <value>true if the command execution is in progress; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.Mvvm.BindableBase">
+      <summary>
+        <para>A ViewModel that supports the <see cref="T:Microsoft.UI.Xaml.Data.INotifyPropertyChanged"/> interface and allows you to use GetProperty and SetProperty methods to implement bindable properties.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.Mvvm.BindableBase.PropertyChanged">
+      <summary>
+        <para>Occurs when a property value changes.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Mvvm.CommandBase`1">
+      <summary>
+        <para>A base class for the <see cref="T:DevExpress.Mvvm.DelegateCommand`1"/> and <see cref="T:DevExpress.Mvvm.AsyncCommand`1"/> classes.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.CommandBase`1.CanExecute(`0)">
+      <summary>
+        <para>Returns whether the command can be executed in its current state.</para>
+      </summary>
+      <param name="param">The command parameter.</param>
+      <returns>true if this command can be executed; otherwise, false.</returns>
+    </member>
+    <member name="E:DevExpress.Mvvm.CommandBase`1.CanExecuteChanged">
+      <summary>
+        <para>Occurs when changes occur that affect whether or not the command should execute.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.CommandBase`1.Execute(`0)">
+      <summary>
+        <para>Defines the method to be called when the command is invoked.</para>
+      </summary>
+      <param name="param">The command parameter.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.CommandBase`1.RaiseCanExecuteChanged">
+      <summary>
+        <para>Raises the <see cref="E:DevExpress.Mvvm.CommandBase`1.CanExecuteChanged"/> event. You can use this method to notify a visual element about a command’s <see cref="M:DevExpress.Mvvm.CommandBase`1.CanExecute(`0)"/> state changes.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Mvvm.DateTimeRange">
+      <summary>
+        <para>A structure that specifies a time interval with the [start, end). mathematical formula.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.#ctor(DevExpress.Mvvm.DateTimeRange)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.DateTimeRange"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.#ctor(System.DateTime,System.DateTime)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.DateTimeRange"/> class with specified settings.</para>
+      </summary>
+      <param name="start">The start date and time.</param>
+      <param name="end">The time range end.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.#ctor(System.DateTime,System.TimeSpan)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.DateTimeRange"/> class with specified settings.</para>
+      </summary>
+      <param name="start">The time range start.</param>
+      <param name="duration">The time range duration.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.Contains(DevExpress.Mvvm.DateTimeRange)">
+      <summary>
+        <para>Checks whether the range contains the specified date-time value.</para>
+      </summary>
+      <param name="x">The date time value to check.</param>
+      <returns>true if the range contains the date-time value; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.Contains(System.DateTime,System.Boolean)">
+      <summary>
+        <para>Checks whether the current range contains the specified date-time range.</para>
+      </summary>
+      <param name="date">The date time range to check.</param>
+      <returns>true if the current range contains the specified date-time range; otherwise, false.</returns>
+    </member>
+    <member name="P:DevExpress.Mvvm.DateTimeRange.Duration">
+      <summary>
+        <para>Gets the duration of the <see cref="T:DevExpress.Mvvm.DateTimeRange"/>.</para>
+      </summary>
+      <value>The duration of the <see cref="T:DevExpress.Mvvm.DateTimeRange"/>.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.DateTimeRange.Empty">
+      <summary>
+        <para>Gets an empty datetime range.</para>
+      </summary>
+      <value>An empty datetime range.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.DateTimeRange.End">
+      <summary>
+        <para>Gets the end date and time of the datetime range.</para>
+      </summary>
+      <value>The end of the datetime range.</value>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.Equals(DevExpress.Mvvm.DateTimeRange)">
+      <summary>
+        <para>Defines whether the specified <see cref="T:DevExpress.Mvvm.DateTimeRange"/> is equal to the current <see cref="T:DevExpress.Mvvm.DateTimeRange"/> instance.</para>
+      </summary>
+      <param name="other">The <see cref="T:DevExpress.Mvvm.DateTimeRange"/> to compare with the current instance.</param>
+      <returns>true if the specified <see cref="T:DevExpress.Mvvm.DateTimeRange"/> is equal to the current <see cref="T:DevExpress.Mvvm.DateTimeRange"/> instance; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.Equals(System.Object)">
+      <summary>
+        <para>Defines whether the specified object is equal to the current <see cref="T:DevExpress.Mvvm.DateTimeRange"/> instance.</para>
+      </summary>
+      <param name="obj">The object to compare with the current instance.</param>
+      <returns>true if the specified object is equal to the current <see cref="T:DevExpress.Mvvm.DateTimeRange"/> instance; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.GetHashCode">
+      <summary>
+        <para>Gets the hash code (a number) that corresponds to the value of the current TimeInterval object.</para>
+      </summary>
+      <returns>The hash code for the current object.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.Intersect(DevExpress.Mvvm.DateTimeRange,DevExpress.Mvvm.DateTimeRange,System.Boolean)">
+      <summary>
+        <para>Checks whether the date time range intersects with two specified ranges.</para>
+      </summary>
+      <param name="x">The first range with which the intersection should be checked.</param>
+      <param name="y">The second range with which the intersection should be checked.</param>
+      <returns>true if the current range intersects with the specified date-time range; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.Intersect(DevExpress.Mvvm.DateTimeRange,System.Boolean)">
+      <summary>
+        <para>Computes the intersection of the current range with the specified range.</para>
+      </summary>
+      <param name="x">The range with which the intersection should be computed.</param>
+      <returns>The intersection of the ranges.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.IntersectsWith(DevExpress.Mvvm.DateTimeRange,DevExpress.Mvvm.DateTimeRange,System.Boolean)">
+      <summary>
+        <para>Computes the intersection of the specified ranges.</para>
+      </summary>
+      <param name="x">The first range.</param>
+      <param name="y">The second range.</param>
+      <returns>The intersection of the specified ranges.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.IntersectsWith(DevExpress.Mvvm.DateTimeRange,System.Boolean)">
+      <summary>
+        <para>Checks whether the time range intersects with the specified range.</para>
+      </summary>
+      <param name="x">The range with which the intersection should be checked.</param>
+      <returns>true if the current range intersects with the specified date-time range; otherwise, false.</returns>
+    </member>
+    <member name="P:DevExpress.Mvvm.DateTimeRange.IsEmpty">
+      <summary>
+        <para>Gets whether the current datetime range is empty.</para>
+      </summary>
+      <value>true if the range is empty; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.DateTimeRange.IsValid">
+      <summary>
+        <para>Gets whether the current datetime range is valid.</para>
+      </summary>
+      <value>true if the range is valid; otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.op_Equality(DevExpress.Mvvm.DateTimeRange,DevExpress.Mvvm.DateTimeRange)">
+      <summary>
+        <para>Determines whether two specified ranges have the same value.</para>
+      </summary>
+      <param name="x">The first range to compare.</param>
+      <param name="y">The second range to compare.</param>
+      <returns>true if the first range is the same as the second range; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.op_Inequality(DevExpress.Mvvm.DateTimeRange,DevExpress.Mvvm.DateTimeRange)">
+      <summary>
+        <para>Determines whether two specified ranges have different values.</para>
+      </summary>
+      <param name="x">The first range to compare.</param>
+      <param name="y">The second range to compare.</param>
+      <returns>true if the first range is different from the second range; otherwise, false.</returns>
+    </member>
+    <member name="P:DevExpress.Mvvm.DateTimeRange.Start">
+      <summary>
+        <para>Gets the start date and time of the datetime range.</para>
+      </summary>
+      <value>The start of the datetime range.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.DateTimeRange.Today">
+      <summary>
+        <para>Gets the current calendar day.</para>
+      </summary>
+      <value>The current calendar day.</value>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.ToString">
+      <summary>
+        <para>Returns the textual representation of the datetime range.</para>
+      </summary>
+      <returns>The textual representation of the datetime range.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.ToString(System.IFormatProvider)">
+      <summary>
+        <para>Returns a culture-specific string representation of the time range.</para>
+      </summary>
+      <param name="provider">The culture-specific formatting information.</param>
+      <returns>The string that represents the range.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.ToString(System.String,System.IFormatProvider)">
+      <summary>
+        <para>Returns a string that represents the range. The return string uses the specified format string to format the result in a culture-specific template.</para>
+      </summary>
+      <param name="format">The format string.</param>
+      <param name="provider">The culture-specific formatting information.</param>
+      <returns>The string that represents the range.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.TryParse(System.String,System.Globalization.CultureInfo,DevExpress.Mvvm.DateTimeRange@)">
+      <summary>
+        <para>Tries to parse the specified string and convert it into the date-time range.</para>
+      </summary>
+      <param name="input">The string to parse.</param>
+      <param name="culture">The culture-specific formatting information.</param>
+      <param name="result">The range generated from the specified string. This parameter is passed uninitialized; the method overrides any value originally supplied in the result.</param>
+      <returns>true if the method successfully parses the specified string; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.Union(DevExpress.Mvvm.DateTimeRange,DevExpress.Mvvm.DateTimeRange)">
+      <summary>
+        <para>Computes the union of the current range and the specified range.</para>
+      </summary>
+      <param name="x">The first range.</param>
+      <param name="y">The second range.</param>
+      <returns>The union of the date-time ranges.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DateTimeRange.Union(DevExpress.Mvvm.DateTimeRange)">
+      <summary>
+        <para>Computes the union of the specified ranges.</para>
+      </summary>
+      <param name="x">The range with which the union should be calculated.</param>
+      <returns>The union of the ranges.</returns>
+    </member>
+    <member name="T:DevExpress.Mvvm.DelegateCommand">
+      <summary>
+        <para>A delegate command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface and calls your parameterless delegates when Execute and CanExecute logic is invoked on the command.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.DelegateCommand.#ctor(System.Action,System.Func{System.Boolean})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.DelegateCommand"/> class.</para>
+      </summary>
+      <param name="execute">The method that is called when the specified command is invoked.</param>
+      <param name="canExecute">true if this command can be executed; otherwise, false.</param>
+    </member>
+    <member name="T:DevExpress.Mvvm.DelegateCommand`1">
+      <summary>
+        <para>A delegate command that implements the <see cref="T:System.Windows.Input.ICommand"/> interface and calls your parameterized delegates when Execute and CanExecute logic is invoked on the command.</para>
+      </summary>
+      <typeparam name="T">A command parameter type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.DelegateCommand`1.#ctor(System.Action{`0},System.Func{`0,System.Boolean})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.DelegateCommand`1"/> class with specified settings.</para>
+      </summary>
+      <param name="execute">The method that is called when the specified command is invoked. The method’s parameter is the command parameter.</param>
+      <param name="canExecute">A delegate that determines whether a command can be executed.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.DelegateCommand`1.CanExecute(`0)">
+      <summary>
+        <para>Returns whether the command can be executed in its current state.</para>
+      </summary>
+      <param name="param">The command parameter.</param>
+      <returns>true if this command can be executed; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.DelegateCommand`1.Execute(`0)">
+      <summary>
+        <para>Defines the method to be called when the command is invoked.</para>
+      </summary>
+      <param name="param">Data that the command uses. If the command does not require data to be passed, this object can be set to a null reference.</param>
+    </member>
+    <member name="T:DevExpress.Mvvm.DispatcherActionPriority">
+      <summary>
+        <para>Defines the priority for the Windows.System.DispatcherQueue class.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.DispatcherActionPriority.High">
+      <summary>
+        <para>This value is bound to the Windows.System.DispatcherQueuePriority.High value.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.DispatcherActionPriority.Low">
+      <summary>
+        <para>This value is bound to the Windows.System.DispatcherQueuePriority.Low value.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.DispatcherActionPriority.Normal">
+      <summary>
+        <para>This value is bound to the Windows.System.DispatcherQueuePriority.Normal value.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Mvvm.DispatcherServiceExtensions">
+      <summary>
+        <para>Contains the extension method for the <see cref="T:DevExpress.Mvvm.IDispatcherService"/> interface.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.DispatcherServiceExtensions.BeginInvoke(DevExpress.Mvvm.IDispatcherService,System.Action,DevExpress.Mvvm.DispatcherActionPriority,System.Int32)">
+      <summary>
+        <para>Executes the specified delegate asynchronously.</para>
+      </summary>
+      <param name="service">An object that implements the <see cref="T:DevExpress.Mvvm.IDispatcherService"/> and invokes the specified delegate.</param>
+      <param name="action">The invoked <see cref="T:System.Action"/>.</param>
+      <param name="priority">The invoked action’s priority in the Windows.System.DispatcherQueue.</param>
+      <param name="delay">A delay before the specified action is invoked, in milliseconds.</param>
+    </member>
+    <member name="T:DevExpress.Mvvm.IAsyncCommand">
+      <summary>
+        <para>An interface that specifies an asynchronous command.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.IAsyncCommand.Cancel">
+      <summary>
+        <para>Creates a request to cancel the command execution.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.IAsyncCommand.Cancel(System.Boolean)">
+      <summary>
+        <para>Creates a request to cancel the command execution.</para>
+      </summary>
+      <param name="throwOnFirstException">true if an exception should cancel the command execution; otherwise, false.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.IAsyncCommand.CancelAfter(System.Int32)">
+      <summary>
+        <para>Creates a request to cancel the command execution after the specified number of milliseconds.</para>
+      </summary>
+      <param name="millisecondsDelay">The number of milliseconds to wait before canceling this CancellationTokenSource.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.IAsyncCommand.CancelAfter(System.TimeSpan)">
+      <summary>
+        <para>Creates a request to cancel the command execution after the specified time span.</para>
+      </summary>
+      <param name="delay">The time span to wait before canceling this CancellationTokenSource.</param>
+    </member>
+    <member name="P:DevExpress.Mvvm.IAsyncCommand.CancelCommand">
+      <summary>
+        <para>Gets the command that creates a request to cancel the asynchronous command execution.</para>
+      </summary>
+      <value>The command that cancels the command execution.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.IAsyncCommand.CancellationToken">
+      <summary>
+        <para>Gets the <see cref="T:System.Threading.CancellationToken"/> that propagates a notification that the asynchronous command should be canceled.</para>
+      </summary>
+      <value>A cancellation token.</value>
+    </member>
+    <member name="M:DevExpress.Mvvm.IAsyncCommand.ExecuteAsync(System.Object)">
+      <summary>
+        <para>Defines the asynchronous method to be called when the command is invoked.</para>
+      </summary>
+      <param name="param">The command parameter.</param>
+      <returns>The Task of the execution process.</returns>
+    </member>
+    <member name="P:DevExpress.Mvvm.IAsyncCommand.IsCancellationRequested">
+      <summary>
+        <para>Gets whether an <see cref="T:DevExpress.Mvvm.AsyncCommand`1"/> should be cancelled.</para>
+      </summary>
+      <value>true if the command should be cancelled; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.IAsyncCommand.IsExecuting">
+      <summary>
+        <para>Gets whether the asynchronous command is executing.</para>
+      </summary>
+      <value>true if the command execution is in progress; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.Mvvm.ICommand`1">
+      <summary>
+        <para>An interface that specifies a parameterized command.</para>
+      </summary>
+      <typeparam name="T">A command parameter.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.ICommand`1.CanExecute(`0)">
+      <summary>
+        <para>Returns whether the command can be executed in its current state.</para>
+      </summary>
+      <param name="param">The command parameter.</param>
+      <returns>true if the command can be executed; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.ICommand`1.Execute(`0)">
+      <summary>
+        <para>Defines the method to be called when the command is invoked.</para>
+      </summary>
+      <param name="param">The command parameter.</param>
+    </member>
+    <member name="T:DevExpress.Mvvm.IDelegateCommand">
+      <summary>
+        <para>An interface that specifies a command delegate.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.IDelegateCommand.RaiseCanExecuteChanged">
+      <summary>
+        <para>Raises the <see cref="E:DevExpress.Mvvm.CommandBase`1.CanExecuteChanged"/> event. You can use this method to notify a visual element about a command’s <see cref="M:DevExpress.Mvvm.CommandBase`1.CanExecute(`0)"/> state changes.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Mvvm.IDispatcherService">
+      <summary>
+        <para>Contains the method that uses the <see cref="T:System.Windows.Threading.Dispatcher"/> to perform actions in a ViewModel. This interface is implemented in the <see cref="T:DevExpress.WinUI.Core.DispatcherService"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.IDispatcherService.InvokeAsync(System.Action,DevExpress.Mvvm.DispatcherActionPriority,System.Int32)">
+      <summary>
+        <para>Passes the specified delegate to the Windows.System.DispatcherQueue.</para>
+      </summary>
+      <param name="action">The invoked <see cref="T:System.Action"/>.</param>
+      <param name="priority">The invoked action’s priority in the Windows.System.DispatcherQueue.</param>
+      <param name="delay">A delay before the specified action is invoked, in milliseconds.</param>
+      <returns>The Task of the execution process.</returns>
+    </member>
+    <member name="T:DevExpress.Mvvm.IMessageBoxService">
+      <summary>
+        <para>Contains methods to show dialog boxes. This interface is implemented in the <see cref="T:DevExpress.WinUI.Core.MessageBoxService"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.IMessageBoxService.ShowAsync(System.String,System.String,System.Collections.Generic.IEnumerable{DevExpress.Mvvm.MessageBoxCommand})">
+      <summary>
+        <para>Displays a message box with specified parameters asynchronously.</para>
+      </summary>
+      <param name="content">A text that is displayed in the message box.</param>
+      <param name="title">A message box’s title.</param>
+      <param name="commands">The collection of message box commands that are displayed in the message box.</param>
+      <returns>The <see cref="T:System.Threading.Tasks.Task"/> that returns the command of the clicked message box button.</returns>
+    </member>
+    <member name="T:DevExpress.Mvvm.IMessenger">
+      <summary>
+        <para>Contains methods that send messages and register message handlers. This interface is implemented in the <see cref="T:DevExpress.Mvvm.Messenger"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.IMessenger.Register``1(System.Object,System.Object,System.Boolean,System.Action{``0})">
+      <summary>
+        <para>Registers a handler of a specific message type.</para>
+      </summary>
+      <param name="recipient">An object that receives messages.</param>
+      <param name="token">An object (marker) that can be used to identify a specific message. Pass null if you want to process messages without tokens.</param>
+      <param name="receiveInheritedMessages">true to receive messages of the TMessage type and all derived types; false to receive messages of the TMessage type only.</param>
+      <param name="action">An action that is invoked when the specified message occurs.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.IMessenger.Send``1(``0,System.Type,System.Object)">
+      <summary>
+        <para>Sends the specified message.</para>
+      </summary>
+      <param name="message">The message that is sent.</param>
+      <param name="messageTargetType">Only recipients of the messageTargetType or inherited type will receive the current message. Set this parameter to null to send a message without an addressee type.</param>
+      <param name="token">An object (marker) that can be used to identify a specific message. Pass null if you want to send regular messages (without tokens).
+When you send a message, you can use the current token parameter to assign a token to the message. When the message occurs, only message recipients that registered the same token are invoked.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.IMessenger.Unregister(System.Object)">
+      <summary>
+        <para>Unsubscribes the specified object from receiving any messages.</para>
+      </summary>
+      <param name="recipient">An object to be unsubscribed from receiving any messages.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.IMessenger.Unregister``1(System.Object,System.Object,System.Action{``0})">
+      <summary>
+        <para>Unsubscribes the specified object’s action from being invoked when a specific message occurs.</para>
+      </summary>
+      <param name="recipient">An object containing an action to be unsubscribed from receiving the messages of TMessage type.</param>
+      <param name="token">An object (marker) that identifies a specific message when you subscribe to it with the Register method. Pass null to unsubscribe from the message regardless of the token assigned to it.</param>
+      <param name="action">An action to be unsubscribed from receiving messages.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="T:DevExpress.Mvvm.ISupportUIServices">
+      <summary>
+        <para>The interface that provides access to a container for DevExpress WinUI MVVM UI Services.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Mvvm.ISupportUIServices.ServiceContainer">
+      <summary>
+        <para>Gets the container that stores DevExpress WinUI MVVM UI Services.</para>
+      </summary>
+      <value>DevExpress WinUI MVVM UI Services.</value>
+    </member>
+    <member name="T:DevExpress.Mvvm.IUIObjectService">
+      <summary>
+        <para>Provides direct access to a UI element from the view model without referencing the UI element’s real type. This interface is implemented in the <see cref="T:DevExpress.WinUI.Core.UIObjectService"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Mvvm.IUIObjectService.Object">
+      <summary>
+        <para>Gets a UI element of the dynamic type.</para>
+      </summary>
+      <value>A UI element.</value>
+    </member>
+    <member name="T:DevExpress.Mvvm.IUIServiceContainer">
+      <summary>
+        <para>Provides direct access to a UI element from the view model without referencing the UI element’s real type. This interface is implemented in the <see cref="T:DevExpress.WinUI.Core.UIObjectService"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.IUIServiceContainer.Clear">
+      <summary>
+        <para>Removes registered services.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.IUIServiceContainer.GetService(System.Type,System.String)">
+      <summary>
+        <para>Returns a service with the specified type and key.</para>
+      </summary>
+      <param name="type">The service type.</param>
+      <param name="key">The service key.</param>
+      <returns>The service.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.IUIServiceContainer.Register(System.Object,System.String)">
+      <summary>
+        <para>Registers a service with the specified key.</para>
+      </summary>
+      <param name="service">The service.</param>
+      <param name="key">The service key.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.IUIServiceContainer.Unregister(System.Object)">
+      <summary>
+        <para>Removes the specified services.</para>
+      </summary>
+      <param name="service">The service.</param>
+    </member>
+    <member name="T:DevExpress.Mvvm.MessageBoxCommand">
+      <summary>
+        <para>Specifies a model for message box buttons. The <see cref="T:DevExpress.WinUI.Core.MessageBoxService"/> uses this class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.MessageBoxCommand.#ctor(System.Object,System.String,System.Action,System.Boolean,System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.MessageBoxCommand"/> class with specified settings.</para>
+      </summary>
+      <param name="id">A button identifier.</param>
+      <param name="caption">The message box command caption.</param>
+      <param name="action">The command that is invoked when a user clicks the button.</param>
+      <param name="isDefault">true if the command is invoked when a user presses the Enter or Space key; otherwise, false.</param>
+      <param name="isCancel">true if the command is invoked when a user presses the Esc key; otherwise, false.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.MessageBoxCommand.#ctor(System.Object,System.String,System.Windows.Input.ICommand,System.Boolean,System.Boolean)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.MessageBoxCommand"/> class with specified settings.</para>
+      </summary>
+      <param name="id">The button identifier.</param>
+      <param name="caption">The message box command caption.</param>
+      <param name="command">The command that is invoked when a user clicks the button.</param>
+      <param name="isDefault">true if the command is invoked when a user presses the Enter or Space key; otherwise, false.</param>
+      <param name="isCancel">true if the command is invoked when a user presses the Esc key; otherwise, false.</param>
+    </member>
+    <member name="P:DevExpress.Mvvm.MessageBoxCommand.Caption">
+      <summary>
+        <para>Gets the message box command caption.</para>
+      </summary>
+      <value>The message box command caption.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.MessageBoxCommand.Command">
+      <summary>
+        <para>Gets the command that is invoked when a user clicks a message box button that is associated with this <see cref="T:DevExpress.Mvvm.MessageBoxCommand"/> instance.</para>
+      </summary>
+      <value>The command that is invoked when a user clicks a message box button that is associated with this <see cref="T:DevExpress.Mvvm.MessageBoxCommand"/> instance.</value>
+    </member>
+    <member name="M:DevExpress.Mvvm.MessageBoxCommand.Create(DevExpress.Mvvm.MessageButton,DevExpress.Mvvm.IMessageButtonLocalizer,System.Nullable{DevExpress.Mvvm.MessageResult},System.Nullable{DevExpress.Mvvm.MessageResult})">
+      <summary>
+        <para>Creates a list of MessageBoxCommands with specified settings.</para>
+      </summary>
+      <param name="buttons">A <see cref="T:DevExpress.Mvvm.MessageButton"/> enum value from which a List of MessageBoxCommands is generatred.</param>
+      <param name="localizer">An object that is used to get the <see cref="P:DevExpress.Mvvm.MessageBoxCommand.Caption"/>.</param>
+      <param name="defaultButton">A button that is invoked when a user presses the Enter key.</param>
+      <param name="cancelButton">A button that is invoked when a user presses the Esc key.</param>
+      <returns>A list of MessageBoxCommands.</returns>
+    </member>
+    <member name="P:DevExpress.Mvvm.MessageBoxCommand.Id">
+      <summary>
+        <para>Gets an object that identifies a message box command.</para>
+      </summary>
+      <value>A message box command identifier.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.MessageBoxCommand.IsCancel">
+      <summary>
+        <para>Gets or sets whether the <see cref="T:DevExpress.Mvvm.MessageBoxCommand"/> is the cancel command. The cancel command is executed when you click the Esc key.</para>
+      </summary>
+      <value>true if the command is the cancel command; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.MessageBoxCommand.IsDefault">
+      <summary>
+        <para>Gets or sets whether the <see cref="T:DevExpress.Mvvm.MessageBoxCommand"/> is the default command. The default command is focused when the message box is displayed. When you click the Enter or Space key, the default command is executed.</para>
+      </summary>
+      <value>true if the command is the default command; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.Mvvm.MessageBoxServiceExtensions">
+      <summary>
+        <para>Contains the extension method for the <see cref="T:DevExpress.Mvvm.IMessageBoxService"/> interface.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.MessageBoxServiceExtensions.ShowAsync(DevExpress.Mvvm.IMessageBoxService,System.String,System.String,DevExpress.Mvvm.MessageButton,System.Nullable{DevExpress.Mvvm.MessageResult},System.Nullable{DevExpress.Mvvm.MessageResult})">
+      <summary>
+        <para>Shows a message box with specified parameters.</para>
+      </summary>
+      <param name="content">The text shown within the message box.</param>
+      <param name="title">The title of the message box.</param>
+      <param name="buttons">The set of buttons shown within the message box.</param>
+      <param name="defaultResult">Specifies which message box button is default. A default button is highlighted when a message box is shown.</param>
+      <param name="cancelResult">Specifies which message box button is the cancel button. The cancel button’s command is invoked when a user presses the Esc key while the MessageBox is focused.</param>
+      <returns>The task that includes the button that the user clicked.</returns>
+    </member>
+    <member name="T:DevExpress.Mvvm.MessageButton">
+      <summary>
+        <para>Lists buttons that can be displayed on a message box.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.MessageButton.OK">
+      <summary>
+        <para>The message box displays an OK button.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.MessageButton.OKCancel">
+      <summary>
+        <para>The message box displays OK and Cancel buttons.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.MessageButton.YesNo">
+      <summary>
+        <para>The message box displays Yes and No buttons.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.MessageButton.YesNoCancel">
+      <summary>
+        <para>The message box displays Yes, No, and Cancel buttons.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Mvvm.MessageResult">
+      <summary>
+        <para>Lists possible MessageBox results.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.MessageResult.Cancel">
+      <summary>
+        <para>The result value of the message box is Cancel.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.MessageResult.No">
+      <summary>
+        <para>The result value of the message box is No.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.MessageResult.None">
+      <summary>
+        <para>The message box returns no result.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.MessageResult.OK">
+      <summary>
+        <para>The result value of the message box is OK.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Mvvm.MessageResult.Yes">
+      <summary>
+        <para>The result value of the message box is Yes.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Mvvm.Messenger">
+      <summary>
+        <para>Implements the <see cref="T:DevExpress.Mvvm.IMessenger"/> interface and allows you to exchange messages between application modules.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.Messenger.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.Messenger"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.Messenger.#ctor(System.Boolean,DevExpress.Mvvm.ActionReferenceType)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.Messenger"/> class with specified settings.</para>
+      </summary>
+      <param name="isMultiThreadSafe">true if the messenger can be used from multiple threads; otherwise, false.</param>
+      <param name="actionReferenceType">An ActionReferenceType enumeration value.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.Messenger.#ctor(System.Boolean,DevExpress.Mvvm.Native.IActionInvokerFactory)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.Messenger"/> class with specified settings.</para>
+      </summary>
+      <param name="isMultiThreadSafe">true if the messenger can be used from multiple threads; otherwise, false.</param>
+      <param name="actionInvokerFactory">An object implementing the IActionInvokerFactory interface.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.Messenger.Cleanup">
+      <summary>
+        <para>Removes all references to the actions that belong to non-existing recipients.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Mvvm.Messenger.Default">
+      <summary>
+        <para>Gets or sets the default messenger.</para>
+      </summary>
+      <value>An object that implements the <see cref="T:DevExpress.Mvvm.IMessenger"/> interface.</value>
+    </member>
+    <member name="M:DevExpress.Mvvm.Messenger.Register``1(System.Object,System.Object,System.Boolean,System.Action{``0})">
+      <summary>
+        <para>Registers a handler of a specific message type.</para>
+      </summary>
+      <param name="recipient">An object that receives messages.</param>
+      <param name="token">An object (marker) that is used to identify a specific message. Pass null if you want to process messages without tokens.</param>
+      <param name="receiveInheritedMessages">true to receive messages of the TMessage type and all derived types; false to receive messages of the TMessage type only.</param>
+      <param name="action">An action that is invoked when the specified message occurs.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.Messenger.RequestCleanup">
+      <summary>
+        <para>Executes the <see cref="M:DevExpress.Mvvm.Messenger.Cleanup"/> method asynchronously when the current application is idle.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.Messenger.Send``1(``0,System.Type,System.Object)">
+      <summary>
+        <para>Sends the specified message.</para>
+      </summary>
+      <param name="message">The message to send.</param>
+      <param name="messageTargetType">The message target type.</param>
+      <param name="token">An object that separates messages.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.Messenger.Unregister(System.Object)">
+      <summary>
+        <para>Unregisters the specified object from all registered message handlers.</para>
+      </summary>
+      <param name="recipient">An object to unregister.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.Messenger.Unregister``1(System.Object,System.Object,System.Action{``0})">
+      <summary>
+        <para>Unsubscribes the specified object’s action from being invoked when a specific message occurs.</para>
+      </summary>
+      <param name="recipient">An object containing an action to be unsubscribed from receiving the messages of TMessage type.</param>
+      <param name="token">An object (marker) that identifies a specific message when you subscribe to it with the Register method. Pass null to unsubscribe from the message regardless of the token assigned to it.</param>
+      <param name="action">An action to be unsubscribed from receiving messages.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="T:DevExpress.Mvvm.MessengerExtensions">
+      <summary>
+        <para>Contains extension methods for the <see cref="T:DevExpress.Mvvm.Messenger"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.MessengerExtensions.Register``1(DevExpress.Mvvm.IMessenger,System.Object,System.Action{``0})">
+      <summary>
+        <para>Registers a handler of a specific message type.</para>
+      </summary>
+      <param name="messenger">A messenger instance.</param>
+      <param name="recipient">An object that receives messages.</param>
+      <param name="action">An action that is invoked when the specified message occurs.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.MessengerExtensions.Register``1(DevExpress.Mvvm.IMessenger,System.Object,System.Boolean,System.Action{``0})">
+      <summary>
+        <para>Registers a handler of a specific message type.</para>
+      </summary>
+      <param name="messenger">A messenger instance.</param>
+      <param name="recipient">An object that receives messages.</param>
+      <param name="receiveInheritedMessages">true to receive messages of the TMessage type and all derived types; false to receive messages of the TMessage type only.</param>
+      <param name="action">An action that is invoked when the specified message occurs.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.MessengerExtensions.Register``1(DevExpress.Mvvm.IMessenger,System.Object,System.Object,System.Action{``0})">
+      <summary>
+        <para>Registers a handler of a specific message type.</para>
+      </summary>
+      <param name="messenger">A messenger instance.</param>
+      <param name="recipient">An object that receives messages.</param>
+      <param name="token">An object (marker) that is used to identify a specific message. Pass null if you want to process messages without tokens.</param>
+      <param name="action">An action that is invoked when the specified message occurs.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.MessengerExtensions.Send``1(DevExpress.Mvvm.IMessenger,``0,System.Object)">
+      <summary>
+        <para>Sends the specified message.</para>
+      </summary>
+      <param name="messenger">A messenger instance.</param>
+      <param name="message">The message to send.</param>
+      <param name="token">An object that separates messages.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.MessengerExtensions.Send``1(DevExpress.Mvvm.IMessenger,``0)">
+      <summary>
+        <para>Sends the specified message.</para>
+      </summary>
+      <param name="messenger">A messenger instance.</param>
+      <param name="message">The message to send.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.MessengerExtensions.Send``2(DevExpress.Mvvm.IMessenger,``0)">
+      <summary>
+        <para>Sends the specified message.</para>
+      </summary>
+      <param name="messenger">A messenger instance.</param>
+      <param name="message">The message to send.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.MessengerExtensions.Unregister``1(DevExpress.Mvvm.IMessenger,System.Object,System.Action{``0})">
+      <summary>
+        <para>Unsubscribes the specified object’s action from being invoked when a specific message occurs.</para>
+      </summary>
+      <param name="messenger">A messenger instance.</param>
+      <param name="recipient">An object containing an action to be unsubscribed from receiving the messages of TMessage type.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.MessengerExtensions.Unregister``1(DevExpress.Mvvm.IMessenger,System.Object,System.Object)">
+      <summary>
+        <para>Unsubscribes the specified object’s action from being invoked when a specific message occurs.</para>
+      </summary>
+      <param name="messenger">A messanger instance.</param>
+      <param name="recipient">An object containing an action to be unsubscribed from receiving the messages of TMessage type.</param>
+      <param name="token">An object (marker) that identifies a specific message when you call the Register method to subscribe to it. Pass null to unsubscribe from the message regardless of the token assigned to it.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="M:DevExpress.Mvvm.MessengerExtensions.Unregister``1(DevExpress.Mvvm.IMessenger,System.Object)">
+      <summary>
+        <para>Unsubscribes the specified object’s action from being invoked when a specific message occurs.</para>
+      </summary>
+      <param name="messenger">A messenger instance.</param>
+      <param name="recipient">An object containing an action to be unsubscribed from receiving the messages of TMessage type.</param>
+      <typeparam name="TMessage">The message type.</typeparam>
+    </member>
+    <member name="T:DevExpress.Mvvm.SetPropertyHelper">
+      <summary>
+        <para>Contains helper methods that allow you to specify a property value.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.SetPropertyHelper.Set``1(``0@,``0,System.Action)">
+      <summary>
+        <para>A helper method that sets the specified property’s field.</para>
+      </summary>
+      <param name="storage">A reference to the property field that stores its value.</param>
+      <param name="value">A value that is set to the property.</param>
+      <param name="changedCallback">A callback that is invoked when the property value is set.</param>
+      <typeparam name="T">The property type.</typeparam>
+      <returns>true if the property is set; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.SetPropertyHelper.Set``1(``0@,``0,System.Action{``0,``0})">
+      <summary>
+        <para>A helper method that sets the specified property’s field.</para>
+      </summary>
+      <param name="storage">A reference to the property field that stores its value.</param>
+      <param name="value">A value that is set to the property.</param>
+      <param name="changedCallback">A callback that is invoked when the property value is set. The first parameter is the old property’s value, the second parameter is the new value.</param>
+      <typeparam name="T">The property type.</typeparam>
+      <returns>true if the property is set; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.SetPropertyHelper.Set``1(``0@,``0,System.Action{``0})">
+      <summary>
+        <para>A helper method that sets the specified property’s field.</para>
+      </summary>
+      <param name="storage">A reference to the property field that stores its value.</param>
+      <param name="value">A value that is set to the property.</param>
+      <param name="changedCallback">A callback that is invoked when the property value is set. The callback parameter is the old property’s value.</param>
+      <typeparam name="T">The property type.</typeparam>
+      <returns>true if the property is set; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.SetPropertyHelper.Set``1(``0@,``0)">
+      <summary>
+        <para>A helper method that sets the specified property’s field.</para>
+      </summary>
+      <param name="storage">A reference to the property field that stores its value.</param>
+      <param name="value">A value that is set to the property.</param>
+      <typeparam name="T">The property type.</typeparam>
+      <returns>true if the property is set; otherwise, false.</returns>
+    </member>
+    <member name="T:DevExpress.Mvvm.TimeSpanRange">
+      <summary>
+        <para>The time span range.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.#ctor(System.TimeSpan,System.TimeSpan)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.TimeSpanRange"/> class with specified settings.</para>
+      </summary>
+      <param name="start">The start value.</param>
+      <param name="end">The end value.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.Contains(DevExpress.Mvvm.TimeSpanRange)">
+      <summary>
+        <para>Checks whether the range contains the specified date-time value.</para>
+      </summary>
+      <param name="x">The time span value to check.</param>
+      <returns>true if the current range contains the specified date-time range; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.Contains(System.TimeSpan,System.Boolean)">
+      <summary>
+        <para>Checks whether the range contains the specified time range value.</para>
+      </summary>
+      <param name="time">The time span value to check.</param>
+      <returns>true if the current range contains the specified date-time range; otherwise, false.</returns>
+    </member>
+    <member name="P:DevExpress.Mvvm.TimeSpanRange.Day">
+      <summary>
+        <para>Gets the range that specifies the entire day.</para>
+      </summary>
+      <value>The range that specifies the entire day.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.TimeSpanRange.Duration">
+      <summary>
+        <para>Gets the range duration.</para>
+      </summary>
+      <value>The range duration.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.TimeSpanRange.End">
+      <summary>
+        <para>Gets the end value of the range.</para>
+      </summary>
+      <value>The end value of the range.</value>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.Equals(DevExpress.Mvvm.TimeSpanRange)">
+      <summary>
+        <para>Checks whether the specified range is equal to the current range.</para>
+      </summary>
+      <param name="other">The range to compare with.</param>
+      <returns>true if the specified range is equal to the current range; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.Equals(System.Object)">
+      <summary>
+        <para>Checks whether the specified object is equal to the current range.</para>
+      </summary>
+      <param name="obj">The object to compare with.</param>
+      <returns>true if the specified object is TimeSpanRange and is equal to the current range; otherwise false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.GetHashCode">
+      <summary>
+        <para>Serves as the default hash function.</para>
+      </summary>
+      <returns>The hash code for the current range.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.Intersect(DevExpress.Mvvm.TimeSpanRange,DevExpress.Mvvm.TimeSpanRange,System.Boolean)">
+      <summary>
+        <para>Computes the intersection of the specified ranges.</para>
+      </summary>
+      <param name="x">The first range.</param>
+      <param name="y">The second range.</param>
+      <returns>The intersection of the specified ranges.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.Intersect(DevExpress.Mvvm.TimeSpanRange,System.Boolean)">
+      <summary>
+        <para>Computes the intersection of the current range with the specified range.</para>
+      </summary>
+      <param name="x">The range with which the intersection should be computed.</param>
+      <returns>The intersection of the ranges.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.IntersectsWith(DevExpress.Mvvm.TimeSpanRange,DevExpress.Mvvm.TimeSpanRange,System.Boolean)">
+      <summary>
+        <para>Checks whether the time range intersects with the two specified ranges.</para>
+      </summary>
+      <param name="x">The first range with which the intersection should be checked.</param>
+      <param name="y">The second range with which the intersection should be checked.</param>
+      <returns>true if the current range intersects with the specified range; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.IntersectsWith(DevExpress.Mvvm.TimeSpanRange,System.Boolean)">
+      <summary>
+        <para>Checks whether the time range intersects with the specified range.</para>
+      </summary>
+      <param name="x">The range with which the intersection should be checked.</param>
+      <returns>true if the current range intersects with the specified date-time range; otherwise, false.</returns>
+    </member>
+    <member name="P:DevExpress.Mvvm.TimeSpanRange.IsDay">
+      <summary>
+        <para>Gets whether the range specifies the entire day.</para>
+      </summary>
+      <value>true if the range specifies the entire day; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.TimeSpanRange.IsValid">
+      <summary>
+        <para>Gets whether the end value is greater than or equal to the start value.</para>
+      </summary>
+      <value>true if the end value is greater than or equal to the start value; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.Mvvm.TimeSpanRange.IsZero">
+      <summary>
+        <para>Gets whether <see cref="P:DevExpress.Mvvm.TimeSpanRange.Start"/> and <see cref="P:DevExpress.Mvvm.TimeSpanRange.End"/> properties are equal to <see cref="F:System.TimeSpan.Zero"/>.</para>
+      </summary>
+      <value>true if both values are equal to Zero; otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.op_Equality(DevExpress.Mvvm.TimeSpanRange,DevExpress.Mvvm.TimeSpanRange)">
+      <summary>
+        <para>Determines whether two specified ranges have the same value.</para>
+      </summary>
+      <param name="x">The first range to compare.</param>
+      <param name="y">The second range to compare.</param>
+      <returns>true if the first range is the same as the second range; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.op_Inequality(DevExpress.Mvvm.TimeSpanRange,DevExpress.Mvvm.TimeSpanRange)">
+      <summary>
+        <para>Determines whether two specified ranges have different values.</para>
+      </summary>
+      <param name="x">The first range to compare.</param>
+      <param name="y">The second range to compare.</param>
+      <returns>true if the first range is different from the second range; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.Parse(System.String,System.Globalization.CultureInfo)">
+      <summary>
+        <para>Parses the specified string and converts it into the time span range.</para>
+      </summary>
+      <param name="input">The string to parse.</param>
+      <param name="culture">The culture-specific formatting information.</param>
+      <returns>The range generated from the specified string.</returns>
+    </member>
+    <member name="P:DevExpress.Mvvm.TimeSpanRange.Start">
+      <summary>
+        <para>Gets the start value of the range.</para>
+      </summary>
+      <value>The start value of the range.</value>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.ToString">
+      <summary>
+        <para>Returns a string that represents the range.</para>
+      </summary>
+      <returns>The string that represents the range.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.ToString(System.IFormatProvider)">
+      <summary>
+        <para>Returns a string that represents the range, formatted with the specified culture-specific formatting information.</para>
+      </summary>
+      <param name="provider">The culture-specific formatting information.</param>
+      <returns>The string that represents the range.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.TryParse(System.String,System.Globalization.CultureInfo,DevExpress.Mvvm.TimeSpanRange@)">
+      <summary>
+        <para>Tries to parse the specified string and convert it into the time span range.</para>
+      </summary>
+      <param name="input">The string to parse.</param>
+      <param name="culture">The culture-specific formatting information.</param>
+      <param name="result">The range generated from the specified string. This parameter is passed uninitialized; the method overrides any value originally supplied in the result.</param>
+      <returns>true if the method successfully parses the specified string; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.Union(DevExpress.Mvvm.TimeSpanRange,DevExpress.Mvvm.TimeSpanRange)">
+      <summary>
+        <para>Computes the union of the current range with the specified range.</para>
+      </summary>
+      <param name="x">The first range.</param>
+      <param name="y">The second range.</param>
+      <returns>The union of the specified ranges.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.TimeSpanRange.Union(DevExpress.Mvvm.TimeSpanRange)">
+      <summary>
+        <para>Computes the union of the current range with the specified range.</para>
+      </summary>
+      <param name="x">The range with which the union should be computed.</param>
+      <returns>The union of the ranges.</returns>
+    </member>
+    <member name="T:DevExpress.Mvvm.UIServiceContainer">
+      <summary>
+        <para>An object that contains services.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.UIServiceContainer.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.UIServiceContainer"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.UIServiceContainer.Clear">
+      <summary>
+        <para>Clears services stored in the current service container.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.Mvvm.UIServiceContainer.Default">
+      <summary>
+        <para>Gets the default service container.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.Mvvm.IUIServiceContainer"/> implementation.</value>
+    </member>
+    <member name="M:DevExpress.Mvvm.UIServiceContainer.GetService(System.Type,System.String)">
+      <summary>
+        <para>Performs a search for a service implementing the specified service interface.</para>
+      </summary>
+      <param name="type">A service type.</param>
+      <param name="key">A service identifier.</param>
+      <returns>An object implementing the specified service interface.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.UIServiceContainer.Register(System.Object,System.String)">
+      <summary>
+        <para>Registers the specified service.</para>
+      </summary>
+      <param name="service">The service to register.</param>
+      <param name="key">The service identifier.</param>
+    </member>
+    <member name="M:DevExpress.Mvvm.UIServiceContainer.Unregister(System.Object)">
+      <summary>
+        <para>Unregisters the specified service.</para>
+      </summary>
+      <param name="service">The service to unregister.</param>
+    </member>
+    <member name="T:DevExpress.Mvvm.UIServiceContainerExtensions">
+      <summary>
+        <para>Contains the extension method for the <see cref="T:DevExpress.Mvvm.UIServiceContainer"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.UIServiceContainerExtensions.GetService``1(DevExpress.Mvvm.IUIServiceContainer,System.String)">
+      <summary>
+        <para>Searches for a service with the specified type in the specified <see cref="T:DevExpress.Mvvm.UIServiceContainer"/>.</para>
+      </summary>
+      <param name="container">An instance of the <see cref="T:DevExpress.Mvvm.IUIServiceContainer"/>.</param>
+      <param name="key">A service identifier.</param>
+      <typeparam name="T">A service type.</typeparam>
+      <returns>A service instance.</returns>
+    </member>
+    <member name="T:DevExpress.Mvvm.ValueAndCount">
+      <summary>
+        <para>An object that contains a unique value and its count.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.Mvvm.ValueAndCount.#ctor(System.Object,System.Int32)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Mvvm.ValueAndCount"/> class with specified settings.</para>
+      </summary>
+      <param name="value">The unique value.</param>
+      <param name="count">The number of unique values.</param>
+    </member>
+    <member name="P:DevExpress.Mvvm.ValueAndCount.Count">
+      <summary>
+        <para>Gets the count of unique values.</para>
+      </summary>
+      <value>The count of unique values.</value>
+    </member>
+    <member name="M:DevExpress.Mvvm.ValueAndCount.Equals(DevExpress.Mvvm.ValueAndCount)">
+      <summary>
+        <para>Determines whether the specified object is equal to the current <see cref="T:DevExpress.Mvvm.ValueAndCount"/> instance.</para>
+      </summary>
+      <param name="other">The specified object.</param>
+      <returns>true if the specified object is equal to the current <see cref="T:DevExpress.Mvvm.ValueAndCount"/> instance; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.ValueAndCount.Equals(System.Object)">
+      <summary>
+        <para>Determines whether the specified object is equal to the current <see cref="T:DevExpress.Mvvm.ValueAndCount"/> instance.</para>
+      </summary>
+      <param name="obj">The specified object.</param>
+      <returns>true if the specified object is equal to the current <see cref="T:DevExpress.Mvvm.ValueAndCount"/> instance; otherwise, false.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.ValueAndCount.GetHashCode">
+      <summary>
+        <para>Gets the hash code (a number) that corresponds to the value of the current object.</para>
+      </summary>
+      <returns>The hash code (a number) that corresponds to the value of the current object.</returns>
+    </member>
+    <member name="M:DevExpress.Mvvm.ValueAndCount.ToString">
+      <summary>
+        <para>Returns the textual representation of the <see cref="T:DevExpress.Mvvm.ValueAndCount"/> object.</para>
+      </summary>
+      <returns>The textual representation of the <see cref="T:DevExpress.Mvvm.ValueAndCount"/> object.</returns>
+    </member>
+    <member name="P:DevExpress.Mvvm.ValueAndCount.Value">
+      <summary>
+        <para>Gets a unique value.</para>
+      </summary>
+      <value>A unique value.</value>
+    </member>
+    <member name="T:DevExpress.Mvvm.ViewModelBase">
+      <summary>
+        <para>The BindableBase descendant that implements the <see cref="T:DevExpress.Mvvm.ISupportUIServices"/> interface and allows you to access UI Services registered within a View.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

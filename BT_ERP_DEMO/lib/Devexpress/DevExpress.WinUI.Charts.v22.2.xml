@@ -1,0 +1,3262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.WinUI.Charts.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.WinUI.Charts">
+      <summary>
+        <para>Contains classes which implement the main functionality of Chart Controls.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ActualScaleType">
+      <summary>
+        <para>Contains the values used to identify the actual scale type for the argument and value data of data points.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ActualScaleType.DateTime">
+      <summary>
+        <para>Identifies the DateTime data scale. This means that data is treated as DateTime values, and shown on the axis as DateTime values (e.g., January, 2003, January, 2004, and January, 2005).</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ActualScaleType.Numerical">
+      <summary>
+        <para>Identifies the Numerical data scale. This means that data is treated as numerical values, and shown on the axis as numbers (e.g., 100, 200, and 300).</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ActualScaleType.Qualitative">
+      <summary>
+        <para>Identifies the Qualitative data scale. This means that data is treated as qualitative values, and shown on the axis as textual representations (e.g., A, B, and C).</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.AreaSeriesView">
+      <summary>
+        <para>Displays series data points as an Area chart.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.AreaSeriesView.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.AreaSeriesView"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AreaSeriesView.ActualContourAppearance">
+      <summary>
+        <para>Gets the actual contour appearance.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.ContourAppearance"/> object.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AreaSeriesView.ContourAppearance">
+      <summary>
+        <para>Gets or sets the appearance of an area contour.</para>
+      </summary>
+      <value><see cref="T:DevExpress.WinUI.Charts.ContourAppearance"/></value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AreaSeriesView.ContourAppearanceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AreaSeriesView.ContourAppearance"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AreaSeriesView.InterpolationMode">
+      <summary>
+        <para>Specifies the area view’s interpolation mode that defines how to connect series points.</para>
+      </summary>
+      <value>A value that defines the interpolation mode applied to the series view.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AreaSeriesView.InterpolationModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AreaSeriesView.InterpolationMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AreaSeriesView.InvertedStep">
+      <summary>
+        <para>Specifies whether to invert the steps that connect series points.</para>
+      </summary>
+      <value>true if an inverted step is used; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AreaSeriesView.InvertedStepProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AreaSeriesView.InvertedStep"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AreaSeriesView.MarkerSize">
+      <summary>
+        <para>Gets or sets the size of data point markers.</para>
+      </summary>
+      <value>An integer value which specifies the height and width of the plot area of a marker(s), in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AreaSeriesView.MarkerSizeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AreaSeriesView.MarkerSize"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AreaSeriesView.RangeControlViewType">
+      <summary>
+        <para>Gets or sets a value that specifies which view type should be used to represent the current series in a Range Control.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.RangeControlViewType"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AreaSeriesView.RangeControlViewTypeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AreaSeriesView.RangeControlViewType"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AreaSeriesView.SeriesAnimation">
+      <summary>
+        <para>Specifies the series animation.</para>
+      </summary>
+      <value>An DevExpress.WinUI.Charts.AreaAnimationBase class descendant, specifying the series animation type.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AreaSeriesView.SeriesAnimationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AreaSeriesView.SeriesAnimation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AreaSeriesView.ShowContour">
+      <summary>
+        <para>Gets or sets a value indicating whether or not it is necessary to show the contour for this series.</para>
+      </summary>
+      <value>true, to show the contour; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AreaSeriesView.ShowContourProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AreaSeriesView.ShowContour"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AreaSeriesView.ShowMarkers">
+      <summary>
+        <para>Gets or sets a value indicating whether series point markers are visible.</para>
+      </summary>
+      <value>true to show markers; false to hide them.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AreaSeriesView.ShowMarkersProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AreaSeriesView.ShowMarkers"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AreaSeriesView.StackedMode">
+      <summary>
+        <para>Specifies whether area series points are stacked when shown for the same argument.</para>
+      </summary>
+      <value>A value that defines how area series points are stacked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AreaSeriesView.StackedModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AreaSeriesView.StackedMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AreaSeriesView.Transparency">
+      <summary>
+        <para>Specifies the transparency (0-1) to use for displaying the filled color area series.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value from 0 (opaque) to 1 (transparent).</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AreaSeriesView.TransparencyProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AreaSeriesView.Transparency"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.AxisAlignment">
+      <summary>
+        <para>Lists the values used to specify an axis alignment.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisAlignment.Far">
+      <summary>
+        <para>The axis is displayed at the right or top side of the chart area, depending on its type and orientation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisAlignment.Near">
+      <summary>
+        <para>The axis is displayed at the left or bottom side of the chart area, depending on its type and orientation.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.AxisBase">
+      <summary>
+        <para>The base class for axes.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.AxisBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.AxisBase"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.ActualGridLinesMinorStrokeStyle">
+      <summary>
+        <para>Gets the actual stroke style of minor grid lines.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.ActualGridLinesStrokeStyle">
+      <summary>
+        <para>Gets the actual stroke style of major grid lines.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.Alignment">
+      <summary>
+        <para>Gets or sets the alignment of the axis. This is a dependency property.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Charts.AxisAlignment"/> enumeration value which specifies the alignment of the axis.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.AlignmentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.Alignment"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.Brush">
+      <summary>
+        <para>Gets or sets the color of the axis. This is a dependency property.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.Media.SolidColorBrush object that is the color used to paint the axis.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.BrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.Brush"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.DateTimeGridAlignment">
+      <summary>
+        <para>Gets or sets the date-time measurement unit, to which the beginning of a diagram’s gridlines and labels should be aligned.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.DateTimeMeasureUnit"/> enumeration value representing the measurement unit to which the beginning of a diagram’s gridlines and labels should be aligned.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.DateTimeGridAlignmentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.DateTimeGridAlignment"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.DateTimeMeasureUnit">
+      <summary>
+        <para>Gets or sets the detail level for date-time values.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.DateTimeMeasureUnit"/> enumeration value which represents the axis’ detail level.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.DateTimeMeasureUnitProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.DateTimeMeasureUnit"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.GridLinesBrush">
+      <summary>
+        <para>Gets or sets the color of the axis grid lines.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.Media.SolidColorBrush object that is the color used to paint the axis grid lines.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.GridLinesBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.GridLinesBrush"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.GridLinesMinorBrush">
+      <summary>
+        <para>Specifies the color of the axis minor grid lines.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.Media.SolidColorBrush object that is the color used to paint the axis minor grid lines.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.GridLinesMinorBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.GridLinesMinorBrush"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.GridLinesMinorStrokeStyle">
+      <summary>
+        <para>Specifies the line style settings for the axis’ minor grid lines.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.GridLinesMinorStrokeStyleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.GridLinesMinorStrokeStyle"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.GridLinesStrokeStyle">
+      <summary>
+        <para>Specifies the line style settings for the axis’ major grid lines.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.GridLinesStrokeStyleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.GridLinesStrokeStyle"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.GridSpacing">
+      <summary>
+        <para>Gets or sets the interval between axis gridlines.</para>
+      </summary>
+      <value>The interval between axis gridlines.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.GridSpacingAuto">
+      <summary>
+        <para>Specifies whether the chart automatically calculates the distance between gridlines based on the major tickmarks.</para>
+      </summary>
+      <value>true if the distance between gridlines is calculated automatically; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.GridSpacingAutoProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.GridSpacingAuto"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.GridSpacingProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.GridSpacing"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.Interlaced">
+      <summary>
+        <para>Gets or sets whether interlacing is applied to the axis.</para>
+      </summary>
+      <value>true to apply interlacing; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.InterlacedBrush">
+      <summary>
+        <para>Gets or sets the interlacing color.</para>
+      </summary>
+      <value>The interlacing color.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.InterlacedBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.InterlacedBrush"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.InterlacedProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.Interlaced"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.LabelAngle">
+      <summary>
+        <para>Specifies a rotation angle for axis labels. The angle is measured in degrees, and clockwise from the horizontal.</para>
+      </summary>
+      <value>An angle in degrees.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.LabelAngleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.LabelAngle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.LabelPattern">
+      <summary>
+        <para>Specifies a string pattern that formats axis label text.</para>
+      </summary>
+      <value>A format pattern.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.LabelPatternProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.LabelPattern"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.LabelTemplate">
+      <summary>
+        <para>Specifies a template that defines a custom appearance and look-and-feel for axis labels.</para>
+      </summary>
+      <value>A data template.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.LabelTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.LabelTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.MinorCount">
+      <summary>
+        <para>Gets or sets the number of minor tickmarks and gridlines.</para>
+      </summary>
+      <value>An integer value which specifies the number of minor tickmarks between two major tickmarks. The same value specifies the number of grid lines.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.MinorCountProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.MinorCount"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.Reverse">
+      <summary>
+        <para>Gets or sets a value indicating whether the axis is reversed. This is a dependency property.</para>
+      </summary>
+      <value>true, to reverse the axis; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.ReverseProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.Reverse"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.AxisBase.SetVisualRangeInternalValues(System.Double,System.Double)">
+      <summary>
+        <para>Sets the start and end values for the axis visual range in internal numeric values.</para>
+      </summary>
+      <param name="start">The visual range’s start value.</param>
+      <param name="end">The visual range’s end value.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.AxisBase.SetVisualRangeValues(System.Object,System.Object)">
+      <summary>
+        <para>Sets the start and end values for the axis visual range in axis units.</para>
+      </summary>
+      <param name="start">The visual range’s start value.</param>
+      <param name="end">The visual range’s end value.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.AxisBase.SetWholeRangeInternalValues(System.Double,System.Double)">
+      <summary>
+        <para>Sets the start and end values for the axis whole range in numeric internal values.</para>
+      </summary>
+      <param name="start">The visual range’s start value.</param>
+      <param name="end">The visual range’s end value.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.AxisBase.SetWholeRangeValues(System.Object,System.Object)">
+      <summary>
+        <para>Sets the start and end values for the axis whole range in axis units.</para>
+      </summary>
+      <param name="start">The whole range’s start value.</param>
+      <param name="end">The whole range’s end value.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.ShowLabels">
+      <summary>
+        <para>Gets or sets a value indicating whether labels should be visible for this axis.</para>
+      </summary>
+      <value>A <see cref="T:System.Boolean"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.ShowLabelsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.ShowLabels"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.ShowLine">
+      <summary>
+        <para>Specifies whether to display the axis line.</para>
+      </summary>
+      <value>true if the axis line is displayed; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.ShowLineProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.ShowLine"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.ShowMajorGridlines">
+      <summary>
+        <para>Specifies whether or not to show major gridlines.</para>
+      </summary>
+      <value>true, to display major gridlines; otherwise - false;</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.ShowMajorGridlinesProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.ShowMajorGridlines"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.ShowMajorTickmarks">
+      <summary>
+        <para>Specifies whether or not the major tickmarks are visible.</para>
+      </summary>
+      <value>true, to show major tickmarks; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.ShowMajorTickmarksProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.ShowMajorTickmarks"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.ShowMinorGridlines">
+      <summary>
+        <para>Specifies whether or not to show minor gridlines.</para>
+      </summary>
+      <value>true, to display minor gridlines; otherwise - false;</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.ShowMinorGridlinesProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.ShowMinorGridlines"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.ShowMinorTickmarks">
+      <summary>
+        <para>Specifies whether or not the axis minor tickmarks are visible.</para>
+      </summary>
+      <value>true, to show minor tickmarks; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.ShowMinorTickmarksProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.ShowMinorTickmarks"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.ShowTitle">
+      <summary>
+        <para>Specifies whether the axis title is visible.</para>
+      </summary>
+      <value>true if the title is visible; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.ShowTitleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.ShowTitle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.SideMargins">
+      <summary>
+        <para>Specifies the distance between the outermost series point and the diagram edge, in axis units.</para>
+      </summary>
+      <value>A value that specifies side margins in axis units.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.SideMarginsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.SideMargins"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.Strips">
+      <summary>
+        <para>Provides access to the collection of axis strips. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.StripCollection"/> object which represents the collection of axis strips.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.SynchronizeVisualRange">
+      <summary>
+        <para>Indicates whether to make the visual range equal to the whole range when its start and end values are changed.</para>
+      </summary>
+      <value>true if the visual and whole ranges are synchronized; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.SynchronizeVisualRangeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.SynchronizeVisualRange"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.Thickness">
+      <summary>
+        <para>Gets or sets the thickness of the axis. This is a dependency property.</para>
+      </summary>
+      <value>An integer value which specifies the thickness of the axis, in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.ThicknessProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.Thickness"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.TickmarksCrossAxis">
+      <summary>
+        <para>Specifies whether or not tickmarks cross the axis.</para>
+      </summary>
+      <value>true, if tickmarks should cross the axis; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.TickmarksCrossAxisProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.TickmarksCrossAxis"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.TickmarksLength">
+      <summary>
+        <para>Specifies the length (in pixels) of axis major tick marks.</para>
+      </summary>
+      <value>An integer value, specifying the length of the major tick marks, in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.TickmarksLengthProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.TickmarksLength"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.TickmarksMinorLength">
+      <summary>
+        <para>Specifies the length (in pixels) of axis minor tickmarks.</para>
+      </summary>
+      <value>An integer value specifying the length of the minor tickmarks, in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.TickmarksMinorLengthProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.TickmarksMinorLength"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.TickmarksMinorThickness">
+      <summary>
+        <para>Specifies the thickness (in pixels) of minor tickmarks.</para>
+      </summary>
+      <value>An integer value, specifying the thickness of minor tick marks, in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.TickmarksMinorThicknessProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.TickmarksMinorThickness"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.TickmarksThickness">
+      <summary>
+        <para>Specifies the thickness (in pixels) of major tickmarks.</para>
+      </summary>
+      <value>An integer value, specifying the thickness of major tick marks, in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.TickmarksThicknessProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.TickmarksThickness"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.Title">
+      <summary>
+        <para>Specifies the axis title’s content.</para>
+      </summary>
+      <value>The title content.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.TitleAlignment">
+      <summary>
+        <para>Specifies the axis title’s alignment.</para>
+      </summary>
+      <value>A value that defines the title alignment.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.TitleAlignmentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.TitleAlignment"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.TitleContentTemplate">
+      <summary>
+        <para>Specifies a data template that configures title appearance.</para>
+      </summary>
+      <value>A data template.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.TitleContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.TitleContentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.TitleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.Title"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.Visible">
+      <summary>
+        <para>Gets or sets a value indicating whether the axis is visible.</para>
+      </summary>
+      <value>true, if the axis is visible; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.VisibleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.Visible"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.VisualRangeEndValue">
+      <summary>
+        <para>Specifies the visual range’s end value in axis units.</para>
+      </summary>
+      <value>The visual range’s end value.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.VisualRangeEndValueInternal">
+      <summary>
+        <para>Specifies the visual range’s end value in internal numeric units.</para>
+      </summary>
+      <value>The visual range’s end value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.VisualRangeEndValueInternalProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.VisualRangeEndValueInternal"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.VisualRangeEndValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.VisualRangeEndValue"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.VisualRangeStartValue">
+      <summary>
+        <para>Specifies the visual range’s start value in axis units.</para>
+      </summary>
+      <value>The visual range’s start value.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.VisualRangeStartValueInternal">
+      <summary>
+        <para>Specifies the visual range’s start value in internal numeric units.</para>
+      </summary>
+      <value>The visual range’s start value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.VisualRangeStartValueInternalProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.VisualRangeStartValueInternal"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.VisualRangeStartValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.VisualRangeStartValue"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.WholeRangeAutoCorrect">
+      <summary>
+        <para>Specifies whether to calculate the axis whole range based on the underlying data.</para>
+      </summary>
+      <value>true if the whole range limits are automatically calculated; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.WholeRangeAutoCorrectProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.WholeRangeAutoCorrect"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.WholeRangeEndValue">
+      <summary>
+        <para>Specifies the whole range’s end value in axis units.</para>
+      </summary>
+      <value>The whole range’s end value.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.WholeRangeEndValueInternal">
+      <summary>
+        <para>Specifies the whole range’s end value in internal numeric units.</para>
+      </summary>
+      <value>The whole range’s end value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.WholeRangeEndValueInternalProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.WholeRangeEndValueInternal"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.WholeRangeEndValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.WholeRangeEndValue"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.WholeRangeStartValue">
+      <summary>
+        <para>Specifies the whole range’s start value in axis units.</para>
+      </summary>
+      <value>The whole range’s start value.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisBase.WholeRangeStartValueInternal">
+      <summary>
+        <para>Specifies the whole range’s start value in internal numeric units.</para>
+      </summary>
+      <value>The whole range’s start value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.WholeRangeStartValueInternalProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.WholeRangeStartValueInternal"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisBase.WholeRangeStartValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.AxisBase.WholeRangeStartValue"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.AxisX">
+      <summary>
+        <para>Represents the X-Axis for 2D charts.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.AxisX.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.AxisX"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.AxisY">
+      <summary>
+        <para>Represents the Y-Axis for 2D charts.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.AxisY.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.AxisY"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.AxisY.ShowZeroValue">
+      <summary>
+        <para>Specifies whether to show the zero level on the y-axis.</para>
+      </summary>
+      <value>true to show the zero level; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.AxisY.ShowZeroValueProperty">
+      <summary>
+        <para>Identifies the AxisY.ShowZeroValue dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.BarLabelPosition">
+      <summary>
+        <para>Lists values that specify the position for Bar labels.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.BarLabelPosition.Center">
+      <summary>
+        <para>The label is displayed in the center of the bar.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.BarLabelPosition.Outside">
+      <summary>
+        <para>The label is displayed outside the bar (on top for positive values, and on the bottom for negative values).</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.BarSeriesView">
+      <summary>
+        <para>Allows you to visualize series data points as bars and columns.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.BarSeriesView.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.BarSeriesView"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.BarSeriesView.BarDistance">
+      <summary>
+        <para>Specifies the distance value (in pixels) between two bars of different series shown at the same argument point.</para>
+      </summary>
+      <value>An integer that is the distance between two neighboring bars, in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.BarSeriesView.BarDistanceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.BarSeriesView.BarDistance"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.BarSeriesView.BarWidth">
+      <summary>
+        <para>Gets or sets the width of a bar.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that is the bar’s width in fractions of axis units, where an axis unit is the distance between two major values on the axis. This value should be greater than or equal to 0.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.BarSeriesView.BarWidthProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.BarSeriesView.BarWidth"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.BarSeriesView.PointAnimation">
+      <summary>
+        <para>Specifies the animation for data points of Bar series.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Charts.BarAnimationBase class descendant, specifying the animation type.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.BarSeriesView.PointAnimationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.BarSeriesView.PointAnimation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.BarSeriesView.RangeControlViewType">
+      <summary>
+        <para>Gets or sets a value that specifies which view type should be used to represent the current series in a Range Control.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.RangeControlViewType"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.BarSeriesView.RangeControlViewTypeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.BarSeriesView.RangeControlViewType"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.BarSeriesView.SideBySideBarLabelPosition">
+      <summary>
+        <para>Specifies the position for labels of side-by-side bars.</para>
+      </summary>
+      <value>A value that identifies a bar label position.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.BarSeriesView.SideBySideBarLabelPositionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.BarSeriesView.SideBySideBarLabelPosition"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.BarSeriesView.StackedGroup">
+      <summary>
+        <para>Specifies the stacked bar group to which the series belongs.</para>
+      </summary>
+      <value>A value that identifies the series’ group.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.BarSeriesView.StackedGroupProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.BarSeriesView.StackedGroup"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.BarSeriesView.StackedMode">
+      <summary>
+        <para>Specifies whether bars are stacked when shown for the same argument.</para>
+      </summary>
+      <value>A value that defines how bars are stacked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.BarSeriesView.StackedModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.BarSeriesView.StackedMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.CartesianChart">
+      <summary>
+        <para>The Cartesian Chart control to plot series of data points on an XY Cartesian diagram.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.CartesianChart.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.CartesianChart"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CartesianChart.ActualAxisX">
+      <summary>
+        <para>Gets the actual x-axis of the <see cref="T:DevExpress.WinUI.Charts.CartesianChart"/> object.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Charts.AxisX"/> object.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CartesianChart.ActualAxisY">
+      <summary>
+        <para>Gets the actual y-axis of the <see cref="T:DevExpress.WinUI.Charts.CartesianChart"/> object.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Charts.AxisY"/> object.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CartesianChart.AllowAxisXZoomScroll">
+      <summary>
+        <para>Indicates whether a user can zoom and scroll a diagram along the X-axis.</para>
+      </summary>
+      <value>true if zoom and scroll operations are allowed; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.CartesianChart.AllowAxisXZoomScrollProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.CartesianChart.AllowAxisXZoomScroll"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CartesianChart.AllowAxisYZoomScroll">
+      <summary>
+        <para>Indicates whether a user can zoom and scroll a diagram along the Y-axis.</para>
+      </summary>
+      <value>true if zoom and scroll operations are allowed; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.CartesianChart.AllowAxisYZoomScrollProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.CartesianChart.AllowAxisYZoomScroll"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CartesianChart.AxisX">
+      <summary>
+        <para>Provides access to the setting of the X-axis.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Charts.AxisX"/> object which represents the X-axis.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.CartesianChart.AxisXProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.CartesianChart.AxisX"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CartesianChart.AxisY">
+      <summary>
+        <para>Provides access to the setting of the Y-axis.</para>
+      </summary>
+      <value>An <see cref="T:DevExpress.WinUI.Charts.AxisY"/> object which represents the Y-axis.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.CartesianChart.AxisYProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.CartesianChart.AxisY"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CartesianChart.Rotated">
+      <summary>
+        <para>Specifies whether or not the chart area should be rotated.</para>
+      </summary>
+      <value>true, to rotate the diagram; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.CartesianChart.RotatedProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.CartesianChart.Rotated"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CartesianChart.Series">
+      <summary>
+        <para>Returns the chart’s series collection.</para>
+      </summary>
+      <value>A collection that stores series.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CartesianChart.SetAxisXRangeCommand">
+      <summary>
+        <para>Returns a command that sets the specified range for the X-axis.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CartesianChart.SetAxisYRangeCommand">
+      <summary>
+        <para>Returns a command that sets the specified range for the Y-axis.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.CartesianSeries">
+      <summary>
+        <para>The base class for Cartesian Chart series.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.CartesianSeriesCollection">
+      <summary>
+        <para>A collection of Cartesian chart series.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.CartesianSeriesView">
+      <summary>
+        <para>Represents the base class for all series views that can be displayed on a <see cref="T:DevExpress.WinUI.Charts.CartesianChart"/> control.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CartesianSeriesView.Brush">
+      <summary>
+        <para>Gets or sets the color of the series view. This is a dependency property.</para>
+      </summary>
+      <value><see cref="T:Microsoft.UI.Xaml.Media.SolidColorBrush"/></value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.CartesianSeriesView.BrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.CartesianSeriesView.Brush"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CartesianSeriesView.ColorEach">
+      <summary>
+        <para>Gets or sets a value that specifies whether each data point of a series is shown in a different color.</para>
+      </summary>
+      <value>true to specify that each data point in a series has a different color; false to use the same color for all the series’ data points.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.CartesianSeriesView.ColorEachProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.CartesianSeriesView.ColorEach"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CartesianSeriesView.LegendPattern">
+      <summary>
+        <para>Specifies a string pattern that formats legend item text for series.</para>
+      </summary>
+      <value>A format string.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.CartesianSeriesView.LegendPatternProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.CartesianSeriesView.LegendPattern"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ChartBase">
+      <summary>
+        <para>The base class for chart controls.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.ChartBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.ChartBase"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartBase.ActualPalette">
+      <summary>
+        <para>Gets the actual palette of a chart.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.Palette"/> object.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.ChartBase.Animate(System.Double)">
+      <summary>
+        <para>Starts animating chart series after the specified delay.</para>
+      </summary>
+      <param name="delayInSeconds">A <see cref="T:System.Double"/> value specifying the delay (in seconds).</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartBase.AnimateCommand">
+      <summary>
+        <para>Returns a command that starts animation of a chart’s contents.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartBase.AnimateOnLoading">
+      <summary>
+        <para>Gets or sets a value indicating if chart contents should be animated on chart loading.</para>
+      </summary>
+      <value>true, to animate chart contents on loading; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartBase.AnimateOnLoadingProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartBase.AnimateOnLoading"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartBase.Legend">
+      <summary>
+        <para>Gets the chart control’s legend and provides access to its settings.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.Legend"/> object that represents the chart control’s legend.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartBase.LegendProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartBase.Legend"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartBase.Palette">
+      <summary>
+        <para>Gets or sets the palette used to draw the chart’s series.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.Palette"/> object that is the palette with colors.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartBase.PaletteProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartBase.Palette"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Charts.ChartBase.SelectionChanged">
+      <summary>
+        <para>Occurs when the chart selection is changed.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartBase.SelectionMode">
+      <summary>
+        <para>Specifies the selection mode for chart series.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartBase.SelectionModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartBase.SelectionMode"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartBase.SeriesItemTemplate">
+      <summary>
+        <para>Gets or sets a template that specifies the settings of chart series.</para>
+      </summary>
+      <value>A template that defines series settings.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartBase.SeriesItemTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartBase.SeriesItemTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartBase.SeriesItemTemplateSelector">
+      <summary>
+        <para>Gets or sets an object that selects a template applied to series.</para>
+      </summary>
+      <value>An object that selects a template based on custom logic.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartBase.SeriesItemTemplateSelectorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartBase.SeriesItemTemplateSelector"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartBase.SeriesSource">
+      <summary>
+        <para>Gets or sets the source of series view models. This is a dependency property.</para>
+      </summary>
+      <value>A data source from which the chart retrieves its series data.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartBase.SeriesSourceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartBase.SeriesSource"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartBase.ToolTipEnabled">
+      <summary>
+        <para>Gets or sets whether to show tooltips when a user clicks a series or series point.</para>
+      </summary>
+      <value>true if tooltips are enabled; false if tooltips are disabled.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartBase.ToolTipEnabledProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartBase.ToolTipEnabled"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ChartDataSource">
+      <summary>
+        <para>The base class for chart data sources.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ChartDependencyObject">
+      <summary>
+        <para>Enables WinRT property system services for its derived model classes.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.ChartDependencyObject.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.ChartDependencyObject"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Charts.ChartDependencyObject.PropertyChanged">
+      <summary>
+        <para>Occurs every time any of the <see cref="T:DevExpress.WinUI.Charts.ChartDependencyObject"/> class properties has changed its value.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ChartElement">
+      <summary>
+        <para>Represents the base class for other chart elements intended to hide most properties of the <see cref="T:Microsoft.UI.Xaml.Controls.Control"/> class.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Charts.ChartElement.PropertyChanged">
+      <summary>
+        <para>Occurs every time any of the <see cref="T:DevExpress.WinUI.Charts.ChartElement"/> class properties has changed its value.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ChartElementSelectionChangedEventArgs">
+      <summary>
+        <para>Contains data for the <see cref="E:DevExpress.WinUI.Charts.ChartBase.SelectionChanged"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.ChartElementSelectionChangedEventArgs.#ctor(System.Collections.Generic.List{System.Object},DevExpress.WinUI.Core.Internal.ISelectableItem)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.ChartElementSelectionChangedEventArgs"/> class with the specified settings.</para>
+      </summary>
+      <param name="selection">A list of selected objects.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartElementSelectionChangedEventArgs.ChangedElement">
+      <summary>
+        <para>Returns the chart element that is currently selected or deselected.</para>
+      </summary>
+      <value>The chart element that is currently selected or deselected.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartElementSelectionChangedEventArgs.IsSelected">
+      <summary>
+        <para>Returns the selection state of the chart element that is currently selected or deselected.</para>
+      </summary>
+      <value>true if the chart element is selected; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ChartElementSelectionChangedEventHandler">
+      <summary>
+        <para>Defines a signature (parameter list types) for the method that handles the <see cref="E:DevExpress.WinUI.Charts.ChartBase.SelectionChanged"/> event.</para>
+      </summary>
+      <param name="sender">Identifies the chart object that raises the event.</param>
+      <param name="e">Contains event data.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ChartFrameworkElement">
+      <summary>
+        <para>Implements base internal infrastructure for chart elements, for example, support for property update notifications.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Charts.ChartFrameworkElement.PropertyChanged">
+      <summary>
+        <para>Occurs when a <see cref="T:DevExpress.WinUI.Charts.ChartFrameworkElement"/> class property’s value changes.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ChartPanel">
+      <summary>
+        <para>A base class for chart elements that can be bound to a DataContext instance.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Charts.ChartPanel.PropertyChanged">
+      <summary>
+        <para>Occurs when the ChartPanel class’ property value changes.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ChartRangeControlClient">
+      <summary>
+        <para>Displays the bound chart’s data within the range control and specifies the chart’s visual range.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.ChartRangeControlClient.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.ChartRangeControlClient"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartRangeControlClient.Chart">
+      <summary>
+        <para>Gets or sets the chart to which the Range Control is bound.</para>
+      </summary>
+      <value>The chart to which the Range Control is bound.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartRangeControlClient.ChartProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartRangeControlClient.Chart"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartRangeControlClient.FontFamily">
+      <summary>
+        <para>Gets or sets a font family for ChartRangeControlClient labels.</para>
+      </summary>
+      <value>The font family for ChartRangeControlClient labels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartRangeControlClient.FontFamilyProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartRangeControlClient.FontFamily"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartRangeControlClient.FontSize">
+      <summary>
+        <para>Gets or sets the font size of ChartRangeControlClient labels.</para>
+      </summary>
+      <value>The font size of ChartRangeControlClient labels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartRangeControlClient.FontSizeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartRangeControlClient.FontSize"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartRangeControlClient.Foreground">
+      <summary>
+        <para>Gets or sets the brush used to paint ChartRangeControlClient label text.</para>
+      </summary>
+      <value>The brush that is used to paint ChartRangeControlClient label text.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartRangeControlClient.ForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartRangeControlClient.Foreground"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartRangeControlClient.GridLinesBrush">
+      <summary>
+        <para>Gets or sets the brush used to paint <see cref="T:DevExpress.WinUI.Charts.ChartRangeControlClient"/> grid lines.</para>
+      </summary>
+      <value>The brush that is used to paint <see cref="T:DevExpress.WinUI.Charts.ChartRangeControlClient"/> grid lines.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartRangeControlClient.GridLinesBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartRangeControlClient.GridLinesBrush"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ChartRangeControlClient.LabelPattern">
+      <summary>
+        <para>Gets or sets a format string that specifies ChartRangeControlClient label text.</para>
+      </summary>
+      <value>The format string that specifies ChartRangeControlClient label text.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ChartRangeControlClient.LabelPatternProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ChartRangeControlClient.LabelPattern"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.Charts.ChartRangeControlClient.LayoutChanged">
+      <summary>
+        <para>Occurs when the <see cref="T:DevExpress.WinUI.Charts.ChartRangeControlClient"/> layout is changed.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.CollectionBase`1">
+      <summary>
+        <para>A base for certain collections used in charts.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.CollectionBase`1.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.CollectionBase`1"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.CollectionBase`1.AddChild(DevExpress.WinUI.Charts.Internal.IOwnedElement)">
+      <summary>
+        <para>Adds a child element to the collection.</para>
+      </summary>
+      <param name="element">An object implementing the IOwnedElement interface.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.CollectionBase`1.Owner">
+      <summary>
+        <para>Provides access to the owner of this collection.</para>
+      </summary>
+      <value>A <see cref="T:System.Object"/> class descendant.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.CollectionBase`1.RemoveChild(DevExpress.WinUI.Charts.Internal.IOwnedElement)">
+      <summary>
+        <para>Removes the child element from this collection.</para>
+      </summary>
+      <param name="element">An object implementing the IOwnedElement interface.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ContourAppearance">
+      <summary>
+        <para>Contains settings that specify the appearance of a contour drawn around chart elements.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.ContourAppearance.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.ContourAppearance"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ContourAppearance.Brush">
+      <summary>
+        <para>Gets or sets the color of the contour. This is a dependency property.</para>
+      </summary>
+      <value><see cref="T:Microsoft.UI.Xaml.Media.SolidColorBrush"/></value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ContourAppearance.BrushColor">
+      <summary>
+        <para>Returns the color of a <see cref="P:DevExpress.WinUI.Charts.ContourAppearance.Brush"/>.</para>
+      </summary>
+      <value>A <see cref="T:Windows.UI.Color"/> value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ContourAppearance.BrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ContourAppearance.Brush"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ContourAppearance.StrokeStyle">
+      <summary>
+        <para>Specifies the line style settings for this contour.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ContourAppearance.StrokeStyleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.ContourAppearance.StrokeStyle"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.DataChangingAnimationMode">
+      <summary>
+        <para>Lists the values used to specify how data points are animated when the underlying data is changed.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DataChangingAnimationMode.AnimateEntireSeries">
+      <summary>
+        <para>The entire series is animated if even a single data point has been changed.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DataChangingAnimationMode.Disabled">
+      <summary>
+        <para>A series isn’t animated when its data points are changing.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.DataSource">
+      <summary>
+        <para>Allows you to bind a chart to a data source.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.DataSource.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.DataSource"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.DataSource.#ctor(System.Object)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.DataSource"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.DataSource.ArgumentDataMember">
+      <summary>
+        <para>Specifies the name of a data source field that stores point arguments.</para>
+      </summary>
+      <value>The name of a data source field.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DataSource.ArgumentDataMemberProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.DataSource.ArgumentDataMember"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.DataSource.ArgumentScaleType">
+      <summary>
+        <para>Specifies the scale type of data point arguments.</para>
+      </summary>
+      <value>A value that identifies a scale type.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DataSource.ArgumentScaleTypeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.DataSource.ArgumentScaleType"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.DataSource.Dispose">
+      <summary>
+        <para>Disposes the <see cref="T:DevExpress.WinUI.Charts.DataSource"/> object. The Dispose method releases all the resources allocated to the object and improves system performance.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.DataSource.GetObjectByKey(System.Int32)">
+      <summary>
+        <para>Returns a data source with the specified key.</para>
+      </summary>
+      <param name="key">An integer that is a key.</param>
+      <returns>An object with the specified key. Null if no objects are found.</returns>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.DataSource.PointSource">
+      <summary>
+        <para>Specifies a source of points.</para>
+      </summary>
+      <value>An object that is a point source.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DataSource.PointSourceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.DataSource.PointSource"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.DataSource.ValueDataMember">
+      <summary>
+        <para>Specifies the name of a data source field that stores point values.</para>
+      </summary>
+      <value>The name of a data source field.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DataSource.ValueDataMemberProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.DataSource.ValueDataMember"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.DataSource.ValueScaleType">
+      <summary>
+        <para>Specifies the scale type of data point values.</para>
+      </summary>
+      <value>A value that identifies a scale type.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DataSource.ValueScaleTypeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.DataSource.ValueScaleType"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.DataSourceBase">
+      <summary>
+        <para>The base class for entities used to connect a chart to a data source.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.DateTimeMeasureUnit">
+      <summary>
+        <para>Lists the values that specify the unit of measurement for date-time values within a chart control.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DateTimeMeasureUnit.Day">
+      <summary>
+        <para>Specifies a day as the measurement unit for date-time values.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DateTimeMeasureUnit.Hour">
+      <summary>
+        <para>Specifies an hour as the measurement unit for date-time values.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DateTimeMeasureUnit.Millisecond">
+      <summary>
+        <para>Specifies a millisecond as the measurement unit for date-time values.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DateTimeMeasureUnit.Minute">
+      <summary>
+        <para>Specifies a minute as the measurement unit for date-time values.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DateTimeMeasureUnit.Month">
+      <summary>
+        <para>Specifies a month as the measurement unit for date-time values.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DateTimeMeasureUnit.Quarter">
+      <summary>
+        <para>Specifies a quarter of a year as the measurement unit for date-time values.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DateTimeMeasureUnit.Second">
+      <summary>
+        <para>Specifies a second as the measurement unit for date-time values.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DateTimeMeasureUnit.Week">
+      <summary>
+        <para>Specifies a week as the measurement unit for date-time values.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.DateTimeMeasureUnit.Year">
+      <summary>
+        <para>Specifies a year as the measurement unit for date-time values.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ElementSelectionChangedEventArgs">
+      <summary>
+        <para>Contains data for the <see cref="E:DevExpress.WinUI.Charts.ChartBase.SelectionChanged"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.ElementSelectionChangedEventArgs.#ctor(System.Collections.Generic.List{System.Object})">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.ElementSelectionChangedEventArgs"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.ElementSelectionChangedEventArgs.Selection">
+      <summary>
+        <para>Returns a list of items that are selected in a chart.</para>
+      </summary>
+      <value>A list that contains selected chart items.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ElementSelectionChangedEventHandler">
+      <summary>
+        <para>A method that handles the <see cref="E:DevExpress.WinUI.Charts.ChartBase.SelectionChanged"/> event.</para>
+      </summary>
+      <param name="sender">The event source.</param>
+      <param name="e">The event data.</param>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.FunnelChart">
+      <summary>
+        <para>The Funnel Chart control is used to plot series of data points on a funnel chart area.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.FunnelChart.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.FunnelChart"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelChart.MinIndentBetweenSeries">
+      <summary>
+        <para>Gets or sets the minimum indent between two Funnel series.</para>
+      </summary>
+      <value>An integer value that specifies the minimum series indent, in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelChart.MinIndentBetweenSeriesProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.FunnelChart.MinIndentBetweenSeries"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelChart.Series">
+      <summary>
+        <para>Returns the funnel chart’s series collection.</para>
+      </summary>
+      <value>A collection that stores <see cref="T:DevExpress.WinUI.Charts.FunnelSeries"/> objects.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.FunnelLabelPosition">
+      <summary>
+        <para>Lists the values used to specify the position of funnel labels.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelLabelPosition.Center">
+      <summary>
+        <para>The labels are displayed in the center of the funnel data points.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelLabelPosition.Left">
+      <summary>
+        <para>The labels are displayed to the left of the funnel data points.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelLabelPosition.LeftColumn">
+      <summary>
+        <para>The labels are organized in a straight column to the left of the funnel data points.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelLabelPosition.Right">
+      <summary>
+        <para>The labels are displayed to the right of the funnel data points.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelLabelPosition.RightColumn">
+      <summary>
+        <para>The labels are organized in a straight column to the right of the funnel data points.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.FunnelSeries">
+      <summary>
+        <para>A funnel series.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.FunnelSeries.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.FunnelSeries"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeries.ActualView">
+      <summary>
+        <para>Returns the view object that is currently applied to the series.</para>
+      </summary>
+      <value>A funnel series view.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeries.Data">
+      <summary>
+        <para>Allows you to populate the series with data.</para>
+      </summary>
+      <value>A data source.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelSeries.DataProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.FunnelSeries.Data"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeries.View">
+      <summary>
+        <para>Specifies series appearance and series element settings.</para>
+      </summary>
+      <value>A funnel series view.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelSeries.ViewProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.FunnelSeries.View"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.FunnelSeriesCollection">
+      <summary>
+        <para>A collection of funnel chart series.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.FunnelSeriesView">
+      <summary>
+        <para>Represents a series view of the Funnel type.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.FunnelSeriesView.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.FunnelSeriesView"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeriesView.ActualContourAppearance">
+      <summary>
+        <para>Gets the actual contour appearance.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.ContourAppearance"/> object.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeriesView.AlignToCenter">
+      <summary>
+        <para>Gets or sets a value indicating whether a Funnel series should be center-aligned within a chart area.</para>
+      </summary>
+      <value>true, if the funnel series should be center-aligned; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelSeriesView.AlignToCenterProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.FunnelSeriesView.AlignToCenter"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeriesView.ContourAppearance">
+      <summary>
+        <para>Gets or sets the appearance of a funnel contour.</para>
+      </summary>
+      <value><see cref="T:DevExpress.WinUI.Charts.ContourAppearance"/></value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelSeriesView.ContourAppearanceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.FunnelSeriesView.ContourAppearance"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeriesView.HeightToWidthRatio">
+      <summary>
+        <para>Gets or sets a value that specifies the height-to-width ratio of a Funnel View.</para>
+      </summary>
+      <value>A double value that specifies the height-to-width ratio of a funnel.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeriesView.HeightToWidthRatioAuto">
+      <summary>
+        <para>Gets or sets a value which indicates whether the height-to-width ratio of a Funnel Data Points should be auto-calculated.</para>
+      </summary>
+      <value>true, if the height-to-width ratio should be auto-calculated; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelSeriesView.HeightToWidthRatioAutoProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.FunnelSeriesView.HeightToWidthRatioAuto"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelSeriesView.HeightToWidthRatioProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.FunnelSeriesView.HeightToWidthRatio"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeriesView.LabelPosition">
+      <summary>
+        <para>Specifies label position for the funnel series.</para>
+      </summary>
+      <value>A value that specifies label position.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelSeriesView.LabelPositionProperty">
+      <summary>
+        <para>Identifies the FunnelSeriesView.LabelPosition dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeriesView.PointAnimation">
+      <summary>
+        <para>Specifies the animation for the data points.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Charts.FunnelAnimationBase class descendant, specifying the marker animation type.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelSeriesView.PointAnimationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.FunnelSeriesView.PointAnimation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeriesView.PointDistance">
+      <summary>
+        <para>Gets or sets the distance between points of a Funnel series.</para>
+      </summary>
+      <value>An integer, representing the distance between points of a Funnel series view, in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelSeriesView.PointDistanceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.FunnelSeriesView.PointDistance"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeriesView.ShowTitle">
+      <summary>
+        <para>Specifies an individual title for the series.</para>
+      </summary>
+      <value>true if the title is visible; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelSeriesView.ShowTitleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.FunnelSeriesView.ShowTitle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeriesView.Title">
+      <summary>
+        <para>Specifies title content for the funnel series.</para>
+      </summary>
+      <value>Title content.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeriesView.TitleContentTemplate">
+      <summary>
+        <para>Specifies a data template that configures title appearance.</para>
+      </summary>
+      <value>A data template.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelSeriesView.TitleContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.FunnelSeriesView.TitleContentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.FunnelSeriesView.TitlePosition">
+      <summary>
+        <para>Specifies title position.</para>
+      </summary>
+      <value>A value that specifies title position.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelSeriesView.TitlePositionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.FunnelSeriesView.TitlePosition"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.FunnelSeriesView.TitleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.FunnelSeriesView.Title"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.HorizontalPosition">
+      <summary>
+        <para>Lists the values that specify the legend’s horizontal alignment within the chart.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.HorizontalPosition.Center">
+      <summary>
+        <para>Centers a legend horizontally within the chart area.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.HorizontalPosition.Left">
+      <summary>
+        <para>The legend is positioned on the left side of the chart area.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.HorizontalPosition.LeftOutside">
+      <summary>
+        <para>The legend is positioned to the left of the Chart area.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.HorizontalPosition.Right">
+      <summary>
+        <para>The legend is positioned on the right side of the Chart Area.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.HorizontalPosition.RightOutside">
+      <summary>
+        <para>The legend is positioned to the right of the Chart area.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.InterpolationMode">
+      <summary>
+        <para>Lists interpolation modes used to connect points.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.InterpolationMode.Line">
+      <summary>
+        <para>Series points are connected by lines.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.InterpolationMode.Step">
+      <summary>
+        <para>Series points are connected by step lines.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.Legend">
+      <summary>
+        <para>Represents a chart control’s legend.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.Legend.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.Legend"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Legend.HorizontalPosition">
+      <summary>
+        <para>Gets or sets the legend’s horizontal position within the chart control.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.HorizontalPosition"/> enumeration member which specifies the legend’s horizontal position within the chart control.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Legend.HorizontalPositionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Legend.HorizontalPosition"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Legend.IsMovableInsideDiagram">
+      <summary>
+        <para>Gets or sets a value indicating if a legend is movable inside a chart area at runtime.</para>
+      </summary>
+      <value>A <see cref="T:System.Boolean"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Legend.IsMovableInsideDiagramProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Legend.IsMovableInsideDiagram"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Legend.ItemTemplate">
+      <summary>
+        <para>Gets or sets the template for the legend items.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object that contains the template for the legend items.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Legend.ItemTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Legend.ItemTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Legend.MaximumRowsOrColumns">
+      <summary>
+        <para>Gets or sets the maximum number of rows allowed (if a legend displays its items vertically) or columns (if a legend displays its items horizontally).</para>
+      </summary>
+      <value>An integer value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Legend.MaximumRowsOrColumnsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Legend.MaximumRowsOrColumns"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Legend.Orientation">
+      <summary>
+        <para>Specifies whether the legend items are vertically or horizontally oriented.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Controls.Orientation"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Legend.OrientationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Legend.Orientation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Legend.ReverseItems">
+      <summary>
+        <para>Gets or sets a value indicating whether the order of legend items is reversed.</para>
+      </summary>
+      <value>true to reverse legend items; false to preserve their original order.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Legend.ReverseItemsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Legend.ReverseItems"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Legend.VerticalPosition">
+      <summary>
+        <para>Gets or sets the legend’s vertical position within the chart control.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.VerticalPosition"/> enumeration member which specifies the legend’s vertical position within the chart control.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Legend.VerticalPositionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Legend.VerticalPosition"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.LineSeriesView">
+      <summary>
+        <para>The Line series view.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.LineSeriesView.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.LineSeriesView"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.LineSeriesView.InterpolationMode">
+      <summary>
+        <para>Specifies the line view’s interpolation mode that defines how to connect series points.</para>
+      </summary>
+      <value>A value that defines the interpolation mode applied to the series view.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.LineSeriesView.InterpolationModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.LineSeriesView.InterpolationMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.LineSeriesView.InvertedStep">
+      <summary>
+        <para>Specifies whether to invert the steps that connect series points.</para>
+      </summary>
+      <value>true if an inverted step is used; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.LineSeriesView.InvertedStepProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.LineSeriesView.InvertedStep"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.LineSeriesView.RangeControlViewType">
+      <summary>
+        <para>Gets or sets a value that specifies which view type should be used to represent the current series in a Range Control.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.RangeControlViewType"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.LineSeriesView.RangeControlViewTypeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.LineSeriesView.RangeControlViewType"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.LineSeriesView.StackedMode">
+      <summary>
+        <para>Specifies whether line series points are stacked when shown for the same argument.</para>
+      </summary>
+      <value>A value that defines how line series points are stacked.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.LineSeriesView.StackedModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.LineSeriesView.StackedMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.LineSeriesViewBase">
+      <summary>
+        <para>The base class for line series.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.LineSeriesViewBase.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.LineSeriesViewBase"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.LineSeriesViewBase.ActualStrokeStyle">
+      <summary>
+        <para>Returns the stroke style that is applied to the line series.</para>
+      </summary>
+      <value>An object that contains stroke settings.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.LineSeriesViewBase.MarkerSize">
+      <summary>
+        <para>Specifies the size of data point markers, in pixels.</para>
+      </summary>
+      <value>The marker size in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.LineSeriesViewBase.MarkerSizeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.LineSeriesViewBase.MarkerSize"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.LineSeriesViewBase.SeriesAnimation">
+      <summary>
+        <para>Specifies the animation applied to the line.</para>
+      </summary>
+      <value>A line animation.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.LineSeriesViewBase.SeriesAnimationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.LineSeriesViewBase.SeriesAnimation"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.LineSeriesViewBase.ShowMarkers">
+      <summary>
+        <para>Specifies whether to show data point markers for the line series.</para>
+      </summary>
+      <value>true if markers are visible; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.LineSeriesViewBase.ShowMarkersProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.LineSeriesViewBase.ShowMarkers"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.LineSeriesViewBase.StrokeStyle">
+      <summary>
+        <para>Specifies the appearance of the line.</para>
+      </summary>
+      <value>Contains stroke settings.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.LineSeriesViewBase.StrokeStyleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.LineSeriesViewBase.StrokeStyle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.MarkerSeriesView">
+      <summary>
+        <para>Represents the base class for all series views that contain data point markers.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.MarkerSeriesView.LabelAngle">
+      <summary>
+        <para>Specifies the rotation angle for label connectors, in degrees.</para>
+      </summary>
+      <value>An angle in degrees.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.MarkerSeriesView.LabelAngleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.MarkerSeriesView.LabelAngle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.MarkerSeriesView.PointAnimation">
+      <summary>
+        <para>Specifies the animation for data points of series with markers.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Charts.MarkerAnimationBase class descendant, specifying the animation type.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.MarkerSeriesView.PointAnimationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.MarkerSeriesView.PointAnimation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.Palette">
+      <summary>
+        <para>Represents a palette (collection of colors) used to draw a chart.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Palette.Count">
+      <summary>
+        <para>Returns the number of colors in a palette.</para>
+      </summary>
+      <value>An integer value representing the total number of colors in a palette.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.Palette.GetPredefinedKinds">
+      <summary>
+        <para>Returns the list of predefined palettes.</para>
+      </summary>
+      <returns>An object implementing the <see cref="T:System.Collections.IEnumerable"/> interface.</returns>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Palette.Item(System.Int32)">
+      <summary>
+        <para>Provides indexed access to individual colors in the palette.</para>
+      </summary>
+      <param name="index">A zero-based integer specifying the desired color’s position within the palette. If it’s negative or exceeds the last available index, an exception is raised.</param>
+      <value>A <see cref="T:Windows.UI.Color"/> object which represents a color at the specified position.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Palette.PaletteName">
+      <summary>
+        <para>Gets the name of the palette.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value representing a palette’s name.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.Charts.Palette.PropertyChanged">
+      <summary>
+        <para>Occurs every time any of the <see cref="T:DevExpress.WinUI.Charts.Palette"/> class properties has changed its value.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.PieChart">
+      <summary>
+        <para>The Pie Chart control to plot series of data points on a pie chart area.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PieChart.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PieChart"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieChart.EqualPieSize">
+      <summary>
+        <para>Specifies whether pies in a chart are equal in size.</para>
+      </summary>
+      <value>true if pie sizes are equal in a chart; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieChart.EqualPieSizeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieChart.EqualPieSize"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieChart.MinIndentBetweenSeries">
+      <summary>
+        <para>Gets or sets the minimum indent between adjacent pie series.</para>
+      </summary>
+      <value>An integer value, which specifies the minimum indent, in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieChart.MinIndentBetweenSeriesProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieChart.MinIndentBetweenSeries"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieChart.Series">
+      <summary>
+        <para>Returns the pie chart’s series collection.</para>
+      </summary>
+      <value>A collection that stores series.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.PieLabelPosition">
+      <summary>
+        <para>Lists the values used to specify the position of pie labels.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieLabelPosition.Inside">
+      <summary>
+        <para>Specifies that point labels should be painted directly on the corresponding slice of a Pie chart.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieLabelPosition.Outside">
+      <summary>
+        <para>Specifies that point labels should be painted outside a Pie chart, near the corresponding slice.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieLabelPosition.TwoColumns">
+      <summary>
+        <para>Specifies that point labels should be painted outside a Pie chart and organized into two columns to the left and right of the Pie chart.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.PieSeries">
+      <summary>
+        <para>A pie series.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PieSeries.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PieSeries"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeries.ActualView">
+      <summary>
+        <para>Returns the view object that is currently applied to the series.</para>
+      </summary>
+      <value>A pie series view.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeries.Data">
+      <summary>
+        <para>Allows you to populate the series with data.</para>
+      </summary>
+      <value>A data source.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeries.DataProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeries.Data"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeries.View">
+      <summary>
+        <para>Gets or sets the series view settings.</para>
+      </summary>
+      <value>Contains pie series view settings.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeries.ViewProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeries.View"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.PieSeriesCollection">
+      <summary>
+        <para>A collection of pie chart series.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.PieSeriesView">
+      <summary>
+        <para>Represents a series view of the Pie type.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PieSeriesView.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PieSeriesView"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.ActualContourAppearance">
+      <summary>
+        <para>Gets the actual contour appearance.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.ContourAppearance"/> object.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.ContourAppearance">
+      <summary>
+        <para>Gets or sets the appearance of a pie contour.</para>
+      </summary>
+      <value><see cref="T:DevExpress.WinUI.Charts.ContourAppearance"/></value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.ContourAppearanceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.ContourAppearance"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.DonutGroup">
+      <summary>
+        <para>Specifies the index of the donut group to which the pie series belongs.</para>
+      </summary>
+      <value>An integer that specifies the donut group index.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.DonutGroupInnerIndent">
+      <summary>
+        <para>Gets or sets the inner indent for the pie series when it is shown in a group of nested donuts, in pixels.</para>
+      </summary>
+      <value>The distance between donut rings in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.DonutGroupInnerIndentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.DonutGroupInnerIndent"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.DonutGroupProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.DonutGroup"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.DonutGroupWeight">
+      <summary>
+        <para>Gets or sets the width of the donut as a percentage of the summarized width of all donuts.</para>
+      </summary>
+      <value>The donut width as a percentage.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.DonutGroupWeightProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.DonutGroupWeight"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.DonutHoleRadiusPercent">
+      <summary>
+        <para>Gets or sets the radius of the donut center hole.</para>
+      </summary>
+      <value>A value in the range from 0 to 100.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.DonutHoleRadiusPercentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.DonutHoleRadiusPercent"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.LabelPosition">
+      <summary>
+        <para>Gets or sets a position for pie sector labels.</para>
+      </summary>
+      <value>A value that identifies a label position.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.LabelPositionProperty">
+      <summary>
+        <para>Identifies the PieSeriesView.LabelPosition dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.PointAnimation">
+      <summary>
+        <para>Specifies the animation for data points of Pie series.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Charts.PieSeriesPointAnimationBase class descendant, specifying the animation type.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.PointAnimationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.PointAnimation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.SeriesAnimation">
+      <summary>
+        <para>Provides access to the settings of a series animation.</para>
+      </summary>
+      <value>An DevExpress.WinUI.Charts.PieSeriesAnimationBase class descendant, specifying the series animation type.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.SeriesAnimationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.SeriesAnimation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.ShowDonut">
+      <summary>
+        <para>Specifies whether to show the pie series as a donut.</para>
+      </summary>
+      <value>true if the pie series is shown as a donut; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.ShowDonutProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.ShowDonut"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.ShowTitle">
+      <summary>
+        <para>Gets or sets whether the title of the pie series is visible.</para>
+      </summary>
+      <value>true if the title is shown; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.ShowTitleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.ShowTitle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.StartAngle">
+      <summary>
+        <para>Specifies the starting angle to draw pie series slices.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value (in degrees, from -360 to 360).</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.StartAngleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.StartAngle"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.SweepDirection">
+      <summary>
+        <para>Specifies the direction in which a Pie series is swept. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.PieSweepDirection"/> enumeration value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.SweepDirectionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.SweepDirection"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.Title">
+      <summary>
+        <para>Gets or sets the title’s content.</para>
+      </summary>
+      <value>An object that specifies title content.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.TitleContentTemplate">
+      <summary>
+        <para>Specifies a template that defines the appearance of title content.</para>
+      </summary>
+      <value>A template that defines title content appearance.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.TitleContentTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.TitleContentTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PieSeriesView.TitlePosition">
+      <summary>
+        <para>Specifies the title position of the pie series.</para>
+      </summary>
+      <value>A value that identifies a title position.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.TitlePositionProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.TitlePosition"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSeriesView.TitleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PieSeriesView.Title"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.PieSweepDirection">
+      <summary>
+        <para>Lists the values that are used to define the direction of a 2D Pie series sweep.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSweepDirection.Clockwise">
+      <summary>
+        <para>The Pie series is swept clockwise.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PieSweepDirection.Counterclockwise">
+      <summary>
+        <para>The Pie series is swept counterclockwise.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.PointData">
+      <summary>
+        <para>A series point that has one value per argument.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointData.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PointData"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointData.#ctor(System.DateTime,System.DateTime)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PointData"/> class with specified settings.</para>
+      </summary>
+      <param name="argument">The point’s DateTime argument.</param>
+      <param name="value">The point’s DateTime value.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointData.#ctor(System.DateTime,System.Double)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PointData"/> class with specified settings.</para>
+      </summary>
+      <param name="argument">The point’s DateTime argument.</param>
+      <param name="value">The point’s numeric value.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointData.#ctor(System.DateTime)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PointData"/> class with specified settings.</para>
+      </summary>
+      <param name="argument">The point’s DateTime argument.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointData.#ctor(System.Double,System.DateTime)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PointData"/> class with specified settings.</para>
+      </summary>
+      <param name="argument">The point’s numeric argument.</param>
+      <param name="value">The point’s DateTime value.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointData.#ctor(System.Double,System.Double)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PointData"/> class with specified settings.</para>
+      </summary>
+      <param name="argument">The point’s numeric argument.</param>
+      <param name="value">The point’s numeric value.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointData.#ctor(System.Double)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PointData"/> class with specified settings.</para>
+      </summary>
+      <param name="argument">The point’s numeric argument.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointData.#ctor(System.String,System.DateTime)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PointData"/> class with specified settings.</para>
+      </summary>
+      <param name="argument">The point’s string argument.</param>
+      <param name="value">The point’s DateTime value.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointData.#ctor(System.String,System.Double)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PointData"/> class with specified settings.</para>
+      </summary>
+      <param name="argument">The point’s string argument.</param>
+      <param name="value">The point’s numeric value.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointData.#ctor(System.String)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PointData"/> class with specified settings.</para>
+      </summary>
+      <param name="argument">The point’s string argument.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointData.DateTimeValue">
+      <summary>
+        <para>Returns the point value as a DateTime object.</para>
+      </summary>
+      <value>The point’s DateTime value.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointData.NumericalValue">
+      <summary>
+        <para>Returns the point’s numeric value.</para>
+      </summary>
+      <value>The point’s numeric value.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointData.Value">
+      <summary>
+        <para>Specifies the series point’s value.</para>
+      </summary>
+      <value>An object that is the point value.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.PointDataBase">
+      <summary>
+        <para>A base class for classes that contain information about a series point.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointDataBase.Argument">
+      <summary>
+        <para>Specifies the series point’s argument.</para>
+      </summary>
+      <value>An object that is the point argument.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointDataBase.ArgumentScaleType">
+      <summary>
+        <para>Returns the scale type of the data point’s argument.</para>
+      </summary>
+      <value>A value that identifies a scale type.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointDataBase.DateTimeArgument">
+      <summary>
+        <para>Returns the point’s argument as a DateTime object.</para>
+      </summary>
+      <value>The point’s DateTime argument.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointDataBase.NumericalArgument">
+      <summary>
+        <para>Returns the point’s numeric argument.</para>
+      </summary>
+      <value>The point’s numeric argument.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.Charts.PointDataBase.PropertyChanged">
+      <summary>
+        <para>Occurs every time any of the <see cref="T:DevExpress.WinUI.Charts.PointDataBase"/> class properties has changed its value.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointDataBase.QualitativeArgument">
+      <summary>
+        <para>Returns the point’s qualitative argument.</para>
+      </summary>
+      <value>The point’s qualitative argument.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointDataBase.ValueScaleType">
+      <summary>
+        <para>Returns the scale type of the data point’s values.</para>
+      </summary>
+      <value>A value that identifies a scale type.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.PointDataCollection">
+      <summary>
+        <para>A collection of series data points.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointDataCollection.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PointDataCollection"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointDataCollection.ActualArgumentScaleType">
+      <summary>
+        <para>Returns the scale type of point arguments.</para>
+      </summary>
+      <value>A value that identifies a scale type.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointDataCollection.ActualValueScaleType">
+      <summary>
+        <para>Returns the scale type of point values.</para>
+      </summary>
+      <value>A value that identifies a scale type.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointDataCollection.Add(DevExpress.WinUI.Charts.PointData)">
+      <summary>
+        <para>Appends the specified point to the end of the collection.</para>
+      </summary>
+      <param name="point">A point to append to the collection.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointDataCollection.ArgumentScaleType">
+      <summary>
+        <para>Specifies the argument scale type.</para>
+      </summary>
+      <value>A value that identifies a scale type.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointDataCollection.Clear">
+      <summary>
+        <para>Removes all items from the collection.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointDataCollection.Contains(DevExpress.WinUI.Charts.PointData)">
+      <summary>
+        <para>Checks whether the collection contains the specified data point.</para>
+      </summary>
+      <param name="point">A data point to locate in the collection.</param>
+      <returns>true if the point is in the collection; otherwise, false.</returns>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointDataCollection.Count">
+      <summary>
+        <para>Returns the number of points that the collection contains.</para>
+      </summary>
+      <value>An integer that specifies the number of points.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointDataCollection.GetObjectByKey(System.Int32)">
+      <summary>
+        <para>Returns a <see cref="T:DevExpress.WinUI.Charts.PointData"/> object with the specified key.</para>
+      </summary>
+      <param name="key">An integer that is a key.</param>
+      <returns>An object with the specified key. Null if no objects are found.</returns>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointDataCollection.IndexOf(DevExpress.WinUI.Charts.PointData)">
+      <summary>
+        <para>Returns the specified point’s position within the collection.</para>
+      </summary>
+      <param name="point">A data point to locate in the collection.</param>
+      <returns>A zero-based integer that is the data point’s position within the collection. -1 if the point does not belong to the collection.</returns>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointDataCollection.Insert(System.Int32,DevExpress.WinUI.Charts.PointData)">
+      <summary>
+        <para>Adds the specified data point to the specified position within the collection.</para>
+      </summary>
+      <param name="index">A zero-based index into which the specified data point should be inserted. If it is negative or exceeds the number of elements, an exception is raised.</param>
+      <param name="point">A data point to be inserted.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointDataCollection.Item(System.Int32)">
+      <summary>
+        <para>Allows you to access individual points within the collection.</para>
+      </summary>
+      <param name="index">A zero-based index that specifies the point’s position in the collection. If it is negative or exceeds the number of elements, an exception is raised.</param>
+      <value>A data point with the specified index.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointDataCollection.Move(System.Int32,System.Int32)">
+      <summary>
+        <para>Moves the data point to another position within the collection.</para>
+      </summary>
+      <param name="oldIndex">A point’s old position.</param>
+      <param name="newIndex">A point’s new position.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointDataCollection.Remove(DevExpress.WinUI.Charts.PointData)">
+      <summary>
+        <para>Removes the specified point from the collection.</para>
+      </summary>
+      <param name="point">A point to be removed from the collection.</param>
+      <returns>true if the specified point was found and successfully removed from the collection; false if the specified point was not found.</returns>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointDataCollection.RemoveAt(System.Int32)">
+      <summary>
+        <para>Removes an item at the specified position from the collection.</para>
+      </summary>
+      <param name="index">A zero-based index of the point to remove. If it is negative or exceeds the number of items in the collection, an exception is raised.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointDataCollection.ValueScaleType">
+      <summary>
+        <para>Specifies the value scale type.</para>
+      </summary>
+      <value>A value that identifies a scale type.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.PointSeriesView">
+      <summary>
+        <para>The Point series view.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.PointSeriesView.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.PointSeriesView"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointSeriesView.MarkerSize">
+      <summary>
+        <para>Gets or sets the size of data point markers.</para>
+      </summary>
+      <value>A <see cref="T:System.Int32"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PointSeriesView.MarkerSizeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PointSeriesView.MarkerSize"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.PointSeriesView.RangeControlViewType">
+      <summary>
+        <para>Gets or sets a value that specifies which view type should be used to represent the current series in a Range Control.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.RangeControlViewType"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.PointSeriesView.RangeControlViewTypeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.PointSeriesView.RangeControlViewType"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.RangeControlViewType">
+      <summary>
+        <para>Lists the values used to specify how a series should be represented in a Range Control.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.RangeControlViewType.Area">
+      <summary>
+        <para>A series is represented in a Range Control using the Area series view.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.RangeControlViewType.Line">
+      <summary>
+        <para>A series is represented in a Range Control using the Line series view.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.RangeControlViewType.None">
+      <summary>
+        <para>A series is not represented in a Range Control.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.RangeControlViewType.Point">
+      <summary>
+        <para>A series is represented in a Range Control using the Point series view.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ScaleType">
+      <summary>
+        <para>Contains the values used to specify the scale type for the argument and value data of data points.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ScaleType.Auto">
+      <summary>
+        <para>A scale type is detected automatically based on the type of underlying data. This means that numerical data will be treated as numerical, date-time data as date-time, qualitative as qualitative values.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ScaleType.DateTime">
+      <summary>
+        <para>Identifies the DateTime data scale. This means that data is treated as DateTime values, and shown on the axis as DateTime values (e.g., January, 2003, January, 2004, and January, 2005).</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ScaleType.Numerical">
+      <summary>
+        <para>Identifies the Numerical data scale. This means that data is treated as numerical values,  shown on the axis as numbers (e.g., 100, 200, and 300).</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.ScaleType.Qualitative">
+      <summary>
+        <para>Identifies the Qualitative data scale. This means that data values are treated as qualitative, and shown on the axis as textual representations (for example, A, B, and C). This scale type can only be used for arguments.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.ScatterLineSeriesView">
+      <summary>
+        <para>The Scatter Line series view.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.ScatterLineSeriesView.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.ScatterLineSeriesView"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.Series">
+      <summary>
+        <para>Represents an individual series within a chart control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.Series.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.Series"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Series.ActualView">
+      <summary>
+        <para>Gets the actual view of a series.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Series.Data">
+      <summary>
+        <para>Gets or sets an object that defines how data should be supplied for this series.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Series.DataProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Series.Data"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Series.View">
+      <summary>
+        <para>Gets or sets the view type of the series.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Series.ViewProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Series.View"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.SeriesBase">
+      <summary>
+        <para>A base class for chart series.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesBase.DisplayName">
+      <summary>
+        <para>Specifies the series’ display name.</para>
+      </summary>
+      <value>The series’ display name.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesBase.DisplayNameProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesBase.DisplayName"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesBase.ShowInLegend">
+      <summary>
+        <para>Indicates whether to show the series in the legend.</para>
+      </summary>
+      <value>true if the series is shown in the legend; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesBase.ShowInLegendProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesBase.ShowInLegend"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesBase.Visible">
+      <summary>
+        <para>Specifies whether the series is visible.</para>
+      </summary>
+      <value>true if the chart shows the series; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesBase.VisibleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesBase.Visible"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.SeriesCollection`1">
+      <summary>
+        <para>A base class for series collections.</para>
+      </summary>
+      <typeparam name="T">The series type.</typeparam>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.SeriesTitlePosition">
+      <summary>
+        <para>Lists the values used to specify the position of series titles.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesTitlePosition.Bottom">
+      <summary>
+        <para>A title is located on the bottom of a series.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesTitlePosition.Top">
+      <summary>
+        <para>A title is located on the top of a series.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.SeriesView">
+      <summary>
+        <para>Represents the base class for all series views.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.SeriesView.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.SeriesView"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.ActualPalette">
+      <summary>
+        <para>Gets the actual palette of a series view.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.Palette"/> object.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.SeriesView.Animate(System.Double)">
+      <summary>
+        <para>Starts animating the series view after the specified delay.</para>
+      </summary>
+      <param name="delayInSeconds">A <see cref="T:System.Double"/> value specifying the delay (in seconds).</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.AnimateCommand">
+      <summary>
+        <para>Returns a command that starts animation of a series’ contents.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.Antialiasing">
+      <summary>
+        <para>Gets or sets whether anti-aliasing (smoothing) is applied to this series view.</para>
+      </summary>
+      <value>True to apply anti-aliasing to this view; False to disable anti-aliasing.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.AntialiasingProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.Antialiasing"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.DataChangingAnimationMode">
+      <summary>
+        <para>Specifies how chart data should be animated on data changes.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.DataChangingAnimationMode"/> enumeration value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.DataChangingAnimationModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.DataChangingAnimationMode"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.LabelConnectorStrokeStyle">
+      <summary>
+        <para>Specifies the style for label connectors.</para>
+      </summary>
+      <value>Contains stroke style options.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.LabelConnectorStrokeStyleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.LabelConnectorStrokeStyle"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.LabelIndent">
+      <summary>
+        <para>Specifies the distance between a point and label, in pixels.</para>
+      </summary>
+      <value>The distance in pixels.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.LabelIndentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.LabelIndent"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.LabelPattern">
+      <summary>
+        <para>Specifies a string pattern that formats series label text.</para>
+      </summary>
+      <value>A format pattern.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.LabelPatternProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.LabelPattern"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.LabelTemplate">
+      <summary>
+        <para>Specifies a template that defines a custom appearance and look-and-feel for labels.</para>
+      </summary>
+      <value>A data template.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.LabelTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.LabelTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.LegendItems">
+      <summary>
+        <para>Gets a list of legend items for this series.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.LegendMarkerTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the presentation of a legend marker for this series.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object that contains the template for a legend marker.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.LegendMarkerTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.LegendMarkerTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.LegendPointPattern">
+      <summary>
+        <para>Specifies a string pattern that formats legend item text for series points.</para>
+      </summary>
+      <value>A string pattern.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.LegendPointPatternProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.LegendPointPattern"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.Palette">
+      <summary>
+        <para>Gets or sets a palette used to color series points.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Charts.Palette"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.PaletteProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.Palette"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.SelectedItem">
+      <summary>
+        <para>Gets or sets the currently selected item in the series.</para>
+      </summary>
+      <value>An object that is the currently selected data point.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.SelectedItemBrush">
+      <summary>
+        <para>Gets or sets the color of the selected series point.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Media.SolidColorBrush"/> object which specifies the color of the selected series point.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.SelectedItemBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.SelectedItemBrush"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.SelectedItemProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.SelectedItem"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.SelectedItems">
+      <summary>
+        <para>Gets or sets the collection of selected items of the <see cref="T:DevExpress.WinUI.Charts.SeriesView"/> object.</para>
+      </summary>
+      <value>A list which contains selected data points.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.SelectedItemsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.SelectedItems"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.ShowLabelConnectors">
+      <summary>
+        <para>Specifies whether to show label connectors.</para>
+      </summary>
+      <value>true if connectors are visible; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.ShowLabelConnectorsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.ShowLabelConnectors"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.ShowLabels">
+      <summary>
+        <para>Gets or sets a value indicating whether labels should be visible for this series.</para>
+      </summary>
+      <value>true, to show series labels; false to hide them.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.ShowLabelsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.ShowLabels"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.ShowToolTipOnSelectItem">
+      <summary>
+        <para>Gets or sets a value specifying whether or not to show a tooltip every time a series (or a series point) is selected.</para>
+      </summary>
+      <value>true to show tooltips when an item is selected; false - to not show them.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.ShowToolTipOnSelectItemProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.ShowToolTipOnSelectItem"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.ToolTipPointPattern">
+      <summary>
+        <para>Gets or sets a string pattern that formats text in series point tooltips.</para>
+      </summary>
+      <value>A string that specifies the tooltip pattern.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.ToolTipPointPatternProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.ToolTipPointPattern"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.ToolTipPointTemplate">
+      <summary>
+        <para>Specifies a template that is applied to series point tooltips. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.ToolTipPointTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.ToolTipPointTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.ToolTipSeriesPattern">
+      <summary>
+        <para>Gets or sets a string which represents the pattern specifying the text to be displayed within the tooltip that appears for a series.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/>, which represents the tooltip pattern.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.ToolTipSeriesPatternProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.ToolTipSeriesPattern"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.SeriesView.ToolTipSeriesTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the presentation of the tooltip for this series.</para>
+      </summary>
+      <value>A <see cref="T:System.Windows.DataTemplate"/> object that contains the template for a series tooltip.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.SeriesView.ToolTipSeriesTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.SeriesView.ToolTipSeriesTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.StackedMode">
+      <summary>
+        <para>Lists values that define how to stack points shown for the same argument.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.StackedMode.FullStacked">
+      <summary>
+        <para>Points shown for the same argument are stacked. A stacked group height is equal to the y-axis length. Point values are shown as a percentage where 100% is the sum of all values associated with the argument.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.StackedMode.None">
+      <summary>
+        <para>Points are displayed side-by-side.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.StackedMode.Stacked">
+      <summary>
+        <para>Points shown for the same argument are stacked. Values are summarized.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.Strip">
+      <summary>
+        <para>Represents a strip within a chart control’s diagram.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Charts.Strip.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Charts.Strip"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Strip.AxisLabelText">
+      <summary>
+        <para>Specifies the text for the strip‘s axis label.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that specifies the axis label text for the strip.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Strip.AxisLabelTextProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Strip.AxisLabelText"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Strip.Brush">
+      <summary>
+        <para>Gets or sets the color of the strip. This is a dependency property.</para>
+      </summary>
+      <value><see cref="T:Microsoft.UI.Xaml.Media.SolidColorBrush"/></value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Strip.BrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Strip.Brush"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Strip.EndValue">
+      <summary>
+        <para>Gets or sets the end value of the strip along an axis.</para>
+      </summary>
+      <value>An <see cref="T:System.Object"/> which specifies the end axis value for the strip.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Strip.EndValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Strip.EndValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Strip.StartValue">
+      <summary>
+        <para>Gets or sets the start value of the strip along an axis.</para>
+      </summary>
+      <value>An <see cref="T:System.Object"/> which specifies the start axis value for the strip.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Strip.StartValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Strip.StartValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Charts.Strip.Visible">
+      <summary>
+        <para>Gets or sets whether the strip is visible.</para>
+      </summary>
+      <value>true if the strip is visible; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.Strip.VisibleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Charts.Strip.Visible"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.StripCollection">
+      <summary>
+        <para>Represents a collection that stores the strips of a particular axis.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.TitleAlignment">
+      <summary>
+        <para>Lists the values used to specify the alignment of an axis title relative to its owner axis.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.TitleAlignment.Center">
+      <summary>
+        <para>Specifies that the title is aligned to the center of the axis.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.TitleAlignment.Far">
+      <summary>
+        <para>Specifies that the title is aligned far from the beginning of the axis.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.TitleAlignment.Near">
+      <summary>
+        <para>Specifies that the title is aligned near the beginning of the axis.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.UnwindDirection">
+      <summary>
+        <para>Lists the values that are used to define the direction of an unwinding animation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.UnwindDirection.BottomToTop">
+      <summary>
+        <para>The Unwind animation is directed from the bottom to the top.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.UnwindDirection.LeftToRight">
+      <summary>
+        <para>The Unwind animation is directed from the left to the right.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.UnwindDirection.RightToLeft">
+      <summary>
+        <para>The Unwind animation is directed from the right to the left.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.UnwindDirection.TopToBottom">
+      <summary>
+        <para>The Unwind animation is directed from the top to the bottom.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Charts.VerticalPosition">
+      <summary>
+        <para>Lists the values that specify the legend’s vertical alignment within the chart.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.VerticalPosition.Bottom">
+      <summary>
+        <para>The legend is positioned level with the bottom of the Chart Area.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.VerticalPosition.BottomOutside">
+      <summary>
+        <para>The legend is positioned at the bottom of the Chart area.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.VerticalPosition.Center">
+      <summary>
+        <para>Centers a legend vertically within the Chart Area.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.VerticalPosition.Top">
+      <summary>
+        <para>The legend is positioned level with the top of the Chart Area.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Charts.VerticalPosition.TopOutside">
+      <summary>
+        <para>The legend is positioned at the top of the Chart area.</para>
+      </summary>
+    </member>
+  </members>
+</doc>

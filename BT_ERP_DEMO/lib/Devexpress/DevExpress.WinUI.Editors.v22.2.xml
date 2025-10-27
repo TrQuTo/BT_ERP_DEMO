@@ -1,0 +1,1862 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.WinUI.Editors.v22.2</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.WinUI.Editors">
+      <summary>
+        <para>Contains classes which implement the main functionality of the DevExpress editor controls.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.AutoCompleteType">
+      <summary>
+        <para>Lists values that specify the type of automatic completion mode used by an editor.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.AutoCompleteType.Default">
+      <summary>
+        <para>When set to Default, the <see cref="F:DevExpress.WinUI.Editors.AutoCompleteType.Strong"/> automatic completion mode is used.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.AutoCompleteType.None">
+      <summary>
+        <para>The automatic completion feature is disabled.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.AutoCompleteType.Optimistic">
+      <summary>
+        <para>When an end-user enters a character in an empty edit box for the first time, the editor automatically fills all the following placeholders with the default values. For placeholders that accept only numeric values, the ‘0’ character is the default. For placeholders that accept word characters, the “a” character is the default.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.AutoCompleteType.Strong">
+      <summary>
+        <para>Each time an end-user types a character, the editor determines if the following placeholder can be filled automatically. If only a specific character can be inserted in this position, the editor automatically displays this character, and moves the caret to the right of this character.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.BaseEdit">
+      <summary>
+        <para>Serves as the base for all editors that can be used for inplace editing in container controls.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.BaseEdit.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.BaseEdit"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.BaseEdit.CausesValidation">
+      <summary>
+        <para>Gets or sets a value indicating whether validation is enabled for this editor. This is a dependency property.</para>
+      </summary>
+      <value>true, if the validation is enabled; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.BaseEdit.CausesValidationProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.CausesValidation"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.BaseEdit.ClearError">
+      <summary>
+        <para>Clears error notification and resets the editor’s value.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.BaseEdit.DoValidate">
+      <summary>
+        <para>Validates the editor.</para>
+      </summary>
+      <returns>true if the editor’s value has been validated; false if the editor’s value is invalid.</returns>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.BaseEdit.EditCore">
+      <summary>
+        <para>Provides access to an internal editor control.</para>
+      </summary>
+      <value>The internal editor control.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.BaseEdit.EditValue">
+      <summary>
+        <para>Gets or sets the editor’s value. This is a dependency property.</para>
+      </summary>
+      <value>An object that is the editor’s value.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.Editors.BaseEdit.EditValueChanged">
+      <summary>
+        <para>Occurs after the editor’s value has been changed.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Editors.BaseEdit.EditValueChanging">
+      <summary>
+        <para>Occurs before the editor’s value is changed.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.BaseEdit.EditValueConverter">
+      <summary>
+        <para>Gets or sets a converter used to provide the editor’s value. This is a dependency property.</para>
+      </summary>
+      <value>An object that implements the <see cref="T:Microsoft.UI.Xaml.Data.IValueConverter"/> interface.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.BaseEdit.EditValueConverterProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.EditValueConverter"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.BaseEdit.EditValuePostDelay">
+      <summary>
+        <para>Gets or sets the amount of time, in milliseconds, after which a value specified by a user is posted to the editor.</para>
+      </summary>
+      <value>An integer that specifies the delay, in milliseconds, after which a new value is posted to the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.EditValue"/> property.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.BaseEdit.EditValuePostDelayProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.EditValuePostDelay"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.BaseEdit.EditValuePostMode">
+      <summary>
+        <para>Gets or sets whether a value specified by a user should be posted immediately or after a delay.</para>
+      </summary>
+      <value>A <see cref="T:DevExpress.WinUI.Editors.PostMode"/> enumeration value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.BaseEdit.EditValuePostModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.EditValuePostMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.BaseEdit.EditValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.EditValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.BaseEdit.EditValueType">
+      <summary>
+        <para>Gets or sets the edit value’s type treatment. This is a dependency property.</para>
+      </summary>
+      <value>The type to which the entered string is automatically converted.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.BaseEdit.EditValueTypeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.EditValueType"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.BaseEdit.HasValidationError">
+      <summary>
+        <para>Gets whether an editor has a validation error. This is a dependency property.</para>
+      </summary>
+      <value>true if the editor has a validation error; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.BaseEdit.HasValidationErrorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.HasValidationError"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.BaseEdit.IsReadOnly">
+      <summary>
+        <para>Gets or sets whether the editor’s value can be changed by end-users. This is a dependency property.</para>
+      </summary>
+      <value>true, if an end-user cannot modify the editor’s value; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.BaseEdit.IsReadOnlyProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.IsReadOnly"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.BaseEdit.ShowErrorIconProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.ShowErrorIcon"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="E:DevExpress.WinUI.Editors.BaseEdit.Validate">
+      <summary>
+        <para>Enables you to validate the editor’s value.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.BaseEdit.ValidateOnEnterKeyPressed">
+      <summary>
+        <para>Gets or sets whether the edit value should be validated when pressing the ENTER key. This is a dependency property.</para>
+      </summary>
+      <value>true to validate the edit value after the ENTER key has been pressed; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.BaseEdit.ValidateOnEnterKeyPressedProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.ValidateOnEnterKeyPressed"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.BaseEdit.ValidateOnTextInput">
+      <summary>
+        <para>Gets or sets whether the edit value should be validated while typing within the editor’s text box. This is a dependency property.</para>
+      </summary>
+      <value>true to validate the edit value while an end-user types text within the editor’s text box; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.BaseEdit.ValidateOnTextInputProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.ValidateOnTextInput"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.BaseEdit.ValidationError">
+      <summary>
+        <para>Gets or sets the validation error defined for the editor. This is a dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.BaseEdit.ValidationErrorProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.ValidationError"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.BaseValidationError.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.BaseValidationError"/> class.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.BaseValidationError.#ctor(System.Object,System.Exception,DevExpress.WinUI.Editors.ErrorType)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.BaseValidationError"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.BaseValidationError.#ctor(System.Object,System.Exception)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.BaseValidationError"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.BaseValidationError.#ctor(System.Object)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.BaseValidationError"/> class with specified settings.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.ButtonInfo">
+      <summary>
+        <para>Represents a button for a button editor.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.ButtonInfo.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.ButtonInfo"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.ActualContentPadding">
+      <summary>
+        <para>Gets the actual padding (inner indents) for the current button’s content. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Thickness"/> value that specifies the actual content padding.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.ActualContentPaddingProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.ActualContentPadding"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.ActualImagePadding">
+      <summary>
+        <para>Gets the actual padding (inner indents) for the current button’s image. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Thickness"/> value that specifies the actual image padding.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.ActualImagePaddingProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.ActualImagePadding"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.ActualTemplate">
+      <summary>
+        <para>Gets or sets the actual data template used to present the button’s content. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.DataTemplate"/> object that represents the template used to present the button’s content.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.ActualTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.ActualTemplate"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.ButtonKind">
+      <summary>
+        <para>Gets a value that specifies the button’s behavior. This is a dependency property.</para>
+      </summary>
+      <value>One of the <see cref="T:DevExpress.WinUI.Editors.ButtonKind"/> enumeration values.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.ButtonKindProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.ButtonKind"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Editors.ButtonInfo.Click">
+      <summary>
+        <para>Occurs when a button is clicked.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.ClickMode">
+      <summary>
+        <para>Gets or sets when the <see cref="E:DevExpress.WinUI.Editors.ButtonInfo.Click"/> event occurs. This is a dependency property.</para>
+      </summary>
+      <value>One of the <see cref="T:Microsoft.UI.Xaml.Controls.ClickMode"/> enumeration values.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.ClickModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.ClickMode"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.Command">
+      <summary>
+        <para>Gets or sets a command associated with the button. This is a dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.CommandParameter">
+      <summary>
+        <para>Gets or sets a parameter to pass to the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.Command"/> property. This is a dependency property.</para>
+      </summary>
+      <value>An object that represents the parameter to pass to the command.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.CommandParameterProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.CommandParameter"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.CommandProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.Command"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.ContentPadding">
+      <summary>
+        <para>Gets or sets the amount of space between the button content and its borders. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Thickness"/> object specifying padding distances.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.ContentPaddingProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.ContentPadding"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.GlyphKind">
+      <summary>
+        <para>Gets or sets the type of the button’s image. This is a dependency property.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Editors.GlyphKind enumeration value that specifies the image type.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.GlyphKindProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.GlyphKind"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.ImageNineGrid">
+      <summary>
+        <para>Gets or sets the nine-grid values used to resize the button’s image.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Thickness"/> value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.ImageNineGridProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.ImageNineGrid"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.ImagePadding">
+      <summary>
+        <para>Gets or sets the amount of space between the button image’s borders and its contents. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Thickness"/> object specifying padding distances.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.ImagePaddingProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.ImagePadding"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.ImageSource">
+      <summary>
+        <para>Gets or sets the button’s image.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Media.ImageSource"/> object that is the image displayed within the button.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.ImageSourceProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.ImageSource"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.ImageStretch">
+      <summary>
+        <para>Gets or sets a value that specifies how a button’s image should be resized to fill its allocated space. This is a dependency property.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.Media.Stretch enumeration value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.ImageStretchProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.ImageStretch"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.IsChecked">
+      <summary>
+        <para>Gets or sets whether the button is checked. This is a dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.IsCheckedProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.IsChecked"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.IsDefault">
+      <summary>
+        <para>Gets or sets whether the button is the default button. This is a dependency property.</para>
+      </summary>
+      <value>true, if the button is the default button; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.IsDefaultProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.IsDefault"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.IsLeft">
+      <summary>
+        <para>Gets or sets the button’s alignment within a <see cref="T:DevExpress.WinUI.Editors.TextEdit"/> control. This is a dependency property.</para>
+      </summary>
+      <value>true to align the button to the editor’s left edge; false to align the button to the editor’s right edge.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.IsLeftProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.IsLeft"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.TemplateRepeat">
+      <summary>
+        <para>Gets or sets a template used to display a button which <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.ButtonKind"/> property is set to <see cref="F:DevExpress.WinUI.Editors.ButtonKind.Repeat"/>. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.DataTemplate"/> object used to display a repeat button.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.TemplateRepeatProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.TemplateRepeat"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.TemplateSimple">
+      <summary>
+        <para>Gets or sets a template used to display a button which <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.ButtonKind"/> property is set to <see cref="F:DevExpress.WinUI.Editors.ButtonKind.Simple"/>. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.DataTemplate"/> object used to display a simple button.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.TemplateSimpleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.TemplateSimple"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfo.TemplateToggle">
+      <summary>
+        <para>Gets or sets a template used to display a button which <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.ButtonKind"/> property is set to <see cref="F:DevExpress.WinUI.Editors.ButtonKind.Toggle"/>. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.DataTemplate"/> object used to display a toggle button.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonInfo.TemplateToggleProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.ButtonInfo.TemplateToggle"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.ButtonInfoCollection">
+      <summary>
+        <para>Represents a collection of buttons.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.ButtonInfoCollection.#ctor(DevExpress.WinUI.Editors.TextEdit)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.ButtonInfoCollection"/> class.</para>
+      </summary>
+      <param name="editor">A <see cref="T:DevExpress.WinUI.Editors.TextEdit"/> object that owns the collection of buttons.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.ButtonInfoCollection.AddRange(System.Collections.Generic.IEnumerable{DevExpress.WinUI.Editors.ButtonInfo})">
+      <summary>
+        <para>Adds a collection of buttons to the end of the current collection.</para>
+      </summary>
+      <param name="buttons">A collection of <see cref="T:DevExpress.WinUI.Editors.ButtonInfo"/> objects.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ButtonInfoCollection.IsInitialized">
+      <summary>
+        <para>Gets or sets whether the collection of buttons has been initialized.</para>
+      </summary>
+      <value>true, if the collection of buttons has been initialized; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.ButtonKind">
+      <summary>
+        <para>Lists values that specify a button’s behavior.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonKind.Repeat">
+      <summary>
+        <para>Represents the repeat button. The <see cref="E:DevExpress.WinUI.Editors.ButtonInfo.Click"/> event is repeatedly fired until a button is released.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonKind.Simple">
+      <summary>
+        <para>Represents a simple button. The <see cref="E:DevExpress.WinUI.Editors.ButtonInfo.Click"/> event is fired each time a button is clicked.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ButtonKind.Toggle">
+      <summary>
+        <para>Represents a toggle button. Clicking a button toggles its state (pressed or released).</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.CalendarPopupSettings">
+      <summary>
+        <para>Contains settings specific to a popup calendar in the DateEdit control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.CalendarPopupSettings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.CalendarPopupSettings"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.CalendarPopupSettings.CalendarIdentifier">
+      <summary>
+        <para>Gets or sets the calendar system to use.</para>
+      </summary>
+      <value>The calendar system to use.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.CalendarPopupSettings.CalendarIdentifierProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.CalendarPopupSettings.CalendarIdentifier"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.CalendarPopupSettings.CalendarLanguage">
+      <summary>
+        <para>Gets or sets the name of the language and culture that a calendar uses.</para>
+      </summary>
+      <value>A calendar’s language and culture.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.CalendarPopupSettings.CalendarLanguageProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.CalendarPopupSettings.CalendarLanguage"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.CustomDisplayTextEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Editors.TextEdit.CustomDisplayText"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.CustomDisplayTextEventArgs.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.CustomDisplayTextEventArgs"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.CustomDisplayTextEventArgs.DisplayText">
+      <summary>
+        <para>Gets or sets the text displayed within the editor.</para>
+      </summary>
+      <value>A string value that specifies the editor’s display text.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.CustomDisplayTextEventArgs.EditValue">
+      <summary>
+        <para>Gets or sets the editor’s value.</para>
+      </summary>
+      <value>An object that represents the editor’s current value.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.CustomDisplayTextEventHandler">
+      <summary>
+        <para>Represents a method that will handle an editor’s <see cref="E:DevExpress.WinUI.Editors.TextEdit.CustomDisplayText"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.DateEdit">
+      <summary>
+        <para>A Date Edit with a dropdown calendar.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.DateEdit.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.DateEdit"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.DateEdit.AllowRoundOutOfRangeValue">
+      <summary>
+        <para>Gets or sets whether automatic rounding of out of range values is enabled.</para>
+      </summary>
+      <value>true to automatically round out of range values; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.DateEdit.AllowRoundOutOfRangeValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.DateEdit.AllowRoundOutOfRangeValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.DateEdit.DateTime">
+      <summary>
+        <para>Gets or sets the editor’s date/time value. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.DateTime"/> object that specifies the editor’s value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.DateEdit.DateTimeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.DateEdit.DateTime"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.DateEdit.IsTextEditable">
+      <summary>
+        <para>Gets or sets whether users are allowed to edit the text displayed in the edit box. This is a dependency property.</para>
+      </summary>
+      <value>true to allow users to edit the text displayed in the edit box; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.DateEdit.IsTextEditableProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.DateEdit.IsTextEditable"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.DateEdit.MaxValue">
+      <summary>
+        <para>Gets or sets the editor’s maximum value. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.DateTime"/> value that specifies the maximum allowed date.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.DateEdit.MaxValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.DateEdit.MaxValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.DateEdit.MinValue">
+      <summary>
+        <para>Gets or sets the editor’s minimum value. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.DateTime"/> structure which represents the minimum allowed date.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.DateEdit.MinValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.DateEdit.MinValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.DateEdit.SetMaximum">
+      <summary>
+        <para>Sets the editor’s maximum allowed value.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.DateEdit.SetMinimum">
+      <summary>
+        <para>Sets the editor’s minimum allowed value.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.EditValueChangedEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Editors.BaseEdit.EditValueChanged"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.EditValueChangedEventArgs.#ctor(System.Object,System.Object)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.EditValueChangedEventArgs"/> class with the specified old and new edit values.</para>
+      </summary>
+      <param name="oldValue">An object representing the old edit value. This value is assigned to the <see cref="P:DevExpress.WinUI.Editors.EditValueChangedEventArgs.OldValue"/> property.</param>
+      <param name="newValue">An object representing the new edit value. This value is assigned to the <see cref="P:DevExpress.WinUI.Editors.EditValueChangedEventArgs.NewValue"/> property.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.EditValueChangedEventArgs.NewValue">
+      <summary>
+        <para>Gets a new value that has been assigned to the editor.</para>
+      </summary>
+      <value>A <see cref="T:System.Object"/> representing the new value.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.EditValueChangedEventArgs.OldValue">
+      <summary>
+        <para>Gets the previous edit value, which has been replaced by the new value.</para>
+      </summary>
+      <value>A <see cref="T:System.Object"/> representing the old value.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.EditValueChangedEventHandler">
+      <summary>
+        <para>Represents a method that will handle the <see cref="E:DevExpress.WinUI.Editors.BaseEdit.EditValueChanged"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.EditValueChangingEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Editors.BaseEdit.EditValueChanging"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.EditValueChangingEventArgs.#ctor(System.Object,System.Object)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.EditValueChangingEventArgs"/> class with the specified old and new edit values.</para>
+      </summary>
+      <param name="oldValue">An object specifying the old edit value. This object is assigned to the <see cref="P:DevExpress.WinUI.Editors.EditValueChangingEventArgs.OldValue"/> property.</param>
+      <param name="newValue">An object specifying the new edit value. This object is assigned to the <see cref="P:DevExpress.WinUI.Editors.EditValueChangingEventArgs.NewValue"/> property.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.EditValueChangingEventArgs.IsCancel">
+      <summary>
+        <para>Gets or sets a value indicating whether the event should be canceled.</para>
+      </summary>
+      <value>true if the event should be canceled; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.EditValueChangingEventArgs.NewValue">
+      <summary>
+        <para>Gets a new value to be assigned to the editor.</para>
+      </summary>
+      <value>A <see cref="T:System.Object"/> representing the new value.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.EditValueChangingEventArgs.OldValue">
+      <summary>
+        <para>Gets or sets the current edit value, which should be replaced by the new value.</para>
+      </summary>
+      <value>A <see cref="T:System.Object"/> representing the old value.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.EditValueChangingEventHandler">
+      <summary>
+        <para>Represents a method that will handle the <see cref="E:DevExpress.WinUI.Editors.BaseEdit.EditValueChanging"/> event.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.ErrorType">
+      <summary>
+        <para>Enumerates error icon types.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ErrorType.Critical">
+      <summary>
+        <para>The ‘Critical Error’ icon.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ErrorType.Default">
+      <summary>
+        <para>The default error icon.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ErrorType.Information">
+      <summary>
+        <para>The ‘Information’ icon.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ErrorType.None">
+      <summary>
+        <para>Indicates that no error is associated with an editor or a cell.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ErrorType.User">
+      <summary>
+        <para>Allows you to override the ErrorIndicator style to define a custom icon.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.ErrorType.Warning">
+      <summary>
+        <para>The ‘Warning’ icon.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.MaskType">
+      <summary>
+        <para>Lists values that specify the type of mask used by an editor.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.MaskType.DateTime">
+      <summary>
+        <para>Specifies that the editor should accept date/time values, and that the mask string must use the DateTime format syntax.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.MaskType.DateTimeAdvancingCaret">
+      <summary>
+        <para>The DateTime mask mode with the caret automatic movement feature.</para>
+        <para>After an end&#0045;user enters and completes a specific portion of a date/time value, the caret automatically moves to the following part of the date/time value that can be edited.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.MaskType.Numeric">
+      <summary>
+        <para>Specifies that the editor should accept numeric values, and that the mask string must use the Numeric format syntax.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.MaskType.RegEx">
+      <summary>
+        <para>Specifies that the mask should be created using the full-functional regular expressions.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.MaskType.Regular">
+      <summary>
+        <para>Specifies that the mask should be created using the simplified regular expression syntax.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.MaskType.Simple">
+      <summary>
+        <para>Specifies that the mask should use the simplified syntax.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.PostMode">
+      <summary>
+        <para>Lists values that specify when data posting starts.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.PostMode.Delayed">
+      <summary>
+        <para>An action starts after a delay.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.PostMode.Immediate">
+      <summary>
+        <para>An action starts immediately.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.SpinEdit">
+      <summary>
+        <para>A SpinEdit control.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.SpinEdit.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.SpinEdit"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.SpinEdit.AllowRoundOutOfRangeValue">
+      <summary>
+        <para>Gets or sets whether automatic rounding of out of range values is enabled. This is a dependency property.</para>
+      </summary>
+      <value>true to automatically round out of range values; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.SpinEdit.AllowRoundOutOfRangeValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.SpinEdit.AllowRoundOutOfRangeValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.SpinEdit.Increment">
+      <summary>
+        <para>Gets or sets a value by which the editor’s value changes each time the editor is spun. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value representing the increment for the spin editor.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.SpinEdit.IncrementProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.SpinEdit.Increment"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.SpinEdit.IsTextEditable">
+      <summary>
+        <para>Gets or sets whether users are allowed to edit the text displayed in the edit box. This is a dependency property.</para>
+      </summary>
+      <value>true to allow users to edit the text displayed in the edit box; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.SpinEdit.IsTextEditableProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.SpinEdit.IsTextEditable"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.SpinEdit.MaxValue">
+      <summary>
+        <para>Gets or sets the editor’s maximum value. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value that specifies the maximum allowed value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.SpinEdit.MaxValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.SpinEdit.MaxValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.SpinEdit.MinValue">
+      <summary>
+        <para>Gets or sets the editor’s minimum value. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value which represents the minimum allowed value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.SpinEdit.MinValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.SpinEdit.MinValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.SpinEdit.SetMaximum">
+      <summary>
+        <para>Sets the editor’s maximum allowed value.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.SpinEdit.SetMinimum">
+      <summary>
+        <para>Sets the editor’s minimum allowed value.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.SpinEdit.Value">
+      <summary>
+        <para>Gets or sets a spin editor’s value. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.Double"/> value specifying the editor’s value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.SpinEdit.ValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.SpinEdit.Value"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.TextEdit">
+      <summary>
+        <para>A text editor.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.TextEdit.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.TextEdit"/> class with default settings.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.AcceptsReturn">
+      <summary>
+        <para>Gets or sets whether an end-user can insert return characters into a text. This is a dependency property.</para>
+      </summary>
+      <value>true, to allow return characters to be accepted and processed by the editor; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.AcceptsReturnProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.AcceptsReturn"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.AllowNullInput">
+      <summary>
+        <para>Gets or sets whether end-users can set the editor’s value to a null reference. This is a dependency property.</para>
+      </summary>
+      <value>true, to allow null input; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.AllowNullInputProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.AllowNullInput"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.AllowSpinOnMouseWheel">
+      <summary>
+        <para>Gets or sets whether or not a value can be changed by spinning the mouse wheel. This is a dependency property.</para>
+      </summary>
+      <value>true, if a value can be changed by spinning the mouse wheel; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.AllowSpinOnMouseWheelProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.AllowSpinOnMouseWheel"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.Buttons">
+      <summary>
+        <para>Returns the collection of buttons.</para>
+      </summary>
+      <value>The collection of <see cref="T:DevExpress.WinUI.Editors.ButtonInfo"/> descendants that represents the editor’s buttons.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.ButtonsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.Buttons"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Editors.TextEdit.CustomDisplayText">
+      <summary>
+        <para>Enables you to display a custom text within the editor.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.TextEdit.Cut">
+      <summary>
+        <para>Moves the current selection in the text editor to the clipboard.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.TextEdit.Delete">
+      <summary>
+        <para>Deletes the currently selected text from the text editor.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.DisplayFormatString">
+      <summary>
+        <para>Gets or sets the pattern used to format the editor’s display value. This is a dependency property.</para>
+      </summary>
+      <value>The format pattern.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.DisplayFormatStringProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.DisplayFormatString"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.DisplayText">
+      <summary>
+        <para>Gets the text displayed within the editor. This is a dependency property.</para>
+      </summary>
+      <value>The editor’s display text.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.DisplayTextProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.DisplayText"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.Header">
+      <summary>
+        <para>Gets or sets the content for the TextEdit’s header.</para>
+      </summary>
+      <value>The content of the TextEdit’s header.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.HeaderProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.Header"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.HeaderTemplate">
+      <summary>
+        <para>Gets or sets the template that defines the TextEdit header’s presentation. This is a dependency property.</para>
+      </summary>
+      <value>The TextEdit header’s presentation.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.HeaderTemplateProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.HeaderTemplate"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.InputScope">
+      <summary>
+        <para>Gets or sets the context for input used by this <see cref="T:DevExpress.WinUI.Editors.TextEdit"/>. This is a dependency property.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.Input.InputScope value which provides a hint at the type of text input expected by the control.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.InputScopeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.InputScope"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.IsSpellCheckEnabled">
+      <summary>
+        <para>Gets or sets whether the TextEdit input interacts with a spell check engine.</para>
+      </summary>
+      <value>true, if the TextEdit input interacts with a spell check engine; otherwise, false.’</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.IsSpellCheckEnabledProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.IsSpellCheckEnabled"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.IsTextPredictionEnabled">
+      <summary>
+        <para>Gets or sets whether the text prediction feature (“autocomplete”) is enabled.</para>
+      </summary>
+      <value>true, to enable the text prediction feature; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.IsTextPredictionEnabledProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.IsTextPredictionEnabled"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.MaxLength">
+      <summary>
+        <para>Gets or sets the maximum number of characters an end-user can enter into the editor. This is a dependency property.</para>
+      </summary>
+      <value>A positive integer specifying the maximum number of characters an end-user can enter. 0 to disable the text length limit.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.MaxLengthProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.MaxLength"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.NullText">
+      <summary>
+        <para>Gets or sets the text displayed within the edit box when the editor’s value is null. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that specifies the string displayed within the edit box when the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.EditValue"/> property is set to null value.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.NullTextForeground">
+      <summary>
+        <para>Gets or sets the brush used to render the null text. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:Microsoft.UI.Xaml.Media.Brush"/> used to render the null text.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.NullTextForegroundProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.NullTextForeground"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.NullTextProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.NullText"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.NullValue">
+      <summary>
+        <para>Gets or sets a null value for the editor. This is a dependency property.</para>
+      </summary>
+      <value>An object that represents the null value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.NullValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.NullValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.TextEdit.Paste">
+      <summary>
+        <para>Replaces the current selection in the text editor with the contents of the clipboard.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.TextEdit.Select(System.Int32,System.Int32)">
+      <summary>
+        <para>Selects the specified number of characters in the text editor, starting from the point specified.</para>
+      </summary>
+      <param name="startIndex">An integer value specifying the selection’s start point in the text editor.</param>
+      <param name="length">An integer value specifying the number of characters to select in the text editor.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.TextEdit.SelectAll">
+      <summary>
+        <para>Selects the editor’s entire content.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.SelectedText">
+      <summary>
+        <para>Gets or sets the text selected within the editor.</para>
+      </summary>
+      <value>A string value that is the currently selected text.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.SelectionHighlightBrush">
+      <summary>
+        <para>Gets or sets the brush used to highlight the selected text. This is a dependency property.</para>
+      </summary>
+      <value>A Microsoft.UI.Xaml.Media.SolidColorBrush value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.SelectionHighlightBrushProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.SelectionHighlightBrush"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.ShowClearButton">
+      <summary>
+        <para>Gets or sets whether the editor displays the Clear button. This is a dependency property.</para>
+      </summary>
+      <value>true if the editor displays the Clear button; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.ShowClearButtonProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.ShowClearButton"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.ShowDefaultButtons">
+      <summary>
+        <para>Gets or sets whether the editor’s default buttons are displayed. This is a dependency property.</para>
+      </summary>
+      <value>true, to display the editor’s default buttons; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.ShowDefaultButtonsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.ShowDefaultButtons"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.ShowNullText">
+      <summary>
+        <para>Gets or sets whether to display the null text. This is a dependency property.</para>
+      </summary>
+      <value>true to display the null text; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.ShowNullTextForEmptyValue">
+      <summary>
+        <para>Gets or sets whether to display the null text for the <see cref="F:System.String.Empty"/> value. This is a dependency property.</para>
+      </summary>
+      <value>true to display the null text for the <see cref="F:System.String.Empty"/> value; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.ShowNullTextForEmptyValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.ShowNullTextForEmptyValue"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.ShowNullTextProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.ShowNullText"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.ShowText">
+      <summary>
+        <para>Gets or sets whether the edit box is displayed. This is a dependency property.</para>
+      </summary>
+      <value>true to display the edit box; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.ShowTextProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.ShowText"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="E:DevExpress.WinUI.Editors.TextEdit.Spin">
+      <summary>
+        <para>Occurs when the UP or DOWN ARROW key is pressed.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.TextEdit.SpinDown">
+      <summary>
+        <para>Decrements the value of a masked editor.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.TextEdit.SpinUp">
+      <summary>
+        <para>Increments the value of a masked editor.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.Text">
+      <summary>
+        <para>Gets or sets the text displayed within the edit box. This is a dependency property.</para>
+      </summary>
+      <value>A <see cref="T:System.String"/> value that specifies the text displayed within the edit box.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.TextAlignment">
+      <summary>
+        <para>Gets or sets the text’s horizontal alignment. This is a dependency property.</para>
+      </summary>
+      <value>The texs’s horizontal alignment.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.TextAlignmentProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.TextAlignment"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.TextInputSettings">
+      <summary>
+        <para>Provides access to the edit settings. This is a dependency property.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Editors.TextInputBaseSettings object containing the edit settings of the <see cref="T:DevExpress.WinUI.Editors.TextEdit"/> editor.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.TextInputSettingsProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.TextInputSettings"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.TextProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.Text"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextEdit.TextWrapping">
+      <summary>
+        <para>Gets or sets whether the text wraps when it reaches the edge of the text box. This is a dependency property.</para>
+      </summary>
+      <value>One of the <see cref="T:Microsoft.UI.Xaml.TextWrapping"/> enumeration values.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextEdit.TextWrappingProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextEdit.TextWrapping"/> dependency property.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.TextEdit.Undo">
+      <summary>
+        <para>Undoes the last edit operation in the text control.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.TextInputMaskSettings">
+      <summary>
+        <para>Provides the mask settings.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.TextInputMaskSettings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.TextInputMaskSettings"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputMaskSettings.AllowNullInput">
+      <summary>
+        <para>Indicates whether end-users can set the editor’s value to a null reference.</para>
+      </summary>
+      <value>true, if null input is allowed; otherwise, false.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputMaskSettings.AutoComplete">
+      <summary>
+        <para>Specifies whether automatic completion is enabled. This is a dependency property.</para>
+      </summary>
+      <value>true, to enable automatic completion; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputMaskSettings.AutoCompleteProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputMaskSettings.AutoComplete"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputMaskSettings.IgnoreBlank">
+      <summary>
+        <para>Specifies whether the blank editor value is considered valid. This is a dependency property.</para>
+      </summary>
+      <value>true, of the blank editor value is considered valid; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputMaskSettings.IgnoreBlankProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputMaskSettings.IgnoreBlank"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputMaskSettings.Mask">
+      <summary>
+        <para>Specifies the mask expression. This is a dependency property.</para>
+      </summary>
+      <value>A string representing a mask expression.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputMaskSettings.MaskCulture">
+      <summary>
+        <para>Specifies the culture whose settings are used by masks. This is a dependency property.</para>
+      </summary>
+      <value>A System.Globalization.CultureInfo object whose settings are used by masks.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputMaskSettings.MaskCultureProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputMaskSettings.MaskCulture"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputMaskSettings.MaskProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputMaskSettings.Mask"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputMaskSettings.MaskType">
+      <summary>
+        <para>Gets or sets the mask type. This is a dependency property.</para>
+      </summary>
+      <value>One of the DevExpress.WinUI.Editors.MaskType enumeration values.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputMaskSettings.MaskTypeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputMaskSettings.MaskType"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputMaskSettings.PlaceHolder">
+      <summary>
+        <para>Specifies the character used as the placeholder in a masked editor, for the Simple, Regular and RegEx mask types. This is a dependency property.</para>
+      </summary>
+      <value>The character used as the placeholder in a masked editor.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputMaskSettings.PlaceHolderProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputMaskSettings.PlaceHolder"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputMaskSettings.SaveLiteral">
+      <summary>
+        <para>Specifies whether constantly displayed mask characters (literals) are included in an editor’s value, for the Simple and Regular mask types. This is a dependency property.</para>
+      </summary>
+      <value>true, if the constantly displayed mask characters are included in an editor’s value; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputMaskSettings.SaveLiteralProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputMaskSettings.SaveLiteral"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputMaskSettings.ShowPlaceHolders">
+      <summary>
+        <para>Specifies whether placeholders are displayed in a masked editor, for the RegEx mask type. This is a dependency property.</para>
+      </summary>
+      <value>true, to display placeholders in a masked editor; otherwise false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputMaskSettings.ShowPlaceHoldersProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputMaskSettings.ShowPlaceHolders"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputMaskSettings.UseAsDisplayFormat">
+      <summary>
+        <para>Specifies whether display values are still formatted using the mask when the editor is not focused. This is a dependency property.</para>
+      </summary>
+      <value>true, if the mask settings are used to format display values when the editor is not focused; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputMaskSettings.UseAsDisplayFormatProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputMaskSettings.UseAsDisplayFormat"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings">
+      <summary>
+        <para>Provides settings used by time span masks.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.#ctor">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings"/> class.</para>
+      </summary>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.AllowNegativeValue">
+      <summary>
+        <para>Specifies whether the editor allows entering negative values. This is a dependency property.</para>
+      </summary>
+      <value>true, to allow entering negative values; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.AllowNegativeValueProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.AllowNegativeValue"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.AssignValueToEnteredLiteral">
+      <summary>
+        <para>Specifies whether the editor should assign the entered value to a mask part that corresponds to the first symbol of the entered literal. This is a dependency property.</para>
+      </summary>
+      <value>true, to assign the entered value to a mask part that corresponds to the first symbol of the entered literal; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.AssignValueToEnteredLiteralProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.AssignValueToEnteredLiteral"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.ChangeNextPartOnCycleValueChange">
+      <summary>
+        <para>Specifies whether to change the next mask part when increasing or decreasing the current mask part out of a valid range. This is a dependency property.</para>
+      </summary>
+      <value>true, to change the next mask part when increasing or decreasing the current mask part out of a valid range; otherwise, false.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.ChangeNextPartOnCycleValueChangeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.ChangeNextPartOnCycleValueChange"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.DefaultPart">
+      <summary>
+        <para>Specifies the mask part (minutes, seconds, etc.) to which to assign the entered numeric value if the editor’s edit value is empty. This is a dependency property.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Editors.TimeSpanPart enumeration value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.DefaultPartProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.DefaultPart"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.InputMode">
+      <summary>
+        <para>Specifies how the time span mask restricts entering large numeric values in mask parts. This is a dependency property.</para>
+      </summary>
+      <value>A DevExpress.WinUI.Editors.TimeSpanInputMode enumeration value.</value>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.InputModeProperty">
+      <summary>
+        <para>Identifies the <see cref="P:DevExpress.WinUI.Editors.TextInputTimeSpanMaskSettings.InputMode"/> dependency property.</para>
+      </summary>
+      <value>A dependency property identifier.</value>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.UpdateEditorSource">
+      <summary>
+        <para>Lists values that specify the action that caused the editor’s validation.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.UpdateEditorSource.DontValidate">
+      <summary>
+        <para>The validation won’t occur.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.UpdateEditorSource.DoValidate">
+      <summary>
+        <para>The <see cref="M:DevExpress.WinUI.Editors.BaseEdit.DoValidate"/> method was called.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.UpdateEditorSource.EnterKeyPressed">
+      <summary>
+        <para>An end-user has changed the edit value and pressed the ENTER key (the <see cref="P:DevExpress.WinUI.Editors.BaseEdit.ValidateOnEnterKeyPressed"/> property should be set to true).</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.UpdateEditorSource.LostFocus">
+      <summary>
+        <para>The editor is about to lose the focus.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.UpdateEditorSource.TextInput">
+      <summary>
+        <para>The edit value has been changed by an end-user.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Editors.UpdateEditorSource.ValueChanging">
+      <summary>
+        <para>The editor’s value has been changed programmatically (e.g. in code behind).</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Editors.ValidationEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.WinUI.Editors.BaseEdit.Validate"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.ValidationEventArgs.#ctor(System.Object,DevExpress.WinUI.Editors.UpdateEditorSource)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.ValidationEventArgs"/> class with specified settings.</para>
+      </summary>
+      <param name="value">The entered value. This object is assigned to the <see cref="P:DevExpress.WinUI.Editors.ValidationEventArgs.Value"/> property.</param>
+      <param name="updateSource">The action that caused the editor’s validation.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.ValidationEventArgs.#ctor(System.Object)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.WinUI.Editors.ValidationEventArgs"/> class with specified settings.</para>
+      </summary>
+      <param name="value">The entered value. This object is assigned to the <see cref="P:DevExpress.WinUI.Editors.ValidationEventArgs.Value"/> property.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ValidationEventArgs.ErrorContent">
+      <summary>
+        <para>Gets or sets an object that describes the validation error.</para>
+      </summary>
+      <value>The validation error’s content.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ValidationEventArgs.ErrorType">
+      <summary>
+        <para>Gets or sets the error icon type.</para>
+      </summary>
+      <value>An error icon type.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ValidationEventArgs.IsValid">
+      <summary>
+        <para>Gets or sets a value which specifies whether the value is valid.</para>
+      </summary>
+      <value>true, if the value is valid; otherwise, false.</value>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.ValidationEventArgs.SetError(System.Object,DevExpress.WinUI.Editors.ErrorType)">
+      <summary>
+        <para>Marks the processed input value as invalid and displays an error within the editor with the specified error icon type.</para>
+      </summary>
+      <param name="errorContent">The error content.</param>
+      <param name="errorType">An error icon type.</param>
+    </member>
+    <member name="M:DevExpress.WinUI.Editors.ValidationEventArgs.SetError(System.Object)">
+      <summary>
+        <para>Marks the processed input value as invalid and displays an error within the editor.</para>
+      </summary>
+      <param name="errorContent">The error content.</param>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ValidationEventArgs.UpdateSource">
+      <summary>
+        <para>Gets the action that caused the validation.</para>
+      </summary>
+      <value>The action that caused the editor’s validation.</value>
+    </member>
+    <member name="P:DevExpress.WinUI.Editors.ValidationEventArgs.Value">
+      <summary>
+        <para>Gets the editor’s value.</para>
+      </summary>
+      <value>The editor’s value which a user enters.</value>
+    </member>
+    <member name="N:DevExpress.WinUI.Localization">
+      <summary>
+        <para>Contains classes and enumerations that are intended to localize the User Interface of DevExpress WinUI Controls.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Localization.EditorStringID">
+      <summary>
+        <para>Contains values corresponding to strings that can be localized.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseAnyOf">
+      <summary>
+        <para>Is any of</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseBeginsWith">
+      <summary>
+        <para>Begins with</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseBetween">
+      <summary>
+        <para>Is between</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseBetweenAnd">
+      <summary>
+        <para>and</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseContains">
+      <summary>
+        <para>Contains</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseDoesNotContain">
+      <summary>
+        <para>Does not contain</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseDoesNotEqual">
+      <summary>
+        <para>Does not equal</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseEndsWith">
+      <summary>
+        <para>Ends with</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseEquals">
+      <summary>
+        <para>Equals</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseGreater">
+      <summary>
+        <para>Is greater than</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseGreaterOrEqual">
+      <summary>
+        <para>Is greater than or equal to</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsBeyondThisYear">
+      <summary>
+        <para>Is Beyond This Year</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsEarlierThisMonth">
+      <summary>
+        <para>Is Earlier This Month</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsEarlierThisWeek">
+      <summary>
+        <para>Is Earlier This Week</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsEarlierThisYear">
+      <summary>
+        <para>Is Earlier This Year</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsLastWeek">
+      <summary>
+        <para>Is Last Week</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsLaterThisMonth">
+      <summary>
+        <para>Is Later This Month</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsLaterThisWeek">
+      <summary>
+        <para>Is Later This Week</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsLaterThisYear">
+      <summary>
+        <para>Is Later This Year</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsNextWeek">
+      <summary>
+        <para>Is Next Week</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsNotNull">
+      <summary>
+        <para>Is not null</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsNotNullOrEmpty">
+      <summary>
+        <para>Is not blank</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsNull">
+      <summary>
+        <para>Is null</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsNullOrEmpty">
+      <summary>
+        <para>Is blank</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsPriorThisYear">
+      <summary>
+        <para>Is Prior This Year</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsToday">
+      <summary>
+        <para>Is Today</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsTomorrow">
+      <summary>
+        <para>Is Tomorrow</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseIsYesterday">
+      <summary>
+        <para>Is Yesterday</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLess">
+      <summary>
+        <para>Is less than</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLessOrEqual">
+      <summary>
+        <para>Is less than or equal to</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLike">
+      <summary>
+        <para>Is like</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLocalDateTimeDayAfterTomorrow">
+      <summary>
+        <para>Day after tomorrow</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLocalDateTimeLastWeek">
+      <summary>
+        <para>Last week</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLocalDateTimeNextMonth">
+      <summary>
+        <para>Next month</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLocalDateTimeNextWeek">
+      <summary>
+        <para>Next week</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLocalDateTimeNextYear">
+      <summary>
+        <para>Next year</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLocalDateTimeNow">
+      <summary>
+        <para>Now</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLocalDateTimeThisMonth">
+      <summary>
+        <para>This month</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLocalDateTimeThisWeek">
+      <summary>
+        <para>This week</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLocalDateTimeThisYear">
+      <summary>
+        <para>This year</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLocalDateTimeToday">
+      <summary>
+        <para>Today</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLocalDateTimeTomorrow">
+      <summary>
+        <para>Tomorrow</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLocalDateTimeTwoWeeksAway">
+      <summary>
+        <para>Two weeks away</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseLocalDateTimeYesterday">
+      <summary>
+        <para>Is Yesterday</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseNoneOf">
+      <summary>
+        <para>Is none of</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseNotBetween">
+      <summary>
+        <para>Is not between</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.FilterClauseNotLike">
+      <summary>
+        <para>Is not like</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanDays">
+      <summary>
+        <para>day</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanDaysPlural">
+      <summary>
+        <para>days</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanDaysShort">
+      <summary>
+        <para>d</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanFractionalSeconds">
+      <summary>
+        <para>fractional</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanFractionalSecondsPlural">
+      <summary>
+        <para>fractional</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanFractionalSecondsShort">
+      <summary>
+        <para>f</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanHours">
+      <summary>
+        <para>hour</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanHoursPlural">
+      <summary>
+        <para>hours</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanHoursShort">
+      <summary>
+        <para>h</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanMilliseconds">
+      <summary>
+        <para>millisecond</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanMillisecondsPlural">
+      <summary>
+        <para>milliseconds</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanMillisecondsShort">
+      <summary>
+        <para>ms</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanMinutes">
+      <summary>
+        <para>minute</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanMinutesPlural">
+      <summary>
+        <para>minutes</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanMinutesShort">
+      <summary>
+        <para>m</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanSeconds">
+      <summary>
+        <para>second</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanSecondsPlural">
+      <summary>
+        <para>seconds</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorStringID.TimeSpanSecondsShort">
+      <summary>
+        <para>s</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.WinUI.Localization.EditorValidationStringID">
+      <summary>
+        <para>Contains values corresponding to strings that can be localized.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorValidationStringID.RangeValidationError">
+      <summary>
+        <para>Value is out of range</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorValidationStringID.ValidationError">
+      <summary>
+        <para>Invalid value</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.WinUI.Localization.EditorValidationStringID.ValueConversionError">
+      <summary>
+        <para>Value cannot be converted</para>
+      </summary>
+    </member>
+  </members>
+</doc>

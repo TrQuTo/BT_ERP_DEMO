@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<doc>
+  <assembly>
+    <name>DevExpress.Xpo.v22.2.Extensions</name>
+  </assembly>
+  <members>
+    <member name="N:DevExpress.Xpo">
+      <summary>
+        <para>Contains classes that support the infrastructure of the eXpress Persistent Objects.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpo.HiddenAttribute">
+      <summary>
+        <para>Applied to XPO persistent classes, their fields or properties. Specifies that the target class, property or field should be hidden when generating OData v3 Service metadata.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpo.StreamAttribute">
+      <summary>
+        <para>Applied to fields or a properties of an XPO persistent class. Specifies that the target string or byte[] property/field is a stream, when generating OData v3 Service metadata.</para>
+      </summary>
+    </member>
+    <member name="T:DevExpress.Xpo.VisibleAttribute">
+      <summary>
+        <para>Applied to non-persistent properties. Specifies that the target property value should be visible to  XPO Odata v3 Service clients.</para>
+      </summary>
+    </member>
+  </members>
+</doc>
